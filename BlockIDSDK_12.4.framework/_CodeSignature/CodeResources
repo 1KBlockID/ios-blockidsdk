@@ -6,7 +6,7 @@
 	<dict>
 		<key>BIDScannerView.nib</key>
 		<data>
-		5KBaHJQLyITvHCbMNNdppt8W2OQ=
+		nPM4qF36nXw3yKfhGP8ox5SoXEU=
 		</data>
 		<key>Headers/BlockIDSDK-Swift.h</key>
 		<data>
@@ -26,31 +26,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5poeVgO6zdqF57NRhsyjBb+xN90=
+		glzbSIZK2E3GEBky2U762WLWe2c=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Ei3yo11Ou2DBVxeAyULV+NVagQE=
+		BNA7wWJZuorF4Q53I2roy2zoKuc=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		Ei3yo11Ou2DBVxeAyULV+NVagQE=
+		BNA7wWJZuorF4Q53I2roy2zoKuc=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		YDcZ20g1zzC8aAM6KOmb8odB4fs=
+		R+ZKYu4xarZHAlYUpcP9HISi5Dg=
+		</data>
+		<key>Modules/BlockIDSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		qcyzELys+JyGvNBorrKoJgHSc+k=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		BKjFaB7VktLrvPG1mWuZlyvr8B0=
+		fvNCZ07/RpOEdewhAn9EycMeO7U=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		YDcZ20g1zzC8aAM6KOmb8odB4fs=
+		R+ZKYu4xarZHAlYUpcP9HISi5Dg=
+		</data>
+		<key>Modules/BlockIDSDK.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		qcyzELys+JyGvNBorrKoJgHSc+k=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		BKjFaB7VktLrvPG1mWuZlyvr8B0=
+		fvNCZ07/RpOEdewhAn9EycMeO7U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,11 +66,11 @@
 		</data>
 		<key>QRGenerator.nib</key>
 		<data>
-		wlLsfek1XY4M3tuSU+/wJbr08+M=
+		7xYsv62JqpKLwMxT7kg+HDIg3bg=
 		</data>
 		<key>default.metallib</key>
 		<data>
-		ssBsrsK37SVUrBQBlL5gJ2b69fg=
+		T6aHm4xhNRXU/KwtJj7a7X61jlE=
 		</data>
 		<key>tessdata/OCRB.traineddata</key>
 		<data>
@@ -79,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			96/uPJ5khopnt9VmUdC3iq1xSOQX5uLM/aLvioeQVBM=
+			LvCHZx9fB1qg+QICSGBCHDZpN810glw3mAWJO7gwpps=
 			</data>
 		</dict>
 		<key>Headers/BlockIDSDK-Swift.h</key>
@@ -114,42 +122,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3L3Ouf3WenBN9jTstW2gCR8g/LNjcogoFDpTrcI/tOk=
+			dnJBY1wzAAO/I3Qo9fVAZoWo8C5J/qk+x3JnEI1hSsc=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3L3Ouf3WenBN9jTstW2gCR8g/LNjcogoFDpTrcI/tOk=
+			dnJBY1wzAAO/I3Qo9fVAZoWo8C5J/qk+x3JnEI1hSsc=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/HQVAAd1QJo4afcwsNYE8/w6wm5wozpCeh6dSX7VzOU=
+			mqbrJssn8gXY18M979DZQJR0oE2MbGjyhDcEZ8Ajyes=
+			</data>
+		</dict>
+		<key>Modules/BlockIDSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AFhOM0CKP8Tf0iagwtGBFt/JXjiEU1wRJg6smz4MLFs=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			58rjZJzEFsMIuq8V/Y6Vy9NlKTQahoZKGlBG5z75Qg4=
+			uqQYgXWgjOY//04up4mN5yR9lkUsc3lbO0xFfO08xuI=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/HQVAAd1QJo4afcwsNYE8/w6wm5wozpCeh6dSX7VzOU=
+			mqbrJssn8gXY18M979DZQJR0oE2MbGjyhDcEZ8Ajyes=
+			</data>
+		</dict>
+		<key>Modules/BlockIDSDK.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AFhOM0CKP8Tf0iagwtGBFt/JXjiEU1wRJg6smz4MLFs=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			58rjZJzEFsMIuq8V/Y6Vy9NlKTQahoZKGlBG5z75Qg4=
+			uqQYgXWgjOY//04up4mN5yR9lkUsc3lbO0xFfO08xuI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -163,14 +185,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rEI/+N0fJfmnTXrKV2bDgs2A7M8u0CmMbRar44OxUGU=
+			nrkA1f7nxhxBqGSm/PQyUltHJdXQIj1qjxQ12Rsw9l0=
 			</data>
 		</dict>
 		<key>default.metallib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/j4sxmKryHTfhNVxnCZ5718lnKr0zajf2IMqyahWnI4=
+			AiMhxowBA/mHUUcKK0BRa3i5R/TF6Zvu2eYLWnoCvUU=
 			</data>
 		</dict>
 		<key>tessdata/OCRB.traineddata</key>
