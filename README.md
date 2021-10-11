@@ -9,3 +9,7 @@
 - The above SDK is updated with below Pod(s)
 - -> TrustWallerCore v2.5.6
 - Update the version of pod in the respective app 
+
+# Changes Done
+1. Passport RFID scan with custom timeout parameter
+2. Crash fix when any random public key is being used in app
