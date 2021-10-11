@@ -12,4 +12,4 @@
 
 # Changes Done
 1. Passport RFID scan with custom timeout parameter
-2. Crash fix when any random public key is being used in app
+2. Crash fix when any random public key (plain string/ not base64 string) is being used in app
