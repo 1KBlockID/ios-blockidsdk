@@ -7,7 +7,7 @@
 
 # Note
 - The above SDK is updated with below Pod(s)
-- -> TrustWallerCore v2.5.6
+- -> TrustWalletCore v2.5.6
 - Update the version of pod in the respective app 
 
 # Changes Done
