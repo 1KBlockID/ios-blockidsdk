@@ -1,4 +1,4 @@
-# BlockID SDK v1.4.83
+# BlockID SDK v1.4.84
 - SDK with older Xcode compatibility - In Progress
 - The develop branch has 3 SDKs now
 - -> Xcode 13 compatible - the top level SDK
@@ -8,4 +8,4 @@
 # Note
 - The above SDK is updated with below Pod(s)
 - -> TrustWallerCore v2.5.6
-- Update the version of respective pod in the redpective app 
+- Update the version of pod in the respective app 
