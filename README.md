@@ -1,1 +1,15 @@
-# ios-blockidsdk
+# BlockID SDK v1.4.84
+- SDK with older Xcode compatibility - In Progress
+- The develop branch has 3 SDKs now
+- -> Xcode 13 compatible - the top level SDK
+- -> Xcode 12.5 compatible 
+- -> Xcode 12.4 compatible 
+
+# Note
+- The above SDK is updated with below Pod(s)
+- -> TrustWalletCore v2.5.6
+- Update the version of pod in the respective app 
+
+# Changes Done
+1. Passport RFID scan with custom timeout parameter
+2. Crash fix when any random public key (plain string/ not base64 string) is being used in app
