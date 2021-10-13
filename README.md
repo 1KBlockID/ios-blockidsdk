@@ -4,7 +4,7 @@
 - -> Xcode 12.5 compatible 
 - -> Xcode 12.4 compatible 
 
-# Changes Log
+# Change Logs
 - v1.4.85
 1. Ability to add custom message during RFID scan
 
