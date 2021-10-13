@@ -12,4 +12,4 @@
 1. Passport RFID scan with custom timeout parameter
 2. Crash fix when any random public key (plain string/ not base64 string) is being used in app
 3. The above SDK is updated with below Pod(s)
--> TrustWalletCore v2.5.6
+- -> TrustWalletCore v2.5.6
