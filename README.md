@@ -5,6 +5,9 @@
 - -> Xcode 12.4 compatible 
 
 # Change Logs
+- v1.4.86
+1. SDK crash fix while calling resetSDK() method
+
 - v1.4.85
 1. Ability to add custom message during RFID scan
 
