@@ -5,6 +5,11 @@
 - -> Xcode 12.4 compatible 
 
 # Change Logs
+- v1.4.87
+1. Introduced compareFace() method
+2. Ability to return document data when scanning is failed
+3. Updated Invalid Document error code
+
 - v1.4.86
 1. SDK crash fix while calling resetSDK() method
 
