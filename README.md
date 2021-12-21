@@ -1,5 +1,5 @@
 # BlockID SDK
-- The develop branch has 3 SDKs now
+- The develop branch has 2 SDKs now
 - -> Xcode 13 compatible - the top level SDK 
 - -> Xcode 12.4 compatible 
 
