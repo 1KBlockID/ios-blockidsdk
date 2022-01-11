@@ -5,6 +5,9 @@
 - -> Xcode 12.4 compatible 
 
 # Change Logs
+- v1.4.93
+1. Supports SSN Verification using existing verifyDocument() method
+
 - v1.4.92
 1. Supports AAMVA integration - introduced verifyDocument() method
 2. Introduce option (new method) to support for NOT to RESET LiveId scan sequence
