@@ -5,6 +5,9 @@
 - -> Xcode 12.4 compatible 
 
 # Change Logs
+- v1.4.95
+1. Enables an option to bypass PoI (Proof of Identity) based on License module configuration
+
 - v1.4.93
 1. Supports SSN Verification using existing verifyDocument() method
 
