@@ -5,6 +5,9 @@
 - -> Xcode 12.4 compatible 
 
 # Change Logs
+- v1.4.96
+1. Bug fix - App gets notifies for wrongExpressionDetected() when shouldResetOnWrongExpresssion is set to false
+
 - v1.4.95
 1. Enables an option to bypass PoI (Proof of Identity) based on License module configuration
 
