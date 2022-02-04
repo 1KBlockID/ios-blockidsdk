@@ -5,6 +5,9 @@
 - -> Xcode 12.4 compatible 
 
 # Change Logs
+- v1.4.97
+1. Provides Document Verification Service for face liveness check
+
 - v1.4.96
 1. Bug fix - App gets notifies for wrongExpressionDetected() when shouldResetOnWrongExpresssion is set to false
 
