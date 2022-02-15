@@ -5,11 +5,15 @@
 - -> Xcode 12.4 compatible 
 
 # Change Logs
+- v1.4.98
+1. Bug(s) fixed - LiveID scan should reset when user's face is out of focus
+
 - v1.4.97
 1. Provides Document Verification Service for face liveness check
+2. Provides addtional method to start LiveID scan with default face liveness check
 
 - v1.4.96
-1. Bug fix - App gets notifies for wrongExpressionDetected() when shouldResetOnWrongExpresssion is set to false
+1. Bug(s) fixed - SDK notifies wrongExpressionDetected() delegate to app when shouldResetOnWrongExpresssion is set to false
 
 - v1.4.95
 1. Enables an option to bypass PoI (Proof of Identity) based on License module configuration
