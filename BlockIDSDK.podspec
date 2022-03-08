@@ -25,7 +25,7 @@ A long description about BlockIDSDK goes here. This document describes the proce
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sushil-tiwari-1kosmos' => 'sushil.tiwari@1kosmos.com' }
-  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => 'bid_sdk_' + s.version.to_s }
+  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   # set platform and minimum deployment target
