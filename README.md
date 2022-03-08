@@ -17,7 +17,7 @@ BlockIDSDK is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'BlockIDSDK'
+  pod 'BlockIDSDK', :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.6.00'
 ```
 
 ## Author
