@@ -1,0 +1,6 @@
+framework module BlockIDSDK {
+  umbrella header "BlockIDSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
