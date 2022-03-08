@@ -1,6 +1,0 @@
-use_frameworks!
-target 'BlockIDSDK_Tests' do
-  pod 'BlockIDSDK', :path => '../'
-  
-  
-end
