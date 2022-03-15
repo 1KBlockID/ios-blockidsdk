@@ -221,6 +221,12 @@ SWIFT_CLASS("_TtC10BlockIDSDK17BIDNetworkManager")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC10BlockIDSDK21BIDNewSessionResponse")
+@interface BIDNewSessionResponse : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10BlockIDSDK14BIDScannerView")
@@ -343,6 +349,12 @@ SWIFT_CLASS("_TtC10BlockIDSDK15QRScannerHelper")
 @interface QRScannerHelper : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC10BlockIDSDK17SessionPollingAPI")
+@interface SessionPollingAPI : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
