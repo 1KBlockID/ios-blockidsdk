@@ -26,15 +26,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R8y1X32sJ4y5ddWFhHHjbCFnmvI=
+		+nxACwEQyWgK7FYP8d0NLVm2uYQ=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		2vDV+bYZnHNCaV+hWEUzC6iN8lY=
+		l/9MauNnbAt44a2sJn6c2ukGARk=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		2vDV+bYZnHNCaV+hWEUzC6iN8lY=
+		l/9MauNnbAt44a2sJn6c2ukGARk=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -110,14 +110,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FCqo4+JBP8TnaVsrqJ7u4wde5SEMmS5d+Nhr/uS5aI4=
+			CE2+ePMYdsWeD9NaCfbCSgN32laCRM3aF8ejYoAypmk=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FCqo4+JBP8TnaVsrqJ7u4wde5SEMmS5d+Nhr/uS5aI4=
+			CE2+ePMYdsWeD9NaCfbCSgN32laCRM3aF8ejYoAypmk=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
