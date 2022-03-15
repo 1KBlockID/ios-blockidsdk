@@ -1,10 +1,12 @@
 # BlockID SDK
-- The branch has 3 SDKs now
-- -> Xcode 13 compatible - the top level SDK
-- -> Xcode 12.5 compatible 
-- -> Xcode 12.4 compatible 
+- The branch has 2 SDKs compatible with
+- -> Xcode 13 (Swift 5.5) - the top level SDK
+- -> Xcode 13.2.1 (Swift 5.5.3)  
 
 # Change Logs
+- v1.6.00
+1. Bug fixes
+
 - v1.4.98
 1. Bug(s) fixed - LiveID scan should reset when user's face is out of focus
 
