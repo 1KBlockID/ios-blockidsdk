@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BlockIDSDK'
-  s.version          = '1.6.00'
+  s.version          = '1.6.10'
   s.summary          = 'This document describes the procedure to configure the BlockID iOS SDK into your application.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A long description about BlockIDSDK goes here. This document describes the procedure to configure the BlockID iOS SDK into your application.
+The BlockID SDK is now available as .xcframework. Application must remove the run script which was required to remove unwanted architecture during app deployment process.
                        DESC
 
   s.homepage         = 'https://github.com/1KBlockID/ios-blockidsdk.git'
@@ -45,7 +45,7 @@ A long description about BlockIDSDK goes here. This document describes the proce
   s.frameworks = 'UIKit', 'CryptoTokenKit'
   
   # add BlockIDSDK.framework dependency
-  s.vendored_frameworks = 'BlockIDSDK/Framework/BlockIDSDK.framework'
+  s.vendored_frameworks = 'BlockIDSDK/Framework/BlockIDSDK.xcframework'
   
   # add pod dependency
   s.dependency 'TrustWalletCore', '~> 2.5.6'
