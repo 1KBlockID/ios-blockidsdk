@@ -613,7 +613,7 @@ public typealias SessionResponseCallback = ((_ status: Swift.Bool, _ object: Blo
   public func addNativeAccount(method: Swift.String!, userId: Swift.String, password: Swift.String, origin: BlockIDSDK.BIDOrigin, deviceToken: Swift.String? = nil, lon: Swift.Double, lat: Swift.Double, completion: @escaping BlockIDSDK.UserAPICallback)
   public func unLinkAccount(bidLinkedAccount: BlockIDSDK.BIDLinkedAccount, deviceToken: Swift.String? = nil, completion: @escaping BlockIDSDK.UserAPICallback)
   public func validateAccessCode(code: Swift.String, origin: BlockIDSDK.BIDOrigin, completion: @escaping BlockIDSDK.AccessCodeValidationAPICallback)
-  public func generateSession(origin: BlockIDSDK.BIDOrigin, acrData: BlockIDSDK.AccessCodeValidationResponseDecryptedData, completion: @escaping ((sessionId: Swift.String?, sessionUrl: Swift.String?), _ error: Swift.String?) -> Swift.Void)
+  public func generateSession(origin: BlockIDSDK.BIDOrigin, acrData: BlockIDSDK.AccessCodeValidationResponseDecryptedData, completion: @escaping ((sessionId: Swift.String?, sessionUrl: Swift.String?), _ error: BlockIDSDK.ErrorResponse?) -> Swift.Void)
   public func getSessionResponse(completion: @escaping BlockIDSDK.SessionResponseCallback)
   public func redeemAccessCode(phoneNumber: Swift.String? = nil, code: Swift.String, userId: Swift.String, password: Swift.String, origin: BlockIDSDK.BIDOrigin, deviceToken: Swift.String? = nil, lat: Swift.Double, lon: Swift.Double, completion: @escaping BlockIDSDK.UserAPICallback)
   public func resetPassword(userId: Swift.String, password: Swift.String, account: BlockIDSDK.BIDAccount?, origin: BlockIDSDK.BIDOrigin, completion: @escaping BlockIDSDK.UserAPICallback)
@@ -1999,7 +1999,7 @@ public enum DataGroupId : Swift.Int, Swift.CaseIterable {
 public typealias RequestBody = [Swift.String : Swift.AnyObject]
 public typealias NetworkResponseCallback<T> = (statusCode: Swift.Int?, error: Swift.Error?, result: T?) where T : Swift.Decodable
 public typealias APIResponseCallback<T> = (status: Swift.Bool, message: Swift.String, error: BlockIDSDK.ErrorResponse?, result: T?) where T : Swift.Decodable
-public typealias SessionAPICallback = ((_ statusCode: Swift.Int?, _ response: BlockIDSDK.BIDSessionResponse?, _ error: Swift.String?) -> Swift.Void)
+public typealias SessionAPICallback = ((_ statusCode: Swift.Int?, _ response: BlockIDSDK.BIDSessionResponse?, _ error: Swift.String?, _ errorResponse: BlockIDSDK.ErrorResponse?) -> Swift.Void)
 public struct ProxyDetails {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BIDNetworkManager : ObjectiveC.NSObject {
