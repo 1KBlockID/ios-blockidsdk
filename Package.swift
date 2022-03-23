@@ -21,7 +21,7 @@ let package = Package(
     targets: [
       .binaryTarget(
         name: "BlockIDSDK",
-        path: "./Sources/Framework/BlockIDSDK.xcframework")
+        path: "./BlockIDSDK/BlockIDSDK.xcframework")
     ]
 
 )
