@@ -19,6 +19,7 @@ import LocalAuthentication
 import Metal
 import MetalKit
 import OpenSSL
+import SafariServices
 import Swift
 import SwiftUI
 import SwiftyTesseract
@@ -648,6 +649,8 @@ public typealias SessionResponseCallback = ((_ status: Swift.Bool, _ object: Ses
   public func getVersion() -> Swift.String?
   public func compareFaces(base64Img1: Swift.String, base64Img2: Swift.String, purpose: CompareFacePurpose, completion: @escaping (BIDFaceCompareScore?, ErrorResponse?) -> Swift.Void)
   public func verifyDocument(dvcID: Swift.String, dic: [Swift.String : Any], completion: @escaping ((Swift.Bool, [Swift.String : Any]?, ErrorResponse?) -> Swift.Void))
+  public func registerFIDOKey(userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, completion: @escaping Fido2Callback)
+  public func authenticateFIDOKey(userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, completion: @escaping Fido2Callback)
   @objc deinit
 }
 public enum CompareFacePurpose : Swift.String {
@@ -1363,6 +1366,7 @@ public struct CustomErrors {
   public init(code: Swift.Int, msg: Swift.String, responseObj: [Swift.String : Any])
   @objc deinit
 }
+public typealias Fido2Callback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
 @available(iOS 13, macOS 10.15, *)
 public func AESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
 @available(iOS 13, macOS 10.15, *)
@@ -2042,6 +2046,7 @@ public class OfflineAuthAccountDetail : Swift.Codable {
 }
 @_hasMissingDesignatedInitializers public class BIDTenantInfo : Swift.Codable {
   public var id: Swift.String?
+  public var tenanttag: Swift.String?
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
