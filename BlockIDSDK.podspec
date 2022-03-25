@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BlockIDSDK'
-  s.version          = '1.6.20.rc02'
+  s.version          = '1.6.20'
   s.summary          = 'This document describes the procedure to configure the BlockID iOS SDK into your application.'
 
 # This description is used to generate tags and improve search results.
@@ -25,10 +25,10 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   #s.author           = { 'dev1kosmos' => 'dev1kosmos@1kosmos.com' }
-  #s.author           = { 'sushil-tiwari-1kosmos' => 'sushil.tiwari@1kosmos.com' }
-  s.author           = { 'dev1kosmos' => 'dev1kosmos@1kosmos.com' }
-  #s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => s.version.to_s }
-  s.source           = { :git => 'https://dev1kosmos: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@github.com/1KBlockID/ios-blockidsdk.git', :tag => s.version.to_s }
+  s.author           = { 'sushil-tiwari-1kosmos' => 'sushil.tiwari@1kosmos.com' }
+  #s.author           = { 'dev1kosmos' => 'dev1kosmos@1kosmos.com' }
+  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => s.version.to_s }
+  #s.source           = { :git => 'https://dev1kosmos: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@github.com/1KBlockID/ios-blockidsdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   # set platform and minimum deployment target

@@ -1357,6 +1357,11 @@ public struct CustomErrors {
   public static let kMagicLinkCodeRedeemed: (code: Swift.Int, msg: Swift.String)
   public static let kTenantRegisterFailed: (code: Swift.Int, msg: Swift.String)
   public static let kUnauthorizedLicenseKey: (code: Swift.Int, msg: Swift.String)
+  public static let kUserNameIsMandatory: (code: Swift.Int, msg: Swift.String)
+  public static let kTenantTagIsMandatory: (code: Swift.Int, msg: Swift.String)
+  public static let kCommunityIsMandatory: (code: Swift.Int, msg: Swift.String)
+  public static let kCancelledProcess: (code: Swift.Int, msg: Swift.String)
+  public static let kSessionExpired: (code: Swift.Int, msg: Swift.String)
 }
 @objc public class ErrorResponse : ObjectiveC.NSObject {
   public var code: Swift.Int
