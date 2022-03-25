@@ -1,8 +1,3 @@
-# BlockID SDK
-- The branch has 2 SDKs compatible with
-- -> Xcode 13 (Swift 5.5) - the top level SDK
-- -> Xcode 13.2.1 (Swift 5.5.3)  
-
 # Change Logs
 - v1.6.20
 1. Introduce capability to register and authenticate FIDO2 security keys
