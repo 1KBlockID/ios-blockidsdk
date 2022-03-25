@@ -4,6 +4,13 @@
 - -> Xcode 13.2.1 (Swift 5.5.3)  
 
 # Change Logs
+- v1.6.20
+1. Introduce capability to register and authenticate FIDO2 security keys
+
+- v1.6.10
+1. FAT framework format is deprecated
+2. The SDK is now avaiable as .xcframework
+
 - v1.6.00
 1. Bug fixes
 
