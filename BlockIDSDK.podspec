@@ -27,7 +27,8 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   #s.author           = { 'dev1kosmos' => 'dev1kosmos@1kosmos.com' }
   s.author           = { 'sushil-tiwari-1kosmos' => 'sushil.tiwari@1kosmos.com' }
   #s.author           = { 'dev1kosmos' => 'dev1kosmos@1kosmos.com' }
-  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => s.version.to_s }
+  #s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :branch => 'pod' }
   #s.source           = { :git => 'https://dev1kosmos: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@github.com/1KBlockID/ios-blockidsdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
