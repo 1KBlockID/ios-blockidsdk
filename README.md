@@ -1,9 +1,12 @@
 # BlockID SDK
-- The branch has 2 SDKs compatible with
-- -> Xcode 13 (Swift 5.5) - the top level SDK
-- -> Xcode 13.2.1 (Swift 5.5.3)  
+- Overview - https://developer.1kosmos.com/devportal/docs/mobile-sdk/overview
+- Integration Guide - https://developer.1kosmos.com/devportal/docs/mobile-sdk/integration-guide/ios
 
 # Change Logs
+- v1.6.10
+1. FAT framework (.framework) format is deprecated
+2. The SDK is now avaiable as .xcframework
+
 - v1.6.00
 1. Bug fixes
 
