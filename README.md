@@ -5,9 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/BlockIDSDK.svg?style=flat)](https://cocoapods.org/pods/BlockIDSDK)
 [![Platform](https://img.shields.io/cocoapods/p/BlockIDSDK.svg?style=flat)](https://cocoapods.org/pods/BlockIDSDK)
 
-## Example
+## Overview
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Reference: https://developer.1kosmos.com/devportal/docs/mobile-sdk/overview 
+
+## Integration Guide
+Reference: https://developer.1kosmos.com/devportal/docs/mobile-sdk/integration-guide/ios
 
 ## Requirements
 
