@@ -45,7 +45,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   # s.public_header_files = 'Pod/Classes/**/*.h'
   
   # add framework dependency
-  s.frameworks = 'UIKit', 'CryptoTokenKit'
+  s.frameworks = 'UIKit', 'CryptoTokenKit', 'SafariServices'
   
   # add BlockIDSDK.framework dependency
   s.vendored_frameworks = 'BlockIDSDK.xcframework'
