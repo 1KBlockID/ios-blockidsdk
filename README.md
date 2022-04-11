@@ -3,8 +3,11 @@
 - Integration Guide - https://developer.1kosmos.com/devportal/docs/mobile-sdk/integration-guide/ios
 
 # Change Logs
+- v1.6.20
+1. Introduce capability to register and authenticate FIDO2 security keys
+
 - v1.6.10
-1. FAT framework (.framework) format is deprecated
+1. FAT framework format is deprecated
 2. The SDK is now avaiable as .xcframework
 
 - v1.6.00
