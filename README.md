@@ -3,6 +3,9 @@
 - Integration Guide - https://developer.1kosmos.com/devportal/docs/mobile-sdk/integration-guide/ios
 
 # Change Logs
+- v.1.7.20
+1. Error code updated for LiveID Verification
+
 - v1.7.10
 1. Bug fixes
 
