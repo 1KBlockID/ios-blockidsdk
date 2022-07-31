@@ -5,22 +5,19 @@
 [![License](https://img.shields.io/cocoapods/l/BlockIDSDK.svg?style=flat)](https://cocoapods.org/pods/BlockIDSDK)
 [![Platform](https://img.shields.io/cocoapods/p/BlockIDSDK.svg?style=flat)](https://cocoapods.org/pods/BlockIDSDK)
 
-## Overview
-
-Reference: https://developer.1kosmos.com/devportal/docs/mobile-sdk/overview 
-
-## Integration Guide
-Reference: https://developer.1kosmos.com/devportal/docs/mobile-sdk/integration-guide/ios
+- Overview: https://developer.1kosmos.com/devportal/docs/mobile-sdk/overview 
+- Integration Guide: https://developer.1kosmos.com/devportal/docs/mobile-sdk/integration-guide/ios
+- API Reference: https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/api-reference
+- Change Log: https://github.com/1KBlockID/ios-blockidsdk/blob/main/README.md
 
 ## Requirements
 
 ## Installation
 
-BlockIDSDK is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+BlockIDSDK is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-  pod 'BlockIDSDK', :git => 'https://dev1kosmos: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@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.6.20'
+  pod 'BlockIDSDK', :git => 'https://dev1kosmos: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@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.7.50'
 ```
 
 ## Author
