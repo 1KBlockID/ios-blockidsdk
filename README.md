@@ -1,8 +1,16 @@
 # BlockID SDK
 - Overview - https://developer.1kosmos.com/devportal/docs/mobile-sdk/overview
-- Integration Guide - https://developer.1kosmos.com/devportal/docs/mobile-sdk/integration-guide/ios
+- Integration Guide - https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/integration-guide
+- API Reference - https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/api-reference
 
 # Change Logs
+- v.1.7.50
+1. Offline Mode
+-- Fixed crash
+-- Updated error code  
+2. License Check
+-- Updated error code
+
 - v.1.7.40
 1. Bug fixes
 
