@@ -32,7 +32,7 @@
 - FAT framework format is deprecated
 - The SDK is now avaiable as .xcframework
 
-###v1.6.00
+### v1.6.00
 - Bug fixes
 
 ### v1.4.98
@@ -71,4 +71,4 @@
 - Passport RFID scan with custom timeout parameter
 - Crash fix when any random public key (plain string/ not base64 string) is being used in app
 - The above SDK is updated with below Pod(s)
-- - TrustWalletCore v2.5.6
+    - TrustWalletCore v2.5.6
