@@ -1,31 +1,29 @@
-# BlockID SDK
+## BlockID SDK
 - Overview - https://developer.1kosmos.com/devportal/docs/mobile-sdk/overview
 - Integration Guide - https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/integration-guide
 - API Reference - https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/api-reference
 
-# Change Logs
-## v.1.7.50
-### Offline Mode
-- Fixed crash
-- Updated error code  
-### License Check
-- Updated error code
+## Change Logs
+### v.1.7.50
+- Fixed crash during offline mode
+- Updated error code for offline mode  
+- Updated error code for license chec
 
-## v.1.7.40
+### v.1.7.40
 - Bug fixes
 
-## v.1.7.20
+### v.1.7.20
 - Error code updated for LiveID Verification
 
-## v1.7.10
+### v1.7.10
 - Bug fixes
 
-## v1.7.00
+### v1.7.00
 - Introduced new method to set dvcId (document verifier connector identifier)
 - Modify verifyDocument() method signature for verifications type parameter
 - Enhance face compare
 
-###v1.6.20
+### v1.6.20
 - Introduce capability to register and authenticate FIDO2 security keys
 
 ### v1.6.10
