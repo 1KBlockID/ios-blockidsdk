@@ -4,10 +4,13 @@
 - API Reference - https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/api-reference
 
 ## Change Logs
+### v.1.7.52
+- Returns error during user linking flow w.r.t Sim Binding capability    
+
 ### v.1.7.50
 - Fixed crash during offline mode
 - Updated error code for offline mode  
-- Updated error code for license chec
+- Updated error code for license check
 
 ### v.1.7.40
 - Bug fixes
