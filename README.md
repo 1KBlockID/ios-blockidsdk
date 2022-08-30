@@ -8,7 +8,7 @@
 - Overview: https://developer.1kosmos.com/devportal/docs/mobile-sdk/overview 
 - Integration Guide: https://developer.1kosmos.com/devportal/docs/mobile-sdk/integration-guide/ios
 - API Reference: https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/api-reference
-- Change Log: https://github.com/1KBlockID/ios-blockidsdk/blob/main/README.md
+- Change Logs: https://github.com/1KBlockID/ios-blockidsdk/blob/main/README.md
 
 ## Requirements
 
@@ -27,28 +27,3 @@ sushil-tiwari-1kosmos, sushil.tiwari@1kosmos.com
 ## License
 
 BlockIDSDK is available under the MIT license. See the LICENSE file for more info.
-
-## Change Logs
-### v.1.8.02
-- Crash fixed during account recovery process using recovery phrases
-
-### v.1.7.52
-- Returns error during user linking flow w.r.t Sim Binding capability    
-
-### v.1.7.50
-- Fixed crash during offline mode
-- Updated error code for offline mode  
-- Updated error code for license check
-
-### v.1.7.40
-- Bug fixes
-
-### v.1.7.20
-- Error code updated for LiveID Verification
-
-### v1.6.20
-- Introduce capability to register and authenticate FIDO2 security keys
-
-### v1.6.10
-- FAT framework format is deprecated
-- The SDK is now avaiable as .xcframework
