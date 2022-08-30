@@ -4,6 +4,9 @@
 - API Reference - https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/api-reference
 
 ## Change Logs
+### v.1.8.02
+- Crash fixed during account recovery process using recovery phrases
+
 ### v.1.7.52
 - Returns error during user linking flow w.r.t Sim Binding capability    
 
