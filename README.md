@@ -4,6 +4,12 @@
 - API Reference - https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/api-reference
 
 ## Change Logs
+### v1.8.10
+- Introduced capability
+   - to connect BlockID wallet to DApps (decentralised application)
+   - for transaction signing
+   - for personal signing
+   
 ### v.1.8.02
 - Crash fixed during account recovery process using recovery phrases
 
