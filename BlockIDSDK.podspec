@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BlockIDSDK'
-  s.version          = '1.7.52'
-  s.summary          = 'This document describes the procedure to configure the BlockID iOS SDK into your application.'
+  s.version          = '1.8.02'
+  s.summary          = 'BlockID SDK v1.8.02'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

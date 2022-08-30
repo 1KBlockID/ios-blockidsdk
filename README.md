@@ -29,6 +29,9 @@ sushil-tiwari-1kosmos, sushil.tiwari@1kosmos.com
 BlockIDSDK is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+### v.1.8.02
+- Crash fixed during account recovery process using recovery phrases
+
 ### v.1.7.52
 - Returns error during user linking flow w.r.t Sim Binding capability    
 
