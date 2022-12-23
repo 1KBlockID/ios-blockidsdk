@@ -6,11 +6,11 @@
 	<dict>
 		<key>BIDScannerView.nib</key>
 		<data>
-		ikAyWvvKu8IqiOFdDXQvb5G4Wes=
+		IYBij9GydQRzpiL4rPWfKsM6NSs=
 		</data>
 		<key>Headers/BlockIDSDK-Swift.h</key>
 		<data>
-		0tUKnWp5FH1hRlrRTcXiLvTXa5c=
+		tPfAGblViuzKJtbex+BOTsO+Phs=
 		</data>
 		<key>Headers/BlockIDSDK.h</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		opAYIj9cJiYhvxbLLu5k87/sGEU=
+		2D/h7TAxgBIgbyT2O67TKE7tdSo=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GQHQxl2HitxPOABWk09jqsdTNPg=
+		VhEpA6QgM5ZXZsPBGR2BIy1cz64=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YEHzLL9dF5w0ntshgA38gJhV2gQ=
+		Cj+oEqRDH1ZzMb+DeXTD1qDRmfg=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RsUzDO9ZnRZdH6SBFSm9z8bCXs4=
+		owjouOy6hzmpnksSNQrrFwSfZ/4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,14 +63,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MVbzqmkHsYmwtwiVgBImWCUZfuMPyyLRPOXlA+LSgNo=
+			bQIms0F9IjCVHdUeaZQjctxfUEteMggrEliTPm/4BnI=
 			</data>
 		</dict>
 		<key>Headers/BlockIDSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tfrw2QR4f7CPhxVTOcSpjcVCOUNJ1KXAuDtTTG1cQkU=
+			uddE419vqtj8HuKeJz9NiB5Wz9Lk/ykfAr/l7vZKF84=
 			</data>
 		</dict>
 		<key>Headers/BlockIDSDK.h</key>
@@ -98,21 +98,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t+fqJvAzYmVptTs4XFgj/HV/w4r1hLJwPmIi6SyFhrI=
+			aHy86xaSvbXvAtX8FZ5GQd93rOlHmlulNF2RE26Ivyo=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fBJfEbxBDAlOP7VnBtOCAl8xI470pKpa6swKjSBKYaE=
+			U42TWnPfq/UNoCrK0WUDUxpZNMMbBJVbx/UU+xHXn8c=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NPaUxjmEVX8uI7/aAwzvwayiwLzs60NyzChd7iOjYjU=
+			xUs5UsWVSBJQUULkRYH81RNaQmGVqiRUAi2QDZzJmE0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
