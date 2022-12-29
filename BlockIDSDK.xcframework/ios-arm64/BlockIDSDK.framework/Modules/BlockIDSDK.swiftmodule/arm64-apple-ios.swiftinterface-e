@@ -15,6 +15,7 @@ import CryptoKit
 import CryptoSwift
 import CryptoTokenKit
 import Foundation
+import IDMetricsSelfieCapture
 import LocalAuthentication
 import Metal
 import MetalKit
@@ -206,6 +207,7 @@ public class DataGroup7 : BlockIDSDK.DataGroup {
   }
   @objc deinit
 }
+public typealias SelfieScanCallback = ((_ status: Swift.Bool, _ data: [Swift.String : Any]?, _ error: BlockIDSDK.ErrorResponse?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers public class AccountAuthConstants : ObjectiveC.NSObject {
   public static let kAuthSender: Swift.String
   public static let kNativeAuthScehema: Swift.String
@@ -1243,6 +1245,7 @@ public enum LivenessFactorType {
 }
 @objc public class LiveIDScannerHelper : ObjectiveC.NSObject {
   public init(scanningMode: BlockIDSDK.ScanningMode, bidScannerView: BlockIDSDK.BIDScannerView, overlayFrame: CoreGraphics.CGRect? = nil, shouldResetOnWrongExpresssion: Swift.Bool = true, liveIdResponseDelegate: BlockIDSDK.LiveIDResponseDelegate)
+  public init(liveIdResponseDelegate: BlockIDSDK.LiveIDResponseDelegate)
   public func startLiveIDScanning(dvcID: Swift.String? = nil)
   public func stopLiveIDScanning()
   @objc deinit
