@@ -257,7 +257,6 @@ SWIFT_CLASS("_TtC10BlockIDSDK8BIDVault")
 @end
 
 
-
 SWIFT_CLASS("_TtC10BlockIDSDK15BiometricAssets")
 @interface BiometricAssets : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -269,9 +268,6 @@ SWIFT_CLASS("_TtC10BlockIDSDK10BlockIDSDK")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-
-
 
 
 
@@ -384,7 +380,6 @@ SWIFT_CLASS("_TtC10BlockIDSDK9TOTPUtils")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 
