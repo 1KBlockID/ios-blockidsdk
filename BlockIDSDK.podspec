@@ -25,7 +25,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.homepage         = 'https://github.com/1KBlockID/ios-blockidsdk.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sushil-tiwari-1kosmos' => 'sushil.tiwari@1kosmos.com' }
-  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => 'bid_sdk_1.8.30.d2' }
 
   # set platform and minimum deployment target
   s.platform = :ios
