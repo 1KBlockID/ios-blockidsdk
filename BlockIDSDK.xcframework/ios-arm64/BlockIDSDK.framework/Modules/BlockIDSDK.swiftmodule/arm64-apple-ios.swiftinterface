@@ -207,7 +207,6 @@ public class DataGroup7 : DataGroup {
   }
   @objc deinit
 }
-public typealias SelfieScanCallback = ((_ status: Swift.Bool, _ data: [Swift.String : Any]?, _ error: ErrorResponse?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers public class AccountAuthConstants : ObjectiveC.NSObject {
   public static let kAuthSender: Swift.String
   public static let kNativeAuthScehema: Swift.String
