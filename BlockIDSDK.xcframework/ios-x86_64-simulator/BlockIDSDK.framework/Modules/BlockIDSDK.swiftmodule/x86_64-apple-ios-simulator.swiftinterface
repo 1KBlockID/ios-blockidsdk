@@ -1421,6 +1421,7 @@ public struct CustomErrors {
   public static let kInvalidNID: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentVerificationFailed: (code: Swift.Int, msg: Swift.String)
   public static let kFaceLivenessCheckFailed: (code: Swift.Int, msg: Swift.String)
+  public static let kScanCancelled: (code: Swift.Int, msg: Swift.String)
   public static let kLiveIDMismatch: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentDataMismatch: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentPhotoComparisionFailed: (code: Swift.Int, msg: Swift.String)
