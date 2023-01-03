@@ -6,6 +6,7 @@
 ## Change Logs
 ### v1.8.30
 - Improved Live ID registration and verification with liveness check
+- Introduce Native FIDO2 Capability
 
 ### v1.8.10
 - Introduced capability

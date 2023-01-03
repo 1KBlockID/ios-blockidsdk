@@ -15,6 +15,7 @@ import CryptoKit
 import CryptoSwift
 import CryptoTokenKit
 import Foundation
+import IDMetricsSelfieCapture
 import LocalAuthentication
 import Metal
 import MetalKit
@@ -1243,6 +1244,7 @@ public enum LivenessFactorType {
 }
 @objc public class LiveIDScannerHelper : ObjectiveC.NSObject {
   public init(scanningMode: BlockIDSDK.ScanningMode, bidScannerView: BlockIDSDK.BIDScannerView, overlayFrame: CoreGraphics.CGRect? = nil, shouldResetOnWrongExpresssion: Swift.Bool = true, liveIdResponseDelegate: BlockIDSDK.LiveIDResponseDelegate)
+  public init(liveIdResponseDelegate: BlockIDSDK.LiveIDResponseDelegate)
   public func startLiveIDScanning(dvcID: Swift.String? = nil)
   public func stopLiveIDScanning()
   @objc deinit
@@ -1419,6 +1421,7 @@ public struct CustomErrors {
   public static let kInvalidNID: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentVerificationFailed: (code: Swift.Int, msg: Swift.String)
   public static let kFaceLivenessCheckFailed: (code: Swift.Int, msg: Swift.String)
+  public static let kScanCancelled: (code: Swift.Int, msg: Swift.String)
   public static let kLiveIDMismatch: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentDataMismatch: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentPhotoComparisionFailed: (code: Swift.Int, msg: Swift.String)
