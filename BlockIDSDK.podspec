@@ -44,7 +44,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.frameworks = 'UIKit', 'CryptoTokenKit', 'SafariServices'
   
   # add BlockIDSDK.framework dependency
-  s.vendored_frameworks = 'BlockIDSDK.xcframework', 'Sub-frameworks/IDMetricsSelfieCapture.xcframework', 'Sub-frameworks/CFDocumentScanSDK.xcframework'
+  s.vendored_frameworks = 'BlockIDSDK.xcframework', 'Dependencies/IDMetricsSelfieCapture.xcframework', 'Dependencies/CFDocumentScanSDK.xcframework'
   
   # add pod dependency
   s.dependency 'TrustWalletCore', '~> 2.5.6'
