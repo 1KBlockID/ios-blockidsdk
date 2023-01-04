@@ -7,6 +7,7 @@ import Accelerate
 import Alamofire
 import BigInt
 @_exported import BlockIDSDK
+import CFDocumentScanSDK
 import Combine
 import CommonCrypto
 import CoreImage
@@ -1326,15 +1327,18 @@ public protocol DriverLicenseResponseDelegate : AnyObject {
   func scanFrontSide()
   func scanBackSide()
   func readyForDetection()
+  func verifyingDocument()
 }
 @objc public class DriverLicenseScanHelper : ObjectiveC.NSObject {
   public init(isDataRequiredOnFail: Swift.Bool = false, scanningMode: BlockIDSDK.ScanningMode, bidScannerView: BlockIDSDK.BIDScannerView, dlScanResponseDelegate: BlockIDSDK.DriverLicenseResponseDelegate, cutoutView: CoreGraphics.CGRect, expiryGracePeriod: Swift.Int)
+  public init(dlScanResponseDelegate: BlockIDSDK.DriverLicenseResponseDelegate)
   public func startDLScanning(scanningSide: BlockIDSDK.DLScanningSide)
   public func stopDLScanning()
   public func isRunning() -> Swift.Bool
   @objc deinit
 }
 extension BlockIDSDK.DriverLicenseScanHelper : BlockIDSDK.DriverLicenseResponseDelegate {
+  public func verifyingDocument()
   public func readyForDetection()
   public func dlScanCompleted(dlScanSide: BlockIDSDK.DLScanningSide, dictDriveLicense: [Swift.String : Any]?, signatureToken signToken: Swift.String?, error: BlockIDSDK.ErrorResponse?)
   public func scanFrontSide()
@@ -1422,6 +1426,7 @@ public struct CustomErrors {
   public static let kDocumentVerificationFailed: (code: Swift.Int, msg: Swift.String)
   public static let kFaceLivenessCheckFailed: (code: Swift.Int, msg: Swift.String)
   public static let kScanCancelled: (code: Swift.Int, msg: Swift.String)
+  public static let kScanError: (code: Swift.Int, msg: Swift.String)
   public static let kLiveIDMismatch: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentDataMismatch: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentPhotoComparisionFailed: (code: Swift.Int, msg: Swift.String)
