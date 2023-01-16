@@ -7,6 +7,7 @@ import Accelerate
 import Alamofire
 import BigInt
 @_exported import BlockIDSDK
+import CFDocumentScanSDK
 import Combine
 import CommonCrypto
 import CoreImage
@@ -15,6 +16,7 @@ import CryptoKit
 import CryptoSwift
 import CryptoTokenKit
 import Foundation
+import IDMetricsSelfieCapture
 import LocalAuthentication
 import Metal
 import MetalKit
@@ -676,8 +678,8 @@ extension BlockIDSDK.BlockIDSDK {
   public func authenticateFIDO2Key(userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, fileName: Swift.String? = nil, completion: @escaping BlockIDSDK.FIDO2Callback)
 }
 extension BlockIDSDK.BlockIDSDK {
-  public func registerFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: BlockIDSDK.FIDO2KeyType, completion: @escaping BlockIDSDK.FIDO2Callback)
-  public func authenticateFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: BlockIDSDK.FIDO2KeyType, fileName: Swift.String? = nil, completion: @escaping BlockIDSDK.FIDO2Callback)
+  public func registerFIDO2Key(controller: UIKit.UIViewController, linkedAccount: BlockIDSDK.BIDLinkedAccount?, type: BlockIDSDK.FIDO2KeyType, completion: @escaping BlockIDSDK.FIDO2Callback)
+  public func authenticateFIDO2Key(type: BlockIDSDK.FIDO2KeyType, controller: UIKit.UIViewController? = nil, sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockIDSDK.BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, completion: @escaping BlockIDSDK.FIDO2Callback)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TOTPUtils : ObjectiveC.NSObject {
   public static let sharedInstance: BlockIDSDK.TOTPUtils
@@ -756,6 +758,7 @@ public enum ScannerType {
   }
 }
 public typealias VerifyLiveIDCallback = ((_ status: Swift.Bool, _ error: BlockIDSDK.ErrorResponse?) -> Swift.Void)
+public typealias LivenessCheckCallback = ((_ status: Swift.Bool, _ token: Swift.String?, _ proof: Swift.String?, _ error: BlockIDSDK.ErrorResponse?) -> Swift.Void)
 public enum AuthAssetType : Swift.String {
   case pin
   case device
@@ -1240,6 +1243,7 @@ public enum LivenessFactorType {
 }
 @objc public class LiveIDScannerHelper : ObjectiveC.NSObject {
   public init(bidScannerView: BlockIDSDK.BIDScannerView, overlayFrame: CoreGraphics.CGRect? = nil, shouldResetOnWrongExpresssion: Swift.Bool = true, liveIdResponseDelegate: BlockIDSDK.LiveIDResponseDelegate)
+  public init(liveIdResponseDelegate: BlockIDSDK.LiveIDResponseDelegate)
   public func startLiveIDScanning(dvcID: Swift.String? = nil)
   public func stopLiveIDScanning()
   @objc deinit
@@ -1321,15 +1325,18 @@ public protocol DriverLicenseResponseDelegate : AnyObject {
   func scanFrontSide()
   func scanBackSide()
   func readyForDetection()
+  func verifyingDocument()
 }
 @objc public class DriverLicenseScanHelper : ObjectiveC.NSObject {
   public init(isDataRequiredOnFail: Swift.Bool = false, bidScannerView: BlockIDSDK.BIDScannerView, dlScanResponseDelegate: BlockIDSDK.DriverLicenseResponseDelegate, cutoutView: CoreGraphics.CGRect, expiryGracePeriod: Swift.Int)
+  public init(dlScanResponseDelegate: BlockIDSDK.DriverLicenseResponseDelegate)
   public func startDLScanning(scanningSide: BlockIDSDK.DLScanningSide)
   public func stopDLScanning()
   public func isRunning() -> Swift.Bool
   @objc deinit
 }
 extension BlockIDSDK.DriverLicenseScanHelper : BlockIDSDK.DriverLicenseResponseDelegate {
+  public func verifyingDocument()
   public func readyForDetection()
   public func dlScanCompleted(dlScanSide: BlockIDSDK.DLScanningSide, dictDriveLicense: [Swift.String : Any]?, signatureToken signToken: Swift.String?, error: BlockIDSDK.ErrorResponse?)
   public func scanFrontSide()
@@ -1385,12 +1392,12 @@ public struct CustomErrors {
   }
   public struct FIDO2 {
     public static let USER_NOT_LINKED: (code: Swift.Int, message: Swift.String)
-    public static let UNSUPPORTED_AUTHENTICATOR: (code: Swift.Int, message: Swift.String)
     public static let SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
     public static let ATTESTATION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
     public static let ATTESTATION_RESULT_FAILED: (code: Swift.Int, message: Swift.String)
     public static let LINKING_FAILED: (code: Swift.Int, message: Swift.String)
     public static let UNLINKING_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let CANCELED: (code: Swift.Int, message: Swift.String)
     public static let FETCH_MANAGED_WALLET_FAILED: (code: Swift.Int, message: Swift.String)
     public static let INVALID_USER: (code: Swift.Int, message: Swift.String)
     public static let ASSERTION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
@@ -1423,6 +1430,8 @@ public struct CustomErrors {
   public static let kInvalidNID: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentVerificationFailed: (code: Swift.Int, msg: Swift.String)
   public static let kFaceLivenessCheckFailed: (code: Swift.Int, msg: Swift.String)
+  public static let kScanCancelled: (code: Swift.Int, msg: Swift.String)
+  public static let kScanError: (code: Swift.Int, msg: Swift.String)
   public static let kLiveIDMismatch: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentDataMismatch: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentPhotoComparisionFailed: (code: Swift.Int, msg: Swift.String)
