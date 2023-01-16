@@ -24,10 +24,10 @@ Pod::Spec.new do |bid|
     bid.source_files            = 'BlockIDSDK/**/*.{h,m,swift,xib,metal}'
   
     # add framework dependency
-    s.frameworks = 'UIKit', 'CryptoTokenKit', 'SafariServices'
+    bid.frameworks = 'UIKit', 'CryptoTokenKit', 'SafariServices'
   
   # add BlockID.framework dependency
-  s.vendored_frameworks = 'BlockID.xcframework', 'Dependencies/IDMetricsSelfieCapture.xcframework', 'Dependencies/CFDocumentScanSDK.xcframework'
+  bid.vendored_frameworks = 'BlockID.xcframework', 'Dependencies/IDMetricsSelfieCapture.xcframework', 'Dependencies/CFDocumentScanSDK.xcframework'
 
     # set dependencies used in Pod file
     bid.dependency              'Alamofire','~> 4.9.1'
