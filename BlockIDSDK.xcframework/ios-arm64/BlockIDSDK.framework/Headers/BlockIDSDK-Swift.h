@@ -300,6 +300,7 @@ SWIFT_CLASS("_TtC10BlockIDSDK23DriverLicenseScanHelper")
 
 
 
+
 SWIFT_CLASS("_TtC10BlockIDSDK11Enrollments")
 @interface Enrollments : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -320,6 +321,7 @@ SWIFT_CLASS("_TtC10BlockIDSDK19LiveIDScannerHelper")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
