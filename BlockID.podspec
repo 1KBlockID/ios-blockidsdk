@@ -22,12 +22,6 @@ Pod::Spec.new do |bid|
     
     # set source files
     bid.source_files            = 'BlockIDSDK/**/*.{h,m,swift,xib,metal}'
-  
-    # add framework dependency
-    bid.frameworks = 'UIKit', 'CryptoTokenKit', 'SafariServices'
-  
-  # add BlockID.framework dependency
-  bid.vendored_frameworks = 'BlockID.xcframework', 'Dependencies/IDMetricsSelfieCapture.xcframework', 'Dependencies/CFDocumentScanSDK.xcframework'
 
     # set dependencies used in Pod file
     bid.dependency              'Alamofire','~> 4.9.1'
@@ -37,12 +31,4 @@ Pod::Spec.new do |bid|
     bid.dependency              'SwiftyTesseract', '~> 3.1.3'
     bid.dependency              'OpenSSL-Universal', '~> 1.1.180'
     bid.dependency 		'YubiKit', '~> 4.2.0'
-
-    # the below dependencies are custom built
-    # and hence added as placeholder
-    # actual dependencies must be added to application
-    bid.dependency              'Web3'
-    bid.dependency              'WebAuthnKit'
-    bid.dependency              'EllipticCurveKeyPair'
-
 end
