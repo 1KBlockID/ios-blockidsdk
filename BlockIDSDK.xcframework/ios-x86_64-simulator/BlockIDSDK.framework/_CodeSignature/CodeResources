@@ -6,11 +6,11 @@
 	<dict>
 		<key>BIDScannerView.nib</key>
 		<data>
-		IYBij9GydQRzpiL4rPWfKsM6NSs=
+		ikAyWvvKu8IqiOFdDXQvb5G4Wes=
 		</data>
 		<key>Headers/BlockIDSDK-Swift.h</key>
 		<data>
-		MKCCQhgGZPTdecGMQXu/Be2eMgQ=
+		XLh9bmogFknoiJORj2lXcBDTerI=
 		</data>
 		<key>Headers/BlockIDSDK.h</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dNcwu5T/+UpdHsZC/bkeHTkYjcY=
+		Xc7dn9C1SYkdmW2fZHJo0tAZius=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9V2RNEsE9r3izY9c9LIA1FeuprI=
+		GjLLPeoYdS1ctE3FtEmj12KH9d0=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		t+sGFrTH2aFXRMNT/dg2Yv15HlU=
+		1LaGP+DW4BBZNdjeUtE2tZLu3lE=
 		</data>
 		<key>Modules/BlockIDSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4Wtl2GOyWoUsh04nHnNGorNe0bs=
+		gzIYS4Lt9ye6d+cSacWwx4ahaGg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,14 +63,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bQIms0F9IjCVHdUeaZQjctxfUEteMggrEliTPm/4BnI=
+			MVbzqmkHsYmwtwiVgBImWCUZfuMPyyLRPOXlA+LSgNo=
 			</data>
 		</dict>
 		<key>Headers/BlockIDSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			acoXctNOA3lCpmAZmX1tUXDB4NmL1ZTJTBBVrPNqytc=
+			zHJLGgesBh+aM4v8z34kemxI5nw2yEzuQhQVQABdopo=
 			</data>
 		</dict>
 		<key>Headers/BlockIDSDK.h</key>
@@ -98,21 +98,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bnHUwWfXqi7ejGPoqDHZIqq0ghLFh8QvmCpOdisrpDo=
+			JlgfU+HMKJ6hRk7tAB9w2TeNw02wTsMdPad8qbMPnP0=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ChWvhACJ8npAwVsCFUjL6bS87q5gBAqGbUloY4OH9Ek=
+			T8oPRIToUUxRmkVbezx+/8HvW6l7nQ5x7IYGrkPM+LQ=
 			</data>
 		</dict>
 		<key>Modules/BlockIDSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bBppO0jHYggFiH0B5Os4cvCyHWzE/+kvujlbMRePbQM=
+			0nwg0VohCEDcPPkoXsUdoRaIeb0adOGLgVjAutVH1Zk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
