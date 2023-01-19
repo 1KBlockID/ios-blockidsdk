@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BlockID'
-  s.version          = '1.9.05'
+  s.version          = '1.9.00'
   s.summary          = 'BlockID SDK v1.9.00'
 
   s.description      = <<-DESC
