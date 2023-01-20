@@ -3,18 +3,7 @@
 - Integration Guide - https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/integration-guide
 - API Reference - https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/api-reference
 
-## Installation
-
-BlockIDSDK is available through CocoaPods. To install it, simply add the following line to your Podfile:
-
-```ruby
-  pod 'BlockIDSDK', :git => 'https://<user>:<token>@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.9.00'
-```
 ## Change Logs
-### v1.9.00
-- Improvements in Native FIDO2 Capability
-- Minor bug fixes
-
 ### v1.8.30
 - Improved Live ID registration and verification with liveness check
 - Introduce Native FIDO2 Capability
