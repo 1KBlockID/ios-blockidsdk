@@ -2243,6 +2243,7 @@ public struct DriverLicenseData : Swift.Codable {
 }
 @_hasMissingDesignatedInitializers public class BIDPasswordPolicy : Swift.Codable {
   public var allowed: Swift.Bool?
+  public var descriptions: [Swift.String]?
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws

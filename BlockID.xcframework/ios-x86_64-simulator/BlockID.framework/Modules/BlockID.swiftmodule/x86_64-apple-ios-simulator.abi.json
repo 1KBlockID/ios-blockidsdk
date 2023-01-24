@@ -72634,6 +72634,141 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "descriptions",
+            "printedName": "descriptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID17BIDPasswordPolicyC12descriptionsSaySSGSgvp",
+            "mangledName": "$s7BlockID17BIDPasswordPolicyC12descriptionsSaySSGSgvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID17BIDPasswordPolicyC12descriptionsSaySSGSgvg",
+                "mangledName": "$s7BlockID17BIDPasswordPolicyC12descriptionsSaySSGSgvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID17BIDPasswordPolicyC12descriptionsSaySSGSgvs",
+                "mangledName": "$s7BlockID17BIDPasswordPolicyC12descriptionsSaySSGSgvs",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID17BIDPasswordPolicyC12descriptionsSaySSGSgvM",
+                "mangledName": "$s7BlockID17BIDPasswordPolicyC12descriptionsSaySSGSgvM",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -81400,28 +81535,28 @@
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 66979,
+      "offset": 67054,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 67016,
+      "offset": 67091,
       "length": 16,
       "value": "\"cross-platform\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 66979,
+      "offset": 67054,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 67016,
+      "offset": 67091,
       "length": 16,
       "value": "\"cross-platform\""
     },
@@ -84004,154 +84139,154 @@
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1621,
+      "offset": 1628,
       "length": 13,
       "value": "\"min_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1668,
+      "offset": 1675,
       "length": 21,
       "value": "\"min_special_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1723,
+      "offset": 1730,
       "length": 21,
       "value": "\"min_numbers_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1786,
+      "offset": 1793,
       "length": 31,
       "value": "\"special_chars_allowed_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1853,
+      "offset": 1860,
       "length": 24,
       "value": "\"min_alpha_caps_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1911,
+      "offset": 1918,
       "length": 20,
       "value": "\"noUsername_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1965,
+      "offset": 1972,
       "length": 20,
       "value": "\"allowInRow_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2012,
+      "offset": 2019,
       "length": 13,
       "value": "\"min_special\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2052,
+      "offset": 2059,
       "length": 13,
       "value": "\"min_numbers\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2101,
+      "offset": 2108,
       "length": 23,
       "value": "\"special_chars_allowed\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2153,
+      "offset": 2160,
       "length": 16,
       "value": "\"min_alpha_caps\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1621,
+      "offset": 1628,
       "length": 13,
       "value": "\"min_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1668,
+      "offset": 1675,
       "length": 21,
       "value": "\"min_special_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1723,
+      "offset": 1730,
       "length": 21,
       "value": "\"min_numbers_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1786,
+      "offset": 1793,
       "length": 31,
       "value": "\"special_chars_allowed_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1853,
+      "offset": 1860,
       "length": 24,
       "value": "\"min_alpha_caps_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1911,
+      "offset": 1918,
       "length": 20,
       "value": "\"noUsername_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 1965,
+      "offset": 1972,
       "length": 20,
       "value": "\"allowInRow_enabled\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2012,
+      "offset": 2019,
       "length": 13,
       "value": "\"min_special\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2052,
+      "offset": 2059,
       "length": 13,
       "value": "\"min_numbers\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2101,
+      "offset": 2108,
       "length": 23,
       "value": "\"special_chars_allowed\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/ios-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2153,
+      "offset": 2160,
       "length": 16,
       "value": "\"min_alpha_caps\""
     },
