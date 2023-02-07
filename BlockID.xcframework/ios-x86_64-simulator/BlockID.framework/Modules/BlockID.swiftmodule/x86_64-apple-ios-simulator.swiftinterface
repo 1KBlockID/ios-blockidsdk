@@ -1415,6 +1415,8 @@ public struct CustomErrors {
     public static let INVALID_USER: (code: Swift.Int, message: Swift.String)
     public static let ASSERTION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
     public static let ASSERTION_RESULT_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let GLOBAL_CAAS_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
+    public static let ADMIN_CONSOLE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
   }
   public struct SCEPCheck {
     public static let INVALID: (code: Swift.Int, message: Swift.String)
