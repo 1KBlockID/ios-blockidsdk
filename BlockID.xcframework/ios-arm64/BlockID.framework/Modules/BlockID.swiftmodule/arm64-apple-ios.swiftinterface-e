@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
-// swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
 import AVFoundation
 import Accelerate
@@ -39,7 +38,6 @@ import WebAuthnKit
 import WebKit
 import YubiKit
 import _Concurrency
-import _StringProcessing
 @objc @_inheritsConvenienceInitializers public class BIDServiceDirectory : ObjectiveC.NSObject, Swift.Decodable {
   @objc override dynamic public init()
   @objc deinit
@@ -680,8 +678,8 @@ extension BlockID.BlockIDSDK {
   public func authenticateFIDO2Key(userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, fileName: Swift.String? = nil, completion: @escaping BlockID.FIDO2Callback)
 }
 extension BlockID.BlockIDSDK {
-  public func registerFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: BlockID.FIDO2KeyType, completion: @escaping BlockID.FIDO2Callback)
-  public func authenticateFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: BlockID.FIDO2KeyType, fileName: Swift.String? = nil, completion: @escaping BlockID.FIDO2Callback)
+  public func registerFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: BlockID.FIDO2KeyType, pin: Swift.String? = nil, completion: @escaping BlockID.FIDO2Callback)
+  public func authenticateFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: BlockID.FIDO2KeyType, pin: Swift.String? = nil, completion: @escaping BlockID.FIDO2Callback)
   public func registerFIDO2Key(controller: UIKit.UIViewController, linkedAccount: BlockID.BIDLinkedAccount?, type: BlockID.FIDO2KeyType, completion: @escaping BlockID.FIDO2Callback)
   public func authenticateFIDO2Key(type: BlockID.FIDO2KeyType, controller: UIKit.UIViewController? = nil, sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, completion: @escaping BlockID.FIDO2Callback)
 }
@@ -831,7 +829,7 @@ public protocol PassportResponseDelegate : AnyObject {
   func readyForDetection()
 }
 @objc public class PassportScanHelper : ObjectiveC.NSObject {
-  public init(isDataRequiredOnFail: Swift.Bool = false, bidScannerView: BlockID.BIDScannerView, ppResponseDelegate: BlockID.PassportResponseDelegate, cutoutView: CoreFoundation.CGRect, expiryGracePeriod: Swift.Int)
+  public init(isDataRequiredOnFail: Swift.Bool = false, bidScannerView: BlockID.BIDScannerView, ppResponseDelegate: BlockID.PassportResponseDelegate, cutoutView: CoreGraphics.CGRect, expiryGracePeriod: Swift.Int)
   public func startPassportScanning()
   public func stopPassportScanning()
   public func isRunning() -> Swift.Bool
@@ -951,7 +949,7 @@ extension BlockID.PassiveAuthenticationError : Foundation.LocalizedError {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BIDScannerView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc required override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required override dynamic public init(frame: CoreGraphics.CGRect)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
@@ -1010,7 +1008,7 @@ public protocol NationalIDResponseDelegate : AnyObject {
   func readyForDetection()
 }
 @objc public class NationalIDScanHelper : ObjectiveC.NSObject {
-  public init(isDataRequiredOnFail: Swift.Bool = false, bidScannerView: BlockID.BIDScannerView, nidScanResponseDelegate: BlockID.NationalIDResponseDelegate, cutoutView: CoreFoundation.CGRect, expiryGracePeriod: Swift.Int)
+  public init(isDataRequiredOnFail: Swift.Bool = false, bidScannerView: BlockID.BIDScannerView, nidScanResponseDelegate: BlockID.NationalIDResponseDelegate, cutoutView: CoreGraphics.CGRect, expiryGracePeriod: Swift.Int)
   public func startNationalIDScanning(scanningSide: BlockID.NIDScanningSide)
   public func stopNationalIDScanning()
   public func isRunning() -> Swift.Bool
@@ -1250,7 +1248,7 @@ public enum LivenessFactorType {
   }
 }
 @objc public class LiveIDScannerHelper : ObjectiveC.NSObject {
-  public init(bidScannerView: BlockID.BIDScannerView, overlayFrame: CoreFoundation.CGRect? = nil, shouldResetOnWrongExpresssion: Swift.Bool = true, liveIdResponseDelegate: BlockID.LiveIDResponseDelegate)
+  public init(bidScannerView: BlockID.BIDScannerView, overlayFrame: CoreGraphics.CGRect? = nil, shouldResetOnWrongExpresssion: Swift.Bool = true, liveIdResponseDelegate: BlockID.LiveIDResponseDelegate)
   public init(liveIdResponseDelegate: BlockID.LiveIDResponseDelegate)
   public func startLiveIDScanning(dvcID: Swift.String? = nil)
   public func stopLiveIDScanning()
@@ -1342,7 +1340,7 @@ extension BlockID.DriverLicenseResponseDelegate {
   public func verifyingDocument()
 }
 @objc public class DriverLicenseScanHelper : ObjectiveC.NSObject {
-  public init(isDataRequiredOnFail: Swift.Bool = false, bidScannerView: BlockID.BIDScannerView, dlScanResponseDelegate: BlockID.DriverLicenseResponseDelegate, cutoutView: CoreFoundation.CGRect, expiryGracePeriod: Swift.Int)
+  public init(isDataRequiredOnFail: Swift.Bool = false, bidScannerView: BlockID.BIDScannerView, dlScanResponseDelegate: BlockID.DriverLicenseResponseDelegate, cutoutView: CoreGraphics.CGRect, expiryGracePeriod: Swift.Int)
   public init(dlScanResponseDelegate: BlockID.DriverLicenseResponseDelegate)
   public func startDLScanning(scanningSide: BlockID.DLScanningSide)
   public func stopDLScanning()
