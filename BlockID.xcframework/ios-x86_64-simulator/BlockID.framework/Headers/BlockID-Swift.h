@@ -427,7 +427,6 @@ SWIFT_CLASS("_TtC7BlockID9TOTPUtils")
 
 
 
-
 SWIFT_CLASS("_TtC7BlockID19WalletConnectHelper")
 @interface WalletConnectHelper : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

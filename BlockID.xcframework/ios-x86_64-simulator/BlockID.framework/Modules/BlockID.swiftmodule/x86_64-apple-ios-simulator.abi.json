@@ -19180,98 +19180,7 @@
           {
             "kind": "Function",
             "name": "registerFIDO2Key",
-            "printedName": "registerFIDO2Key(controller:userName:tenantDNS:communityName:type:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FIDO2KeyType",
-                "printedName": "BlockID.FIDO2KeyType",
-                "usr": "s:7BlockID12FIDO2KeyTypeO"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.ErrorResponse?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ErrorResponse",
-                            "printedName": "BlockID.ErrorResponse",
-                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC16registerFIDO2Key10controller8userName9tenantDNS09communityI04type10completionySo16UIViewControllerC_S3SAA0eF4TypeOySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC16registerFIDO2Key10controller8userName9tenantDNS09communityI04type10completionySo16UIViewControllerC_S3SAA0eF4TypeOySb_AA13ErrorResponseCSgtctF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "authenticateFIDO2Key",
-            "printedName": "authenticateFIDO2Key(controller:userName:tenantDNS:communityName:type:fileName:completion:)",
+            "printedName": "registerFIDO2Key(controller:userName:tenantDNS:communityName:type:pin:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19364,8 +19273,114 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC20authenticateFIDO2Key10controller8userName9tenantDNS09communityI04type04fileI010completionySo16UIViewControllerC_S3SAA0eF4TypeOSSSgySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC20authenticateFIDO2Key10controller8userName9tenantDNS09communityI04type04fileI010completionySo16UIViewControllerC_S3SAA0eF4TypeOSSSgySb_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID0A5IDSDKC16registerFIDO2Key10controller8userName9tenantDNS09communityI04type3pin10completionySo16UIViewControllerC_S3SAA0eF4TypeOSSSgySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC16registerFIDO2Key10controller8userName9tenantDNS09communityI04type3pin10completionySo16UIViewControllerC_S3SAA0eF4TypeOSSSgySb_AA13ErrorResponseCSgtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authenticateFIDO2Key",
+            "printedName": "authenticateFIDO2Key(controller:userName:tenantDNS:communityName:type:pin:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FIDO2KeyType",
+                "printedName": "BlockID.FIDO2KeyType",
+                "usr": "s:7BlockID12FIDO2KeyTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC20authenticateFIDO2Key10controller8userName9tenantDNS09communityI04type3pin10completionySo16UIViewControllerC_S3SAA0eF4TypeOSSSgySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC20authenticateFIDO2Key10controller8userName9tenantDNS09communityI04type3pin10completionySo16UIViewControllerC_S3SAA0eF4TypeOSSSgySb_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -82188,28 +82203,28 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 72174,
+      "offset": 75952,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 72211,
+      "offset": 75989,
       "length": 16,
       "value": "\"cross-platform\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 72174,
+      "offset": 75952,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 72211,
+      "offset": 75989,
       "length": 16,
       "value": "\"cross-platform\""
     },
