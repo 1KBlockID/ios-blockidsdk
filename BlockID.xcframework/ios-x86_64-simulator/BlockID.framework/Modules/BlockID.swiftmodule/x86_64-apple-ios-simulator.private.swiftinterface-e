@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -1008,9 +1008,11 @@ public protocol NationalIDResponseDelegate : AnyObject {
   func scanFrontSide()
   func scanBackSide()
   func readyForDetection()
+  func verifyingDocument()
 }
 @objc public class NationalIDScanHelper : ObjectiveC.NSObject {
   public init(isDataRequiredOnFail: Swift.Bool = false, bidScannerView: BlockID.BIDScannerView, nidScanResponseDelegate: BlockID.NationalIDResponseDelegate, cutoutView: CoreFoundation.CGRect, expiryGracePeriod: Swift.Int)
+  public init(nidscanResponseDelegate: BlockID.NationalIDResponseDelegate)
   public func startNationalIDScanning(scanningSide: BlockID.NIDScanningSide)
   public func stopNationalIDScanning()
   public func isRunning() -> Swift.Bool
@@ -1018,6 +1020,7 @@ public protocol NationalIDResponseDelegate : AnyObject {
 }
 extension BlockID.NationalIDScanHelper : BlockID.NationalIDResponseDelegate {
   public func readyForDetection()
+  public func verifyingDocument()
   public func nidScanCompleted(nidScanSide: BlockID.NIDScanningSide, dictNationalID: [Swift.String : Any]?, signatureToken signToken: Swift.String?, error: BlockID.ErrorResponse?)
   public func scanFrontSide()
   public func scanBackSide()
