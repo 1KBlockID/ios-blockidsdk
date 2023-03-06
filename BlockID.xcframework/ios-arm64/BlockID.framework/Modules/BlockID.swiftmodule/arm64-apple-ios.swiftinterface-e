@@ -1010,6 +1010,12 @@ public protocol NationalIDResponseDelegate : AnyObject {
   func readyForDetection()
   func verifyingDocument()
 }
+extension BlockID.NationalIDResponseDelegate {
+  public func verifyingDocument()
+  public func scanFrontSide()
+  public func scanBackSide()
+  public func readyForDetection()
+}
 @objc public class NationalIDScanHelper : ObjectiveC.NSObject {
   public init(isDataRequiredOnFail: Swift.Bool = false, bidScannerView: BlockID.BIDScannerView, nidScanResponseDelegate: BlockID.NationalIDResponseDelegate, cutoutView: CoreFoundation.CGRect, expiryGracePeriod: Swift.Int)
   public init(nidscanResponseDelegate: BlockID.NationalIDResponseDelegate)

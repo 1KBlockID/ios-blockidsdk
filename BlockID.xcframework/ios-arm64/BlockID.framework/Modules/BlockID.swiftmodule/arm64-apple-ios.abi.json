@@ -28336,6 +28336,86 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verifyingDocument",
+            "printedName": "verifyingDocument()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID26NationalIDResponseDelegatePAAE17verifyingDocumentyyF",
+            "mangledName": "$s7BlockID26NationalIDResponseDelegatePAAE17verifyingDocumentyyF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : BlockID.NationalIDResponseDelegate>",
+            "sugared_genericSig": "<Self where Self : BlockID.NationalIDResponseDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scanFrontSide",
+            "printedName": "scanFrontSide()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID26NationalIDResponseDelegatePAAE13scanFrontSideyyF",
+            "mangledName": "$s7BlockID26NationalIDResponseDelegatePAAE13scanFrontSideyyF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : BlockID.NationalIDResponseDelegate>",
+            "sugared_genericSig": "<Self where Self : BlockID.NationalIDResponseDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scanBackSide",
+            "printedName": "scanBackSide()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID26NationalIDResponseDelegatePAAE12scanBackSideyyF",
+            "mangledName": "$s7BlockID26NationalIDResponseDelegatePAAE12scanBackSideyyF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : BlockID.NationalIDResponseDelegate>",
+            "sugared_genericSig": "<Self where Self : BlockID.NationalIDResponseDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "readyForDetection",
+            "printedName": "readyForDetection()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID26NationalIDResponseDelegatePAAE17readyForDetectionyyF",
+            "mangledName": "$s7BlockID26NationalIDResponseDelegatePAAE17readyForDetectionyyF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : BlockID.NationalIDResponseDelegate>",
+            "sugared_genericSig": "<Self where Self : BlockID.NationalIDResponseDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -81222,42 +81302,42 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/NationalID\/NationalIDScanHelper.swift",
       "kind": "Array",
-      "offset": 744,
+      "offset": 1070,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/NationalID\/NationalIDScanHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 831,
+      "offset": 1157,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/NationalID\/NationalIDScanHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 878,
+      "offset": 1204,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/NationalID\/NationalIDScanHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 919,
+      "offset": 1245,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/NationalID\/NationalIDScanHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 971,
+      "offset": 1297,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/NationalID\/NationalIDScanHelper.swift",
       "kind": "StringLiteral",
-      "offset": 547,
+      "offset": 873,
       "length": 20,
       "value": "\"BlockID.NationalIDScanHelper\""
     },
