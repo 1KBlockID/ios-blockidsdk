@@ -7821,6 +7821,65 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setIALValue",
+            "printedName": "setIALValue(ial:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID8BIDVaultC11setIALValue3ialySS_tF",
+            "mangledName": "$s7BlockID8BIDVaultC11setIALValue3ialySS_tF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIALValue",
+            "printedName": "getIALValue()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID8BIDVaultC11getIALValueSSSgyF",
+            "mangledName": "$s7BlockID8BIDVaultC11getIALValueSSSgyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -16892,18 +16951,62 @@
           {
             "kind": "Function",
             "name": "getIAL",
-            "printedName": "getIAL()",
+            "printedName": "getIAL(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.String, BlockID.ErrorResponse?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.String, BlockID.ErrorResponse?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC6getIALSSyF",
-            "mangledName": "$s7BlockID0A5IDSDKC6getIALSSyF",
+            "usr": "s:7BlockID0A5IDSDKC6getIAL10completionyySb_SSAA13ErrorResponseCSgtc_tF",
+            "mangledName": "$s7BlockID0A5IDSDKC6getIAL10completionyySb_SSAA13ErrorResponseCSgtc_tF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -17047,55 +17150,12 @@
           {
             "kind": "Function",
             "name": "getScopesAttributesDic",
-            "printedName": "getScopesAttributesDic(scopes:creds:origin:userId:)",
+            "printedName": "getScopesAttributesDic(scopes:creds:origin:userId:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(scopesAttributesDict: [Swift.String : Any]?, error: BlockID.ErrorResponse?)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String : Any]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.String : Any]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ProtocolComposition",
-                            "printedName": "Any"
-                          }
-                        ],
-                        "usr": "s:SD"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "BlockID.ErrorResponse?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ErrorResponse",
-                        "printedName": "BlockID.ErrorResponse",
-                        "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ]
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -17129,11 +17189,71 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]?, BlockID.ErrorResponse?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([Swift.String : Any]?, BlockID.ErrorResponse?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC22getScopesAttributesDic6scopes5creds6origin6userIdSDySSypGSg0hF4Dict_AA13ErrorResponseCSg5errortSS_SSAA9BIDOriginCSSSgtF",
-            "mangledName": "$s7BlockID0A5IDSDKC22getScopesAttributesDic6scopes5creds6origin6userIdSDySSypGSg0hF4Dict_AA13ErrorResponseCSg5errortSS_SSAA9BIDOriginCSSSgtF",
+            "usr": "s:7BlockID0A5IDSDKC22getScopesAttributesDic6scopes5creds6origin6userId10completionySS_SSAA9BIDOriginCSSSgySDySSypGSg_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC22getScopesAttributesDic6scopes5creds6origin6userId10completionySS_SSAA9BIDOriginCSSSgySDySSypGSg_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -17144,13 +17264,12 @@
           {
             "kind": "Function",
             "name": "getEventData",
-            "printedName": "getEventData(publicKey:lon:lat:)",
+            "printedName": "getEventData(publicKey:lon:lat:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -17169,11 +17288,29 @@
                 "name": "Double",
                 "printedName": "Swift.Double",
                 "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC12getEventData9publicKey3lon3latS2S_S2dtF",
-            "mangledName": "$s7BlockID0A5IDSDKC12getEventData9publicKey3lon3latS2S_S2dtF",
+            "usr": "s:7BlockID0A5IDSDKC12getEventData9publicKey3lon3lat10completionySS_S2dySSctF",
+            "mangledName": "$s7BlockID0A5IDSDKC12getEventData9publicKey3lon3lat10completionySS_S2dySSctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -21974,7 +22111,7 @@
           {
             "kind": "Function",
             "name": "enrollPin",
-            "printedName": "enrollPin(pin:proofedBy:tenant:keyPair:did:completion:)",
+            "printedName": "enrollPin(pin:proofedBy:tenant:keyPair:did:ial:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22004,6 +22141,12 @@
                 "name": "APIKeyPair",
                 "printedName": "BlockID.APIKeyPair",
                 "usr": "s:7BlockID10APIKeyPairC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -22052,8 +22195,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID15BIDAuthProviderC9enrollPin3pin9proofedBy6tenant7keyPair3did10completionySS_SSAA9BIDTenantCAA06APIKeyL0CSSySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID15BIDAuthProviderC9enrollPin3pin9proofedBy6tenant7keyPair3did10completionySS_SSAA9BIDTenantCAA06APIKeyL0CSSySb_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID15BIDAuthProviderC9enrollPin3pin9proofedBy6tenant7keyPair3did3ial10completionySS_SSAA9BIDTenantCAA06APIKeyL0CS2SySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID15BIDAuthProviderC9enrollPin3pin9proofedBy6tenant7keyPair3did3ial10completionySS_SSAA9BIDTenantCAA06APIKeyL0CS2SySb_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -22091,7 +22234,7 @@
           {
             "kind": "Function",
             "name": "unEnrollPin",
-            "printedName": "unEnrollPin(pin:tenant:keyPair:did:completion:)",
+            "printedName": "unEnrollPin(pin:tenant:keyPair:did:ial:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22115,6 +22258,12 @@
                 "name": "APIKeyPair",
                 "printedName": "BlockID.APIKeyPair",
                 "usr": "s:7BlockID10APIKeyPairC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -22163,8 +22312,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID15BIDAuthProviderC11unEnrollPin3pin6tenant7keyPair3did10completionySS_AA9BIDTenantCAA06APIKeyK0CSSySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID15BIDAuthProviderC11unEnrollPin3pin6tenant7keyPair3did10completionySS_AA9BIDTenantCAA06APIKeyK0CSSySb_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID15BIDAuthProviderC11unEnrollPin3pin6tenant7keyPair3did3ial10completionySS_AA9BIDTenantCAA06APIKeyK0CS2SySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID15BIDAuthProviderC11unEnrollPin3pin6tenant7keyPair3did3ial10completionySS_AA9BIDTenantCAA06APIKeyK0CS2SySb_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -22392,7 +22541,7 @@
           {
             "kind": "Function",
             "name": "enrollLiveID",
-            "printedName": "enrollLiveID(dictLiveID:tenant:keyPair:did:completion:)",
+            "printedName": "enrollLiveID(dictLiveID:tenant:keyPair:did:ial:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -22429,6 +22578,12 @@
                 "name": "APIKeyPair",
                 "printedName": "BlockID.APIKeyPair",
                 "usr": "s:7BlockID10APIKeyPairC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -22477,8 +22632,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID15BIDAuthProviderC010enrollLiveB004dictfB06tenant7keyPair3did10completionySDySSypG_AA9BIDTenantCAA06APIKeyJ0CSSySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID15BIDAuthProviderC010enrollLiveB004dictfB06tenant7keyPair3did10completionySDySSypG_AA9BIDTenantCAA06APIKeyJ0CSSySb_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID15BIDAuthProviderC010enrollLiveB004dictfB06tenant7keyPair3did3ial10completionySDySSypG_AA9BIDTenantCAA06APIKeyJ0CS2SySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID15BIDAuthProviderC010enrollLiveB004dictfB06tenant7keyPair3did3ial10completionySDySSypG_AA9BIDTenantCAA06APIKeyJ0CS2SySb_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -29220,6 +29375,91 @@
         "declKind": "Class",
         "usr": "s:7BlockID16RegisterUserDataC",
         "mangledName": "$s7BlockID16RegisterUserDataC",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RegisterUserDataResponse",
+        "printedName": "RegisterUserDataResponse",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RegisterUserDataResponse",
+                "printedName": "BlockID.RegisterUserDataResponse",
+                "usr": "s:7BlockID24RegisterUserDataResponseC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7BlockID24RegisterUserDataResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7BlockID24RegisterUserDataResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BlockID",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID24RegisterUserDataResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7BlockID24RegisterUserDataResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "BlockID",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7BlockID24RegisterUserDataResponseC",
+        "mangledName": "$s7BlockID24RegisterUserDataResponseC",
         "moduleName": "BlockID",
         "declAttributes": [
           "AccessControl"
@@ -38619,7 +38859,7 @@
           {
             "kind": "Function",
             "name": "startMigration",
-            "printedName": "startMigration(tenant:clientTenant:keyPair:did:completion:)",
+            "printedName": "startMigration(tenant:clientTenant:keyPair:did:ial:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38643,6 +38883,12 @@
                 "name": "APIKeyPair",
                 "printedName": "BlockID.APIKeyPair",
                 "usr": "s:7BlockID10APIKeyPairC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -38691,8 +38937,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID19DataMigrationHelperC05startD06tenant12clientTenant7keyPair3did10completionyAA9BIDTenantC_AkA06APIKeyK0CSSySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID19DataMigrationHelperC05startD06tenant12clientTenant7keyPair3did10completionyAA9BIDTenantC_AkA06APIKeyK0CSSySb_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID19DataMigrationHelperC05startD06tenant12clientTenant7keyPair3did3ial10completionyAA9BIDTenantC_AlA06APIKeyK0CS2SySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID19DataMigrationHelperC05startD06tenant12clientTenant7keyPair3did3ial10completionyAA9BIDTenantC_AlA06APIKeyK0CS2SySb_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -80096,6 +80342,13 @@
       "value": "\"K_TRUSTED_SESSION_SOURCES\""
     },
     {
+      "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
+      "kind": "StringLiteral",
+      "offset": 1185,
+      "length": 12,
+      "value": "\"K_USER_IAL\""
+    },
+    {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDLicense\/BIDLicenseValidator.swift",
       "kind": "BooleanLiteral",
       "offset": 4174,
@@ -80616,30 +80869,37 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1762,
+      "offset": 1865,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1807,
+      "offset": 1910,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "Array",
-      "offset": 1856,
+      "offset": 1959,
       "length": 549,
       "value": "[\"https:\/\/1k-dev.1kosmos.net\/sessions\", \"https:\/\/1k-qa.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us.1kosmos.net\/sessions\", \"https:\/\/1k-uat.1kosmos.net\/sessions\", \"https:\/\/1k-pilot.1kosmos.net\/sessions\", \"https:\/\/1k-pilot-in.1kosmos.in\/sessions\", \"https:\/\/1k-prod-in.1kosmos.in\/sessions\"]"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2496,
+      "offset": 2599,
       "length": 5,
       "value": "21600"
+    },
+    {
+      "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2694,
+      "length": 6,
+      "value": "\"IAL1\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/RFIDModule\/NFCPassportReader\/DataGroups\/ChipAuthenticationInfo.swift",
@@ -81260,42 +81520,42 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 7270,
+      "offset": 7375,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 7443,
+      "offset": 7548,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 7500,
+      "offset": 7605,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 11901,
+      "offset": 12191,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 12013,
+      "offset": 12303,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 12067,
+      "offset": 12357,
       "length": 3,
       "value": "0.0"
     },
@@ -81547,156 +81807,191 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 64524,
+      "offset": 1254,
+      "length": 40,
+      "value": "\"\/api\/r1\/userdocs\/userdid\/{userdid}\/ial\""
+    },
+    {
+      "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 67261,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 68511,
+      "offset": 71271,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 68550,
+      "offset": 71310,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 68595,
+      "offset": 71355,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 68636,
+      "offset": 71396,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 68672,
+      "offset": 71432,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 68844,
+      "offset": 71604,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69434,
+      "offset": 72194,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69485,
+      "offset": 72245,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69531,
+      "offset": 72291,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69579,
+      "offset": 72339,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69625,
+      "offset": 72385,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69664,
+      "offset": 72424,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69710,
+      "offset": 72470,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69750,
+      "offset": 72510,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69788,
+      "offset": 72548,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69826,
+      "offset": 72586,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69864,
+      "offset": 72624,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69903,
+      "offset": 72663,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69943,
+      "offset": 72703,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 69985,
+      "offset": 72745,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 70026,
+      "offset": 72786,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 81922,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 82008,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
+      "kind": "Array",
+      "offset": 82036,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 81958,
+      "length": 3,
+      "value": "\"BlockID.IAL\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/RFIDModule\/NFCPassportReader\/X509Wrapper.swift",
@@ -82373,28 +82668,28 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 75952,
+      "offset": 76226,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 75989,
+      "offset": 76263,
       "length": 16,
       "value": "\"cross-platform\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 75952,
+      "offset": 76226,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 75989,
+      "offset": 76263,
       "length": 16,
       "value": "\"cross-platform\""
     },
@@ -82891,77 +83186,84 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14218,
+      "offset": 14178,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14311,
+      "offset": 14271,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14380,
+      "offset": 14340,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14454,
+      "offset": 14414,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14545,
+      "offset": 14505,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14603,
+      "offset": 14563,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14686,
+      "offset": 14646,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14763,
+      "offset": 14723,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14827,
+      "offset": 14787,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14865,
+      "offset": 14825,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14903,
+      "offset": 14863,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 14902,
       "length": 2,
       "value": "\"\""
     },
@@ -82975,21 +83277,14 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14982,
+      "offset": 14984,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15024,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 15065,
+      "offset": 15025,
       "length": 2,
       "value": "\"\""
     },

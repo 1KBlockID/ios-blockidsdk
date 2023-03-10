@@ -296,6 +296,7 @@ SWIFT_CLASS("_TtC7BlockID8BIDVault")
 
 
 
+
 SWIFT_CLASS("_TtC7BlockID15BiometricAssets")
 @interface BiometricAssets : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

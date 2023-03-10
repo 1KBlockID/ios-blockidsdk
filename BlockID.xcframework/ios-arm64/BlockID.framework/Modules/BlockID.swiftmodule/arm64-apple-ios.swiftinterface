@@ -323,6 +323,10 @@ extension BIDVault {
   public func setTrustedSessionsSources(info: GlobalConfigResponse)
   public func getTrustedSessionsSources() -> [Swift.String]?
 }
+extension BIDVault {
+  public func setIALValue(ial: Swift.String)
+  public func getIALValue() -> Swift.String?
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Enrollments : ObjectiveC.NSObject {
   public static let sharedInstance: Enrollments
   public func isDigitalAssetsEnabled() -> Swift.Bool
@@ -577,6 +581,7 @@ public typealias SessionResponseCallback = ((_ status: Swift.Bool, _ object: Ses
 public typealias SCEPCertificateCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
 public typealias KYCCallback = ((_ status: Swift.Bool, _ kycHash: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias MessageGatewaysCallback = ((_ status: Swift.Bool, _ object: [MessageGateway]?, _ error: ErrorResponse?) -> Swift.Void)
+public typealias IALCallback = ((_ status: Swift.Bool, _ ialValue: Swift.String, _ error: ErrorResponse?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockIDSDK
   public func isReady() -> Swift.Bool
@@ -635,12 +640,12 @@ public typealias MessageGatewaysCallback = ((_ status: Swift.Bool, _ object: [Me
   public func generateWalletForRestore(mnemonics: Swift.String) -> Swift.Bool
   public func getMnemonicPhrases() -> Swift.String?
   public func getDID() -> Swift.String
-  public func getIAL() -> Swift.String
+  public func getIAL(completion: @escaping IALCallback)
   public func getLinkedUserAccounts() -> (linkedUsers: [BIDLinkedAccount]?, error: ErrorResponse?)
   public func setCurrentUserAccount(account: BIDLinkedAccount)
   public func getCurrentUserAccount() -> (currentUser: BIDLinkedAccount?, error: ErrorResponse?)
-  public func getScopesAttributesDic(scopes: Swift.String, creds: Swift.String, origin: BIDOrigin, userId: Swift.String? = nil) -> (scopesAttributesDict: [Swift.String : Any]?, error: ErrorResponse?)
-  public func getEventData(publicKey: Swift.String, lon: Swift.Double, lat: Swift.Double) -> Swift.String
+  public func getScopesAttributesDic(scopes: Swift.String, creds: Swift.String, origin: BIDOrigin, userId: Swift.String? = nil, completion: @escaping ([Swift.String : Any]?, ErrorResponse?) -> Swift.Void)
+  public func getEventData(publicKey: Swift.String, lon: Swift.Double, lat: Swift.Double, completion: @escaping (Swift.String) -> Swift.Void)
   public func authenticateUser(sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
   public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
   public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
@@ -783,13 +788,13 @@ public enum AuthAssetType : Swift.String {
   public func isSDKUnLocked() -> Swift.Bool
   public func getLiveIdImageBase64String() -> Swift.String?
   public func isAuthAssetEnrolled(assetType: AuthAssetType) -> Swift.Bool
-  public func enrollPin(pin: Swift.String, proofedBy: Swift.String, tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, completion: @escaping UserAPICallback)
+  public func enrollPin(pin: Swift.String, proofedBy: Swift.String, tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping UserAPICallback)
   public func verifyPin(pin: Swift.String) -> Swift.Bool
-  public func unEnrollPin(pin: Swift.String, tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, completion: @escaping UserAPICallback)
+  public func unEnrollPin(pin: Swift.String, tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping UserAPICallback)
   public func enrollDeviceAuth(completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
   public func unenrollDeviceAuth(completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
   public func verifyDeviceAuth(completion: @escaping (Swift.Bool, BiometricError?, Swift.String?) -> Swift.Void)
-  public func enrollLiveID(dictLiveID: [Swift.String : Any], tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, completion: @escaping UserAPICallback)
+  public func enrollLiveID(dictLiveID: [Swift.String : Any], tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping UserAPICallback)
   public func verifyLiveID(image: UIKit.UIImage, keyPair: APIKeyPair, tenant: BIDTenant, did: Swift.String, completion: @escaping VerifyLiveIDCallback)
   public func verifyFace(image: UIKit.UIImage, keyPair: APIKeyPair, tenant: BIDTenant, did: Swift.String, completion: @escaping (_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
   @objc deinit
@@ -1043,6 +1048,11 @@ extension NationalIDScanHelper : NationalIDResponseDelegate {
   required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class RegisterUserData : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class RegisterUserDataResponse : Swift.Codable {
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -1312,7 +1322,7 @@ public class DataGroup {
   public static let sharedInstance: DataMigrationHelper
   public func migrationRequired() -> Swift.Bool
   public func createMigrationWallet()
-  public func startMigration(tenant: BIDTenant, clientTenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, completion: @escaping DataMigrationHelper.BIDMigrationCallback)
+  public func startMigration(tenant: BIDTenant, clientTenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping DataMigrationHelper.BIDMigrationCallback)
   public func isBidChainNeedsMigration() -> Swift.Bool
   public func migrateBidChains(completion: @escaping (Swift.Bool?, Swift.String?) -> Swift.Void)
   @objc deinit
