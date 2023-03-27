@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/BlockID-Swift.h</key>
 		<data>
-		IX8SW6nawCTia3ujQo/IzVc9mTw=
+		j/bwX5mLzUHJcL3XoR99Pmkc4Ts=
 		</data>
 		<key>Headers/BlockID.h</key>
 		<data>
@@ -26,27 +26,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6CXKXkyI0fdBoEvUjdwpCvFFxmI=
+		R8XhIC+4L+cMxDkJ0vztkU/9EqQ=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		d2Hy0mMGZctfqpkNYtyXi3lBrWw=
+		W2iwQA6FdE/KvPI8smIK6/OOukk=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DNHCqnQIuIMGo/Qu3jW2apImCSA=
+		Uz01fkzF7BpBNocuasyyKQ/iq8g=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		FttyC2o00Qh6rTlKGTn5vUVy+3o=
+		hpD7VhrMvyPKcODqK8L+M/xWGZQ=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DNHCqnQIuIMGo/Qu3jW2apImCSA=
+		Uz01fkzF7BpBNocuasyyKQ/iq8g=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rNvPwT2fbrAAFjgai4GU0G7mqCk=
+		WsK2TkWlkXzDAnEsyftu0DAQxKs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FZ2rjrWrm5af5gGpjAyYMNpp4ScAhiMnJkjKbw0ba9s=
+			6FW1lAICHvREhWeE48sMYTCZmfsykVC1vmnG84jeXOA=
 			</data>
 		</dict>
 		<key>Headers/BlockID.h</key>
@@ -106,35 +106,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vqp15Xw4s4ifk38RQy3B+ssaDMl7SGhIHIp3rFDyzUQ=
+			R10vUY6OX6gQ5z1lVO4swgahLkByb0WmHDexC8IEl7s=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w6w/RR6OSufolVRJfs8/sWfiv8aHZq2Mp10To1JbSYo=
+			t2THTVXV81f7+RR153/eOijrtlNnYaiy1xnkDnUQwz4=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CXp4QLQX1UTaQ9SKdNk1CRC7lfniltuN7vXsRU+GOW4=
+			NbhGNw8OMJjEKtIvdTKJ3yPC8/uQvEnqKE/gWOuasiY=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w6w/RR6OSufolVRJfs8/sWfiv8aHZq2Mp10To1JbSYo=
+			t2THTVXV81f7+RR153/eOijrtlNnYaiy1xnkDnUQwz4=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mjHY7Xc6ezHMDlqwA/P3H9qbSz41bJ52TJs3jIl+PH4=
+			Ia37ByY43BY3fyZ5yMp65ei6czFTCze5ubhzZEbS/rc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
