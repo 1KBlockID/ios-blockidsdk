@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -570,6 +570,7 @@ public enum LogLevel : Swift.Int, Swift.CaseIterable {
   public class func clearStoredLogs()
   @objc deinit
 }
+public typealias FIDO2PINCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias BIDTenantRegisterationCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ object: BlockID.BIDTenant?) -> Swift.Void)
 public typealias UserAPICallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias LiveIDCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
@@ -582,6 +583,8 @@ public typealias SCEPCertificateCallback = ((_ status: Swift.Bool, _ error: Bloc
 public typealias KYCCallback = ((_ status: Swift.Bool, _ kycHash: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias MessageGatewaysCallback = ((_ status: Swift.Bool, _ object: [BlockID.MessageGateway]?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias IALCallback = ((_ status: Swift.Bool, _ ialValue: Swift.String, _ error: BlockID.ErrorResponse?) -> Swift.Void)
+public typealias VCsCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
+public typealias VPCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.BlockIDSDK
   public func isReady() -> Swift.Bool
@@ -648,8 +651,8 @@ public typealias IALCallback = ((_ status: Swift.Bool, _ ialValue: Swift.String,
   public func getEventData(publicKey: Swift.String, lon: Swift.Double, lat: Swift.Double, completion: @escaping (Swift.String) -> Swift.Void)
   public func authenticateUser(sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
   public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
-  public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
-  public func authenticateUser(controller: UIKit.UIViewController? = nil, sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
+  public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
+  public func authenticateUser(controller: UIKit.UIViewController? = nil, sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, extraData: [Swift.String : Any]? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
   public func isTrustedSessionSources(sessionUrl: Swift.String) -> Swift.Bool
   public func getOfflineAuthPayload(bidLinkedAccount: BlockID.BIDLinkedAccount) -> Swift.String?
   public func getLicense() -> (license: BlockID.BIDLicense?, error: BlockID.ErrorResponse?)
@@ -685,10 +688,19 @@ extension BlockID.BlockIDSDK {
   public func authenticateFIDO2Key(userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, fileName: Swift.String? = nil, completion: @escaping BlockID.FIDO2Callback)
 }
 extension BlockID.BlockIDSDK {
-  public func registerFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: BlockID.FIDO2KeyType, pin: Swift.String? = nil, completion: @escaping BlockID.FIDO2Callback)
+  public func registerFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: BlockID.FIDO2KeyType, pin: Swift.String? = nil, setPin: Swift.Bool = false, completion: @escaping BlockID.FIDO2Callback)
   public func authenticateFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: BlockID.FIDO2KeyType, pin: Swift.String? = nil, completion: @escaping BlockID.FIDO2Callback)
   public func registerFIDO2Key(controller: UIKit.UIViewController, linkedAccount: BlockID.BIDLinkedAccount?, type: BlockID.FIDO2KeyType, completion: @escaping BlockID.FIDO2Callback)
   public func authenticateFIDO2Key(type: BlockID.FIDO2KeyType, controller: UIKit.UIViewController? = nil, sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, completion: @escaping BlockID.FIDO2Callback)
+}
+extension BlockID.BlockIDSDK {
+  public func setFido2PIN(newPin: Swift.String, completion: @escaping BlockID.FIDO2PINCallback)
+  public func changeFido2PIN(oldPin: Swift.String, newPin: Swift.String, completion: @escaping BlockID.FIDO2PINCallback)
+  public func resetFido2(completion: @escaping BlockID.FIDO2PINCallback)
+}
+extension BlockID.BlockIDSDK {
+  public func getVCsFrom(downloadURL url: Swift.String, completion: @escaping BlockID.VCsCallback)
+  public func getVP(_ dictVCObj: [Swift.String : Any], completion: @escaping BlockID.VPCallback)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TOTPUtils : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.TOTPUtils
@@ -1451,6 +1463,9 @@ public struct CustomErrors {
   }
   public struct Account {
     public static let INVALID_ACCOUNT: (code: Swift.Int, msg: Swift.String)
+  }
+  public struct VCs {
+    public static let SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
   }
   public static let kWalletCreationFailed: (code: Swift.Int, msg: Swift.String)
   public static let kUserIdAlreadyExists: (code: Swift.Int, msg: Swift.String)
