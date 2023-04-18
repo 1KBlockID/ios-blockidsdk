@@ -43546,6 +43546,79 @@
                     "accessorKind": "get"
                   }
                 ]
+              },
+              {
+                "kind": "Var",
+                "name": "KEY_ALREADY_REGISTERED",
+                "printedName": "KEY_ALREADY_REGISTERED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV5FIDO2V22KEY_ALREADY_REGISTEREDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V22KEY_ALREADY_REGISTEREDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V22KEY_ALREADY_REGISTEREDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V22KEY_ALREADY_REGISTEREDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
               }
             ],
             "declKind": "Struct",
@@ -83276,49 +83349,49 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 79353,
+      "offset": 80717,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 79390,
+      "offset": 80754,
       "length": 16,
       "value": "\"cross-platform\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 79353,
+      "offset": 80717,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 79390,
+      "offset": 80754,
       "length": 16,
       "value": "\"cross-platform\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11809,
+      "offset": 11965,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 11844,
+      "offset": 12000,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 11756,
+      "offset": 11912,
       "length": 13,
       "value": "\"BlockID.ErrorResponse\""
     },
