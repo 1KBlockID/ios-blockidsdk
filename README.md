@@ -26,6 +26,16 @@ sushil-tiwari-1kosmos, sushil.tiwari@1kosmos.com
 BlockIDSDK is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+### v1.8.30
+- Improved Live ID registration and verification with liveness check
+- Introduce Native FIDO2 Capability
+
+### v1.8.10
+- Introduced capability
+   - to connect BlockID wallet to DApps (decentralised application)
+   - for transaction signing
+   - for personal signing
+   
 ### v.1.8.02
 - Crash fixed during account recovery process using recovery phrases
 
