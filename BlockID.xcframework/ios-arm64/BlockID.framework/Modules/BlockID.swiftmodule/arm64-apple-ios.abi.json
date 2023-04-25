@@ -81557,7 +81557,7 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 136211,
+      "offset": 136163,
       "length": 5,
       "value": "false"
     },
@@ -82474,182 +82474,182 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 67261,
+      "offset": 67291,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 71271,
+      "offset": 71301,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 71310,
+      "offset": 71340,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 71355,
+      "offset": 71385,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 71396,
+      "offset": 71426,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 71432,
+      "offset": 71462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 71604,
+      "offset": 71634,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72194,
+      "offset": 72224,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72245,
+      "offset": 72275,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72291,
+      "offset": 72321,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72339,
+      "offset": 72369,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72385,
+      "offset": 72415,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72424,
+      "offset": 72454,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72470,
+      "offset": 72500,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72510,
+      "offset": 72540,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72548,
+      "offset": 72578,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72586,
+      "offset": 72616,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72624,
+      "offset": 72654,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72663,
+      "offset": 72693,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72703,
+      "offset": 72733,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72745,
+      "offset": 72775,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 72786,
+      "offset": 72816,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81922,
+      "offset": 81952,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82008,
+      "offset": 82038,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "Array",
-      "offset": 82036,
+      "offset": 82066,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81958,
+      "offset": 81988,
       "length": 3,
       "value": "\"BlockID.IAL\""
     },
