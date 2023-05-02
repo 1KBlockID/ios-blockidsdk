@@ -41,9 +41,10 @@ import WebKit
 import YubiKit
 import _Concurrency
 import _StringProcessing
-@objc @_inheritsConvenienceInitializers public class BIDServiceDirectory : ObjectiveC.NSObject, Swift.Decodable {
+@objc @_inheritsConvenienceInitializers public class BIDServiceDirectory : ObjectiveC.NSObject, Swift.Codable {
   @objc override dynamic public init()
   @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 open class KeychainWrapper {
@@ -583,7 +584,6 @@ public typealias SCEPCertificateCallback = ((_ status: Swift.Bool, _ error: Erro
 public typealias KYCCallback = ((_ status: Swift.Bool, _ kycHash: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias MessageGatewaysCallback = ((_ status: Swift.Bool, _ object: [MessageGateway]?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias IALCallback = ((_ status: Swift.Bool, _ ialValue: Swift.String, _ error: ErrorResponse?) -> Swift.Void)
-public typealias GetScopeDataCallBack = (([Swift.String : Any]?, ErrorResponse?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockIDSDK
   public func isReady() -> Swift.Bool
@@ -646,7 +646,7 @@ public typealias GetScopeDataCallBack = (([Swift.String : Any]?, ErrorResponse?)
   public func getLinkedUserAccounts() -> (linkedUsers: [BIDLinkedAccount]?, error: ErrorResponse?)
   public func setCurrentUserAccount(account: BIDLinkedAccount)
   public func getCurrentUserAccount() -> (currentUser: BIDLinkedAccount?, error: ErrorResponse?)
-  public func getScopesAttributesDic(scopes: Swift.String, creds: Swift.String, origin: BIDOrigin, userId: Swift.String? = nil, completion: @escaping GetScopeDataCallBack)
+  public func getScopesAttributesDic(scopes: Swift.String, creds: Swift.String, origin: BIDOrigin, userId: Swift.String? = nil, completion: @escaping ([Swift.String : Any]?, ErrorResponse?) -> Swift.Void)
   public func getEventData(publicKey: Swift.String, lon: Swift.Double, lat: Swift.Double, completion: @escaping (Swift.String) -> Swift.Void)
   public func authenticateUser(sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
   public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
@@ -1650,6 +1650,21 @@ public func calcSHA256Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
 public func calcSHA512Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
 @available(iOS 13, macOS 10.15, *)
 public func calcSHA384Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
+public enum CacheTTLLIMIT : Swift.Int {
+  case oneDay
+  case tenMinutes
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class BIDSDKCacheManager {
+  public static let shared: BIDSDKCacheManager
+  public func setCache(_ key: Swift.String, _ value: Swift.String?, _ ttl: CacheTTLLIMIT)
+  public func getCache(_ key: Swift.String, _ ttl: CacheTTLLIMIT) -> Swift.String?
+  @objc deinit
+}
 public enum PACEMappingType {
   case GM
   case IM
@@ -2198,6 +2213,11 @@ public class OfflineAuthAccountDetail : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TenantInfoAPI : ObjectiveC.NSObject {
+  public static let sharedInstance: TenantInfoAPI
+  public func fetchTenantInfo(dns: Swift.String, community: Swift.String, completion: @escaping (APIResponseCallback<TenantCommunityResponse>) -> Swift.Void)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class TenantCommunityResponse : Swift.Codable {
   public var tenant: BIDTenantInfo?
   public var community: BIDCommunityInfo?
@@ -2209,12 +2229,16 @@ public class OfflineAuthAccountDetail : Swift.Codable {
 @_hasMissingDesignatedInitializers public class BIDTenantInfo : Swift.Codable {
   public var id: Swift.String?
   public var tenanttag: Swift.String?
+  public var name: Swift.String?
+  public var displayTenantInfoForPersona: Swift.Bool?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDCommunityInfo : Swift.Codable {
   public var id: Swift.String?
+  public var mobileLogo: Swift.String?
+  public var name: Swift.String?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -2423,6 +2447,9 @@ extension RegisterDocType : Swift.RawRepresentable {}
 extension RegisterDocCategory : Swift.Equatable {}
 extension RegisterDocCategory : Swift.Hashable {}
 extension RegisterDocCategory : Swift.RawRepresentable {}
+extension CacheTTLLIMIT : Swift.Equatable {}
+extension CacheTTLLIMIT : Swift.Hashable {}
+extension CacheTTLLIMIT : Swift.RawRepresentable {}
 extension PACEMappingType : Swift.Equatable {}
 extension PACEMappingType : Swift.Hashable {}
 extension SwiftyJSONError : Swift.Equatable {}

@@ -458,6 +458,13 @@ SWIFT_CLASS("_TtC7BlockID9TOTPUtils")
 
 
 
+SWIFT_CLASS("_TtC7BlockID13TenantInfoAPI")
+@interface TenantInfoAPI : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC7BlockID19WalletConnectHelper")
 @interface WalletConnectHelper : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
