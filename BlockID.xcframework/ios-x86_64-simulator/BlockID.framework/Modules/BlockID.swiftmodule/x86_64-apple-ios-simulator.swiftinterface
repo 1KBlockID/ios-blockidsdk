@@ -1469,6 +1469,7 @@ public struct CustomErrors {
   }
   public struct VCs {
     public static let SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
+    public static let INVALID_VC_DATA: (code: Swift.Int, message: Swift.String)
   }
   public static let kWalletCreationFailed: (code: Swift.Int, msg: Swift.String)
   public static let kUserIdAlreadyExists: (code: Swift.Int, msg: Swift.String)
