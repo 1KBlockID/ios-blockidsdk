@@ -1,7 +1,5 @@
 ## BlockID
 
-[![CI Status](https://img.shields.io/travis/sushil-tiwari-1kosmos/BlockIDSDK.svg?style=flat)](https://travis-ci.org/sushil-tiwari-1kosmos/BlockIDSDK)
-
 - Overview: https://developer.1kosmos.com/devportal/docs/mobile-sdk/overview 
 - Integration Guide: https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/integration-guide
 - API Reference: https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/api-reference
