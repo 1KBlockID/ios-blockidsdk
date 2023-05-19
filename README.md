@@ -1,9 +1,6 @@
 ## BlockID
 
 [![CI Status](https://img.shields.io/travis/sushil-tiwari-1kosmos/BlockIDSDK.svg?style=flat)](https://travis-ci.org/sushil-tiwari-1kosmos/BlockIDSDK)
-[![Version](https://img.shields.io/cocoapods/v/BlockIDSDK.svg?style=flat)](https://cocoapods.org/pods/BlockIDSDK)
-[![License](https://img.shields.io/cocoapods/l/BlockIDSDK.svg?style=flat)](https://cocoapods.org/pods/BlockIDSDK)
-[![Platform](https://img.shields.io/cocoapods/p/BlockIDSDK.svg?style=flat)](https://cocoapods.org/pods/BlockIDSDK)
 
 - Overview: https://developer.1kosmos.com/devportal/docs/mobile-sdk/overview 
 - Integration Guide: https://developer.1kosmos.com/devportal/docs/mobile-sdk/ios/integration-guide
