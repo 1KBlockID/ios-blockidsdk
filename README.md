@@ -18,7 +18,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 ### v1.9.31
-- Fixed an issue of passing account object as string while asking for uwl scopes when QR is authenticated 
+- Fixed an issue of passing account object as string during authenticate user
 
 ### v1.9.30
 - Added a new function to consume Verifiable Credentials
