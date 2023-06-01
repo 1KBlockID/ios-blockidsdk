@@ -2394,27 +2394,27 @@ public class GlobalConfigResponse : Swift.Codable {
   required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class MobileAppConfigs : Swift.Codable {
-  public class BlockIDConfig : Swift.Codable {
-    public var app: MobileAppConfigs.OriginAllowedToTransfer
+  @_hasMissingDesignatedInitializers public class BlockIDConfig : Swift.Codable {
+    public var app: MobileAppConfigs.OriginAllowedToTransfer?
     @objc deinit
     public func encode(to encoder: any Swift.Encoder) throws
     required public init(from decoder: any Swift.Decoder) throws
   }
-  public class TrustedSessions : Swift.Codable {
+  @_hasMissingDesignatedInitializers public class TrustedSessions : Swift.Codable {
     @objc deinit
     public func encode(to encoder: any Swift.Encoder) throws
     required public init(from decoder: any Swift.Decoder) throws
   }
-  public class OriginAllowedToTransfer : Swift.Codable {
-    public var originAllowedToTransfer: [MobileAppConfigs.Origin]
+  @_hasMissingDesignatedInitializers public class OriginAllowedToTransfer : Swift.Codable {
+    public var originAllowedToTransfer: [MobileAppConfigs.Origin]?
     @objc deinit
     public func encode(to encoder: any Swift.Encoder) throws
     required public init(from decoder: any Swift.Decoder) throws
   }
-  public class Origin : Swift.Codable {
-    public var dns: Swift.String
-    public var tenantTag: Swift.String
-    public var communityName: Swift.String
+  @_hasMissingDesignatedInitializers public class Origin : Swift.Codable {
+    public var dns: Swift.String?
+    public var tenantTag: Swift.String?
+    public var communityName: Swift.String?
     @objc deinit
     public func encode(to encoder: any Swift.Encoder) throws
     required public init(from decoder: any Swift.Decoder) throws
