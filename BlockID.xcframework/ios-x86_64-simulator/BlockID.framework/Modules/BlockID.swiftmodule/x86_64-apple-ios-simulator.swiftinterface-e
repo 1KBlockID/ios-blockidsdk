@@ -587,7 +587,7 @@ public typealias IALCallback = ((_ status: Swift.Bool, _ ialValue: Swift.String,
 public typealias VCsCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 public typealias VPCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 public typealias GlobalConfigCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: BlockID.GlobalConfigResponse?) -> Swift.Void)
-public typealias GetDocumentsCallback = ((_ status: Swift.Bool, _ docs: [BlockID.RegisterUserData]?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
+public typealias GetDocumentsCallback = ((_ status: Swift.Bool, _ responseDict: [Swift.String : Any]?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.BlockIDSDK
   public func isReady() -> Swift.Bool
@@ -615,7 +615,7 @@ public typealias GetDocumentsCallback = ((_ status: Swift.Bool, _ docs: [BlockID
   public func registerDocument(obj: [Swift.String : Any], storeArtifacts: Swift.Bool, syncArtifacts: Swift.Bool, liveIdProofedBy: Swift.String, docSignToken: Swift.String? = nil, faceImage: UIKit.UIImage, liveIDSignToken: Swift.String? = nil, completion: @escaping BlockID.UserAPICallback)
   public func isCurrentDocumentExists(dictDoc: [Swift.String : Any]) -> Swift.Bool
   public func unregisterDocument(dictDoc: [Swift.String : Any], completion: @escaping BlockID.UserAPICallback)
-  public func getDocuments(docIds: [Swift.String], _ completion: @escaping BlockID.GetDocumentsCallback)
+  public func fetchDocuments(requestDict: [Swift.String : Any], _ completion: @escaping BlockID.GetDocumentsCallback)
   public func setProxy(host: Swift.String, port: Swift.Int, userName: Swift.String, password: Swift.String, isHTPPOnly: Swift.Bool)
   public func getProxyDetails() -> BlockID.ProxyDetails?
   public func isPinRegistered() -> Swift.Bool
