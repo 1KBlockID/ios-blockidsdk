@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/BlockID-Swift.h</key>
 		<data>
-		IdIq6xrLVZv4avI7RR0GQexe1Vw=
+		B1cyRKJBcLWVM5bPAQmIAS4BKsk=
 		</data>
 		<key>Headers/BlockID.h</key>
 		<data>
@@ -26,27 +26,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yoz4kiQ7aFdOeQb3irndZbYJsFw=
+		qUZ/QK5G+FlNOUHa/N5mXicsjfc=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		yoKbHLesvldF0kiCinm2bCiAJGg=
+		ISw5520rdxKYdHdfbX6NhoLpChU=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		SN+WZ/jLAiAQEtsA6MXNo8+1kFc=
+		mF+ZZEQTpROWfbRjf445SFRcDLE=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6ZoSFSxy0s+llV0pHfsd/MXrPEs=
+		b5C4BhD0766witeBXcJf3d3KH4k=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SN+WZ/jLAiAQEtsA6MXNo8+1kFc=
+		mF+ZZEQTpROWfbRjf445SFRcDLE=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bvEv1RdfYEjnO6XJU+v8yC6Y+7w=
+		c/gKh05m+48HeLogmx54E4399FM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		2hLEj1gKXAfNd+87Sf2UqMBQ/ZM=
+		oKAWE/JtJvUzZIKMyXGxS5ZDuyo=
 		</data>
 		<key>tessdata/OCRB.traineddata</key>
 		<data>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YFNwh9u7wkTb/NqfWI+TKq5LQ8WLwruIjZLoc7jA3D4=
+			Iy4SrOiJazoSDOHx1F0Q4FEfjXCED5huzdLz1VorBnM=
 			</data>
 		</dict>
 		<key>Headers/BlockID.h</key>
@@ -106,35 +106,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IJVisdy2dKx8GFwDuDWor4y7W4+rrmumTOL0j3RtsCU=
+			tJaymOa8KglgUQQkJwofmhdmO6+lQHQXdXFSOJfRS+s=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NLwVlaFl+FQYPpEq2S7xwCAb43SdmpKJJ7pOS02Oe3M=
+			YF3dR8tsu/45j8MeTBAVU/1GZEpnPEF4Xj4hBUeX9xw=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PIaEopPpbxkFccR1Nj/YRBNimKAFY1Us/IUOJOXMaYQ=
+			bFh2NCIV68czFPlzgJ2LuVNqzavIpzyRr/e0MIQUCOg=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NLwVlaFl+FQYPpEq2S7xwCAb43SdmpKJJ7pOS02Oe3M=
+			YF3dR8tsu/45j8MeTBAVU/1GZEpnPEF4Xj4hBUeX9xw=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HTvnpGo2Qjt49U5dnQHPMTLt6bx4R9tX8RaPZajvabQ=
+			ANwubbCu3/nW+3tRr4WOxxpHb6jtjZkybG2okOFsqI8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -155,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ogyofG+To3CKMBOemYWgz+9a85+J7gRP6ZNejMLx4o=
+			l3bwgc20bafuHlPgdD33sh7tIhU7zZ4LIDwy3ZrurMY=
 			</data>
 		</dict>
 		<key>tessdata/OCRB.traineddata</key>
