@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -1509,6 +1509,7 @@ public struct CustomErrors {
   public static let kDocumentPhotoNotFound: (code: Swift.Int, msg: Swift.String)
   public static let kNoMigrationNeeded: (code: Swift.Int, msg: Swift.String)
   public static let kLiveIDMandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_REGISTRATION_IS_NOT_ALLOWED: (code: Swift.Int, message: Swift.String)
   public static let kNotTrustedSessionSource: (code: Swift.Int, msg: Swift.String)
   public static let kPPAboutToExpire: (code: Swift.Int, msg: Swift.String)
   public static let kPPExpired: (code: Swift.Int, msg: Swift.String)
