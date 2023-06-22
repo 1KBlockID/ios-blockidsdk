@@ -129,6 +129,8 @@ public enum KeychainItemAccessibility {
 }
 @_hasMissingDesignatedInitializers public class BIDAccount : Swift.Codable {
   public var source: Swift.String?
+  public var tenantId: Swift.String?
+  public var communityId: Swift.String?
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -709,6 +711,9 @@ extension BlockIDSDK {
 extension BlockIDSDK {
   public func fetchGlobalConfig(_ tenant: BIDTenant, completion: @escaping GlobalConfigCallback)
 }
+extension BlockIDSDK {
+  public func updateAccountInfo(account: BIDLinkedAccount, pushID: Swift.String? = nil, deviceInfo: [Swift.String : Any], completion: @escaping UpdateAccInfoCallback)
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TOTPUtils : ObjectiveC.NSObject {
   public static let sharedInstance: TOTPUtils
   public func generateTOTP(_timer timer: Swift.Int, secret: Foundation.Data, algorithm: TOTPUtils.Algorithm, digits: Swift.Int) throws -> Swift.String
@@ -845,6 +850,7 @@ public enum AuthAssetType : Swift.String {
   @objc deinit
   required public init(from decoder: Swift.Decoder) throws
 }
+public typealias UpdateAccInfoCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
 public protocol RFIDResponseDelegate : AnyObject {
   func rfidResponseWith(metadata: MRZDocumentData?, photo: UIKit.UIImage?, dn: Swift.String?, signature: Swift.String?)
   func rfidCancelledByUser()
