@@ -1702,7 +1702,8 @@ public enum CacheTTLLIMIT : Swift.Int {
   public static let shared: BlockID.BIDSDKCacheManager
   final public let kMyIPKey: Swift.String
   public func setCache(_ key: Swift.String, _ value: Swift.String?, _ ttl: BlockID.CacheTTLLIMIT)
-  public func getCache(_ key: Swift.String, _ ttl: BlockID.CacheTTLLIMIT) -> Swift.String?
+  public func setCache(_ key: Swift.String, _ value: Swift.String?, _ ttl: Swift.Int)
+  public func getCache(_ key: Swift.String) -> Swift.String?
   @objc deinit
 }
 public enum PACEMappingType {
