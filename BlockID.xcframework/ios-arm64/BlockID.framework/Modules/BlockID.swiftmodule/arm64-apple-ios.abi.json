@@ -16385,13 +16385,12 @@
           {
             "kind": "Function",
             "name": "checkUserExist",
-            "printedName": "checkUserExist(userId:origin:)",
+            "printedName": "checkUserExist(userId:origin:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
@@ -16404,11 +16403,29 @@
                 "name": "BIDOrigin",
                 "printedName": "BlockID.BIDOrigin",
                 "usr": "s:7BlockID9BIDOriginC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC14checkUserExist6userId6originSbSS_AA9BIDOriginCtF",
-            "mangledName": "$s7BlockID0A5IDSDKC14checkUserExist6userId6originSbSS_AA9BIDOriginCtF",
+            "usr": "s:7BlockID0A5IDSDKC14checkUserExist6userId6origin10completionySS_AA9BIDOriginCySbctF",
+            "mangledName": "$s7BlockID0A5IDSDKC14checkUserExist6userId6origin10completionySS_AA9BIDOriginCySbctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -47027,8 +47044,8 @@
           },
           {
             "kind": "Var",
-            "name": "K_REGISTRATION_IS_NOT_ALLOWED",
-            "printedName": "K_REGISTRATION_IS_NOT_ALLOWED",
+            "name": "K_REGISTRATION_NOT_ALLOWED",
+            "printedName": "K_REGISTRATION_NOT_ALLOWED",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -47051,8 +47068,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7BlockID12CustomErrorsV29K_REGISTRATION_IS_NOT_ALLOWEDSi4code_SS7messagetvpZ",
-            "mangledName": "$s7BlockID12CustomErrorsV29K_REGISTRATION_IS_NOT_ALLOWEDSi4code_SS7messagetvpZ",
+            "usr": "s:7BlockID12CustomErrorsV26K_REGISTRATION_NOT_ALLOWEDSi4code_SS7messagetvpZ",
+            "mangledName": "$s7BlockID12CustomErrorsV26K_REGISTRATION_NOT_ALLOWEDSi4code_SS7messagetvpZ",
             "moduleName": "BlockID",
             "static": true,
             "declAttributes": [
@@ -47089,8 +47106,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7BlockID12CustomErrorsV29K_REGISTRATION_IS_NOT_ALLOWEDSi4code_SS7messagetvgZ",
-                "mangledName": "$s7BlockID12CustomErrorsV29K_REGISTRATION_IS_NOT_ALLOWEDSi4code_SS7messagetvgZ",
+                "usr": "s:7BlockID12CustomErrorsV26K_REGISTRATION_NOT_ALLOWEDSi4code_SS7messagetvgZ",
+                "mangledName": "$s7BlockID12CustomErrorsV26K_REGISTRATION_NOT_ALLOWEDSi4code_SS7messagetvgZ",
                 "moduleName": "BlockID",
                 "static": true,
                 "implicit": true,
@@ -53317,6 +53334,16 @@
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -84791,7 +84818,7 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 140524,
+      "offset": 143137,
       "length": 5,
       "value": "false"
     },
@@ -85400,70 +85427,70 @@
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 4641,
+      "offset": 5406,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 5893,
+      "offset": 6715,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 6066,
+      "offset": 6888,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 6123,
+      "offset": 6945,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 7447,
+      "offset": 8509,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 7620,
+      "offset": 8682,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 7677,
+      "offset": 8739,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 12263,
+      "offset": 13656,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 12375,
+      "offset": 13785,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 12429,
+      "offset": 13839,
       "length": 3,
       "value": "0.0"
     },
@@ -87678,6 +87705,13 @@
       "offset": 679,
       "length": 6,
       "value": "\"myip\""
+    },
+    {
+      "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/CommonUtils\/BIDOriginHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 443,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/adityasharma\/Desktop\/GitRepos\/1Kosmos\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/RFIDModule\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
