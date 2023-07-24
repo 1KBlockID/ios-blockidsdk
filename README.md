@@ -9,7 +9,7 @@
 BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.9.40'
+   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.9.50'
 ```
 
 ## License
@@ -17,6 +17,10 @@ BlockID is available through CocoaPods. To install it, simply add the following 
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+### v1.9.50
+- Fixed an issue of unable to perform password-less login after device is unlinked and invite is resent.
+- Handled auth requests for linked accounts when tenant has two DNS mappings.
+
 ### v1.9.40
 - Added a new function to fetch user documents which are registered against application DID
 - Added a new function to update linked account Device Info and Push ID

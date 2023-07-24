@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -632,7 +632,7 @@ public typealias FetchDocumentsCallback = ((_ status: Swift.Bool, _ responseDict
   public func resetRestorationData()
   public func getTOTP() -> (totp: BlockID.TOTP?, error: BlockID.ErrorResponse?)
   public func getOfflineTOTP(bidLinkedAccount: BlockID.BIDLinkedAccount) -> (totp: BlockID.TOTP?, error: BlockID.ErrorResponse?)
-  public func checkUserExist(userId: Swift.String, origin: BlockID.BIDOrigin) -> Swift.Bool
+  public func checkUserExist(userId: Swift.String, origin: BlockID.BIDOrigin, completion: @escaping (Swift.Bool) -> ())
   public func addPreLinkedUser(userId: Swift.String, scep_hash: Swift.String, scep_privatekey: Swift.String, scep_expiry: Swift.String, origin: BlockID.BIDOrigin, account: BlockID.BIDAccount?, completion: @escaping BlockID.UserAPICallback)
   public func restoreUserDataFromWallet(completion: @escaping BlockID.UserAPICallback)
   public func addNativeAccount(method: Swift.String!, userId: Swift.String, password: Swift.String, origin: BlockID.BIDOrigin, deviceToken: Swift.String? = nil, lon: Swift.Double, lat: Swift.Double, completion: @escaping BlockID.UserAPICallback)
@@ -1516,7 +1516,7 @@ public struct CustomErrors {
   public static let kDocumentPhotoNotFound: (code: Swift.Int, msg: Swift.String)
   public static let kNoMigrationNeeded: (code: Swift.Int, msg: Swift.String)
   public static let kLiveIDMandatory: (code: Swift.Int, msg: Swift.String)
-  public static let K_REGISTRATION_IS_NOT_ALLOWED: (code: Swift.Int, message: Swift.String)
+  public static let K_REGISTRATION_NOT_ALLOWED: (code: Swift.Int, message: Swift.String)
   public static let kNotTrustedSessionSource: (code: Swift.Int, msg: Swift.String)
   public static let kPPAboutToExpire: (code: Swift.Int, msg: Swift.String)
   public static let kPPExpired: (code: Swift.Int, msg: Swift.String)
@@ -1706,6 +1706,7 @@ public enum CacheTTLLIMIT : Swift.Int {
   public func getCache(_ key: Swift.String) -> Swift.String?
   @objc deinit
 }
+public typealias BIDOriginCallback = ((_ status: Swift.Bool, _ account: BlockID.BIDLinkedAccount?, _ index: Swift.Int?) -> Swift.Void)
 public enum PACEMappingType {
   case GM
   case IM
