@@ -18,9 +18,8 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 ### v1.9.50
-- Fixed an issue of inconsistent date formatting across iOS and Android for Verified Credential details.
 - Fixed an issue of unable to perform password-less login after device is unlinked and invite is resent.
-- Fixed an issue of origin mismatch for different tenant DNS for same communityId/tenantId.
+- Handled auth requests for linked accounts when tenant has two DNS mappings.
 
 ### v1.9.40
 - Added a new function to fetch user documents which are registered against application DID
