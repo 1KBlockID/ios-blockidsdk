@@ -1145,6 +1145,10 @@ extension BlockID.NationalIDScanHelper : BlockID.NationalIDResponseDelegate {
   public var user_agent: Swift.String?
   public var network_info: Swift.String?
   public var device_name: Swift.String?
+  public var os: Swift.String?
+  public var os_version: Swift.String?
+  public var device_model: Swift.String?
+  public var device_make: Swift.String?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
