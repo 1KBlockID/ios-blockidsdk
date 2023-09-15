@@ -19,15 +19,16 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 
 ### v1.9.70
-- Resolved a crash issue during drivers license enrolment if the verification configuration is unavailable on server.
-- Enhanced device details now include device name, make and model for improved reporting capabilities.
+- Resolved a crash issue during drivers license enrolment if the verification configuration is unavailable on server
+- Enhanced device details now include device name, make and model for improved reporting capabilities
+- Fixed a crash in tenant registration while attempting to restore after first attempt failed
 
 ### v1.9.60
 - Version update
 
 ### v1.9.50
-- Fixed an issue of unable to perform password-less login after device is unlinked and invite is resent.
-- Handled auth requests for linked accounts when tenant has two DNS mappings.
+- Fixed an issue of unable to perform password-less login after device is unlinked and invite is resent
+- Handled auth requests for linked accounts when tenant has two DNS mappings
 
 ### v1.9.40
 - Added a new function to fetch user documents which are registered against application DID
