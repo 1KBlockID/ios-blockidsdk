@@ -19,7 +19,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 
 ### v1.9.80
-- Added a class named as IPProvider to get IPAddress
+- Introduced IPProvider class to get IPAddress
 
 ### v1.9.70
 - Resolved a crash issue during drivers license enrolment if the verification configuration is unavailable on server
