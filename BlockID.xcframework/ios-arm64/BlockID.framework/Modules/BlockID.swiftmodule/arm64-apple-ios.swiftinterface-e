@@ -2239,7 +2239,7 @@ public struct ProxyDetails {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BIDNetworkManager : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.BIDNetworkManager
   public func makeRequest<T>(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: BlockID.RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (BlockID.NetworkResponseCallback<T>) -> Swift.Void) where T : Swift.Decodable
-  public func makeRequest(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: BlockID.RequestBody?, requestHeaders: Alamofire.HTTPHeaders, timeOutInterval: Swift.Double = 0.0, completion: @escaping (Swift.String?, Swift.String?, Swift.Bool) -> Swift.Void)
+  public func makeRequest(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: BlockID.RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (Swift.String?, Swift.String?, Swift.Bool) -> Swift.Void)
   public func makeMultipartRequest<T>(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, multipartFormData: @escaping ((Alamofire.MultipartFormData) -> Swift.Void), requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (BlockID.NetworkResponseCallback<T>) -> Swift.Void) where T : Swift.Decodable
   @objc deinit
 }
