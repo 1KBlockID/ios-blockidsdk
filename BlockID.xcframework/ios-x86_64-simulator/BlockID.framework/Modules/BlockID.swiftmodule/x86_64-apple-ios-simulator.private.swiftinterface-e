@@ -284,6 +284,12 @@ public struct DTHStruct {
   public static func method04() -> Swift.Bool
   public static func method05() -> Swift.Bool
 }
+@objc @_inheritsConvenienceInitializers public class IPProvider : ObjectiveC.NSObject {
+  public static let shared: BlockID.IPProvider
+  public func getIPAddress() -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BIDVault : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.BIDVault
   public func setPin(pin: Swift.String)
@@ -671,6 +677,7 @@ public typealias FetchDocumentsCallback = ((_ status: Swift.Bool, _ responseDict
   public func migrateData(bidTenant: BlockID.BIDTenant, clientTenant: BlockID.BIDTenant, completion: @escaping BlockID.BIDMigrationCallback)
   public func getVersion() -> Swift.String?
   public func verifyDocument(dvcID: Swift.String? = nil, dic: [Swift.String : Any], verifications: [Swift.String], completion: @escaping ((Swift.Bool, [Swift.String : Any]?, BlockID.ErrorResponse?) -> Swift.Void))
+  public func requestSCEPCertificate(requestedAccount: BlockID.BIDLinkedAccount, completion: @escaping BlockID.SCEPCertificateCallback)
   public func checkSCEPCertificate(requestedAccount: BlockID.BIDLinkedAccount, completion: @escaping BlockID.SCEPCertificateCallback)
   @objc deinit
 }

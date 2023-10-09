@@ -359,6 +359,12 @@ SWIFT_CLASS("_TtC7BlockID13ErrorResponse")
 
 
 
+SWIFT_CLASS("_TtC7BlockID10IPProvider")
+@interface IPProvider : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7BlockID19LiveIDScannerHelper")
 @interface LiveIDScannerHelper : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
