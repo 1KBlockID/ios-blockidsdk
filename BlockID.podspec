@@ -33,7 +33,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   # add pod dependency
   s.dependency 'TrustWalletCore', '~> 2.5.6'
   s.dependency 'Alamofire','~> 4.9.1'
-  s.dependency 'CryptoSwift', '~> 1.3.0'
+  s.dependency 'CryptoSwift', '~> 1.6.0'
   s.dependency 'BigInt', '~> 4.0'
   s.dependency 'SwiftyTesseract', '~> 3.1.3'
   s.dependency 'OpenSSL-Universal', '~> 1.1.180'
