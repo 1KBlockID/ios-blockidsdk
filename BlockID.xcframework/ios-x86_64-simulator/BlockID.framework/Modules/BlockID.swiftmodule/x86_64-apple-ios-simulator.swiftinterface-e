@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -858,11 +858,6 @@ public enum AuthAssetType : Swift.String {
   required public init(from decoder: Swift.Decoder) throws
 }
 public typealias UpdateAccInfoCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
-public protocol RFIDResponseDelegate : AnyObject {
-  func rfidResponseWith(metadata: BlockID.MRZDocumentData?, photo: UIKit.UIImage?, dn: Swift.String?, signature: Swift.String?)
-  func rfidCancelledByUser()
-  func rfidInvalidInput()
-}
 public protocol PassportResponseDelegate : AnyObject {
   func passportScanCompleted(withPassport docDic: [Swift.String : Any]?, error: BlockID.ErrorResponse?, signatureToken signToken: Swift.String?, isWithRFID: Swift.Bool?)
   func readyForDetection()
@@ -872,18 +867,11 @@ public protocol PassportResponseDelegate : AnyObject {
   public func startPassportScanning()
   public func stopPassportScanning()
   public func isRunning() -> Swift.Bool
-  public func startRFIDScanning(defaultTimeout: Foundation.TimeInterval = 15)
-  public func stopRFIDScanning()
   @objc deinit
 }
 extension BlockID.PassportScanHelper : BlockID.PassportResponseDelegate {
   public func passportScanCompleted(withPassport docDic: [Swift.String : Any]?, error: BlockID.ErrorResponse?, signatureToken signToken: Swift.String?, isWithRFID: Swift.Bool? = false)
   public func readyForDetection()
-}
-extension BlockID.PassportScanHelper : BlockID.RFIDResponseDelegate {
-  public func rfidResponseWith(metadata: BlockID.MRZDocumentData?, photo: UIKit.UIImage?, dn: Swift.String?, signature: Swift.String?)
-  public func rfidCancelledByUser()
-  public func rfidInvalidInput()
 }
 public enum SecureMessagingSupportedAlgorithms {
   case DES
@@ -2381,6 +2369,22 @@ extension Swift.String {
   public func replace(target: Swift.String, with: Swift.String) -> Swift.String
   public func convertStringToHex() -> Swift.String
   public func convertHexToString() -> Swift.String
+}
+public protocol RFIDResponseDelegate : AnyObject {
+  func rfidResponseWith(metadata: BlockID.MRZDocumentData?, photo: UIKit.UIImage?, dn: Swift.String?, signature: Swift.String?)
+  func rfidCancelledByUser()
+  func rfidInvalidInput()
+}
+@objc public class RFIDScannerHelper : ObjectiveC.NSObject {
+  public init(isDataRequiredOnFail: Swift.Bool = false, ppResponseDelegate: BlockID.PassportResponseDelegate, ppObject: [Swift.String : Any], expiryGracePeriod: Swift.Int)
+  public func startRFIDScanning(defaultTimeout: Foundation.TimeInterval = 15)
+  public func stopRFIDScanning()
+  @objc deinit
+}
+extension BlockID.RFIDScannerHelper : BlockID.RFIDResponseDelegate {
+  public func rfidResponseWith(metadata: BlockID.MRZDocumentData?, photo: UIKit.UIImage?, dn: Swift.String?, signature: Swift.String?)
+  public func rfidCancelledByUser()
+  public func rfidInvalidInput()
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BIDNationalId : BlockID.BIDDocumentData {
   public var metadata: BlockID.MRZDocumentData?
