@@ -19,7 +19,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 
 ### v.1.9.83
-- Messaging updated for registration via Sim-binding
+- Fixed error handling for ACR code redemption
 
 ### v1.9.80
 - Added a new function to issue a scep certificate for non scep users
