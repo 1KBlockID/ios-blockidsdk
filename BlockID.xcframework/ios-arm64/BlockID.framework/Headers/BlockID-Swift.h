@@ -432,6 +432,7 @@ SWIFT_CLASS("_TtC7BlockID18PassportScanHelper")
 
 
 
+
 SWIFT_CLASS("_TtC7BlockID14PersonalAssets")
 @interface PersonalAssets : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -450,15 +451,6 @@ SWIFT_CLASS("_TtC7BlockID15QRScannerHelper")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-
-SWIFT_CLASS("_TtC7BlockID17RFIDScannerHelper")
-@interface RFIDScannerHelper : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 
 
 SWIFT_CLASS("_TtC7BlockID17SessionPollingAPI")
