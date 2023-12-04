@@ -87525,6 +87525,13 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
+      "offset": 11897,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "StringLiteral",
       "offset": 11929,
       "length": 2,
       "value": "\"\""
@@ -87532,56 +87539,49 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 11961,
+      "offset": 12652,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 12684,
+      "offset": 12683,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 12715,
+      "offset": 12936,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 12968,
+      "offset": 12962,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 12994,
+      "offset": 12998,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 13030,
+      "offset": 13032,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 13064,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 13095,
+      "offset": 13063,
       "length": 2,
       "value": "\"\""
     },
