@@ -4289,226 +4289,55 @@
         "printedName": "DocumentScannerViewController",
         "children": [
           {
-            "kind": "Var",
-            "name": "documentType",
-            "printedName": "documentType",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(docType:dvcId:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BlockID.DocumentScannerType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DocumentScannerType",
-                    "printedName": "BlockID.DocumentScannerType",
-                    "usr": "s:7BlockID19DocumentScannerTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID29DocumentScannerViewControllerC12documentTypeAA0cdH0OSgvp",
-            "mangledName": "$s7BlockID29DocumentScannerViewControllerC12documentTypeAA0cdH0OSgvp",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "Custom",
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "BlockID.DocumentScannerType?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DocumentScannerType",
-                        "printedName": "BlockID.DocumentScannerType",
-                        "usr": "s:7BlockID19DocumentScannerTypeO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID29DocumentScannerViewControllerC12documentTypeAA0cdH0OSgvg",
-                "mangledName": "$s7BlockID29DocumentScannerViewControllerC12documentTypeAA0cdH0OSgvg",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "get"
+                "name": "DocumentScannerViewController",
+                "printedName": "BlockID.DocumentScannerViewController",
+                "usr": "c:@M@BlockID@objc(cs)DocumentScannerViewController"
               },
               {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "BlockID.DocumentScannerType?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DocumentScannerType",
-                        "printedName": "BlockID.DocumentScannerType",
-                        "usr": "s:7BlockID19DocumentScannerTypeO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID29DocumentScannerViewControllerC12documentTypeAA0cdH0OSgvs",
-                "mangledName": "$s7BlockID29DocumentScannerViewControllerC12documentTypeAA0cdH0OSgvs",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "set"
+                "kind": "TypeNominal",
+                "name": "DocumentScannerType",
+                "printedName": "BlockID.DocumentScannerType",
+                "usr": "s:7BlockID19DocumentScannerTypeO"
               },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID29DocumentScannerViewControllerC12documentTypeAA0cdH0OSgvM",
-                "mangledName": "$s7BlockID29DocumentScannerViewControllerC12documentTypeAA0cdH0OSgvM",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "BlockID.DocumentScanDelegate?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DocumentScanDelegate",
-                    "printedName": "BlockID.DocumentScanDelegate",
-                    "usr": "s:7BlockID20DocumentScanDelegateP"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DocumentScanDelegate",
+                "printedName": "BlockID.DocumentScanDelegate",
+                "usr": "s:7BlockID20DocumentScanDelegateP"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:7BlockID29DocumentScannerViewControllerC8delegateAA0C12ScanDelegate_pSgvp",
-            "mangledName": "$s7BlockID29DocumentScannerViewControllerC8delegateAA0C12ScanDelegate_pSgvp",
+            "declKind": "Constructor",
+            "usr": "s:7BlockID29DocumentScannerViewControllerC7docType5dvcId8delegateAcA0cdH0O_SSSgAA0C12ScanDelegate_ptcfc",
+            "mangledName": "$s7BlockID29DocumentScannerViewControllerC7docType5dvcId8delegateAcA0cdH0O_SSSgAA0C12ScanDelegate_ptcfc",
             "moduleName": "BlockID",
             "declAttributes": [
               "Custom",
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
             ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "BlockID.DocumentScanDelegate?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DocumentScanDelegate",
-                        "printedName": "BlockID.DocumentScanDelegate",
-                        "usr": "s:7BlockID20DocumentScanDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID29DocumentScannerViewControllerC8delegateAA0C12ScanDelegate_pSgvg",
-                "mangledName": "$s7BlockID29DocumentScannerViewControllerC8delegateAA0C12ScanDelegate_pSgvg",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "BlockID.DocumentScanDelegate?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DocumentScanDelegate",
-                        "printedName": "BlockID.DocumentScanDelegate",
-                        "usr": "s:7BlockID20DocumentScanDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID29DocumentScannerViewControllerC8delegateAA0C12ScanDelegate_pSgvs",
-                "mangledName": "$s7BlockID29DocumentScannerViewControllerC8delegateAA0C12ScanDelegate_pSgvs",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID29DocumentScannerViewControllerC8delegateAA0C12ScanDelegate_pSgvM",
-                "mangledName": "$s7BlockID29DocumentScannerViewControllerC8delegateAA0C12ScanDelegate_pSgvM",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
+            "init_kind": "Convenience"
           },
           {
             "kind": "Function",
@@ -86174,7 +86003,7 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/DocumentScanner\/DocumentScannerViewController\/DocumentScannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 959,
+      "offset": 1376,
       "length": 1,
       "value": "1"
     },
@@ -88050,210 +87879,210 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82120,
+      "offset": 82750,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 86277,
+      "offset": 86907,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 86316,
+      "offset": 86946,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 86361,
+      "offset": 86991,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 86402,
+      "offset": 87032,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 86438,
+      "offset": 87068,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 86610,
+      "offset": 87240,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87200,
+      "offset": 87830,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87251,
+      "offset": 87881,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87297,
+      "offset": 87927,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87345,
+      "offset": 87975,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87391,
+      "offset": 88021,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87430,
+      "offset": 88060,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87476,
+      "offset": 88106,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87516,
+      "offset": 88146,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87554,
+      "offset": 88184,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87592,
+      "offset": 88222,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87630,
+      "offset": 88260,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87669,
+      "offset": 88299,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87709,
+      "offset": 88339,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87751,
+      "offset": 88381,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87792,
+      "offset": 88422,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87824,
+      "offset": 88454,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87864,
+      "offset": 88494,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87906,
+      "offset": 88536,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87947,
+      "offset": 88577,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 97305,
+      "offset": 97935,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 97391,
+      "offset": 98021,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "Array",
-      "offset": 97419,
+      "offset": 98049,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 97341,
+      "offset": 97971,
       "length": 3,
       "value": "\"BlockID.IAL\""
     },
