@@ -219,8 +219,7 @@ public protocol DocumentScanDelegate {
   func onDocumentScanResponse(status: Swift.Bool, document: Swift.String?, error: ErrorResponse?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var documentType: DocumentScannerType?
-  @_Concurrency.MainActor(unsafe) public var delegate: DocumentScanDelegate?
+  @_Concurrency.MainActor(unsafe) convenience public init(docType: DocumentScannerType, dvcId: Swift.String? = nil, delegate: DocumentScanDelegate)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)

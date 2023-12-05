@@ -10,7 +10,7 @@
 		</data>
 		<key>DocumentScannerViewController.nib</key>
 		<data>
-		J1gTYOaMN92Gor4huBFcpVGBbLI=
+		Ycd/zCvehlrEE+PEh52brfr9f0Y=
 		</data>
 		<key>Headers/BlockID-Swift.h</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5T/ad0iISW9iytKAGd+A0EphuSk=
+		HfxBLaNWkGkONu27Qw7btNs+0MQ=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		y5iQ7UBXcZx4cM0gioVtnL7oS7s=
+		5fnK/CdtlGMPZyW3K0OkmwhkrSM=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		QkpH8v7M2tg+Sht4sGmhRnJiOQg=
+		VLFX4MnK4H4kZpxxxFUVb18Ovwk=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		QkpH8v7M2tg+Sht4sGmhRnJiOQg=
+		VLFX4MnK4H4kZpxxxFUVb18Ovwk=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		zlO0IeGWm4y/9KOZ9ZyGY5HeuFk=
+		e7LAngwNR6MDDlGW/R8xkrPPU+Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,7 +94,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yU/OHbQTKuNVQsrr899pL9fwdplsGk5gsH5x5XN+2rI=
+			tqJHgH6sjUKr99nlMxx4poFFFCY2URsW+PRe3P/ovDM=
 			</data>
 		</dict>
 		<key>Headers/BlockID-Swift.h</key>
@@ -129,14 +129,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e5hjquOSc6IpKMmPX/ajsDVCSmAL+mU0hbtcOJONhEw=
+			3+mBIHT/jMdbzhFK2lQTf41tmzuIfi2VuJsR/wxMOoU=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tMwAB4H0PYLCDBV3Lxw6QqQfeWaLuH5rKa+AutLhKQE=
+			9NaAxK7IKXSnVquGex7isoghrNT42LOCpRl1BYuHB1U=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -150,14 +150,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tMwAB4H0PYLCDBV3Lxw6QqQfeWaLuH5rKa+AutLhKQE=
+			9NaAxK7IKXSnVquGex7isoghrNT42LOCpRl1BYuHB1U=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			brquIKHajZhWbeyWS/2ZUTxJXwOPSRhrHH2sSgPEcCE=
+			B2Vt+WUVIFjLfKwpLQOzv+w4D5jFi1GLsEXv9RDoeSg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
