@@ -133,6 +133,9 @@ public enum KeychainItemAccessibility {
   public var tenantId: Swift.String?
   public var communityId: Swift.String?
   public var otpSeed: Swift.String?
+  public var getAccountOTP: BlockID.TOTP? {
+    get
+  }
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -654,7 +657,6 @@ public typealias PollSessionCallback = ((_ status: Swift.Bool, _ error: BlockID.
   public func commitTempData()
   public func resetRestorationData()
   public func getTOTP() -> (totp: BlockID.TOTP?, error: BlockID.ErrorResponse?)
-  public func generateTOTP(fromOtpSeed otpSeed: Swift.String) -> (totp: BlockID.TOTP?, error: BlockID.ErrorResponse?)
   public func getOfflineTOTP(bidLinkedAccount: BlockID.BIDLinkedAccount) -> (totp: BlockID.TOTP?, error: BlockID.ErrorResponse?)
   public func checkUserExist(userId: Swift.String, origin: BlockID.BIDOrigin, completion: @escaping (Swift.Bool) -> ())
   public func addPreLinkedUser(userId: Swift.String, scep_hash: Swift.String, scep_privatekey: Swift.String, scep_expiry: Swift.String, origin: BlockID.BIDOrigin, account: BlockID.BIDAccount?, completion: @escaping BlockID.UserAPICallback)
