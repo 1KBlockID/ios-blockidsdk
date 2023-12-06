@@ -133,9 +133,7 @@ public enum KeychainItemAccessibility {
   public var tenantId: Swift.String?
   public var communityId: Swift.String?
   public var otpSeed: Swift.String?
-  public var getAccountOTP: BlockID.TOTP? {
-    get
-  }
+  public func getAccountOTP() -> BlockID.TOTP?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
