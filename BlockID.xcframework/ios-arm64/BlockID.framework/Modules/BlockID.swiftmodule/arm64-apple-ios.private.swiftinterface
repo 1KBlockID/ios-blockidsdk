@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -130,10 +130,6 @@ public enum KeychainItemAccessibility {
 }
 @_hasMissingDesignatedInitializers public class BIDAccount : Swift.Codable {
   public var source: Swift.String?
-  public var tenantId: Swift.String?
-  public var communityId: Swift.String?
-  public var otpSeed: Swift.String?
-  public func getAccountOTP() -> TOTP?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -218,19 +214,6 @@ public class DataGroup7 : DataGroup {
   }
   @objc deinit
 }
-public protocol DocumentScanDelegate {
-  func onDocumentScanResponse(status: Swift.Bool, document: Swift.String?, error: ErrorResponse?)
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) convenience public init(docType: DocumentScannerType, dvcId: Swift.String? = nil, delegate: any DocumentScanDelegate)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension DocumentScannerViewController : SafariServices.SFSafariViewControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
-}
 @objc @_inheritsConvenienceInitializers public class AccountAuthConstants : ObjectiveC.NSObject {
   public static let kAuthSender: Swift.String
   public static let kNativeAuthScehema: Swift.String
@@ -299,12 +282,6 @@ public struct DTHStruct {
   public static func method03() -> Swift.Bool
   public static func method04() -> Swift.Bool
   public static func method05() -> Swift.Bool
-}
-@objc @_inheritsConvenienceInitializers public class IPProvider : ObjectiveC.NSObject {
-  public static let shared: IPProvider
-  public func getIPAddress() -> Swift.String?
-  @objc override dynamic public init()
-  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BIDVault : ObjectiveC.NSObject {
   public static let sharedInstance: BIDVault
@@ -611,10 +588,6 @@ public typealias IALCallback = ((_ status: Swift.Bool, _ ialValue: Swift.String,
 public typealias VCsCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 public typealias VPCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 public typealias GlobalConfigCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: GlobalConfigResponse?) -> Swift.Void)
-public typealias FetchDocumentsCallback = ((_ status: Swift.Bool, _ responseDict: [Swift.String : Any]?, _ error: ErrorResponse?) -> Swift.Void)
-public typealias FetchUserAccountInfoCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
-public typealias DocumentSessionCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: BIDDocumentSessionResponse?) -> Swift.Void)
-public typealias PollSessionCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockIDSDK
   public func isReady() -> Swift.Bool
@@ -642,7 +615,6 @@ public typealias PollSessionCallback = ((_ status: Swift.Bool, _ error: ErrorRes
   public func registerDocument(obj: [Swift.String : Any], storeArtifacts: Swift.Bool, syncArtifacts: Swift.Bool, liveIdProofedBy: Swift.String, docSignToken: Swift.String? = nil, faceImage: UIKit.UIImage, liveIDSignToken: Swift.String? = nil, completion: @escaping UserAPICallback)
   public func isCurrentDocumentExists(dictDoc: [Swift.String : Any]) -> Swift.Bool
   public func unregisterDocument(dictDoc: [Swift.String : Any], completion: @escaping UserAPICallback)
-  public func fetchDocuments(requestDict: [Swift.String : Any], _ completion: @escaping FetchDocumentsCallback)
   public func setProxy(host: Swift.String, port: Swift.Int, userName: Swift.String, password: Swift.String, isHTPPOnly: Swift.Bool)
   public func getProxyDetails() -> ProxyDetails?
   public func isPinRegistered() -> Swift.Bool
@@ -656,7 +628,7 @@ public typealias PollSessionCallback = ((_ status: Swift.Bool, _ error: ErrorRes
   public func resetRestorationData()
   public func getTOTP() -> (totp: TOTP?, error: ErrorResponse?)
   public func getOfflineTOTP(bidLinkedAccount: BIDLinkedAccount) -> (totp: TOTP?, error: ErrorResponse?)
-  public func checkUserExist(userId: Swift.String, origin: BIDOrigin, completion: @escaping (Swift.Bool) -> ())
+  public func checkUserExist(userId: Swift.String, origin: BIDOrigin) -> Swift.Bool
   public func addPreLinkedUser(userId: Swift.String, scep_hash: Swift.String, scep_privatekey: Swift.String, scep_expiry: Swift.String, origin: BIDOrigin, account: BIDAccount?, completion: @escaping UserAPICallback)
   public func restoreUserDataFromWallet(completion: @escaping UserAPICallback)
   public func addNativeAccount(method: Swift.String!, userId: Swift.String, password: Swift.String, origin: BIDOrigin, deviceToken: Swift.String? = nil, lon: Swift.Double, lat: Swift.Double, completion: @escaping UserAPICallback)
@@ -696,7 +668,6 @@ public typealias PollSessionCallback = ((_ status: Swift.Bool, _ error: ErrorRes
   public func migrateData(bidTenant: BIDTenant, clientTenant: BIDTenant, completion: @escaping BIDMigrationCallback)
   public func getVersion() -> Swift.String?
   public func verifyDocument(dvcID: Swift.String? = nil, dic: [Swift.String : Any], verifications: [Swift.String], completion: @escaping ((Swift.Bool, [Swift.String : Any]?, ErrorResponse?) -> Swift.Void))
-  public func requestSCEPCertificate(requestedAccount: BIDLinkedAccount, completion: @escaping SCEPCertificateCallback)
   public func checkSCEPCertificate(requestedAccount: BIDLinkedAccount, completion: @escaping SCEPCertificateCallback)
   @objc deinit
 }
@@ -736,16 +707,6 @@ extension BlockIDSDK {
 }
 extension BlockIDSDK {
   public func fetchGlobalConfig(_ tenant: BIDTenant, completion: @escaping GlobalConfigCallback)
-}
-extension BlockIDSDK {
-  public func updateAccountInfo(account: BIDLinkedAccount, pushID: Swift.String? = nil, deviceInfo: [Swift.String : Any], completion: @escaping UpdateAccInfoCallback)
-}
-extension BlockIDSDK {
-  public func fetchUserAccountsInfo(accounts: [BIDLinkedAccount], completion: @escaping FetchUserAccountInfoCallback)
-}
-extension BlockIDSDK {
-  public func createDocumentSession(docType: DocumentScannerType, dvcId: Swift.String? = nil, completion: @escaping DocumentSessionCallback)
-  public func pollDocumentSession(sessionId: Swift.String, dvcId: Swift.String? = nil, completion: @escaping PollSessionCallback)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TOTPUtils : ObjectiveC.NSObject {
   public static let sharedInstance: TOTPUtils
@@ -883,7 +844,11 @@ public enum AuthAssetType : Swift.String {
   @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
 }
-public typealias UpdateAccInfoCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
+public protocol RFIDResponseDelegate : AnyObject {
+  func rfidResponseWith(metadata: MRZDocumentData?, photo: UIKit.UIImage?, dn: Swift.String?, signature: Swift.String?)
+  func rfidCancelledByUser()
+  func rfidInvalidInput()
+}
 public protocol PassportResponseDelegate : AnyObject {
   func passportScanCompleted(withPassport docDic: [Swift.String : Any]?, error: ErrorResponse?, signatureToken signToken: Swift.String?, isWithRFID: Swift.Bool?)
   func readyForDetection()
@@ -893,11 +858,18 @@ public protocol PassportResponseDelegate : AnyObject {
   public func startPassportScanning()
   public func stopPassportScanning()
   public func isRunning() -> Swift.Bool
+  public func startRFIDScanning(defaultTimeout: Foundation.TimeInterval = 15)
+  public func stopRFIDScanning()
   @objc deinit
 }
 extension PassportScanHelper : PassportResponseDelegate {
   public func passportScanCompleted(withPassport docDic: [Swift.String : Any]?, error: ErrorResponse?, signatureToken signToken: Swift.String?, isWithRFID: Swift.Bool? = false)
   public func readyForDetection()
+}
+extension PassportScanHelper : RFIDResponseDelegate {
+  public func rfidResponseWith(metadata: MRZDocumentData?, photo: UIKit.UIImage?, dn: Swift.String?, signature: Swift.String?)
+  public func rfidCancelledByUser()
+  public func rfidInvalidInput()
 }
 public enum SecureMessagingSupportedAlgorithms {
   case DES
@@ -1094,19 +1066,11 @@ extension NationalIDScanHelper : NationalIDResponseDelegate {
   required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class RegisterUserData : Swift.Codable {
-  public var type: Swift.String?
-  public var id: Swift.String?
-  public var data: Swift.String?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class RegisterUserDataResponse : Swift.Codable {
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@_hasMissingDesignatedInitializers public class GetDocumentResponse : Swift.Codable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1165,10 +1129,6 @@ extension NationalIDScanHelper : NationalIDResponseDelegate {
   public var user_agent: Swift.String?
   public var network_info: Swift.String?
   public var device_name: Swift.String?
-  public var os: Swift.String?
-  public var os_version: Swift.String?
-  public var device_model: Swift.String?
-  public var device_make: Swift.String?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1443,21 +1403,6 @@ extension DriverLicenseScanHelper : DriverLicenseResponseDelegate {
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
-public enum DocumentScannerType : Swift.String {
-  case DL
-  case PPT
-  case IDCARD
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public struct BIDDocumentSessionResponse : Swift.Decodable {
-  public var sessionId: Swift.String?
-  public var url: Swift.String?
-  public init(from decoder: any Swift.Decoder) throws
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
 public class DataGroup14 : DataGroup {
   public var securityInfos: [SecurityInfo] {
@@ -1530,11 +1475,6 @@ public struct CustomErrors {
     public static let SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
     public static let INVALID_VC_DATA: (code: Swift.Int, message: Swift.String)
   }
-  public struct DocumentScanner {
-    public static let CANCELED: (code: Swift.Int, message: Swift.String)
-    public static let INVALID_DOC_TYPE: (code: Swift.Int, message: Swift.String)
-    public static let TIMEOUT: (code: Swift.Int, message: Swift.String)
-  }
   public static let kWalletCreationFailed: (code: Swift.Int, msg: Swift.String)
   public static let kUserIdAlreadyExists: (code: Swift.Int, msg: Swift.String)
   public static let kSomethingWentWrong: (code: Swift.Int, msg: Swift.String)
@@ -1560,7 +1500,6 @@ public struct CustomErrors {
   public static let kDocumentPhotoNotFound: (code: Swift.Int, msg: Swift.String)
   public static let kNoMigrationNeeded: (code: Swift.Int, msg: Swift.String)
   public static let kLiveIDMandatory: (code: Swift.Int, msg: Swift.String)
-  public static let K_REGISTRATION_NOT_ALLOWED: (code: Swift.Int, message: Swift.String)
   public static let kNotTrustedSessionSource: (code: Swift.Int, msg: Swift.String)
   public static let kPPAboutToExpire: (code: Swift.Int, msg: Swift.String)
   public static let kPPExpired: (code: Swift.Int, msg: Swift.String)
@@ -1744,13 +1683,10 @@ public enum CacheTTLLIMIT : Swift.Int {
 }
 @_hasMissingDesignatedInitializers public class BIDSDKCacheManager {
   public static let shared: BIDSDKCacheManager
-  final public let kMyIPKey: Swift.String
   public func setCache(_ key: Swift.String, _ value: Swift.String?, _ ttl: CacheTTLLIMIT)
-  public func setCache(_ key: Swift.String, _ value: Swift.String?, _ ttl: Swift.Int)
-  public func getCache(_ key: Swift.String) -> Swift.String?
+  public func getCache(_ key: Swift.String, _ ttl: CacheTTLLIMIT) -> Swift.String?
   @objc deinit
 }
-public typealias BIDOriginCallback = ((_ status: Swift.Bool, _ account: BIDLinkedAccount?, _ index: Swift.Int?) -> Swift.Void)
 public enum PACEMappingType {
   case GM
   case IM
@@ -2416,18 +2352,6 @@ extension Swift.String {
   public func convertStringToHex() -> Swift.String
   public func convertHexToString() -> Swift.String
 }
-public protocol RFIDResponseDelegate : AnyObject {
-  func rfidScanCompleted(withPassport docDic: [Swift.String : Any]?, error: ErrorResponse?)
-}
-@objc public class RFIDScannerHelper : ObjectiveC.NSObject {
-  public init(isDataRequiredOnFail: Swift.Bool = false, rfidResponseDelegate: any RFIDResponseDelegate, ppObject: [Swift.String : Any], expiryGracePeriod: Swift.Int)
-  public func startRFIDScanning(defaultTimeout: Foundation.TimeInterval = 15)
-  public func stopRFIDScanning()
-  @objc deinit
-}
-extension RFIDScannerHelper : RFIDResponseDelegate {
-  public func rfidScanCompleted(withPassport docDic: [Swift.String : Any]?, error: ErrorResponse?)
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BIDNationalId : BIDDocumentData {
   public var metadata: MRZDocumentData?
   public var mrz_result: Swift.String?
@@ -2557,9 +2481,6 @@ extension DocTypeEnum : Swift.Hashable {}
 extension DocTypeEnum : Swift.RawRepresentable {}
 extension DLScanningSide : Swift.Equatable {}
 extension DLScanningSide : Swift.Hashable {}
-extension DocumentScannerType : Swift.Equatable {}
-extension DocumentScannerType : Swift.Hashable {}
-extension DocumentScannerType : Swift.RawRepresentable {}
 extension FIDO2KeyType : Swift.Equatable {}
 extension FIDO2KeyType : Swift.Hashable {}
 extension FIDO2KeyType : Swift.RawRepresentable {}
