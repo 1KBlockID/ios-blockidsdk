@@ -8,13 +8,9 @@
 		<data>
 		IYBij9GydQRzpiL4rPWfKsM6NSs=
 		</data>
-		<key>DocumentScannerViewController.nib</key>
-		<data>
-		Ycd/zCvehlrEE+PEh52brfr9f0Y=
-		</data>
 		<key>Headers/BlockID-Swift.h</key>
 		<data>
-		BV5JQiUpsFRZpktVY4Ju7LQjkvs=
+		IdIq6xrLVZv4avI7RR0GQexe1Vw=
 		</data>
 		<key>Headers/BlockID.h</key>
 		<data>
@@ -30,27 +26,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		B58mUJ+Vt+UgseZZWhmt2LDlCbc=
+		mrsoVBqkWNxRsf3h0xPR+y4iBLA=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5fnK/CdtlGMPZyW3K0OkmwhkrSM=
+		kuEoTRNbwymd/q/+GQSxuJkwDmk=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/gGoZ9Ve3ar5ySNaRbwBBpo82bM=
+		W732c11SZ8FjDmh8rkQd+OuOcbc=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ToFNuRSmLjpbpWadDTOU7DR5J2Q=
+		e/+AprdVDc9lXVjt8poeTFcOXO4=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/gGoZ9Ve3ar5ySNaRbwBBpo82bM=
+		W732c11SZ8FjDmh8rkQd+OuOcbc=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hTO1eG9bt8XLXLWs7hBhcXfDV0s=
+		VHu5NfpRepyN8AdMP6jozSmyvVc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,19 +58,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		oKAWE/JtJvUzZIKMyXGxS5ZDuyo=
-		</data>
-		<key>iconLoading.png</key>
-		<data>
-		n+hYmuO5mT98PQK8hsphbEQSTAI=
-		</data>
-		<key>iconLoading@2x.png</key>
-		<data>
-		PMQ/DsxN9OAig93uFyTzEwafpqk=
-		</data>
-		<key>iconLoading@3x.png</key>
-		<data>
-		YIjnGLBnnSRaSpmAmIm4Zs0Nkqs=
+		2hLEj1gKXAfNd+87Sf2UqMBQ/ZM=
 		</data>
 		<key>tessdata/OCRB.traineddata</key>
 		<data>
@@ -90,18 +74,11 @@
 			bQIms0F9IjCVHdUeaZQjctxfUEteMggrEliTPm/4BnI=
 			</data>
 		</dict>
-		<key>DocumentScannerViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tqJHgH6sjUKr99nlMxx4poFFFCY2URsW+PRe3P/ovDM=
-			</data>
-		</dict>
 		<key>Headers/BlockID-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YHJsVnAySEyuNHAoaVSQ6y54B54Mzgpe/n7QiEA3rHs=
+			YFNwh9u7wkTb/NqfWI+TKq5LQ8WLwruIjZLoc7jA3D4=
 			</data>
 		</dict>
 		<key>Headers/BlockID.h</key>
@@ -129,35 +106,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3+mBIHT/jMdbzhFK2lQTf41tmzuIfi2VuJsR/wxMOoU=
+			kK31QIsuMfl5TIdXJE3hd7tGUvbkue4CEpfWZ1zFIqA=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mT+iH0IUC+wQHECl9/61nJTbMG5/1NiEsUaiXHNDG9Q=
+			ZQQazqNN/nczDYq2uLrYbWJ+Ah6nElP2clbS4dSmnZY=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m864yi0TXWOuEBhYkOAUVR9qjgeZLL3cLPDBnI/gVWA=
+			413p65sXCy+dFWaLRn2tJ2GMInJNn+Yb5cyXZLmPhpQ=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mT+iH0IUC+wQHECl9/61nJTbMG5/1NiEsUaiXHNDG9Q=
+			ZQQazqNN/nczDYq2uLrYbWJ+Ah6nElP2clbS4dSmnZY=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4gdHn1tAKE9L0skxqjzVqwhCKbuy7B8eEuxMKXsz3XA=
+			CPiiu7w5jexBPJnCbaJaMiPSmt5yxOn69pJAl7LLB9A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -178,28 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l3bwgc20bafuHlPgdD33sh7tIhU7zZ4LIDwy3ZrurMY=
-			</data>
-		</dict>
-		<key>iconLoading.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jS6Yo/O3pNCHYmbnL8jjpVP/NTLtCiEY9w1Nq0/CZq8=
-			</data>
-		</dict>
-		<key>iconLoading@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MxYnJ5QGnMvUlYlwvxkyn7E1QZQcI3N9sCv9ImRCqFA=
-			</data>
-		</dict>
-		<key>iconLoading@3x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Dd/437wdduGHCSmUcgkzYuT9PhE/yWAyv2p9qTa4D4I=
+			7ogyofG+To3CKMBOemYWgz+9a85+J7gRP6ZNejMLx4o=
 			</data>
 		</dict>
 		<key>tessdata/OCRB.traineddata</key>
