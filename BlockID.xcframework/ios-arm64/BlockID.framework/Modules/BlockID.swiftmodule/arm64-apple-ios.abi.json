@@ -2487,44 +2487,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreNFC",
-        "printedName": "CoreNFC",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "CFDocumentScanSDK",
-        "printedName": "CFDocumentScanSDK",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "BIDAccount",
         "printedName": "BIDAccount",
@@ -30427,33 +30389,6 @@
             "init_kind": "Designated"
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(nidscanResponseDelegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NationalIDScanHelper",
-                "printedName": "BlockID.NationalIDScanHelper",
-                "usr": "c:@M@BlockID@objc(cs)NationalIDScanHelper"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NationalIDResponseDelegate",
-                "printedName": "BlockID.NationalIDResponseDelegate",
-                "usr": "s:7BlockID26NationalIDResponseDelegateP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7BlockID20NationalIDScanHelperC23nidscanResponseDelegateAcA0c10IDResponseH0_p_tcfc",
-            "mangledName": "$s7BlockID20NationalIDScanHelperC23nidscanResponseDelegateAcA0c10IDResponseH0_p_tcfc",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Function",
             "name": "startNationalIDScanning",
             "printedName": "startNationalIDScanning(scanningSide:)",
@@ -47516,80 +47451,6 @@
           },
           {
             "kind": "Var",
-            "name": "kInvalidDL",
-            "printedName": "kInvalidDL",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(code: Swift.Int, msg: Swift.String)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID12CustomErrorsV10kInvalidDLSi4code_SS3msgtvpZ",
-            "mangledName": "$s7BlockID12CustomErrorsV10kInvalidDLSi4code_SS3msgtvpZ",
-            "moduleName": "BlockID",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, msg: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID12CustomErrorsV10kInvalidDLSi4code_SS3msgtvgZ",
-                "mangledName": "$s7BlockID12CustomErrorsV10kInvalidDLSi4code_SS3msgtvgZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "kInvalidPP",
             "printedName": "kInvalidPP",
             "children": [
@@ -47655,80 +47516,6 @@
                 "declKind": "Accessor",
                 "usr": "s:7BlockID12CustomErrorsV10kInvalidPPSi4code_SS3msgtvgZ",
                 "mangledName": "$s7BlockID12CustomErrorsV10kInvalidPPSi4code_SS3msgtvgZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "kInvalidNID",
-            "printedName": "kInvalidNID",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(code: Swift.Int, msg: Swift.String)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID12CustomErrorsV11kInvalidNIDSi4code_SS3msgtvpZ",
-            "mangledName": "$s7BlockID12CustomErrorsV11kInvalidNIDSi4code_SS3msgtvpZ",
-            "moduleName": "BlockID",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, msg: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID12CustomErrorsV11kInvalidNIDSi4code_SS3msgtvgZ",
-                "mangledName": "$s7BlockID12CustomErrorsV11kInvalidNIDSi4code_SS3msgtvgZ",
                 "moduleName": "BlockID",
                 "static": true,
                 "implicit": true,
@@ -47960,80 +47747,6 @@
           },
           {
             "kind": "Var",
-            "name": "kScanError",
-            "printedName": "kScanError",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(code: Swift.Int, msg: Swift.String)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID12CustomErrorsV10kScanErrorSi4code_SS3msgtvpZ",
-            "mangledName": "$s7BlockID12CustomErrorsV10kScanErrorSi4code_SS3msgtvpZ",
-            "moduleName": "BlockID",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, msg: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID12CustomErrorsV10kScanErrorSi4code_SS3msgtvgZ",
-                "mangledName": "$s7BlockID12CustomErrorsV10kScanErrorSi4code_SS3msgtvgZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "kLiveIDMismatch",
             "printedName": "kLiveIDMismatch",
             "children": [
@@ -48245,79 +47958,6 @@
                 "declKind": "Accessor",
                 "usr": "s:7BlockID12CustomErrorsV31kDocumentPhotoComparisionFailedSi4code_SS3msgtvgZ",
                 "mangledName": "$s7BlockID12CustomErrorsV31kDocumentPhotoComparisionFailedSi4code_SS3msgtvgZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "kDocumentAboutToExpire",
-            "printedName": "kDocumentAboutToExpire",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(code: Swift.Int, msg: Swift.String)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID12CustomErrorsV22kDocumentAboutToExpireSi4code_SS3msgtvpZ",
-            "mangledName": "$s7BlockID12CustomErrorsV22kDocumentAboutToExpireSi4code_SS3msgtvpZ",
-            "moduleName": "BlockID",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, msg: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID12CustomErrorsV22kDocumentAboutToExpireSi4code_SS3msgtvgZ",
-                "mangledName": "$s7BlockID12CustomErrorsV22kDocumentAboutToExpireSi4code_SS3msgtvgZ",
                 "moduleName": "BlockID",
                 "static": true,
                 "implicit": true,
@@ -85395,48 +85035,6 @@
       "value": "\"BlockID.ChipAuthenticationPublicKeyInfo\""
     },
     {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/SupportingScanner\/DocumentScannerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 709,
-      "length": 8,
-      "value": "\"status\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/SupportingScanner\/DocumentScannerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 745,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/SupportingScanner\/DocumentScannerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 781,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/SupportingScanner\/DocumentScannerHelper.swift",
-      "kind": "FloatLiteral",
-      "offset": 1021,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/SupportingScanner\/DocumentScannerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 1396,
-      "length": 17,
-      "value": "\"dl_authenticate\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/SupportingScanner\/DocumentScannerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 1455,
-      "length": 21,
-      "value": "\"idcard_authenticate\""
-    },
-    {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
       "offset": 178,
@@ -87805,14 +87403,7 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/NationalID\/NationalIDScanHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1245,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/NationalID\/NationalIDScanHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1297,
+      "offset": 1256,
       "length": 5,
       "value": "false"
     },
@@ -88792,14 +88383,7 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/DriverLicense\/DriverLicenseScanHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1311,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/DriverLicense\/DriverLicenseScanHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1363,
+      "offset": 1322,
       "length": 5,
       "value": "false"
     },
@@ -89086,21 +88670,21 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12630,
+      "offset": 12144,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 12665,
+      "offset": 12179,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 12577,
+      "offset": 12091,
       "length": 13,
       "value": "\"BlockID.ErrorResponse\""
     },
