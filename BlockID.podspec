@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint BlockIDSDK.podspec' to ensure this is a
+# Be sure to run `pod lib lint BlockID.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -17,7 +17,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
 
   s.homepage         = 'https://github.com/1KBlockID/ios-blockidsdk.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sushil-tiwari-1kosmos' => 'sushil.tiwari@1kosmos.com' }
+  s.author           = { 'info-1kosmos' => 'info@1kosmos.com' }
   s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.9.90' }
 
   # set platform and minimum deployment target
@@ -28,7 +28,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.frameworks = 'UIKit', 'CryptoTokenKit', 'SafariServices'
 
   # add BlockIDSDK.framework dependency
-  s.vendored_frameworks = 'BlockID.xcframework', 'Dependencies/IDMetricsSelfieCapture.xcframework', 'Dependencies/CFDocumentScanSDK.xcframework'
+  s.vendored_frameworks = 'BlockID.xcframework', 'Dependencies/IDMetricsSelfieCapture.xcframework'
 
   # add pod dependency
   s.dependency 'TrustWalletCore', '~> 2.5.6'

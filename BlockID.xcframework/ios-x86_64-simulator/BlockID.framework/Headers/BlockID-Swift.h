@@ -362,7 +362,6 @@ SWIFT_CLASS("_TtC7BlockID23DriverLicenseScanHelper")
 
 
 
-
 SWIFT_CLASS("_TtC7BlockID11Enrollments")
 @interface Enrollments : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
