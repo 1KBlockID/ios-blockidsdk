@@ -2199,8 +2199,6 @@ public class OfflineAuthAccountDetail : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public struct BIDDL {
-}
 public struct DriverLicenseData : Swift.Codable {
   public var issuerIdentificationNumber: Swift.String?
   public var fullName: Swift.String?
