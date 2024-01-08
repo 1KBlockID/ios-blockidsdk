@@ -8,9 +8,13 @@
 		<data>
 		IYBij9GydQRzpiL4rPWfKsM6NSs=
 		</data>
+		<key>DocumentScannerViewController.nib</key>
+		<data>
+		Ycd/zCvehlrEE+PEh52brfr9f0Y=
+		</data>
 		<key>Headers/BlockID-Swift.h</key>
 		<data>
-		6SkHc/v5MB/WUvS5OUU9V+wxodc=
+		nbz2Ga8BMei6zAQelqm7zU51vxY=
 		</data>
 		<key>Headers/BlockID.h</key>
 		<data>
@@ -26,27 +30,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sSLc2vh9sTRdcl16UNiKN9yn3og=
+		z5EHKFe6K9QzFZCUWaNn9iIf0i4=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		BTv+55TgMNboE8ODu5cTOB2I7b4=
+		cWDc5AasSLMYuCXTIMZvLnNELek=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		BOcAAvHZwGCXOPAu/CaiyE5GUHw=
+		Wk7Ed0wnAuyJiMxS1Q3UWuTagps=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		jN4Vmd4wlqgMi9O2DndpbpjCCRk=
+		EzOpyjDtzkTyfasUJpapAxWQhGM=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		BOcAAvHZwGCXOPAu/CaiyE5GUHw=
+		Wk7Ed0wnAuyJiMxS1Q3UWuTagps=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ymeZQ5OXU9piOtDPcSdLvF1uXIk=
+		WoaIbj+eFFHS75tu/DkiUkNfmVA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,11 +62,19 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		OvFtZsL7Xb8SinINmTRLGv3WSkM=
+		N+mxc05rB8aqVqXI/okKDUIyPXw=
 		</data>
-		<key>tessdata/OCRB.traineddata</key>
+		<key>iconLoading.png</key>
 		<data>
-		IPNTIpmcOOdfGPbpc8p4uReVAhA=
+		n+hYmuO5mT98PQK8hsphbEQSTAI=
+		</data>
+		<key>iconLoading@2x.png</key>
+		<data>
+		PMQ/DsxN9OAig93uFyTzEwafpqk=
+		</data>
+		<key>iconLoading@3x.png</key>
+		<data>
+		YIjnGLBnnSRaSpmAmIm4Zs0Nkqs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -74,11 +86,18 @@
 			bQIms0F9IjCVHdUeaZQjctxfUEteMggrEliTPm/4BnI=
 			</data>
 		</dict>
+		<key>DocumentScannerViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tqJHgH6sjUKr99nlMxx4poFFFCY2URsW+PRe3P/ovDM=
+			</data>
+		</dict>
 		<key>Headers/BlockID-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qNkbcNNXbquUQhx+0L7K2T3yPDDmO3h7hEgUsENN4OE=
+			555/yHHONC9v0g255dUaOoIxz7W4W2ucPunrfH+U1PI=
 			</data>
 		</dict>
 		<key>Headers/BlockID.h</key>
@@ -106,35 +125,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OLOa87wGZt/C0GR7ktjA2pbn54N9Oau6AQvdSEAeUnk=
+			N3w53zlKaR0IkppuFGfSP6JkmPUP/zxxUk7GJnce9hk=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fSPuFRcI98TeOI9AZyYHe0QjqrcABt6bwexznW/8Qmc=
+			OHYLpw26bpDrs8799URiJ+3wxCm69gRz5rCFs0WL2xI=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			20OSV5YBiGTzvWJM7Bomc+qqNIprRmuro8RSjuBUx2k=
+			gm+tRJqKzvndiYnPNCAAb4N0mGUPcNqUvP1IsLi96N8=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fSPuFRcI98TeOI9AZyYHe0QjqrcABt6bwexznW/8Qmc=
+			OHYLpw26bpDrs8799URiJ+3wxCm69gRz5rCFs0WL2xI=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zyiSvl6MaeN9/gOiBzYANb96eQXjWTiz8PcT1rUrVhg=
+			Yn0GxwKYNXbmw0zfltwlHVrMgjuaqOl6DZ/gR59rEzI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -155,14 +174,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/F8cWZ1alge9mNtDEgtbIAG5QTGINtlFW7ZBopR8glc=
+			tk00+GfarqzNdDdHCCo7vl7LAWX1Cmrk/O6VfQnRt3s=
 			</data>
 		</dict>
-		<key>tessdata/OCRB.traineddata</key>
+		<key>iconLoading.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AGgqjGNIGfLmRXX7xNv36WV8PnFUcnNnkYAeHssunso=
+			jS6Yo/O3pNCHYmbnL8jjpVP/NTLtCiEY9w1Nq0/CZq8=
+			</data>
+		</dict>
+		<key>iconLoading@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MxYnJ5QGnMvUlYlwvxkyn7E1QZQcI3N9sCv9ImRCqFA=
+			</data>
+		</dict>
+		<key>iconLoading@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Dd/437wdduGHCSmUcgkzYuT9PhE/yWAyv2p9qTa4D4I=
 			</data>
 		</dict>
 	</dict>
