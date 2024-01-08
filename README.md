@@ -19,8 +19,9 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 
 ### v1.9.90
-- Updated document web sanner
-- 
+- Updated all new document scanning experience replaced with legacy scanner
+- Added Account OTP feature in My Identity list
+- Bug fixes and Improvements
 
 ### v1.9.80
 - Added a new function to issue a scep certificate for non scep users
