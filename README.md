@@ -9,7 +9,7 @@
 BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.9.70'
+   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.9.90'
 ```
 
 ## License
@@ -17,6 +17,10 @@ BlockID is available through CocoaPods. To install it, simply add the following 
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+
+### v1.9.90
+- The legacy scanners have been substituted with a new web based ID proofing experience
+- Fixed a bug in the cache manager
 
 ### v1.9.80
 - Added a new function to issue a scep certificate for non scep users
