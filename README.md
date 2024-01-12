@@ -22,6 +22,9 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 - The legacy scanners have been substituted with a new web based ID proofing experience
 - Fixed a bug in the cache manager
 
+### v.1.9.83
+- Fixed error handling for ACR code redemption
+
 ### v1.9.80
 - Added a new function to issue a scep certificate for non scep users
 - Updated IP Address provider to efficiently fetch and cache IP addresses
