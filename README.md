@@ -19,7 +19,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 
 ### v1.9.90
-- Updated all new document scanning experience replaced with legacy scanner
+- The legacy scanners have been substituted with a new web based ID proofing experience
 - Bug fixes and Improvements
 
 ### v1.9.80
