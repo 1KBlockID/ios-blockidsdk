@@ -20,7 +20,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ### v1.9.90
 - The legacy scanners have been substituted with a new web based ID proofing experience
-- Bug fixes and Improvements
+- Fixed a bug in the cache manager
 
 ### v1.9.80
 - Added a new function to issue a scep certificate for non scep users
