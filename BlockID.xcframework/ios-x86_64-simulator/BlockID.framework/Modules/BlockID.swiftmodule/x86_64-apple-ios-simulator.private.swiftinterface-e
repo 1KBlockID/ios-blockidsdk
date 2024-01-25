@@ -221,6 +221,7 @@ public protocol DocumentScanDelegate {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) convenience public init(docType: BlockID.DocumentScannerType, dvcId: Swift.String? = nil, delegate: any BlockID.DocumentScanDelegate)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -534,6 +535,20 @@ public struct ResponseAPDU {
   public var sw2: Swift.UInt8
   public init(data: [Swift.UInt8], sw1: Swift.UInt8, sw2: Swift.UInt8)
 }
+public protocol SelfieScanDelegate {
+  func onSelfieScanResponse(status: Swift.Bool, responseObj: Swift.String?, error: BlockID.ErrorResponse?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SelfieScannerViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) convenience public init(tenant: BlockID.BIDTenant, delegate: any BlockID.SelfieScanDelegate)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension BlockID.SelfieScannerViewController : SafariServices.SFSafariViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
+}
 public enum BiometricError {
   case NoID
   case cancel
@@ -600,7 +615,7 @@ public typealias BIDWalletCreationCallback = ((_ status: Swift.Bool, _ error: Bl
 public typealias BIDMigrationCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias AccessCodeValidationAPICallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ object: BlockID.AccessCodeValidationResponseDecryptedData?) -> Swift.Void)
 public typealias AuthenticateUserCallback = ((_ status: Swift.Bool, _ sessionId: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
-public typealias SessionResponseCallback = ((_ status: Swift.Bool, _ object: BlockID.SessionResponseData?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
+public typealias SessionResponseCallback = ((_ status: Swift.Bool, _ object: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias SCEPCertificateCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias KYCCallback = ((_ status: Swift.Bool, _ kycHash: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias MessageGatewaysCallback = ((_ status: Swift.Bool, _ object: [BlockID.MessageGateway]?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
@@ -743,6 +758,8 @@ extension BlockID.BlockIDSDK {
 extension BlockID.BlockIDSDK {
   public func createDocumentSession(docType: BlockID.DocumentScannerType, dvcId: Swift.String? = nil, completion: @escaping BlockID.DocumentSessionCallback)
   public func pollDocumentSession(sessionId: Swift.String, dvcId: Swift.String? = nil, completion: @escaping BlockID.PollSessionCallback)
+  public func createSelfieScannerSession(tenant: BlockID.BIDTenant, origin: BlockID.BIDOrigin, metaData: Swift.String, serverKey: Swift.String, completion: @escaping ((sessionId: Swift.String?, sessionUrl: Swift.String?), _ error: BlockID.ErrorResponse?) -> Swift.Void)
+  public func getSelfieSessionPollResponse(completion: @escaping BlockID.SessionResponseCallback)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TOTPUtils : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.TOTPUtils
@@ -851,7 +868,7 @@ public enum AuthAssetType : Swift.String {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BIDSessionResponse : Swift.Codable {
-  public func sessionResponseData() -> BlockID.SessionResponseData?
+  public func sessionResponseData() -> Swift.String?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -875,6 +892,16 @@ public enum AuthAssetType : Swift.String {
 @objc @_inheritsConvenienceInitializers public class BIDNewSessionResponse : ObjectiveC.NSObject, Swift.Decodable {
   @objc override dynamic public init()
   @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class BIDSelfieSessionDataRequest : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class BIDSessionMetaData : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 public typealias UpdateAccInfoCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
