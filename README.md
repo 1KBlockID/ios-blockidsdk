@@ -19,7 +19,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 
 ### v1.10.00
-- Bug fixed during LiveID Verification
+- Fixed bug in the LiveID Verification
 
 ### v1.9.90
 - The legacy scanners have been substituted with a new web based ID proofing experience
