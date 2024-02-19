@@ -311,6 +311,8 @@ public struct DTHStruct {
   public func getDvcId() -> Swift.String?
   public func getTenant() -> BlockID.BIDTenant?
   public func setTenant(tenant: BlockID.BIDTenant)
+  public func getAppTenant() -> BlockID.BIDTenant?
+  public func setAppTenant(appTenant: BlockID.BIDTenant)
   public func setLiveIDRegistered(_ value: Swift.Bool)
   public func isLiveIDRegistered() -> Swift.Bool
   public func setPINRegistered(_ value: Swift.Bool)
@@ -645,6 +647,7 @@ public typealias PollSessionCallback = ((_ status: Swift.Bool, _ response: Swift
   public func isDeviceAuthRegisterd() -> Swift.Bool
   public func isLiveIDRegisterd() -> Swift.Bool
   public func getTenant() -> BlockID.BIDTenant?
+  public func getAppTenant() -> BlockID.BIDTenant?
   public func getDeviceAuth() -> BlockID.DeviceAuth
   public func checkDeviceTrust() -> Swift.Bool
   public func isScreenLockEnabled() -> Swift.Bool
