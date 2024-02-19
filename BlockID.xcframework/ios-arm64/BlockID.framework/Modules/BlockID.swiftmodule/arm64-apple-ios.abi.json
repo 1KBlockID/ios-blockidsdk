@@ -7824,6 +7824,61 @@
           },
           {
             "kind": "Function",
+            "name": "getAppTenant",
+            "printedName": "getAppTenant()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BlockID.BIDTenant?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BIDTenant",
+                    "printedName": "BlockID.BIDTenant",
+                    "usr": "s:7BlockID9BIDTenantC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID8BIDVaultC12getAppTenantAA9BIDTenantCSgyF",
+            "mangledName": "$s7BlockID8BIDVaultC12getAppTenantAA9BIDTenantCSgyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAppTenant",
+            "printedName": "setAppTenant(appTenant:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDTenant",
+                "printedName": "BlockID.BIDTenant",
+                "usr": "s:7BlockID9BIDTenantC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID8BIDVaultC12setAppTenant03appF0yAA9BIDTenantC_tF",
+            "mangledName": "$s7BlockID8BIDVaultC12setAppTenant03appF0yAA9BIDTenantC_tF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setLiveIDRegistered",
             "printedName": "setLiveIDRegistered(_:)",
             "children": [
@@ -16768,6 +16823,35 @@
             "declKind": "Func",
             "usr": "s:7BlockID0A5IDSDKC9getTenantAA9BIDTenantCSgyF",
             "mangledName": "$s7BlockID0A5IDSDKC9getTenantAA9BIDTenantCSgyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAppTenant",
+            "printedName": "getAppTenant()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BlockID.BIDTenant?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BIDTenant",
+                    "printedName": "BlockID.BIDTenant",
+                    "usr": "s:7BlockID9BIDTenantC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC12getAppTenantAA9BIDTenantCSgyF",
+            "mangledName": "$s7BlockID0A5IDSDKC12getAppTenantAA9BIDTenantCSgyF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -81105,84 +81189,91 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 385,
+      "offset": 399,
+      "length": 27,
+      "value": "\"com.blockid.sdk.appTenant\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
+      "kind": "StringLiteral",
+      "offset": 483,
       "length": 31,
       "value": "\"com.blockid.sdk.defaultwallet\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 461,
+      "offset": 559,
       "length": 33,
       "value": "\"com.blockid.sdk.serverpublickey\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 532,
+      "offset": 630,
       "length": 26,
       "value": "\"com.blockid.sdk.otpseeds\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 601,
+      "offset": 699,
       "length": 31,
       "value": "\"com.blockid.sdk.licensemodule\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 673,
+      "offset": 771,
       "length": 32,
       "value": "\"com.blockid.sdk.linkedAccounts\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 746,
+      "offset": 844,
       "length": 32,
       "value": "\"com.blockid.sdk.currentAccount\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 826,
+      "offset": 919,
       "length": 36,
       "value": "\"com.blockid.sdk.isLiveIdRegistered\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 902,
+      "offset": 995,
       "length": 33,
       "value": "\"com.blockid.sdk.isPinRegistered\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 970,
+      "offset": 1063,
       "length": 26,
       "value": "\"com.blockid.sdk.docsList\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1028,
+      "offset": 1121,
       "length": 10,
       "value": "\"K_DVC_ID\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1119,
+      "offset": 1213,
       "length": 27,
       "value": "\"K_TRUSTED_SESSION_SOURCES\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1185,
+      "offset": 1279,
       "length": 12,
       "value": "\"K_USER_IAL\""
     },
@@ -81721,42 +81812,42 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2652,
+      "offset": 2732,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2697,
+      "offset": 2777,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "Array",
-      "offset": 2746,
+      "offset": 2826,
       "length": 636,
       "value": "[\"https:\/\/1k-dev.1kosmos.net\/sessions\", \"https:\/\/1k-qa.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu.1kosmos.net\/sessions\", \"https:\/\/1k-uat.1kosmos.net\/sessions\", \"https:\/\/1k-pilot.1kosmos.net\/sessions\", \"https:\/\/1k-pilot-in.1kosmos.in\/sessions\", \"https:\/\/1k-prod-in.1kosmos.in\/sessions\"]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3473,
+      "offset": 3553,
       "length": 5,
       "value": "21600"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3513,
+      "offset": 3593,
       "length": 6,
       "value": "\"IAL1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 149701,
+      "offset": 155514,
       "length": 5,
       "value": "false"
     },
