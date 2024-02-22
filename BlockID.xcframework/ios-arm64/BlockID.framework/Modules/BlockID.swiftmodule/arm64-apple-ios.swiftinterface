@@ -2259,6 +2259,20 @@ public struct DriverLicenseData : Swift.Codable {
   required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class PasswordRules : Swift.Codable {
+  public var minEnabled: Swift.Bool?
+  public var minSpecialEnabled: Swift.Bool?
+  public var minNumbersEnabled: Swift.Bool?
+  public var specialCharAllowedEnabled: Swift.Bool?
+  public var minAlphaCapsEnabled: Swift.Bool?
+  public var noUsername: Swift.Bool?
+  public var noUsernameEnabled: Swift.Bool?
+  public var allowInRowEnabled: Swift.Bool?
+  public var min: Swift.Int?
+  public var minSpecial: Swift.Int?
+  public var minNumbers: Swift.Int?
+  public var specialCharsAllowed: Swift.String?
+  public var minAlphaCaps: Swift.Int?
+  public var allowInRow: Swift.Int?
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
