@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -27,7 +27,6 @@ import Swift
 import SwiftUI
 import UIKit
 import Vision
-import WalletConnectPairing/*.WalletConnectPairing*/
 import WalletConnectRelay
 import WalletConnectSign
 import WalletConnectUtils
@@ -41,8 +40,8 @@ import _StringProcessing
 @objc @_inheritsConvenienceInitializers public class BIDServiceDirectory : ObjectiveC.NSObject, Swift.Codable {
   @objc override dynamic public init()
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 open class KeychainWrapper {
   @available(*, deprecated, message: "KeychainWrapper.defaultKeychainWrapper is deprecated, use KeychainWrapper.standard instead")
@@ -63,7 +62,7 @@ open class KeychainWrapper {
   open func double(forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> Swift.Double?
   open func bool(forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> Swift.Bool?
   open func string(forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> Swift.String?
-  open func object(forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> (any Foundation.NSCoding)?
+  open func object(forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> Foundation.NSCoding?
   open func data(forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> Foundation.Data?
   open func dataRef(forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> Foundation.Data?
   @discardableResult
@@ -77,7 +76,7 @@ open class KeychainWrapper {
   @discardableResult
   open func set(_ value: Swift.String, forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> Swift.Bool
   @discardableResult
-  open func set(_ value: any Foundation.NSCoding, forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> Swift.Bool
+  open func set(_ value: Foundation.NSCoding, forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> Swift.Bool
   @discardableResult
   open func set(_ value: Foundation.Data, forKey key: Swift.String, withAccessibility accessibility: BlockID.KeychainItemAccessibility? = nil) -> Swift.Bool
   @available(*, deprecated, message: "remove is deprecated, use removeObject instead")
@@ -132,8 +131,8 @@ public enum KeychainItemAccessibility {
   public var otpSeed: Swift.String?
   public func getAccountOTP() -> BlockID.TOTP?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
 public class DataGroup2 : BlockID.DataGroup {
@@ -219,7 +218,7 @@ public protocol DocumentScanDelegate {
   func onDocumentScanResponse(status: Swift.Bool, document: Swift.String?, error: BlockID.ErrorResponse?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) convenience public init(docType: BlockID.DocumentScannerType, dvcId: Swift.String? = nil, delegate: any BlockID.DocumentScanDelegate)
+  @_Concurrency.MainActor(unsafe) convenience public init(docType: BlockID.DocumentScannerType, dvcId: Swift.String? = nil, delegate: BlockID.DocumentScanDelegate)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -253,8 +252,8 @@ public class BIDOrigin : Swift.Codable, Swift.Equatable {
   public func getAuthMethod() -> Swift.String?
   public static func == (lhs: BlockID.BIDOrigin, rhs: BlockID.BIDOrigin) -> Swift.Bool
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public enum AccessCodeType : Swift.String {
   case VERIFICATION
@@ -277,15 +276,15 @@ public class TagReader {
 @_inheritsConvenienceInitializers public class BIDPassport : BlockID.BIDDocumentData {
   public class func makePassportObj(passportData: BlockID.MRZDocumentData, passportOcr: Swift.String, passportImage: Swift.String, userPhoto: Swift.String, passportMrz: Swift.String) -> BlockID.BIDPassport
   public init()
-  override public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
 public protocol QRScanResponseDelegate : AnyObject {
   func onQRScanResult(qrCodeData: Swift.String?)
 }
 @objc public class QRScannerHelper : ObjectiveC.NSObject {
-  public init(bidScannerView: BlockID.BIDScannerView, kQRScanResponseDelegate: any BlockID.QRScanResponseDelegate)
+  public init(bidScannerView: BlockID.BIDScannerView, kQRScanResponseDelegate: BlockID.QRScanResponseDelegate)
   public func startQRScanning()
   public func stopQRScanning()
   public func isRunning() -> Swift.Bool
@@ -492,7 +491,7 @@ public class NFCPassportModel {
   public var activeAuthenticationSignature: [Swift.UInt8] {
     get
   }
-  public var verificationErrors: [any Swift.Error] {
+  public var verificationErrors: [Swift.Error] {
     get
   }
   public var isPACESupported: Swift.Bool {
@@ -808,8 +807,8 @@ public class SimpleASN1DumpParser {
 }
 @_hasMissingDesignatedInitializers public class TOTP : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 extension BlockID.TOTP {
   public func setRemainingSecond(remainingSecond: Swift.Int)
@@ -861,39 +860,39 @@ public enum AuthAssetType : Swift.String {
 }
 @_hasMissingDesignatedInitializers public class BIDSessionResponse : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class SessionResponseData : Swift.Codable {
   public var phoneNumber: Swift.String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDNewSessionDataReuqest : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDCreateSession : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers public class BIDNewSessionResponse : ObjectiveC.NSObject, Swift.Decodable {
   @objc override dynamic public init()
   @objc deinit
-  required public init(from decoder: any Swift.Decoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDSelfieSessionDataRequest : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDSessionMetaData : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public typealias UpdateAccInfoCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public enum SecureMessagingSupportedAlgorithms {
@@ -928,10 +927,10 @@ public protocol WalletConnectDelegate : AnyObject {
   func onSessionRequest(request: WalletConnectSign.Request)
   func onSessionSettleResponse(sessions: [BlockID.ActiveSessionItem])
   func onSessionDisconnect(remainingSession: [BlockID.ActiveSessionItem])
-  func onError(error: any Swift.Error)
+  func onError(error: Swift.Error)
 }
 @objc public class WalletConnectHelper : ObjectiveC.NSObject {
-  public init(projectID: Swift.String, metadata: WalletConnectSign.AppMetadata, delegate: any BlockID.WalletConnectDelegate)
+  public init(projectID: Swift.String, metadata: WalletConnectSign.AppMetadata, delegate: BlockID.WalletConnectDelegate)
   public func connect(uri: Swift.String)
   public func disconnect(session: BlockID.ActiveSessionItem)
   public func approveSession(request: WalletConnectSign.Request)
@@ -1056,39 +1055,39 @@ public class DataGroup11 : BlockID.DataGroup {
 @_hasMissingDesignatedInitializers public class BIDLicense : Swift.Codable {
   public var modules: BlockID.LicenseModules!
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class LicenseModules : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class RegisterUserData : Swift.Codable {
   public var type: Swift.String?
   public var id: Swift.String?
   public var data: Swift.String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class RegisterUserDataResponse : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class GetDocumentResponse : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class AccessCodeResponse : Swift.Codable {
   public func getPublicKey() -> Swift.String
   public func accessCodeValidationData() -> BlockID.AccessCodeValidationResponseDecryptedData?
   public func accessCodeRedeemData() -> BlockID.BIDOnboardedUserAccount?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class AccessCodeValidationResponseDecryptedData : Swift.Codable {
   public var uuid: Swift.String!
@@ -1098,15 +1097,15 @@ public class DataGroup11 : BlockID.DataGroup {
   public var phoneRequired: Swift.Bool?
   public var smsServiceNumber: Swift.String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class AccessCodeResponseDataPayload : Swift.Codable {
   public var userid: Swift.String!
   public var authType: Swift.String!
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDOnboardedUserAccount : Swift.Codable {
   public var userId: Swift.String?
@@ -1117,8 +1116,8 @@ public class DataGroup11 : BlockID.DataGroup {
   public var origin: BlockID.BIDOrigin!
   public var account: BlockID.BIDAccount?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class EventData : Swift.Codable {
   public var license_hash: Swift.String?
@@ -1141,13 +1140,13 @@ public class DataGroup11 : BlockID.DataGroup {
   public var device_model: Swift.String?
   public var device_make: Swift.String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class VerifyScanResponse : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public struct JSONCodingKeys : Swift.CodingKey {
   public var stringValue: Swift.String
@@ -1177,8 +1176,8 @@ extension Swift.UnkeyedEncodingContainer {
 }
 @_hasMissingDesignatedInitializers public class KYCHashData : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @available(iOS 13, macOS 10.15, *)
 public enum CertificateType {
@@ -1255,8 +1254,8 @@ public struct MRZDocumentData : Swift.Codable {
   public var gender: Swift.String?
   public var doe: Swift.String?
   public var personalNumber: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct TOTPGenerator {
   public static let sharedInstance: BlockID.TOTPGenerator
@@ -1290,8 +1289,8 @@ public enum LivenessFactorType {
   }
 }
 @objc public class LiveIDScannerHelper : ObjectiveC.NSObject {
-  public init(bidScannerView: BlockID.BIDScannerView, overlayFrame: CoreFoundation.CGRect? = nil, shouldResetOnWrongExpresssion: Swift.Bool = true, liveIdResponseDelegate: any BlockID.LiveIDResponseDelegate)
-  public init(liveIdResponseDelegate: any BlockID.LiveIDResponseDelegate)
+  public init(bidScannerView: BlockID.BIDScannerView, overlayFrame: CoreFoundation.CGRect? = nil, shouldResetOnWrongExpresssion: Swift.Bool = true, liveIdResponseDelegate: BlockID.LiveIDResponseDelegate)
+  public init(liveIdResponseDelegate: BlockID.LiveIDResponseDelegate)
   public func startLiveIDScanning(dvcID: Swift.String? = nil)
   public func stopLiveIDScanning()
   @objc deinit
@@ -1356,8 +1355,8 @@ public class DataGroup {
   public var communityId: Swift.String?
   public class func makeTenant(tag: Swift.String, community: Swift.String, dns: Swift.String) -> BlockID.BIDTenant
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class CreateAccessCodePayload {
   public init(version: BlockID.Version, type: BlockID.AccessCodeType, emailID: Swift.String, emailSubject: Swift.String, emailTemplate: Swift.String)
@@ -1365,8 +1364,8 @@ public class DataGroup {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BIDDriverLicense : BlockID.BIDDocumentData {
   public class func makeDriverLicenseObj(dlData: BlockID.DriverLicenseData?, dlOcr: Swift.String?, dlFrontImage: Swift.String?, dlBackImage: Swift.String?, userPhoto: Swift.String?, dlBarcodeInfo: Swift.String?) -> BlockID.BIDDriverLicense
-  override public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
 public enum DocumentScannerType : Swift.String {
@@ -1515,8 +1514,8 @@ public struct CustomErrors {
 @_hasMissingDesignatedInitializers public class ServicePublicKeyResponse : Swift.Codable {
   public var publicKey: Swift.String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public typealias FIDO2Callback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 @available(iOS 13, macOS 10.15, *)
@@ -1731,8 +1730,8 @@ public class PACEInfo : BlockID.SecurityInfo {
 }
 @_hasMissingDesignatedInitializers public class AuthUserResponse : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public class WorkstationAuthOrigin : Swift.Codable {
   public var api: Swift.String?
@@ -1742,8 +1741,8 @@ public class WorkstationAuthOrigin : Swift.Codable {
   public var scopes: Swift.String?
   public init(api: Swift.String, tag: Swift.String, community: Swift.String, publicKey: Swift.String, scopes: Swift.String)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @available(iOS 13, *)
 public class BACHandler {
@@ -1761,16 +1760,16 @@ public class BACHandler {
   public var active: Swift.Bool?
   public var smsServiceNumber: Swift.String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDDocumentData : Swift.Codable {
   public var id: Swift.String?
   public var type: Swift.String?
   public var photo: Swift.String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDLinkedAccount : Swift.Codable, Swift.Equatable {
   public var origin: BlockID.BIDOrigin!
@@ -1783,8 +1782,8 @@ public class BACHandler {
   public static func == (lhs: BlockID.BIDLinkedAccount, rhs: BlockID.BIDLinkedAccount) -> Swift.Bool
   public func isOfflineAuthSupported() -> Swift.Bool
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public enum SwiftyJSONError : Swift.Int, Swift.Error {
   case unsupportedType
@@ -1892,11 +1891,11 @@ extension Swift.String : BlockID.JSONSubscriptType {
   }
 }
 extension BlockID.JSON {
-  public subscript(path: [any BlockID.JSONSubscriptType]) -> BlockID.JSON {
+  public subscript(path: [BlockID.JSONSubscriptType]) -> BlockID.JSON {
     get
     set
   }
-  public subscript(path: any BlockID.JSONSubscriptType...) -> BlockID.JSON {
+  public subscript(path: BlockID.JSONSubscriptType...) -> BlockID.JSON {
     get
     set
   }
@@ -2132,8 +2131,8 @@ public enum writingOptionsKeys {
   }
 }
 extension BlockID.JSON : Swift.Codable {
-  public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 @available(iOS 13, macOS 10.15, *)
 public enum DataGroupId : Swift.Int, Swift.CaseIterable {
@@ -2178,7 +2177,7 @@ public enum Version : Swift.String {
   }
 }
 public typealias RequestBody = [Swift.String : Swift.AnyObject]
-public typealias NetworkResponseCallback<T> = (statusCode: Swift.Int?, error: (any Swift.Error)?, result: T?) where T : Swift.Decodable
+public typealias NetworkResponseCallback<T> = (statusCode: Swift.Int?, error: Swift.Error?, result: T?) where T : Swift.Decodable
 public typealias APIResponseCallback<T> = (status: Swift.Bool, message: Swift.String, error: BlockID.ErrorResponse?, result: T?) where T : Swift.Decodable
 public typealias SessionAPICallback = ((_ statusCode: Swift.Int?, _ response: BlockID.BIDSessionResponse?, _ error: Swift.String?, _ errorResponse: BlockID.ErrorResponse?) -> Swift.Void)
 public struct ProxyDetails {
@@ -2187,7 +2186,7 @@ public struct ProxyDetails {
   public static let sharedInstance: BlockID.BIDNetworkManager
   public func makeRequest<T>(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: BlockID.RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (BlockID.NetworkResponseCallback<T>) -> Swift.Void) where T : Swift.Decodable
   public func makeRequest(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: BlockID.RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (Swift.String?, Swift.String?, Swift.Bool) -> Swift.Void)
-  public func makeRequestWithStatusCode(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: BlockID.RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (Swift.Int?, (any Swift.Error)?, Swift.String?) -> Swift.Void)
+  public func makeRequestWithStatusCode(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: BlockID.RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (Swift.Int?, Swift.Error?, Swift.String?) -> Swift.Void)
   public func makeMultipartRequest<T>(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, multipartFormData: @escaping ((Alamofire.MultipartFormData) -> Swift.Void), requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (BlockID.NetworkResponseCallback<T>) -> Swift.Void) where T : Swift.Decodable
   @objc deinit
 }
@@ -2195,8 +2194,8 @@ public struct ProxyDetails {
   public class func getTotalPackage(data: Swift.String, packageSize: Swift.Int) -> Swift.Int
   public class func split(offlinePayload: Swift.String, length: Swift.Int) -> [Swift.String]
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public class OfflineAuthAccountDetail : Swift.Codable {
   public var user: Swift.String?
@@ -2206,13 +2205,13 @@ public class OfflineAuthAccountDetail : Swift.Codable {
   public var account: BlockID.BIDAccount?
   public init(user: Swift.String, did: Swift.String, hash: Swift.String, token: Swift.String, account: BlockID.BIDAccount?)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDWallet : Swift.Codable {
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TenantInfoAPI : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.TenantInfoAPI
@@ -2224,8 +2223,8 @@ public class OfflineAuthAccountDetail : Swift.Codable {
   public var community: BlockID.BIDCommunityInfo?
   public var message: Swift.String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDTenantInfo : Swift.Codable {
   public var id: Swift.String?
@@ -2233,16 +2232,16 @@ public class OfflineAuthAccountDetail : Swift.Codable {
   public var name: Swift.String?
   public var displayTenantInfoForPersona: Swift.Bool?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDCommunityInfo : Swift.Codable {
   public var id: Swift.String?
   public var mobileLogo: Swift.String?
   public var name: Swift.String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public struct DriverLicenseData : Swift.Codable {
   public var issuerIdentificationNumber: Swift.String?
@@ -2289,8 +2288,8 @@ public struct DriverLicenseData : Swift.Codable {
   public var akaGivenName: Swift.String?
   public var akaFamilyName: Swift.String?
   public var akaSuffix: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDPasswordPolicy : Swift.Codable {
   public var allowed: Swift.Bool?
@@ -2298,8 +2297,8 @@ public struct DriverLicenseData : Swift.Codable {
   public var authtype: Swift.String?
   public var descriptions: [Swift.String]?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class PasswordRules : Swift.Codable {
   public var minEnabled: Swift.Bool?
@@ -2317,8 +2316,8 @@ public struct DriverLicenseData : Swift.Codable {
   public var minAlphaCaps: Swift.Int?
   public var allowInRow: Swift.Int?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
 public class CardAccess {
@@ -2341,49 +2340,49 @@ extension Swift.String {
 public class FetchConfigResponse : Swift.Codable {
   public var data: [Swift.String : BlockID.MobileAppConfigs.BlockIDConfig]
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class MobileAppConfigs : Swift.Codable {
   @_hasMissingDesignatedInitializers public class BlockIDConfig : Swift.Codable {
     public var app: BlockID.MobileAppConfigs.OriginAllowedToTransfer?
     @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    required public init(from decoder: Swift.Decoder) throws
   }
   @_hasMissingDesignatedInitializers public class SDKConfig : Swift.Codable {
     @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    required public init(from decoder: Swift.Decoder) throws
   }
   @_hasMissingDesignatedInitializers public class LiveIdSelfie : Swift.Codable {
     @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    required public init(from decoder: Swift.Decoder) throws
   }
   @_hasMissingDesignatedInitializers public class OriginAllowedToTransfer : Swift.Codable {
     public var originAllowedToTransfer: [BlockID.MobileAppConfigs.Origin]?
     @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    required public init(from decoder: Swift.Decoder) throws
   }
   @_hasMissingDesignatedInitializers public class Origin : Swift.Codable {
     public var dns: Swift.String?
     public var tenantTag: Swift.String?
     public var communityName: Swift.String?
     @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+    required public init(from decoder: Swift.Decoder) throws
   }
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public protocol RFIDResponseDelegate : AnyObject {
   func rfidScanCompleted(withPassport docDic: [Swift.String : Any]?, error: BlockID.ErrorResponse?)
 }
 @objc public class RFIDScannerHelper : ObjectiveC.NSObject {
-  public init(isDataRequiredOnFail: Swift.Bool = false, rfidResponseDelegate: any BlockID.RFIDResponseDelegate, ppObject: [Swift.String : Any], expiryGracePeriod: Swift.Int)
+  public init(isDataRequiredOnFail: Swift.Bool = false, rfidResponseDelegate: BlockID.RFIDResponseDelegate, ppObject: [Swift.String : Any], expiryGracePeriod: Swift.Int)
   public func startRFIDScanning(defaultTimeout: Foundation.TimeInterval = 15)
   public func stopRFIDScanning()
   @objc deinit
@@ -2400,8 +2399,8 @@ extension BlockID.RFIDScannerHelper : BlockID.RFIDResponseDelegate {
   public var image_back: Swift.String?
   public var qr_code_data: Swift.String?
   public class func makeNationalIDObj(nidData: BlockID.MRZDocumentData?, nidOcr_front: Swift.String?, nidOcr_back: Swift.String?, nidFrontImage: Swift.String?, nidBackImage: Swift.String?, userPhoto: Swift.String?, nidBarcodeInfo: Swift.String?, nidMrz: Swift.String) -> BlockID.BIDNationalId
-  override public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  override public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
 @objc @available(iOS 13, *)
@@ -2417,14 +2416,14 @@ public class PassportReader : ObjectiveC.NSObject {
 @available(iOS 13, *)
 extension BlockID.PassportReader : CoreNFC.NFCTagReaderSessionDelegate {
   public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
-  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: any Swift.Error)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: Swift.Error)
   public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
 }
 @_hasMissingDesignatedInitializers public class ServerPublicKeyResponse : Swift.Codable {
   public var publicKey: Swift.String?
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public enum APIFailedError : Swift.Error {
   case notFound(msg: Swift.String)
