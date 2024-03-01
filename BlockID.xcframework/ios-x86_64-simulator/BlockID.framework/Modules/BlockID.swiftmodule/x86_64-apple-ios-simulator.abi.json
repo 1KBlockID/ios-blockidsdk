@@ -90109,42 +90109,42 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2116,
+      "offset": 2140,
       "length": 20,
       "value": "\"noUsername_enabled\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2170,
+      "offset": 2194,
       "length": 20,
       "value": "\"allowInRow_enabled\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2217,
+      "offset": 2258,
       "length": 13,
       "value": "\"min_special\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2257,
+      "offset": 2298,
       "length": 13,
       "value": "\"min_numbers\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2306,
+      "offset": 2347,
       "length": 23,
       "value": "\"special_chars_allowed\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2358,
+      "offset": 2399,
       "length": 16,
       "value": "\"min_alpha_caps\""
     },
@@ -90186,42 +90186,42 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2116,
+      "offset": 2140,
       "length": 20,
       "value": "\"noUsername_enabled\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2170,
+      "offset": 2194,
       "length": 20,
       "value": "\"allowInRow_enabled\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2217,
+      "offset": 2258,
       "length": 13,
       "value": "\"min_special\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2257,
+      "offset": 2298,
       "length": 13,
       "value": "\"min_numbers\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2306,
+      "offset": 2347,
       "length": 23,
       "value": "\"special_chars_allowed\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
       "kind": "StringLiteral",
-      "offset": 2358,
+      "offset": 2399,
       "length": 16,
       "value": "\"min_alpha_caps\""
     },
