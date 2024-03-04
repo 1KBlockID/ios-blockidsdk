@@ -9,7 +9,7 @@
 BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.9.90'
+   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.10.10'
 ```
 
 ## License
