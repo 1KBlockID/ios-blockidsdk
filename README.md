@@ -18,6 +18,13 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 
+### v1.10.10
+- Updated tenant registration to derive root tenant if the application supplies client tenant
+- Added restoration of wallet and documents through LiveID Selfie
+
+### v1.10.00
+- Fixed bug in the LiveID Verification 
+
 ### v1.9.90
 - The legacy scanners have been substituted with a new web based ID proofing experience
 - Fixed a bug in the cache manager
