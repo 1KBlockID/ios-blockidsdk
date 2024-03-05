@@ -86504,28 +86504,28 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 81053,
+      "offset": 81447,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 81090,
+      "offset": 81484,
       "length": 16,
       "value": "\"cross-platform\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 81053,
+      "offset": 81447,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
       "kind": "StringLiteral",
-      "offset": 81090,
+      "offset": 81484,
       "length": 16,
       "value": "\"cross-platform\""
     },
@@ -86728,7 +86728,7 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Public Key API\/PublicKeyAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 4740,
+      "offset": 4844,
       "length": 2,
       "value": "\"\""
     },
