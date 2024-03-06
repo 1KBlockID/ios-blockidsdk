@@ -354,6 +354,7 @@ SWIFT_CLASS("_TtC7BlockID10BlockIDSDK")
 
 
 
+
 SWIFT_CLASS("_TtC7BlockID10DeviceAuth")
 @interface DeviceAuth : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -371,6 +372,7 @@ SWIFT_CLASS("_TtC7BlockID13DigitalAssets")
 SWIFT_CLASS("_TtC7BlockID29DocumentScannerViewController")
 @interface DocumentScannerViewController : UIViewController
 - (void)viewDidLoad;
+- (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -450,6 +452,21 @@ SWIFT_CLASS("_TtC7BlockID17RFIDScannerHelper")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+
+SWIFT_CLASS("_TtC7BlockID27SelfieScannerViewController")
+@interface SelfieScannerViewController : UIViewController
+- (void)viewDidLoad;
+- (void)viewWillDisappear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface SelfieScannerViewController (SWIFT_EXTENSION(BlockID)) <SFSafariViewControllerDelegate>
+- (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
+@end
 
 
 

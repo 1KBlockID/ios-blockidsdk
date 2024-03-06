@@ -221,6 +221,7 @@ public protocol DocumentScanDelegate {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) convenience public init(docType: BlockID.DocumentScannerType, dvcId: Swift.String? = nil, delegate: any BlockID.DocumentScanDelegate)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -312,6 +313,8 @@ public struct DTHStruct {
   public func getDvcId() -> Swift.String?
   public func getTenant() -> BlockID.BIDTenant?
   public func setTenant(tenant: BlockID.BIDTenant)
+  public func getAppTenant() -> BlockID.BIDTenant?
+  public func setAppTenant(appTenant: BlockID.BIDTenant)
   public func setLiveIDRegistered(_ value: Swift.Bool)
   public func isLiveIDRegistered() -> Swift.Bool
   public func setPINRegistered(_ value: Swift.Bool)
@@ -342,7 +345,7 @@ public struct DTHStruct {
   @objc deinit
 }
 extension BlockID.BIDVault {
-  public func setTrustedSessionsSources(info: BlockID.GlobalConfigResponse)
+  public func setTrustedSessionsSources(info: BlockID.FetchConfigResponse)
   public func getTrustedSessionsSources() -> [Swift.String]?
 }
 extension BlockID.BIDVault {
@@ -600,26 +603,25 @@ public typealias BIDWalletCreationCallback = ((_ status: Swift.Bool, _ error: Bl
 public typealias BIDMigrationCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias AccessCodeValidationAPICallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ object: BlockID.AccessCodeValidationResponseDecryptedData?) -> Swift.Void)
 public typealias AuthenticateUserCallback = ((_ status: Swift.Bool, _ sessionId: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
-public typealias SessionResponseCallback = ((_ status: Swift.Bool, _ object: BlockID.SessionResponseData?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
+public typealias SessionResponseCallback = ((_ status: Swift.Bool, _ object: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias SCEPCertificateCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias KYCCallback = ((_ status: Swift.Bool, _ kycHash: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias MessageGatewaysCallback = ((_ status: Swift.Bool, _ object: [BlockID.MessageGateway]?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias IALCallback = ((_ status: Swift.Bool, _ ialValue: Swift.String, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias VCsCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 public typealias VPCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
-public typealias GlobalConfigCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: BlockID.GlobalConfigResponse?) -> Swift.Void)
+public typealias FetchConfigCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: BlockID.FetchConfigResponse?) -> Swift.Void)
 public typealias FetchDocumentsCallback = ((_ status: Swift.Bool, _ responseDict: [Swift.String : Any]?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias FetchUserAccountsInfoCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias DocumentSessionCallback = ((_ status: Swift.Bool, _ response: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias PollSessionCallback = ((_ status: Swift.Bool, _ response: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
+public typealias RestoreWalletWithLiveIDCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.BlockIDSDK
   public func isReady() -> Swift.Bool
   public func setLicenseKey(key: Swift.String)
   public func getLicenseKey() -> Swift.String
   public func setDvcID(dvcID: Swift.String)
-  public func setRestoreMode()
-  public func isRestoreModeOn() -> Swift.Bool
   public func setMigrationMode()
   public func isMigrationModeOn() -> Swift.Bool
   public func resetMigrationMode()
@@ -646,6 +648,7 @@ public typealias PollSessionCallback = ((_ status: Swift.Bool, _ response: Swift
   public func isDeviceAuthRegisterd() -> Swift.Bool
   public func isLiveIDRegisterd() -> Swift.Bool
   public func getTenant() -> BlockID.BIDTenant?
+  public func getAppTenant() -> BlockID.BIDTenant?
   public func getDeviceAuth() -> BlockID.DeviceAuth
   public func checkDeviceTrust() -> Swift.Bool
   public func isScreenLockEnabled() -> Swift.Bool
@@ -655,7 +658,6 @@ public typealias PollSessionCallback = ((_ status: Swift.Bool, _ response: Swift
   public func getOfflineTOTP(bidLinkedAccount: BlockID.BIDLinkedAccount) -> (totp: BlockID.TOTP?, error: BlockID.ErrorResponse?)
   public func checkUserExist(userId: Swift.String, origin: BlockID.BIDOrigin, completion: @escaping (Swift.Bool) -> ())
   public func addPreLinkedUser(userId: Swift.String, scep_hash: Swift.String, scep_privatekey: Swift.String, scep_expiry: Swift.String, origin: BlockID.BIDOrigin, account: BlockID.BIDAccount?, completion: @escaping BlockID.UserAPICallback)
-  public func restoreUserDataFromWallet(completion: @escaping BlockID.UserAPICallback)
   public func addNativeAccount(method: Swift.String!, userId: Swift.String, password: Swift.String, origin: BlockID.BIDOrigin, deviceToken: Swift.String? = nil, lon: Swift.Double, lat: Swift.Double, completion: @escaping BlockID.UserAPICallback)
   public func unLinkAccount(bidLinkedAccount: BlockID.BIDLinkedAccount, deviceToken: Swift.String? = nil, completion: @escaping BlockID.UserAPICallback)
   public func validateAccessCode(code: Swift.String, origin: BlockID.BIDOrigin, completion: @escaping BlockID.AccessCodeValidationAPICallback)
@@ -667,8 +669,6 @@ public typealias PollSessionCallback = ((_ status: Swift.Bool, _ response: Swift
   public func decryptString(str: Swift.String, senderKey: Swift.String) -> Swift.String?
   public func getWalletPublicKey() -> Swift.String
   public func getServerPublicKey() -> Swift.String
-  @discardableResult
-  public func generateWalletForRestore(mnemonics: Swift.String) -> Swift.Bool
   public func getMnemonicPhrases() -> Swift.String?
   public func getDID() -> Swift.String
   public func getIAL(completion: @escaping BlockID.IALCallback)
@@ -732,7 +732,7 @@ extension BlockID.BlockIDSDK {
   public func getVP(_ dictVCObj: [Swift.String : Any], completion: @escaping BlockID.VPCallback)
 }
 extension BlockID.BlockIDSDK {
-  public func fetchGlobalConfig(_ tenant: BlockID.BIDTenant, completion: @escaping BlockID.GlobalConfigCallback)
+  public func fetchConfig(_ tenantDNS: Swift.String, completion: @escaping BlockID.FetchConfigCallback)
 }
 extension BlockID.BlockIDSDK {
   public func updateAccountInfo(account: BlockID.BIDLinkedAccount, pushID: Swift.String? = nil, deviceInfo: [Swift.String : Any], completion: @escaping BlockID.UpdateAccInfoCallback)
@@ -743,6 +743,15 @@ extension BlockID.BlockIDSDK {
 extension BlockID.BlockIDSDK {
   public func createDocumentSession(docType: BlockID.DocumentScannerType, dvcId: Swift.String? = nil, completion: @escaping BlockID.DocumentSessionCallback)
   public func pollDocumentSession(sessionId: Swift.String, dvcId: Swift.String? = nil, completion: @escaping BlockID.PollSessionCallback)
+}
+extension BlockID.BlockIDSDK {
+  public func setRestoreMode()
+  public func isRestoreModeOn() -> Swift.Bool
+  public func restoreUserDataFromWallet(completion: @escaping BlockID.UserAPICallback)
+  @discardableResult
+  public func generateWalletForRestore(mnemonics: Swift.String) -> Swift.Bool
+  public func isRestoreWalletEnabled(forTenant dns: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  public func restoreWalletWithLiveID(controller: UIKit.UIViewController, rootTenantDNS: Swift.String, communityName: Swift.String, dvcID: Swift.String? = nil, completion: @escaping BlockID.RestoreWalletWithLiveIDCallback)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TOTPUtils : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.TOTPUtils
@@ -851,7 +860,6 @@ public enum AuthAssetType : Swift.String {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BIDSessionResponse : Swift.Codable {
-  public func sessionResponseData() -> BlockID.SessionResponseData?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -877,6 +885,16 @@ public enum AuthAssetType : Swift.String {
   @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
 }
+@_hasMissingDesignatedInitializers public class BIDSelfieSessionDataRequest : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class BIDSessionMetaData : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 public typealias UpdateAccInfoCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public enum SecureMessagingSupportedAlgorithms {
   case DES
@@ -891,6 +909,17 @@ public enum SecureMessagingSupportedAlgorithms {
 public class SecureMessaging {
   public init(encryptionAlgorithm: BlockID.SecureMessagingSupportedAlgorithms = .DES, ksenc: [Swift.UInt8], ksmac: [Swift.UInt8], ssc: [Swift.UInt8])
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SelfieScannerViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) convenience public init(tenant: BlockID.BIDTenant, dvcID: Swift.String, scopes: Swift.String, keyPair: BlockID.APIKeyPair)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension BlockID.SelfieScannerViewController : SafariServices.SFSafariViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
 }
 extension Starscream.WebSocket : WalletConnectRelay.WebSocketConnecting {
 }
@@ -1401,6 +1430,7 @@ public struct CustomErrors {
     public static let INVALID_USER: (code: Swift.Int, message: Swift.String)
     public static let ASSERTION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
     public static let ASSERTION_RESULT_FAILED: (code: Swift.Int, message: Swift.String)
+    @available(*, deprecated, message: "Not in use, will be removed soon")
     public static let GLOBAL_CAAS_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
     public static let ADMIN_CONSOLE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
     public static let KEY_ALREADY_REGISTERED: (code: Swift.Int, message: Swift.String)
@@ -1426,6 +1456,15 @@ public struct CustomErrors {
     public static let CANCELED: (code: Swift.Int, message: Swift.String)
     public static let INVALID_DOC_TYPE: (code: Swift.Int, message: Swift.String)
     public static let TIMEOUT: (code: Swift.Int, message: Swift.String)
+  }
+  public struct CaaS {
+    public static let GLOBAL_CAAS_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
+  }
+  public struct LiveIDSelfie {
+    public static let CANCELED: (code: Swift.Int, message: Swift.String)
+    public static let WALLETAPI_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
+    public static let WALLET_RESTORATION_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let GENERATE_SESSION_FAILED: (code: Swift.Int, message: Swift.String)
   }
   public static let kWalletCreationFailed: (code: Swift.Int, msg: Swift.String)
   public static let kUserIdAlreadyExists: (code: Swift.Int, msg: Swift.String)
@@ -1472,6 +1511,12 @@ public struct CustomErrors {
   public init(code: Swift.Int, msg: Swift.String)
   public init(code: Swift.Int, msg: Swift.String, responseObj: [Swift.String : Any])
   @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ServicePublicKeyResponse : Swift.Codable {
+  public var publicKey: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public typealias FIDO2Callback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 @available(iOS 13, macOS 10.15, *)
@@ -2257,6 +2302,20 @@ public struct DriverLicenseData : Swift.Codable {
   required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class PasswordRules : Swift.Codable {
+  public var minEnabled: Swift.Bool?
+  public var minSpecialEnabled: Swift.Bool?
+  public var minNumbersEnabled: Swift.Bool?
+  public var specialCharAllowedEnabled: Swift.Bool?
+  public var minAlphaCapsEnabled: Swift.Bool?
+  public var noUsername: Swift.Bool?
+  public var noUsernameEnabled: Swift.Bool?
+  public var allowInRowEnabled: Swift.Bool?
+  public var min: Swift.Int?
+  public var minSpecial: Swift.Int?
+  public var minNumbers: Swift.Int?
+  public var specialCharsAllowed: Swift.String?
+  public var minAlphaCaps: Swift.Int?
+  public var allowInRow: Swift.Int?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -2278,6 +2337,47 @@ extension Swift.String {
   public func replace(target: Swift.String, with: Swift.String) -> Swift.String
   public func convertStringToHex() -> Swift.String
   public func convertHexToString() -> Swift.String
+}
+public class FetchConfigResponse : Swift.Codable {
+  public var data: [Swift.String : BlockID.MobileAppConfigs.BlockIDConfig]
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class MobileAppConfigs : Swift.Codable {
+  @_hasMissingDesignatedInitializers public class BlockIDConfig : Swift.Codable {
+    public var app: BlockID.MobileAppConfigs.OriginAllowedToTransfer?
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+  @_hasMissingDesignatedInitializers public class SDKConfig : Swift.Codable {
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+  @_hasMissingDesignatedInitializers public class LiveIdSelfie : Swift.Codable {
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+  @_hasMissingDesignatedInitializers public class OriginAllowedToTransfer : Swift.Codable {
+    public var originAllowedToTransfer: [BlockID.MobileAppConfigs.Origin]?
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+  @_hasMissingDesignatedInitializers public class Origin : Swift.Codable {
+    public var dns: Swift.String?
+    public var tenantTag: Swift.String?
+    public var communityName: Swift.String?
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public protocol RFIDResponseDelegate : AnyObject {
   func rfidScanCompleted(withPassport docDic: [Swift.String : Any]?, error: BlockID.ErrorResponse?)
@@ -2322,42 +2422,6 @@ extension BlockID.PassportReader : CoreNFC.NFCTagReaderSessionDelegate {
 }
 @_hasMissingDesignatedInitializers public class ServerPublicKeyResponse : Swift.Codable {
   public var publicKey: Swift.String?
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-public class GlobalConfigResponse : Swift.Codable {
-  public var data: [Swift.String : BlockID.MobileAppConfigs.BlockIDConfig]
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@_hasMissingDesignatedInitializers public class MobileAppConfigs : Swift.Codable {
-  @_hasMissingDesignatedInitializers public class BlockIDConfig : Swift.Codable {
-    public var app: BlockID.MobileAppConfigs.OriginAllowedToTransfer?
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
-  @_hasMissingDesignatedInitializers public class TrustedSessions : Swift.Codable {
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
-  @_hasMissingDesignatedInitializers public class OriginAllowedToTransfer : Swift.Codable {
-    public var originAllowedToTransfer: [BlockID.MobileAppConfigs.Origin]?
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
-  @_hasMissingDesignatedInitializers public class Origin : Swift.Codable {
-    public var dns: Swift.String?
-    public var tenantTag: Swift.String?
-    public var communityName: Swift.String?
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
