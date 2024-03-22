@@ -1,7 +1,7 @@
 framework module BlockID {
   umbrella header "BlockID.h"
-
   export *
+
   module * { export * }
 }
 

@@ -83,7 +83,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -111,7 +111,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -849,12 +849,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Foundation.NSCoding?",
+                "printedName": "(any Foundation.NSCoding)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "NSCoding",
-                    "printedName": "Foundation.NSCoding",
+                    "printedName": "any Foundation.NSCoding",
                     "usr": "c:objc(pl)NSCoding"
                   }
                 ],
@@ -1263,7 +1263,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "NSCoding",
-                "printedName": "Foundation.NSCoding",
+                "printedName": "any Foundation.NSCoding",
                 "usr": "c:objc(pl)NSCoding"
               },
               {
@@ -1596,6 +1596,12 @@
                 "mangledName": "$s7BlockID13DataGroupHashV2idSSvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available",
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1681,6 +1687,12 @@
                 "mangledName": "$s7BlockID13DataGroupHashV03sodE0SSvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available",
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1766,6 +1778,12 @@
                 "mangledName": "$s7BlockID13DataGroupHashV08computedE0SSvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available",
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1851,6 +1869,12 @@
                 "mangledName": "$s7BlockID13DataGroupHashV5matchSbvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available",
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -2926,7 +2950,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -2954,7 +2978,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -4376,7 +4400,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "DocumentScanDelegate",
-                "printedName": "BlockID.DocumentScanDelegate",
+                "printedName": "any BlockID.DocumentScanDelegate",
                 "usr": "s:7BlockID20DocumentScanDelegateP"
               }
             ],
@@ -4643,6 +4667,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -6184,7 +6215,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -6212,7 +6243,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -6955,7 +6986,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -6985,7 +7016,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -7117,7 +7148,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "QRScanResponseDelegate",
-                "printedName": "BlockID.QRScanResponseDelegate",
+                "printedName": "any BlockID.QRScanResponseDelegate",
                 "usr": "s:7BlockID22QRScanResponseDelegateP"
               }
             ],
@@ -11947,12 +11978,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[Swift.Error]",
+                "printedName": "[any Swift.Error]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -11979,12 +12010,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[Swift.Error]",
+                    "printedName": "[any Swift.Error]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -12895,6 +12926,10 @@
                 "mangledName": "$s7BlockID12ResponseAPDUV4dataSays5UInt8VGvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -12980,6 +13015,10 @@
                 "mangledName": "$s7BlockID12ResponseAPDUV3sw1s5UInt8VvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -13065,6 +13104,10 @@
                 "mangledName": "$s7BlockID12ResponseAPDUV3sw2s5UInt8VvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -23325,7 +23368,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -23353,7 +23396,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -25003,7 +25046,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -25031,7 +25074,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -25198,7 +25241,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -25226,7 +25269,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -25283,7 +25326,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -25311,7 +25354,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -25368,7 +25411,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -25396,7 +25439,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -25479,7 +25522,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -25586,7 +25629,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -25614,7 +25657,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -25672,7 +25715,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -25700,7 +25743,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -26392,6 +26435,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -26606,7 +26656,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -26665,7 +26715,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WalletConnectDelegate",
-                "printedName": "BlockID.WalletConnectDelegate",
+                "printedName": "any BlockID.WalletConnectDelegate",
                 "usr": "s:7BlockID21WalletConnectDelegateP"
               }
             ],
@@ -29197,6 +29247,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -30109,7 +30166,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -30137,7 +30194,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -30194,7 +30251,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -30222,7 +30279,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -30633,7 +30690,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -30661,7 +30718,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -30718,7 +30775,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -30746,7 +30803,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -30803,7 +30860,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -30831,7 +30888,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -30967,7 +31024,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -30995,7 +31052,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -31713,7 +31770,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -31741,7 +31798,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -32018,7 +32075,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -32046,7 +32103,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -32873,7 +32930,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -32901,7 +32958,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -35048,7 +35105,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -35076,7 +35133,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -35133,7 +35190,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -35161,7 +35218,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -35519,7 +35576,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -35547,7 +35604,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -37972,7 +38029,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -37997,7 +38054,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -38894,7 +38951,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "LiveIDResponseDelegate",
-                "printedName": "BlockID.LiveIDResponseDelegate",
+                "printedName": "any BlockID.LiveIDResponseDelegate",
                 "usr": "s:7BlockID22LiveIDResponseDelegateP"
               }
             ],
@@ -38921,7 +38978,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "LiveIDResponseDelegate",
-                "printedName": "BlockID.LiveIDResponseDelegate",
+                "printedName": "any BlockID.LiveIDResponseDelegate",
                 "usr": "s:7BlockID22LiveIDResponseDelegateP"
               }
             ],
@@ -39775,6 +39832,12 @@
                 "mangledName": "$s7BlockID9DataGroupC13datagroupTypeAA0cD2IdOvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available",
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -41195,7 +41258,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -41223,7 +41286,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -41507,7 +41570,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -41537,7 +41600,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -48615,7 +48678,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -48643,7 +48706,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -54687,7 +54750,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -54715,7 +54778,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -55383,7 +55446,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -55411,7 +55474,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -55576,6 +55639,10 @@
                 "mangledName": "$s7BlockID10BACHandlerC5ksencSays5UInt8VGvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -55686,6 +55753,10 @@
                 "mangledName": "$s7BlockID10BACHandlerC5ksmacSays5UInt8VGvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -55796,6 +55867,10 @@
                 "mangledName": "$s7BlockID10BACHandlerC4kifdSays5UInt8VGvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -56350,7 +56425,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -56378,7 +56453,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -56812,7 +56887,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -56840,7 +56915,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -57709,7 +57784,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -57737,7 +57812,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -59365,12 +59440,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[BlockID.JSONSubscriptType]",
+                "printedName": "[any BlockID.JSONSubscriptType]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "JSONSubscriptType",
-                    "printedName": "BlockID.JSONSubscriptType",
+                    "printedName": "any BlockID.JSONSubscriptType",
                     "usr": "s:7BlockID17JSONSubscriptTypeP"
                   }
                 ],
@@ -59401,12 +59476,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[BlockID.JSONSubscriptType]",
+                    "printedName": "[any BlockID.JSONSubscriptType]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JSONSubscriptType",
-                        "printedName": "BlockID.JSONSubscriptType",
+                        "printedName": "any BlockID.JSONSubscriptType",
                         "usr": "s:7BlockID17JSONSubscriptTypeP"
                       }
                     ],
@@ -59439,12 +59514,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[BlockID.JSONSubscriptType]",
+                    "printedName": "[any BlockID.JSONSubscriptType]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JSONSubscriptType",
-                        "printedName": "BlockID.JSONSubscriptType",
+                        "printedName": "any BlockID.JSONSubscriptType",
                         "usr": "s:7BlockID17JSONSubscriptTypeP"
                       }
                     ],
@@ -59471,12 +59546,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[BlockID.JSONSubscriptType]",
+                    "printedName": "[any BlockID.JSONSubscriptType]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JSONSubscriptType",
-                        "printedName": "BlockID.JSONSubscriptType",
+                        "printedName": "any BlockID.JSONSubscriptType",
                         "usr": "s:7BlockID17JSONSubscriptTypeP"
                       }
                     ],
@@ -59507,12 +59582,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[BlockID.JSONSubscriptType]",
+                "printedName": "[any BlockID.JSONSubscriptType]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "JSONSubscriptType",
-                    "printedName": "BlockID.JSONSubscriptType",
+                    "printedName": "any BlockID.JSONSubscriptType",
                     "usr": "s:7BlockID17JSONSubscriptTypeP"
                   }
                 ],
@@ -59543,12 +59618,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[BlockID.JSONSubscriptType]",
+                    "printedName": "[any BlockID.JSONSubscriptType]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JSONSubscriptType",
-                        "printedName": "BlockID.JSONSubscriptType",
+                        "printedName": "any BlockID.JSONSubscriptType",
                         "usr": "s:7BlockID17JSONSubscriptTypeP"
                       }
                     ],
@@ -59581,12 +59656,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[BlockID.JSONSubscriptType]",
+                    "printedName": "[any BlockID.JSONSubscriptType]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JSONSubscriptType",
-                        "printedName": "BlockID.JSONSubscriptType",
+                        "printedName": "any BlockID.JSONSubscriptType",
                         "usr": "s:7BlockID17JSONSubscriptTypeP"
                       }
                     ],
@@ -59613,12 +59688,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[BlockID.JSONSubscriptType]",
+                    "printedName": "[any BlockID.JSONSubscriptType]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JSONSubscriptType",
-                        "printedName": "BlockID.JSONSubscriptType",
+                        "printedName": "any BlockID.JSONSubscriptType",
                         "usr": "s:7BlockID17JSONSubscriptTypeP"
                       }
                     ],
@@ -63911,7 +63986,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -63939,7 +64014,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -66665,7 +66740,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "((statusCode: Swift.Int?, error: Swift.Error?, result: τ_0_0?)) -> ()",
+                "printedName": "((statusCode: Swift.Int?, error: (any Swift.Error)?, result: τ_0_0?)) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -66675,7 +66750,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(statusCode: Swift.Int?, error: Swift.Error?, result: τ_0_0?)",
+                    "printedName": "(statusCode: Swift.Int?, error: (any Swift.Error)?, result: τ_0_0?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -66694,12 +66769,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -66955,7 +67030,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Int?, Swift.Error?, Swift.String?) -> ()",
+                "printedName": "(Swift.Int?, (any Swift.Error)?, Swift.String?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -66965,7 +67040,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.Int?, Swift.Error?, Swift.String?)",
+                    "printedName": "(Swift.Int?, (any Swift.Error)?, Swift.String?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -66984,12 +67059,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -67094,7 +67169,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "((statusCode: Swift.Int?, error: Swift.Error?, result: τ_0_0?)) -> ()",
+                "printedName": "((statusCode: Swift.Int?, error: (any Swift.Error)?, result: τ_0_0?)) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -67104,7 +67179,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(statusCode: Swift.Int?, error: Swift.Error?, result: τ_0_0?)",
+                    "printedName": "(statusCode: Swift.Int?, error: (any Swift.Error)?, result: τ_0_0?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -67123,12 +67198,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -67345,7 +67420,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -67373,7 +67448,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -68049,7 +68124,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -68077,7 +68152,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -68143,7 +68218,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -68171,7 +68246,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -68820,7 +68895,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -68848,7 +68923,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -69345,7 +69420,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -69373,7 +69448,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -69760,7 +69835,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -69788,7 +69863,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -74713,7 +74788,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -74738,7 +74813,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -75272,7 +75347,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -75300,7 +75375,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -76912,7 +76987,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -76940,7 +77015,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -77242,7 +77317,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -77270,7 +77345,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -77442,7 +77517,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decoder",
-                    "printedName": "Swift.Decoder",
+                    "printedName": "any Swift.Decoder",
                     "usr": "s:s7DecoderP"
                   }
                 ],
@@ -77470,7 +77545,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -77527,7 +77602,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decoder",
-                    "printedName": "Swift.Decoder",
+                    "printedName": "any Swift.Decoder",
                     "usr": "s:s7DecoderP"
                   }
                 ],
@@ -77555,7 +77630,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -77612,7 +77687,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decoder",
-                    "printedName": "Swift.Decoder",
+                    "printedName": "any Swift.Decoder",
                     "usr": "s:s7DecoderP"
                   }
                 ],
@@ -77640,7 +77715,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -77832,7 +77907,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decoder",
-                    "printedName": "Swift.Decoder",
+                    "printedName": "any Swift.Decoder",
                     "usr": "s:s7DecoderP"
                   }
                 ],
@@ -77860,7 +77935,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -78247,7 +78322,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decoder",
-                    "printedName": "Swift.Decoder",
+                    "printedName": "any Swift.Decoder",
                     "usr": "s:s7DecoderP"
                   }
                 ],
@@ -78275,7 +78350,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -78327,7 +78402,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -78355,7 +78430,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -78524,7 +78599,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "RFIDResponseDelegate",
-                "printedName": "BlockID.RFIDResponseDelegate",
+                "printedName": "any BlockID.RFIDResponseDelegate",
                 "usr": "s:7BlockID20RFIDResponseDelegateP"
               },
               {
@@ -79696,7 +79771,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -79726,7 +79801,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -79916,6 +79991,10 @@
                 "mangledName": "$s7BlockID14PassportReaderC32passiveAuthenticationUsesOpenSSLSbvM",
                 "moduleName": "BlockID",
                 "implicit": true,
+                "intro_iOS": "13",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -80240,7 +80319,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -80508,7 +80587,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -80536,7 +80615,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -80866,6 +80945,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -81650,6 +81736,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -82395,6 +82488,7 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
@@ -84840,28 +84934,28 @@
       "kind": "IntegerLiteral",
       "offset": 242,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "IntegerLiteral",
       "offset": 267,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "IntegerLiteral",
       "offset": 296,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "IntegerLiteral",
       "offset": 322,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
@@ -87290,7 +87384,7 @@
       "kind": "Array",
       "offset": 614,
       "length": 109,
-      "value": "[1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0]"
+      "value": "[-1.0, -1.0, 0.0, 1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/Internal\/Renderer.swift",
@@ -88403,7 +88497,7 @@
       "kind": "IntegerLiteral",
       "offset": 1459,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
@@ -88431,7 +88525,7 @@
       "kind": "IntegerLiteral",
       "offset": 1666,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/Utils.swift",
@@ -89803,7 +89897,7 @@
       "kind": "Array",
       "offset": 1354,
       "length": 14,
-      "value": "[1009, 1020]"
+      "value": "[-1009, -1020]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/OfflineAuth\/QRSplitDataPacket.swift",
