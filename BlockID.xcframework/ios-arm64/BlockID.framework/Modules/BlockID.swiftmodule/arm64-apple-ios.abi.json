@@ -4224,30 +4224,6 @@
       },
       {
         "kind": "Import",
-        "name": "IDMetricsSelfieCapture",
-        "printedName": "IDMetricsSelfieCapture",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -15867,7 +15843,7 @@
           {
             "kind": "Function",
             "name": "setLiveID",
-            "printedName": "setLiveID(liveIdImage:liveIdProofedBy:sigToken:completion:)",
+            "printedName": "setLiveID(liveIdImage:liveIdProofedBy:sigToken:livenessResult:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15911,6 +15887,20 @@
                 "usr": "s:Sq"
               },
               {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
                 "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
@@ -15951,8 +15941,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC07setLiveB011liveIdImage0fG9ProofedBy8sigToken10completionySo7UIImageC_SSSgAKySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC07setLiveB011liveIdImage0fG9ProofedBy8sigToken10completionySo7UIImageC_SSSgAKySb_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID0A5IDSDKC07setLiveB011liveIdImage0fG9ProofedBy8sigToken14livenessResult10completionySo7UIImageC_SSSgA2LySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC07setLiveB011liveIdImage0fG9ProofedBy8sigToken14livenessResult10completionySo7UIImageC_SSSgA2LySb_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -15963,7 +15953,7 @@
           {
             "kind": "Function",
             "name": "verifyLiveID",
-            "printedName": "verifyLiveID(image:sigToken:completion:)",
+            "printedName": "verifyLiveID(image:sigToken:livenessResult:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15989,6 +15979,20 @@
                   }
                 ],
                 "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
                 "usr": "s:Sq"
               },
               {
@@ -16032,8 +16036,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC010verifyLiveB05image8sigToken10completionySo7UIImageC_SSSgySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC010verifyLiveB05image8sigToken10completionySo7UIImageC_SSSgySb_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID0A5IDSDKC010verifyLiveB05image8sigToken14livenessResult10completionySo7UIImageC_SSSgAKySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC010verifyLiveB05image8sigToken14livenessResult10completionySo7UIImageC_SSSgAKySb_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -24734,7 +24738,7 @@
           {
             "kind": "Function",
             "name": "enrollLiveID",
-            "printedName": "enrollLiveID(dictLiveID:tenant:keyPair:did:ial:completion:)",
+            "printedName": "enrollLiveID(dictLiveID:tenant:keyPair:did:ial:livenessResult:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -24785,6 +24789,20 @@
                 "usr": "s:SS"
               },
               {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
                 "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
@@ -24825,8 +24843,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID15BIDAuthProviderC010enrollLiveB004dictfB06tenant7keyPair3did3ial10completionySDySSypG_AA9BIDTenantCAA06APIKeyJ0CS2SySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID15BIDAuthProviderC010enrollLiveB004dictfB06tenant7keyPair3did3ial10completionySDySSypG_AA9BIDTenantCAA06APIKeyJ0CS2SySb_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID15BIDAuthProviderC010enrollLiveB004dictfB06tenant7keyPair3did3ial14livenessResult10completionySDySSypG_AA9BIDTenantCAA06APIKeyJ0CS3SSgySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID15BIDAuthProviderC010enrollLiveB004dictfB06tenant7keyPair3did3ial14livenessResult10completionySDySSypG_AA9BIDTenantCAA06APIKeyJ0CS3SSgySb_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -24837,7 +24855,7 @@
           {
             "kind": "Function",
             "name": "verifyLiveID",
-            "printedName": "verifyLiveID(image:keyPair:tenant:did:completion:)",
+            "printedName": "verifyLiveID(image:keyPair:tenant:did:livenessResult:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -24869,6 +24887,20 @@
                 "usr": "s:SS"
               },
               {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
                 "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
@@ -24909,8 +24941,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID15BIDAuthProviderC010verifyLiveB05image7keyPair6tenant3did10completionySo7UIImageC_AA06APIKeyI0CAA9BIDTenantCSSySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID15BIDAuthProviderC010verifyLiveB05image7keyPair6tenant3did10completionySo7UIImageC_AA06APIKeyI0CAA9BIDTenantCSSySb_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID15BIDAuthProviderC010verifyLiveB05image7keyPair6tenant3did14livenessResult10completionySo7UIImageC_AA06APIKeyI0CAA9BIDTenantCS2SSgySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID15BIDAuthProviderC010verifyLiveB05image7keyPair6tenant3did14livenessResult10completionySo7UIImageC_AA06APIKeyI0CAA9BIDTenantCS2SSgySb_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -38267,7 +38299,7 @@
           {
             "kind": "Function",
             "name": "focusOnFaceChanged",
-            "printedName": "focusOnFaceChanged(isFocused:)",
+            "printedName": "focusOnFaceChanged(isFocused:message:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38287,38 +38319,25 @@
                   }
                 ],
                 "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID22LiveIDResponseDelegateP18focusOnFaceChanged9isFocusedySbSg_tF",
-            "mangledName": "$s7BlockID22LiveIDResponseDelegateP18focusOnFaceChanged9isFocusedySbSg_tF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : BlockID.LiveIDResponseDelegate>",
-            "sugared_genericSig": "<Self where Self : BlockID.LiveIDResponseDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "readyForExpression",
-            "printedName": "readyForExpression(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "LivenessFactorType",
-                "printedName": "BlockID.LivenessFactorType",
-                "usr": "s:7BlockID18LivenessFactorTypeO"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID22LiveIDResponseDelegateP18readyForExpressionyyAA18LivenessFactorTypeOF",
-            "mangledName": "$s7BlockID22LiveIDResponseDelegateP18readyForExpressionyyAA18LivenessFactorTypeOF",
+            "usr": "s:7BlockID22LiveIDResponseDelegateP18focusOnFaceChanged9isFocused7messageySbSg_SSSgtF",
+            "mangledName": "$s7BlockID22LiveIDResponseDelegateP18focusOnFaceChanged9isFocused7messageySbSg_SSSgtF",
             "moduleName": "BlockID",
             "genericSig": "<τ_0_0 where τ_0_0 : BlockID.LiveIDResponseDelegate>",
             "sugared_genericSig": "<Self where Self : BlockID.LiveIDResponseDelegate>",
@@ -38329,7 +38348,7 @@
           {
             "kind": "Function",
             "name": "liveIdDetectionCompleted",
-            "printedName": "liveIdDetectionCompleted(_:signatureToken:error:)",
+            "printedName": "liveIdDetectionCompleted(_:signatureToken:livenessResult:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38367,6 +38386,20 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "BlockID.ErrorResponse?",
                 "children": [
                   {
@@ -38380,35 +38413,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID22LiveIDResponseDelegateP24liveIdDetectionCompleted_14signatureToken5errorySo7UIImageCSg_SSSgAA13ErrorResponseCSgtF",
-            "mangledName": "$s7BlockID22LiveIDResponseDelegateP24liveIdDetectionCompleted_14signatureToken5errorySo7UIImageCSg_SSSgAA13ErrorResponseCSgtF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : BlockID.LiveIDResponseDelegate>",
-            "sugared_genericSig": "<Self where Self : BlockID.LiveIDResponseDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "wrongExpressionDetected",
-            "printedName": "wrongExpressionDetected(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LivenessFactorType",
-                "printedName": "BlockID.LivenessFactorType",
-                "usr": "s:7BlockID18LivenessFactorTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID22LiveIDResponseDelegateP23wrongExpressionDetectedyyAA18LivenessFactorTypeOF",
-            "mangledName": "$s7BlockID22LiveIDResponseDelegateP23wrongExpressionDetectedyyAA18LivenessFactorTypeOF",
+            "usr": "s:7BlockID22LiveIDResponseDelegateP24liveIdDetectionCompleted_14signatureToken14livenessResult5errorySo7UIImageCSg_SSSgAkA13ErrorResponseCSgtF",
+            "mangledName": "$s7BlockID22LiveIDResponseDelegateP24liveIdDetectionCompleted_14signatureToken14livenessResult5errorySo7UIImageCSg_SSSgAkA13ErrorResponseCSgtF",
             "moduleName": "BlockID",
             "genericSig": "<τ_0_0 where τ_0_0 : BlockID.LiveIDResponseDelegate>",
             "sugared_genericSig": "<Self where Self : BlockID.LiveIDResponseDelegate>",
@@ -38494,7 +38500,7 @@
           {
             "kind": "Function",
             "name": "focusOnFaceChanged",
-            "printedName": "focusOnFaceChanged(isFocused:)",
+            "printedName": "focusOnFaceChanged(isFocused:message:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38514,63 +38520,25 @@
                   }
                 ],
                 "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID22LiveIDResponseDelegatePAAE18focusOnFaceChanged9isFocusedySbSg_tF",
-            "mangledName": "$s7BlockID22LiveIDResponseDelegatePAAE18focusOnFaceChanged9isFocusedySbSg_tF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : BlockID.LiveIDResponseDelegate>",
-            "sugared_genericSig": "<Self where Self : BlockID.LiveIDResponseDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "readyForExpression",
-            "printedName": "readyForExpression(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "LivenessFactorType",
-                "printedName": "BlockID.LivenessFactorType",
-                "usr": "s:7BlockID18LivenessFactorTypeO"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID22LiveIDResponseDelegatePAAE18readyForExpressionyyAA18LivenessFactorTypeOF",
-            "mangledName": "$s7BlockID22LiveIDResponseDelegatePAAE18readyForExpressionyyAA18LivenessFactorTypeOF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : BlockID.LiveIDResponseDelegate>",
-            "sugared_genericSig": "<Self where Self : BlockID.LiveIDResponseDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "wrongExpressionDetected",
-            "printedName": "wrongExpressionDetected(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LivenessFactorType",
-                "printedName": "BlockID.LivenessFactorType",
-                "usr": "s:7BlockID18LivenessFactorTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID22LiveIDResponseDelegatePAAE23wrongExpressionDetectedyyAA18LivenessFactorTypeOF",
-            "mangledName": "$s7BlockID22LiveIDResponseDelegatePAAE23wrongExpressionDetectedyyAA18LivenessFactorTypeOF",
+            "usr": "s:7BlockID22LiveIDResponseDelegatePAAE18focusOnFaceChanged9isFocused7messageySbSg_SSSgtF",
+            "mangledName": "$s7BlockID22LiveIDResponseDelegatePAAE18focusOnFaceChanged9isFocused7messageySbSg_SSSgtF",
             "moduleName": "BlockID",
             "genericSig": "<τ_0_0 where τ_0_0 : BlockID.LiveIDResponseDelegate>",
             "sugared_genericSig": "<Self where Self : BlockID.LiveIDResponseDelegate>",
@@ -38591,328 +38559,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "LivenessFactorType",
-        "printedName": "LivenessFactorType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "BLINK",
-            "printedName": "BLINK",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BlockID.LivenessFactorType.Type) -> BlockID.LivenessFactorType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LivenessFactorType",
-                    "printedName": "BlockID.LivenessFactorType",
-                    "usr": "s:7BlockID18LivenessFactorTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BlockID.LivenessFactorType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LivenessFactorType",
-                        "printedName": "BlockID.LivenessFactorType",
-                        "usr": "s:7BlockID18LivenessFactorTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7BlockID18LivenessFactorTypeO5BLINKyA2CmF",
-            "mangledName": "$s7BlockID18LivenessFactorTypeO5BLINKyA2CmF",
-            "moduleName": "BlockID"
-          },
-          {
-            "kind": "Var",
-            "name": "SMILE",
-            "printedName": "SMILE",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BlockID.LivenessFactorType.Type) -> BlockID.LivenessFactorType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LivenessFactorType",
-                    "printedName": "BlockID.LivenessFactorType",
-                    "usr": "s:7BlockID18LivenessFactorTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BlockID.LivenessFactorType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LivenessFactorType",
-                        "printedName": "BlockID.LivenessFactorType",
-                        "usr": "s:7BlockID18LivenessFactorTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7BlockID18LivenessFactorTypeO5SMILEyA2CmF",
-            "mangledName": "$s7BlockID18LivenessFactorTypeO5SMILEyA2CmF",
-            "moduleName": "BlockID"
-          },
-          {
-            "kind": "Var",
-            "name": "TURN_LEFT",
-            "printedName": "TURN_LEFT",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BlockID.LivenessFactorType.Type) -> BlockID.LivenessFactorType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LivenessFactorType",
-                    "printedName": "BlockID.LivenessFactorType",
-                    "usr": "s:7BlockID18LivenessFactorTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BlockID.LivenessFactorType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LivenessFactorType",
-                        "printedName": "BlockID.LivenessFactorType",
-                        "usr": "s:7BlockID18LivenessFactorTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7BlockID18LivenessFactorTypeO9TURN_LEFTyA2CmF",
-            "mangledName": "$s7BlockID18LivenessFactorTypeO9TURN_LEFTyA2CmF",
-            "moduleName": "BlockID"
-          },
-          {
-            "kind": "Var",
-            "name": "TURN_RIGHT",
-            "printedName": "TURN_RIGHT",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BlockID.LivenessFactorType.Type) -> BlockID.LivenessFactorType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LivenessFactorType",
-                    "printedName": "BlockID.LivenessFactorType",
-                    "usr": "s:7BlockID18LivenessFactorTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BlockID.LivenessFactorType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LivenessFactorType",
-                        "printedName": "BlockID.LivenessFactorType",
-                        "usr": "s:7BlockID18LivenessFactorTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7BlockID18LivenessFactorTypeO10TURN_RIGHTyA2CmF",
-            "mangledName": "$s7BlockID18LivenessFactorTypeO10TURN_RIGHTyA2CmF",
-            "moduleName": "BlockID"
-          },
-          {
-            "kind": "Var",
-            "name": "NONE",
-            "printedName": "NONE",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BlockID.LivenessFactorType.Type) -> BlockID.LivenessFactorType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LivenessFactorType",
-                    "printedName": "BlockID.LivenessFactorType",
-                    "usr": "s:7BlockID18LivenessFactorTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BlockID.LivenessFactorType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LivenessFactorType",
-                        "printedName": "BlockID.LivenessFactorType",
-                        "usr": "s:7BlockID18LivenessFactorTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7BlockID18LivenessFactorTypeO4NONEyA2CmF",
-            "mangledName": "$s7BlockID18LivenessFactorTypeO4NONEyA2CmF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LivenessFactorType",
-                "printedName": "BlockID.LivenessFactorType",
-                "usr": "s:7BlockID18LivenessFactorTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LivenessFactorType",
-                "printedName": "BlockID.LivenessFactorType",
-                "usr": "s:7BlockID18LivenessFactorTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID18LivenessFactorTypeO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s7BlockID18LivenessFactorTypeO2eeoiySbAC_ACtFZ",
-            "moduleName": "BlockID",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID18LivenessFactorTypeO9hashValueSivp",
-            "mangledName": "$s7BlockID18LivenessFactorTypeO9hashValueSivp",
-            "moduleName": "BlockID",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID18LivenessFactorTypeO9hashValueSivg",
-                "mangledName": "$s7BlockID18LivenessFactorTypeO9hashValueSivg",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID18LivenessFactorTypeO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s7BlockID18LivenessFactorTypeO4hash4intoys6HasherVz_tF",
-            "moduleName": "BlockID",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:7BlockID18LivenessFactorTypeO",
-        "mangledName": "$s7BlockID18LivenessFactorTypeO",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "LiveIDScannerHelper",
         "printedName": "LiveIDScannerHelper",
         "children": [
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(bidScannerView:overlayFrame:shouldResetOnWrongExpresssion:liveIdResponseDelegate:)",
+            "printedName": "init(bidScannerView:overlayFrame:liveIdResponseDelegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38943,48 +38596,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "LiveIDResponseDelegate",
                 "printedName": "any BlockID.LiveIDResponseDelegate",
                 "usr": "s:7BlockID22LiveIDResponseDelegateP"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7BlockID19LiveIDScannerHelperC14bidScannerView12overlayFrame29shouldResetOnWrongExpresssion22liveIdResponseDelegateAcA010BIDScannerH0C_So6CGRectVSgSbAA0c10IDResponseS0_ptcfc",
-            "mangledName": "$s7BlockID19LiveIDScannerHelperC14bidScannerView12overlayFrame29shouldResetOnWrongExpresssion22liveIdResponseDelegateAcA010BIDScannerH0C_So6CGRectVSgSbAA0c10IDResponseS0_ptcfc",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(liveIdResponseDelegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LiveIDScannerHelper",
-                "printedName": "BlockID.LiveIDScannerHelper",
-                "usr": "c:@M@BlockID@objc(cs)LiveIDScannerHelper"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LiveIDResponseDelegate",
-                "printedName": "any BlockID.LiveIDResponseDelegate",
-                "usr": "s:7BlockID22LiveIDResponseDelegateP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7BlockID19LiveIDScannerHelperC22liveIdResponseDelegateAcA0c10IDResponseI0_p_tcfc",
-            "mangledName": "$s7BlockID19LiveIDScannerHelperC22liveIdResponseDelegateAcA0c10IDResponseI0_p_tcfc",
+            "usr": "s:7BlockID19LiveIDScannerHelperC14bidScannerView12overlayFrame22liveIdResponseDelegateAcA010BIDScannerH0C_So6CGRectVSgAA0c10IDResponseN0_ptcfc",
+            "mangledName": "$s7BlockID19LiveIDScannerHelperC14bidScannerView12overlayFrame22liveIdResponseDelegateAcA010BIDScannerH0C_So6CGRectVSgAA0c10IDResponseN0_ptcfc",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -39109,41 +38728,6 @@
           },
           {
             "kind": "Function",
-            "name": "focusOnFaceChange",
-            "printedName": "focusOnFaceChange(isFocused:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID19LiveIDScannerHelperC17focusOnFaceChange9isFocusedySbSg_tF",
-            "mangledName": "$s7BlockID19LiveIDScannerHelperC17focusOnFaceChange9isFocusedySbSg_tF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "faceLivenessCheckStarted",
             "printedName": "faceLivenessCheckStarted()",
             "children": [
@@ -39165,35 +38749,8 @@
           },
           {
             "kind": "Function",
-            "name": "wrongExpressionDetected",
-            "printedName": "wrongExpressionDetected(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LivenessFactorType",
-                "printedName": "BlockID.LivenessFactorType",
-                "usr": "s:7BlockID18LivenessFactorTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID19LiveIDScannerHelperC23wrongExpressionDetectedyyAA18LivenessFactorTypeOF",
-            "mangledName": "$s7BlockID19LiveIDScannerHelperC23wrongExpressionDetectedyyAA18LivenessFactorTypeOF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "focusOnFaceChanged",
-            "printedName": "focusOnFaceChanged(isFocused:)",
+            "printedName": "focusOnFaceChanged(isFocused:message:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39213,38 +38770,25 @@
                   }
                 ],
                 "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID19LiveIDScannerHelperC18focusOnFaceChanged9isFocusedySbSg_tF",
-            "mangledName": "$s7BlockID19LiveIDScannerHelperC18focusOnFaceChanged9isFocusedySbSg_tF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "readyForExpression",
-            "printedName": "readyForExpression(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "LivenessFactorType",
-                "printedName": "BlockID.LivenessFactorType",
-                "usr": "s:7BlockID18LivenessFactorTypeO"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID19LiveIDScannerHelperC18readyForExpressionyyAA18LivenessFactorTypeOF",
-            "mangledName": "$s7BlockID19LiveIDScannerHelperC18readyForExpressionyyAA18LivenessFactorTypeOF",
+            "usr": "s:7BlockID19LiveIDScannerHelperC18focusOnFaceChanged9isFocused7messageySbSg_SSSgtF",
+            "mangledName": "$s7BlockID19LiveIDScannerHelperC18focusOnFaceChanged9isFocused7messageySbSg_SSSgtF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -39255,7 +38799,7 @@
           {
             "kind": "Function",
             "name": "liveIdDetectionCompleted",
-            "printedName": "liveIdDetectionCompleted(_:signatureToken:error:)",
+            "printedName": "liveIdDetectionCompleted(_:signatureToken:livenessResult:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -39293,6 +38837,20 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "BlockID.ErrorResponse?",
                 "children": [
                   {
@@ -39306,8 +38864,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID19LiveIDScannerHelperC24liveIdDetectionCompleted_14signatureToken5errorySo7UIImageCSg_SSSgAA13ErrorResponseCSgtF",
-            "mangledName": "$s7BlockID19LiveIDScannerHelperC24liveIdDetectionCompleted_14signatureToken5errorySo7UIImageCSg_SSSgAA13ErrorResponseCSgtF",
+            "usr": "s:7BlockID19LiveIDScannerHelperC24liveIdDetectionCompleted_14signatureToken14livenessResult5errorySo7UIImageCSg_SSSgAkA13ErrorResponseCSgtF",
+            "mangledName": "$s7BlockID19LiveIDScannerHelperC24liveIdDetectionCompleted_14signatureToken14livenessResult5errorySo7UIImageCSg_SSSgAkA13ErrorResponseCSgtF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -46152,8 +45710,8 @@
           },
           {
             "kind": "Var",
-            "name": "kScanCancelled",
-            "printedName": "kScanCancelled",
+            "name": "KLiveIdTokenValidationFailed",
+            "printedName": "KLiveIdTokenValidationFailed",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -46176,8 +45734,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7BlockID12CustomErrorsV14kScanCancelledSi4code_SS3msgtvpZ",
-            "mangledName": "$s7BlockID12CustomErrorsV14kScanCancelledSi4code_SS3msgtvpZ",
+            "usr": "s:7BlockID12CustomErrorsV28KLiveIdTokenValidationFailedSi4code_SS3msgtvpZ",
+            "mangledName": "$s7BlockID12CustomErrorsV28KLiveIdTokenValidationFailedSi4code_SS3msgtvpZ",
             "moduleName": "BlockID",
             "static": true,
             "declAttributes": [
@@ -46215,8 +45773,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7BlockID12CustomErrorsV14kScanCancelledSi4code_SS3msgtvgZ",
-                "mangledName": "$s7BlockID12CustomErrorsV14kScanCancelledSi4code_SS3msgtvgZ",
+                "usr": "s:7BlockID12CustomErrorsV28KLiveIdTokenValidationFailedSi4code_SS3msgtvgZ",
+                "mangledName": "$s7BlockID12CustomErrorsV28KLiveIdTokenValidationFailedSi4code_SS3msgtvgZ",
                 "moduleName": "BlockID",
                 "static": true,
                 "implicit": true,
@@ -82288,6 +81846,28 @@
           },
           {
             "kind": "Function",
+            "name": "getSHA512WithSalt",
+            "printedName": "getSHA512WithSalt()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS7BlockIDE17getSHA512WithSaltSSyF",
+            "mangledName": "$sSS7BlockIDE17getSHA512WithSaltSSyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "sha256",
             "printedName": "sha256()",
             "children": [
@@ -83112,7 +82692,7 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/CameraModule.swift",
       "kind": "StringLiteral",
-      "offset": 422,
+      "offset": 373,
       "length": 12,
       "value": "\"BlockID.CameraModule\""
     },
@@ -83290,48 +82870,6 @@
       "offset": 445,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetectorOld.swift",
-      "kind": "BooleanLiteral",
-      "offset": 641,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetectorOld.swift",
-      "kind": "IntegerLiteral",
-      "offset": 761,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetectorOld.swift",
-      "kind": "IntegerLiteral",
-      "offset": 786,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetectorOld.swift",
-      "kind": "IntegerLiteral",
-      "offset": 811,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetectorOld.swift",
-      "kind": "IntegerLiteral",
-      "offset": 822,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetectorOld.swift",
-      "kind": "IntegerLiteral",
-      "offset": 833,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetectorOld.swift",
@@ -83843,20 +83381,6 @@
       "offset": 253,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/SupportingScanner\/SelfieScannerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 562,
-      "length": 8,
-      "value": "\"liveId\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/SupportingScanner\/SelfieScannerHelper.swift",
-      "kind": "IntegerLiteral",
-      "offset": 773,
-      "length": 2,
-      "value": "90"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
@@ -84918,7 +84442,7 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 155383,
+      "offset": 157153,
       "length": 5,
       "value": "false"
     },
@@ -86289,22 +85813,8 @@
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/LiveID\/LiveIDScannerHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2051,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/LiveID\/LiveIDScannerHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2209,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/LiveID\/LiveIDScannerHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1648,
+      "offset": 987,
       "length": 19,
       "value": "\"BlockID.LiveIDScannerHelper\""
     },
@@ -86626,182 +86136,147 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13018,
+      "offset": 13034,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 13053,
+      "offset": 13069,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 12965,
+      "offset": 12981,
       "length": 13,
       "value": "\"BlockID.ErrorResponse\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 189,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 215,
+      "offset": 192,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "FloatLiteral",
-      "offset": 246,
+      "offset": 223,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 273,
-      "length": 4,
-      "value": "0.43"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 372,
-      "length": 4,
-      "value": "0.35"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 407,
-      "length": 4,
-      "value": "0.30"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 1423,
-      "length": 3,
-      "value": "0.6"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
-      "kind": "FloatLiteral",
-      "offset": 1532,
-      "length": 3,
-      "value": "0.6"
+      "kind": "StringLiteral",
+      "offset": 380,
+      "length": 20,
+      "value": "\"Face is not found.\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "StringLiteral",
-      "offset": 1699,
+      "offset": 445,
+      "length": 38,
+      "value": "\"Please align the face in the center.\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 529,
+      "length": 23,
+      "value": "\"Multiple faces found.\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 856,
       "length": 18,
       "value": "\"video data queue\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "Array",
-      "offset": 1752,
+      "offset": 909,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 2069,
+      "offset": 1226,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 2075,
+      "offset": 1232,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 2120,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2147,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2179,
+      "offset": 1277,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 2211,
+      "offset": 1313,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1345,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 2233,
+      "offset": 1367,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 2262,
+      "offset": 1396,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 2305,
+      "offset": 1439,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
-      "kind": "Dictionary",
-      "offset": 2751,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "StringLiteral",
-      "offset": 1194,
+      "offset": 562,
       "length": 12,
       "value": "\"BlockID.FaceDetector\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 28603,
+      "offset": 27202,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 28620,
+      "offset": 27219,
       "length": 1,
       "value": "0"
     },
