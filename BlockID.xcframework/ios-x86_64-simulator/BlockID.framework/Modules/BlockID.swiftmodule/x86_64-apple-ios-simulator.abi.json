@@ -86192,91 +86192,98 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "StringLiteral",
-      "offset": 856,
+      "offset": 596,
+      "length": 19,
+      "value": "\"Scanning Complete\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 919,
       "length": 18,
       "value": "\"video data queue\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "Array",
-      "offset": 909,
+      "offset": 972,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 1226,
+      "offset": 1289,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 1232,
+      "offset": 1295,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 1277,
+      "offset": 1340,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 1313,
+      "offset": 1376,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 1345,
+      "offset": 1408,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 1367,
+      "offset": 1430,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 1396,
+      "offset": 1459,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 1439,
+      "offset": 1502,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 625,
       "length": 12,
       "value": "\"BlockID.FaceDetector\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 28152,
+      "offset": 28367,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 28169,
+      "offset": 28384,
       "length": 1,
       "value": "0"
     },
