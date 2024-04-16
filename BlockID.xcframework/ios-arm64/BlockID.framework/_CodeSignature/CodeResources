@@ -6,15 +6,15 @@
 	<dict>
 		<key>BIDScannerView.nib</key>
 		<data>
-		IYBij9GydQRzpiL4rPWfKsM6NSs=
+		fxIQ4yJbD1E4yK113gLU/CPRbQM=
 		</data>
 		<key>DocumentScannerViewController.nib</key>
 		<data>
-		rUYlcUN6nl4DqTtdeptasjFfTSc=
+		C6roHZYeJv4cOMMcqu03V+5H3u8=
 		</data>
 		<key>Headers/BlockID-Swift.h</key>
 		<data>
-		5myQbG04wMiK9Rn+vTduKTeJFvg=
+		jHsueLsEdMJXl7q+RBz65SPskRc=
 		</data>
 		<key>Headers/BlockID.h</key>
 		<data>
@@ -30,43 +30,43 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		b5tBKlglCgDRmhbcfrIIKlxa6H8=
+		qP/6ZaRT1R1sM8qxxNM/wSZqv2M=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		23ROfdX7xjbgdUHcTUR6sKZQQj0=
+		K7zyMEHhf7ddN341XtB2bU9sf8U=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		qdhlrEVYUPqsxZ+yRKUMJC1SBx4=
+		AEA78CY8qjo+opOSDNW9SSTUsFE=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		B6Kk9C6XJnPxJol5Jnrc0OV9zzA=
+		Y0v/Z+Jrc4+ZQR7k2IR5cp9XCwI=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		qdhlrEVYUPqsxZ+yRKUMJC1SBx4=
+		AEA78CY8qjo+opOSDNW9SSTUsFE=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qmIXeUwG6DdTj5YT/MOtwm6ZZUo=
+		2UTOfvkCpnqYm/VNUitFFVRpWAE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		U/q7av0pxa3lvkVPE21dYAgZ7yg=
+		TEHjXB8upr8yXbhlFAdjDiE1ADo=
 		</data>
 		<key>QRGenerator.nib</key>
 		<data>
-		RsQDFsJl8xo9txial9lxKVsu5OE=
+		Xk0MoQlzbwSXDphdjy6kXitibCA=
 		</data>
 		<key>SelfieScannerViewController.nib</key>
 		<data>
-		VHJF80tQBZ6dYLi5sXpl5y4sFfA=
+		un8PNE4OOQ3zXXlxZniQy0p7qMc=
 		</data>
 		<key>default.metallib</key>
 		<data>
-		N+mxc05rB8aqVqXI/okKDUIyPXw=
+		MP5WMFwidY0zGbBLWLkNKjvTIaA=
 		</data>
 		<key>iconLoading.png</key>
 		<data>
@@ -80,6 +80,18 @@
 		<data>
 		YIjnGLBnnSRaSpmAmIm4Zs0Nkqs=
 		</data>
+		<key>shutter@1x.png</key>
+		<data>
+		iJoskGE/omcufMZ2pudmWA+k8UU=
+		</data>
+		<key>shutter@2x.png</key>
+		<data>
+		e+G8DWEQYuluuaenG9/XyBrsH+Q=
+		</data>
+		<key>shutter@3x.png</key>
+		<data>
+		5F/VtAbynbg2/VUkoGndQushzzc=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -87,21 +99,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bQIms0F9IjCVHdUeaZQjctxfUEteMggrEliTPm/4BnI=
+			n6uJk+6hXbdiLQjczsPYs8q0bRf8tyNOQ3Aaa0GIrjY=
 			</data>
 		</dict>
 		<key>DocumentScannerViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RtFbXdQHP15gVNrPOxix+1hLsv5Ze5vSN6OQLfWKAYc=
+			DarpvfBP5Lovq8xkBioX47mL9t3VkmBadsSge4KcPcI=
 			</data>
 		</dict>
 		<key>Headers/BlockID-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uG1mHYddvzIZ3I6P9iZ1H4vPFbg0ihgFgIAgjQqdkVg=
+			FurTwj1bkL8H+1KkuRF5FwYH8JnLflcHR+EIHo2BAMw=
 			</data>
 		</dict>
 		<key>Headers/BlockID.h</key>
@@ -129,63 +141,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JrPBrBmjtbuXu55tPrtBnHyDcqsqmCUkvY/ZscTZyrc=
+			7eDyrhbLsteLZNvaz/qw9F4tqxziiCsPyC0xJkDzS1g=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v9LsPJKxN7/MNJncNjYektZFSWL4fRYrnJAHPZ+yGZ0=
+			+Wesx7FQ+PzMXQ9FwFtt/F0djHokDaJWlMf7y8e4WAw=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CkFCwxnd/ZD3TttYDEgSBD/38Nyseh6OH4Zp4EHGHUY=
+			MYdL8QQAL5qJL9luWmgatZQMUcnZ7VtH5ThJHKwb+40=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v9LsPJKxN7/MNJncNjYektZFSWL4fRYrnJAHPZ+yGZ0=
+			+Wesx7FQ+PzMXQ9FwFtt/F0djHokDaJWlMf7y8e4WAw=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9aAKa5zZv/v3JGJSuzMRjLhjOpiPpn143TgWPWHcrJY=
+			WueOPMED7jU/MPrJdcM3jO62BFaRFVb7Rq3YkBw2JDQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EMsqfCEq6ChZJEfp9nKt1ViUm65ZgOeEiUccQ66ZLEY=
+			IyAujFd3rz4tqoPRLhni714Fmq5V424ex0NbcrW2DEw=
 			</data>
 		</dict>
 		<key>QRGenerator.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+NJQzWMEm8y9vjEQ3AWL2ZKZgNiDjVRvF6QB9I5OWL0=
+			YCXBjg1wSQCYV11PHRyhXmcdaPkc8Ip7XF6L7MC6g/Y=
 			</data>
 		</dict>
 		<key>SelfieScannerViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WkL+KlAtPm1Vo0ryqSwn6hTjSi0PBQtSpVEOA/gW/6k=
+			ZPz2uz7gQoHGM2r9AmsY6McRsym191Wah9bjh2gV92E=
 			</data>
 		</dict>
 		<key>default.metallib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tk00+GfarqzNdDdHCCo7vl7LAWX1Cmrk/O6VfQnRt3s=
+			VQMNhijP6Rsj1KGsiGqQ8CabwP1Sz4Xs6oXw4aUad3E=
 			</data>
 		</dict>
 		<key>iconLoading.png</key>
@@ -207,6 +219,27 @@
 			<key>hash2</key>
 			<data>
 			Dd/437wdduGHCSmUcgkzYuT9PhE/yWAyv2p9qTa4D4I=
+			</data>
+		</dict>
+		<key>shutter@1x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TkD8cvJEjzBbha/7zAjN0xCArv/aqvzhNZxYqiprWA0=
+			</data>
+		</dict>
+		<key>shutter@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HqojnFp/7Qlyigh8AXv7f+krJdyETGJTaa2kvrDAUyw=
+			</data>
+		</dict>
+		<key>shutter@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5ML0ee3poRUb/1pS2JKjjAPcp+eZapF2q9z/mW9Wy6o=
 			</data>
 		</dict>
 	</dict>
