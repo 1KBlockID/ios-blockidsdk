@@ -386,7 +386,6 @@ SWIFT_CLASS("_TtC7BlockID19LiveIDScannerHelper")
 
 
 
-
 SWIFT_CLASS("_TtC7BlockID14PassportReader") SWIFT_AVAILABILITY(ios,introduced=13)
 @interface PassportReader : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

@@ -6,7 +6,7 @@
 	<dict>
 		<key>BIDScannerView.nib</key>
 		<data>
-		IYBij9GydQRzpiL4rPWfKsM6NSs=
+		kvWSIgA+giUft20EnCiGHwbqYJA=
 		</data>
 		<key>DocumentScannerViewController.nib</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/BlockID-Swift.h</key>
 		<data>
-		cXt5uUaYhwBsZ0Rm7bNDQBuXx0w=
+		fJseyhcHqUpfpl+7C0r0DYNZZQ0=
 		</data>
 		<key>Headers/BlockID.h</key>
 		<data>
@@ -30,27 +30,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PeYcFvIxr6i+Qimq2aL0gRI6mL4=
+		XWsowTMNGokeQCLV886xqQGxr4M=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		23ROfdX7xjbgdUHcTUR6sKZQQj0=
+		w4jOTvqHcC2r58RP+069GZzfjls=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		2cA3cgHdzkcDAaDGgKvbUbhWKMM=
+		QMOL1IsPZsRLVlW2Ei/2KiyAmlg=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mRldrAhP4neuErlUlZv/8y1kL54=
+		CB6DAg5fl2t1l3eGdtqTPwqVbd8=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2cA3cgHdzkcDAaDGgKvbUbhWKMM=
+		QMOL1IsPZsRLVlW2Ei/2KiyAmlg=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		srXTFURhhJRm+nYBO3zShAtQMLA=
+		/jp87r34p4pdy5AC1Eyt/9DRPiA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		oKAWE/JtJvUzZIKMyXGxS5ZDuyo=
+		2hLEj1gKXAfNd+87Sf2UqMBQ/ZM=
 		</data>
 		<key>iconLoading.png</key>
 		<data>
@@ -80,6 +80,18 @@
 		<data>
 		YIjnGLBnnSRaSpmAmIm4Zs0Nkqs=
 		</data>
+		<key>shutter@1x.png</key>
+		<data>
+		iJoskGE/omcufMZ2pudmWA+k8UU=
+		</data>
+		<key>shutter@2x.png</key>
+		<data>
+		e+G8DWEQYuluuaenG9/XyBrsH+Q=
+		</data>
+		<key>shutter@3x.png</key>
+		<data>
+		5F/VtAbynbg2/VUkoGndQushzzc=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -87,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bQIms0F9IjCVHdUeaZQjctxfUEteMggrEliTPm/4BnI=
+			z1HYvPjQTdEZctH1vCIzsK7Js8p/UHW+7wSkXyP/2D4=
 			</data>
 		</dict>
 		<key>DocumentScannerViewController.nib</key>
@@ -101,7 +113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0C2b35Q0y4gq1gQzzHhy1VY7sqyqCy7Tc07rYNBZbHk=
+			fbZuWHSV4VHZePSRD8xUhOsXw8YvjZNZPvIKV4xSTHQ=
 			</data>
 		</dict>
 		<key>Headers/BlockID.h</key>
@@ -129,35 +141,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JrPBrBmjtbuXu55tPrtBnHyDcqsqmCUkvY/ZscTZyrc=
+			TTMrbz0lf4XnC63kuhc24TESW0R8Mg34pLWDjY2KYQw=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VHesm4EQz7MgePHk+jLi60wpo9y/i500SX8InUI9Xp0=
+			6I8yamaCi/NqcKmNOjHVY4vw0M1Iil/6egDCwGfBo/4=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HNW/bc3UXv4Dl+TlALFHRnBQgM9nLqPAy+F45WhoaVk=
+			ZtEKIHUOHa13CG1CRd8uNW+xqSEFlr6UiMnx9MqmFuQ=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VHesm4EQz7MgePHk+jLi60wpo9y/i500SX8InUI9Xp0=
+			6I8yamaCi/NqcKmNOjHVY4vw0M1Iil/6egDCwGfBo/4=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HLJVj1U4V2zRC7h8EiocrZ5pCp8lE3OkOUJuUaWxWdE=
+			1kyEBO6I8vJVzFenNBtqZfLcIvN9nVSr5T1qzLRGfX8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -185,7 +197,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l3bwgc20bafuHlPgdD33sh7tIhU7zZ4LIDwy3ZrurMY=
+			7ogyofG+To3CKMBOemYWgz+9a85+J7gRP6ZNejMLx4o=
 			</data>
 		</dict>
 		<key>iconLoading.png</key>
@@ -207,6 +219,27 @@
 			<key>hash2</key>
 			<data>
 			Dd/437wdduGHCSmUcgkzYuT9PhE/yWAyv2p9qTa4D4I=
+			</data>
+		</dict>
+		<key>shutter@1x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TkD8cvJEjzBbha/7zAjN0xCArv/aqvzhNZxYqiprWA0=
+			</data>
+		</dict>
+		<key>shutter@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HqojnFp/7Qlyigh8AXv7f+krJdyETGJTaa2kvrDAUyw=
+			</data>
+		</dict>
+		<key>shutter@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5ML0ee3poRUb/1pS2JKjjAPcp+eZapF2q9z/mW9Wy6o=
 			</data>
 		</dict>
 	</dict>
