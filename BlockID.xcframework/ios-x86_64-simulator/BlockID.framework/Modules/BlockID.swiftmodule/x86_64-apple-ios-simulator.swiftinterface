@@ -2309,7 +2309,6 @@ public class CardAccess {
 }
 extension Swift.String {
   public func sha512() -> Swift.String
-  public func getSHA512WithSalt() -> Swift.String
   public func sha256() -> Swift.String
   public func md5HashV1() -> Swift.String
   public func md5HashV0() -> Swift.String
