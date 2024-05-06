@@ -664,7 +664,7 @@ public typealias RestoreWalletWithLiveIDCallback = ((_ status: Swift.Bool, _ err
   public func generateSession(origin: BIDOrigin, completion: @escaping ((sessionId: Swift.String?, sessionUrl: Swift.String?), _ error: ErrorResponse?) -> Swift.Void)
   public func getSessionResponse(completion: @escaping SessionResponseCallback)
   public func resetPassword(userId: Swift.String, password: Swift.String, account: BIDAccount?, origin: BIDOrigin, completion: @escaping UserAPICallback)
-  public func resetSDK(licenseKey: Swift.String)
+  public func resetSDK(licenseKey: Swift.String, rootTenant: BIDTenant, reason: Swift.String)
   public func encryptString(str: Swift.String, rcptKey: Swift.String) -> Swift.String?
   public func decryptString(str: Swift.String, senderKey: Swift.String) -> Swift.String?
   public func getWalletPublicKey() -> Swift.String
