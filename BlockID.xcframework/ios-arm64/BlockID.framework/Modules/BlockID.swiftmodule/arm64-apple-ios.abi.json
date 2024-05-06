@@ -17836,7 +17836,7 @@
           {
             "kind": "Function",
             "name": "resetSDK",
-            "printedName": "resetSDK(licenseKey:)",
+            "printedName": "resetSDK(licenseKey:rootTenant:reason:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -17848,11 +17848,23 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDTenant",
+                "printedName": "BlockID.BIDTenant",
+                "usr": "s:7BlockID9BIDTenantC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC8resetSDK10licenseKeyySS_tF",
-            "mangledName": "$s7BlockID0A5IDSDKC8resetSDK10licenseKeyySS_tF",
+            "usr": "s:7BlockID0A5IDSDKC8resetSDK10licenseKey10rootTenant6reasonySS_AA9BIDTenantCSStF",
+            "mangledName": "$s7BlockID0A5IDSDKC8resetSDK10licenseKey10rootTenant6reasonySS_AA9BIDTenantCSStF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -84420,7 +84432,7 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 157153,
+      "offset": 159451,
       "length": 5,
       "value": "false"
     },
@@ -85869,42 +85881,42 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
       "kind": "StringLiteral",
-      "offset": 466,
+      "offset": 461,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
       "kind": "StringLiteral",
-      "offset": 831,
+      "offset": 826,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1207,
+      "offset": 1202,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1382,
+      "offset": 1377,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1613,
+      "offset": 1608,
       "length": 11,
       "value": "\"userAgent\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1640,
+      "offset": 1635,
       "length": 2,
       "value": "\"\""
     },
