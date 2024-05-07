@@ -83655,21 +83655,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Analytics API\/AnalyticsApi.swift",
       "kind": "StringLiteral",
-      "offset": 256,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Analytics API\/AnalyticsApi.swift",
-      "kind": "StringLiteral",
-      "offset": 296,
+      "offset": 259,
       "length": 70,
       "value": "\"\/reports\/tenant\/{tenantId}\/community\/{communityId}\/event\/{eventName}\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Analytics API\/AnalyticsApi.swift",
       "kind": "StringLiteral",
-      "offset": 402,
+      "offset": 365,
       "length": 21,
       "value": "\"\/reports\/publickeys\""
     },
@@ -85895,28 +85888,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1202,
-      "length": 5,
-      "value": "\"nil\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 1377,
-      "length": 5,
-      "value": "\"nil\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 1608,
+      "offset": 1278,
       "length": 11,
       "value": "\"userAgent\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1635,
+      "offset": 1305,
       "length": 2,
       "value": "\"\""
     },
