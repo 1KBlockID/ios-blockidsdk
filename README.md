@@ -18,8 +18,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 ### v1.10.30
-- Added events for in app authentication
-- Changed the prototype for authenticateUser() for recording the auth factor
+- Updated authenticate user function to record auth factor
 
 ### v1.10.21
 - Added events for app reset and account removal
