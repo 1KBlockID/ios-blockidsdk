@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BlockID
 import ARKit
 import AVFoundation
 import Accelerate
@@ -21,22 +20,18 @@ import MetalKit
 import OpenSSL
 import PromiseKit
 import SafariServices
-import Starscream
 import Swift
 import SwiftUI
 import UIKit
 import Vision
-import WalletConnectPairing/*.WalletConnectPairing*/
-import WalletConnectRelay
-import WalletConnectSign
-import WalletConnectUtils
 import WalletCore
-import Web3
 import WebAuthnKit
 import WebKit
 import YubiKit
 import _Concurrency
+import _CoreNFC_UIKit
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers public class BIDServiceDirectory : ObjectiveC.NSObject, Swift.Codable {
   @objc override dynamic public init()
   @objc deinit
@@ -919,32 +914,6 @@ public class SecureMessaging {
 }
 extension BlockID.SelfieScannerViewController : SafariServices.SFSafariViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
-}
-extension Starscream.WebSocket : WalletConnectRelay.WebSocketConnecting {
-}
-public protocol WalletConnectDelegate : AnyObject {
-  func onSessionProposal(sessionProposal: WalletConnectSign.Session.Proposal?)
-  func onSessionRequest(request: WalletConnectSign.Request)
-  func onSessionSettleResponse(sessions: [BlockID.ActiveSessionItem])
-  func onSessionDisconnect(remainingSession: [BlockID.ActiveSessionItem])
-  func onError(error: any Swift.Error)
-}
-@objc public class WalletConnectHelper : ObjectiveC.NSObject {
-  public init(projectID: Swift.String, metadata: WalletConnectSign.AppMetadata, delegate: any BlockID.WalletConnectDelegate)
-  public func connect(uri: Swift.String)
-  public func disconnect(session: BlockID.ActiveSessionItem)
-  public func approveSession(request: WalletConnectSign.Request)
-  public func rejectSession(request: WalletConnectSign.Request)
-  public func getActiveSessions() -> [BlockID.ActiveSessionItem]
-  public func approveConnection(sessionProposal: WalletConnectSign.Session.Proposal)
-  public func rejectConnection(sessionProposal: WalletConnectSign.Session.Proposal)
-  @objc deinit
-}
-public struct ActiveSessionItem {
-  public let dappName: Swift.String
-  public let dappURL: Swift.String
-  public let iconURL: Swift.String
-  public let topic: Swift.String
 }
 @available(iOS 13, macOS 10.15, *)
 public enum NFCPassportReaderError : Swift.Error {
