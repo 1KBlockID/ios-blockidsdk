@@ -18,11 +18,11 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.homepage         = 'https://github.com/1KBlockID/ios-blockidsdk.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'info-1kosmos' => 'info@1kosmos.com' }
-  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => 'fltr_01' }
+  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => 'fltr_02' }
 
   # set platform and minimum deployment target
   s.platform = :ios
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '13.4'
 
   # add framework dependency
   s.frameworks = 'UIKit', 'CryptoTokenKit', 'SafariServices'
