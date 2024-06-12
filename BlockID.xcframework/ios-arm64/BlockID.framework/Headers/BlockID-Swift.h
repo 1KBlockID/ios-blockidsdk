@@ -508,15 +508,6 @@ SWIFT_CLASS("_TtC7BlockID13TenantInfoAPI")
 @end
 
 
-
-SWIFT_CLASS("_TtC7BlockID19WalletConnectHelper")
-@interface WalletConnectHelper : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
