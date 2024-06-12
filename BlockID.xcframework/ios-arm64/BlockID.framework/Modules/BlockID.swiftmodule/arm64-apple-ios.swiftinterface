@@ -20,17 +20,11 @@ import MetalKit
 import OpenSSL
 import PromiseKit
 import SafariServices
-import Starscream
 import Swift
 import SwiftUI
 import UIKit
 import Vision
-import WalletConnectPairing
-import WalletConnectRelay
-import WalletConnectSign
-import WalletConnectUtils
 import WalletCore
-import Web3
 import WebAuthnKit
 import WebKit
 import YubiKit
@@ -920,32 +914,6 @@ public class SecureMessaging {
 }
 extension SelfieScannerViewController : SafariServices.SFSafariViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
-}
-extension Starscream.WebSocket : WalletConnectRelay.WebSocketConnecting {
-}
-public protocol WalletConnectDelegate : AnyObject {
-  func onSessionProposal(sessionProposal: WalletConnectSign.Session.Proposal?)
-  func onSessionRequest(request: WalletConnectSign.Request)
-  func onSessionSettleResponse(sessions: [ActiveSessionItem])
-  func onSessionDisconnect(remainingSession: [ActiveSessionItem])
-  func onError(error: any Swift.Error)
-}
-@objc public class WalletConnectHelper : ObjectiveC.NSObject {
-  public init(projectID: Swift.String, metadata: WalletConnectSign.AppMetadata, delegate: any WalletConnectDelegate)
-  public func connect(uri: Swift.String)
-  public func disconnect(session: ActiveSessionItem)
-  public func approveSession(request: WalletConnectSign.Request)
-  public func rejectSession(request: WalletConnectSign.Request)
-  public func getActiveSessions() -> [ActiveSessionItem]
-  public func approveConnection(sessionProposal: WalletConnectSign.Session.Proposal)
-  public func rejectConnection(sessionProposal: WalletConnectSign.Session.Proposal)
-  @objc deinit
-}
-public struct ActiveSessionItem {
-  public let dappName: Swift.String
-  public let dappURL: Swift.String
-  public let iconURL: Swift.String
-  public let topic: Swift.String
 }
 @available(iOS 13, macOS 10.15, *)
 public enum NFCPassportReaderError : Swift.Error {
