@@ -17,7 +17,7 @@ BlockID is available through CocoaPods. To install it, simply add the following 
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
-### v1.10.31
+### v1.10.32
 - Removed WalletConnect and related references
 
 ### v1.10.30
