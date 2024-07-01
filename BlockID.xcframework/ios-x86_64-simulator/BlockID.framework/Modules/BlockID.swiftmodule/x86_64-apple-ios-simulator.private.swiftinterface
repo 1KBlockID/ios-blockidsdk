@@ -2138,6 +2138,7 @@ public struct ProxyDetails {
   public func makeRequest<T>(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (NetworkResponseCallback<T>) -> Swift.Void) where T : Swift.Decodable
   public func makeRequest(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (Swift.String?, Swift.String?, Swift.Bool) -> Swift.Void)
   public func makeRequestWithStatusCode(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (Swift.Int?, (any Swift.Error)?, Swift.String?) -> Swift.Void)
+  public func request(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (Swift.Int?, (any Swift.Error)?, Any?) -> Swift.Void)
   public func makeMultipartRequest<T>(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, multipartFormData: @escaping ((Alamofire.MultipartFormData) -> Swift.Void), requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (NetworkResponseCallback<T>) -> Swift.Void) where T : Swift.Decodable
   @objc deinit
 }
