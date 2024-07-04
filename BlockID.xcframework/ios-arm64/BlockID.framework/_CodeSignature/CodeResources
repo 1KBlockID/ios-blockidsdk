@@ -6,7 +6,7 @@
 	<dict>
 		<key>BIDScannerView.nib</key>
 		<data>
-		fxIQ4yJbD1E4yK113gLU/CPRbQM=
+		fnb7/IFKLUkxGTVDSc2pJw7CXl0=
 		</data>
 		<key>DocumentScannerViewController.nib</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eBrUQVFTX7ccRSL00oPE8bHRKIA=
+		kxPzYG/6Z8oFMSIuGgpWdRHWpCc=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		lCrPuHkpAtyRYQwxA5a88mNPeNw=
+		MJW7L7MoBu/NPEpWuijkIogdX0U=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		1NsiePsl7bd+LmDPeLhXi/fPVRI=
+		0sc49axIs2v2vVIJhui159qmD6I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n6uJk+6hXbdiLQjczsPYs8q0bRf8tyNOQ3Aaa0GIrjY=
+			wfykuILeAqSb3+kuW36SxM20hhUDQW891U5VL6NbCRc=
 			</data>
 		</dict>
 		<key>DocumentScannerViewController.nib</key>
@@ -141,7 +141,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xh8dXAhXkYRq9JL5w4H1Jcg53Bi4FvurLckYBlG49vw=
+			OVak4ROqI79caJBa5mNSHXwETvON74Bez68hbyj3rWo=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -169,7 +169,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cyOdkw5XRYGuV2uSmZRPttPNTZSkuN5S8mj+DBkreEA=
+			91f26cK96Kd+tNWrSxCJZLKxVsa0PsjWKd4/W1LiSRc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
