@@ -1309,6 +1309,9 @@ public class DataGroup {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+public struct AnalyticsHelper {
+  public static func logAppEvent(eventName: Swift.String, tenant: BlockID.BIDTenant, eventParams: [Swift.String : Any])
+}
 @_hasMissingDesignatedInitializers public class CreateAccessCodePayload {
   public init(version: BlockID.Version, type: BlockID.AccessCodeType, emailID: Swift.String, emailSubject: Swift.String, emailTemplate: Swift.String)
   @objc deinit
