@@ -20,6 +20,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ### v1.10.50
 - Added support for Xcode 15.0.1
 - Added logging events support from application 
+- Fixed issue of LiveID capture button visibility for iPhoneSE generation 2/3 devices
 
 ### v1.10.40
 - Fixed bug in user authentication server request handling
