@@ -17,6 +17,9 @@ BlockID is available through CocoaPods. To install it, simply add the following 
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+### v1.10.60
+- Fixed issue related to scopes info evaluation by SDK and empty strings in Origin object
+
 ### v1.10.51
 - Added code signed sdk
 
