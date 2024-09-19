@@ -19,6 +19,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 ### v1.10.60
 - Fixed issue related to scopes info evaluation by SDK and empty strings in Origin object
+- Fixed an issue with Sim binding work flow when QR code is scanned
 
 ### v1.10.51
 - Added code signed sdk
