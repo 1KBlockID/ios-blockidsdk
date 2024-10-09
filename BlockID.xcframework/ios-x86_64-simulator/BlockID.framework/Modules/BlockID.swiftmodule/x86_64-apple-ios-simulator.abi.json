@@ -19399,8 +19399,7 @@
             "mangledName": "$s7BlockID0A5IDSDKC10getVersionSSSgyF",
             "moduleName": "BlockID",
             "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -39007,6 +39006,170 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DataMigrationHelper",
+        "printedName": "DataMigrationHelper",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sharedInstance",
+            "printedName": "sharedInstance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataMigrationHelper",
+                "printedName": "BlockID.DataMigrationHelper",
+                "usr": "s:7BlockID19DataMigrationHelperC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID19DataMigrationHelperC14sharedInstanceACvpZ",
+            "mangledName": "$s7BlockID19DataMigrationHelperC14sharedInstanceACvpZ",
+            "moduleName": "BlockID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataMigrationHelper",
+                    "printedName": "BlockID.DataMigrationHelper",
+                    "usr": "s:7BlockID19DataMigrationHelperC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID19DataMigrationHelperC14sharedInstanceACvgZ",
+                "mangledName": "$s7BlockID19DataMigrationHelperC14sharedInstanceACvgZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "isBidChainNeedsMigration",
+            "printedName": "isBidChainNeedsMigration()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID19DataMigrationHelperC015isBidChainNeedsD0SbyF",
+            "mangledName": "$s7BlockID19DataMigrationHelperC015isBidChainNeedsD0SbyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "migrateBidChains",
+            "printedName": "migrateBidChains(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID19DataMigrationHelperC16migrateBidChains10completionyySbSg_SSSgtc_tF",
+            "mangledName": "$s7BlockID19DataMigrationHelperC16migrateBidChains10completionyySbSg_SSSgtc_tF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7BlockID19DataMigrationHelperC",
+        "mangledName": "$s7BlockID19DataMigrationHelperC",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BIDTenant",
         "printedName": "BIDTenant",
         "children": [
@@ -45079,79 +45242,6 @@
                 "declKind": "Accessor",
                 "usr": "s:7BlockID12CustomErrorsV22kDocumentPhotoNotFoundSi4code_SS3msgtvgZ",
                 "mangledName": "$s7BlockID12CustomErrorsV22kDocumentPhotoNotFoundSi4code_SS3msgtvgZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "kNoMigrationNeeded",
-            "printedName": "kNoMigrationNeeded",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(code: Swift.Int, msg: Swift.String)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID12CustomErrorsV18kNoMigrationNeededSi4code_SS3msgtvpZ",
-            "mangledName": "$s7BlockID12CustomErrorsV18kNoMigrationNeededSi4code_SS3msgtvpZ",
-            "moduleName": "BlockID",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, msg: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID12CustomErrorsV18kNoMigrationNeededSi4code_SS3msgtvgZ",
-                "mangledName": "$s7BlockID12CustomErrorsV18kNoMigrationNeededSi4code_SS3msgtvgZ",
                 "moduleName": "BlockID",
                 "static": true,
                 "implicit": true,
@@ -75148,7 +75238,7 @@
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 159998,
+      "offset": 156836,
       "length": 5,
       "value": "false"
     },
@@ -76765,21 +76855,21 @@
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13034,
+      "offset": 12935,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 13069,
+      "offset": 12970,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 12981,
+      "offset": 12882,
       "length": 13,
       "value": "\"BlockID.ErrorResponse\""
     },

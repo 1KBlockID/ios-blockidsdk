@@ -1281,6 +1281,13 @@ public class DataGroup {
   public func hash(_ hashAlgorythm: Swift.String) -> [Swift.UInt8]
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class DataMigrationHelper {
+  public typealias BIDMigrationCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
+  public static let sharedInstance: DataMigrationHelper
+  public func isBidChainNeedsMigration() -> Swift.Bool
+  public func migrateBidChains(completion: @escaping (Swift.Bool?, Swift.String?) -> Swift.Void)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class BIDTenant : Swift.Codable {
   public var tenantTag: Swift.String?
   public var community: Swift.String?
@@ -1421,7 +1428,6 @@ public struct CustomErrors {
   public static let kDocumentExpired: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentEnrolled: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentPhotoNotFound: (code: Swift.Int, msg: Swift.String)
-  public static let kNoMigrationNeeded: (code: Swift.Int, msg: Swift.String)
   public static let kLiveIDMandatory: (code: Swift.Int, msg: Swift.String)
   public static let K_REGISTRATION_NOT_ALLOWED: (code: Swift.Int, message: Swift.String)
   public static let kNotTrustedSessionSource: (code: Swift.Int, msg: Swift.String)
