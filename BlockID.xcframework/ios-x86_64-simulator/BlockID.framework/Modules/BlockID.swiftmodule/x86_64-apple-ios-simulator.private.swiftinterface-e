@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BlockID
 import ARKit
 import AVFoundation
 import Accelerate
@@ -30,6 +29,7 @@ import WebAuthnKit
 import WebKit
 import YubiKit
 import _Concurrency
+import _CoreNFC_UIKit
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers public class BIDServiceDirectory : ObjectiveC.NSObject, Swift.Codable {
@@ -616,9 +616,6 @@ public typealias RestoreWalletWithLiveIDCallback = ((_ status: Swift.Bool, _ err
   public func setLicenseKey(key: Swift.String)
   public func getLicenseKey() -> Swift.String
   public func setDvcID(dvcID: Swift.String)
-  public func setMigrationMode()
-  public func isMigrationModeOn() -> Swift.Bool
-  public func resetMigrationMode()
   public func initiateTempWallet(completion: @escaping BlockID.BIDWalletCreationCallback)
   public func registerTenant(tenant: BlockID.BIDTenant, completion: @escaping BlockID.BIDTenantRegisterationCallback)
   public func updateAccessibilityOfKeychain()
@@ -684,7 +681,6 @@ public typealias RestoreWalletWithLiveIDCallback = ((_ status: Swift.Bool, _ err
   public func setData(dataStr: Swift.String) -> Swift.String
   public func getData(forKey key: Swift.String) -> Swift.String?
   public func purgeData(forKey key: Swift.String)
-  public func migrateData(bidTenant: BlockID.BIDTenant, clientTenant: BlockID.BIDTenant, completion: @escaping BlockID.BIDMigrationCallback)
   public func getVersion() -> Swift.String?
   public func verifyDocument(dvcID: Swift.String? = nil, dic: [Swift.String : Any], verifications: [Swift.String], completion: @escaping ((Swift.Bool, [Swift.String : Any]?, BlockID.ErrorResponse?) -> Swift.Void))
   public func requestSCEPCertificate(requestedAccount: BlockID.BIDLinkedAccount, completion: @escaping BlockID.SCEPCertificateCallback)
@@ -1285,19 +1281,6 @@ public class DataGroup {
   public func hash(_ hashAlgorythm: Swift.String) -> [Swift.UInt8]
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class DataMigrationHelper {
-  public typealias BIDMigrationCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
-  public var tenant: BlockID.BIDTenant?
-  public var clientTenant: BlockID.BIDTenant?
-  public var did: Swift.String?
-  public static let sharedInstance: BlockID.DataMigrationHelper
-  public func migrationRequired() -> Swift.Bool
-  public func createMigrationWallet()
-  public func startMigration(tenant: BlockID.BIDTenant, clientTenant: BlockID.BIDTenant, keyPair: BlockID.APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping BlockID.DataMigrationHelper.BIDMigrationCallback)
-  public func isBidChainNeedsMigration() -> Swift.Bool
-  public func migrateBidChains(completion: @escaping (Swift.Bool?, Swift.String?) -> Swift.Void)
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class BIDTenant : Swift.Codable {
   public var tenantTag: Swift.String?
   public var community: Swift.String?
@@ -1739,355 +1722,6 @@ public class BACHandler {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public enum SwiftyJSONError : Swift.Int, Swift.Error {
-  case unsupportedType
-  case indexOutOfBounds
-  case elementTooDeep
-  case wrongType
-  case notExist
-  case invalidJSON
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-extension BlockID.SwiftyJSONError : Foundation.CustomNSError {
-  public static var errorDomain: Swift.String {
-    get
-  }
-  public var errorCode: Swift.Int {
-    get
-  }
-  public var errorUserInfo: [Swift.String : Any] {
-    get
-  }
-}
-public enum Type : Swift.Int {
-  case number
-  case string
-  case bool
-  case array
-  case dictionary
-  case null
-  case unknown
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public struct JSON {
-  public init(data: Foundation.Data, options opt: Foundation.JSONSerialization.ReadingOptions = []) throws
-  public init(_ object: Any)
-  public init(parseJSON jsonString: Swift.String)
-  public mutating func merge(with other: BlockID.JSON) throws
-  public func merged(with other: BlockID.JSON) throws -> BlockID.JSON
-  public var type: BlockID.`Type` {
-    get
-  }
-  public var error: BlockID.SwiftyJSONError? {
-    get
-  }
-  public var object: Any {
-    get
-    set
-  }
-  @available(*, unavailable, renamed: "null")
-  public static var nullJSON: BlockID.JSON {
-    get
-  }
-  public static var null: BlockID.JSON {
-    get
-  }
-}
-public enum Index<T> : Swift.Comparable {
-  case array(Swift.Int)
-  case dictionary(Swift.DictionaryIndex<Swift.String, T>)
-  case null
-  public static func == (lhs: BlockID.Index<T>, rhs: BlockID.Index<T>) -> Swift.Bool
-  public static func < (lhs: BlockID.Index<T>, rhs: BlockID.Index<T>) -> Swift.Bool
-}
-public typealias JSONIndex = BlockID.Index<BlockID.JSON>
-public typealias JSONRawIndex = BlockID.Index<Any>
-extension BlockID.JSON : Swift.Collection {
-  public typealias Index = BlockID.JSONRawIndex
-  public var startIndex: BlockID.JSON.Index {
-    get
-  }
-  public var endIndex: BlockID.JSON.Index {
-    get
-  }
-  public func index(after i: BlockID.JSON.Index) -> BlockID.JSON.Index
-  public subscript(position: BlockID.JSON.Index) -> (Swift.String, BlockID.JSON) {
-    get
-  }
-  public typealias Element = (Swift.String, BlockID.JSON)
-  public typealias Indices = Swift.DefaultIndices<BlockID.JSON>
-  public typealias Iterator = Swift.IndexingIterator<BlockID.JSON>
-  public typealias SubSequence = Swift.Slice<BlockID.JSON>
-}
-public enum JSONKey {
-  case index(Swift.Int)
-  case key(Swift.String)
-}
-public protocol JSONSubscriptType {
-  var jsonKey: BlockID.JSONKey { get }
-}
-extension Swift.Int : BlockID.JSONSubscriptType {
-  public var jsonKey: BlockID.JSONKey {
-    get
-  }
-}
-extension Swift.String : BlockID.JSONSubscriptType {
-  public var jsonKey: BlockID.JSONKey {
-    get
-  }
-}
-extension BlockID.JSON {
-  public subscript(path: [any BlockID.JSONSubscriptType]) -> BlockID.JSON {
-    get
-    set
-  }
-  public subscript(path: any BlockID.JSONSubscriptType...) -> BlockID.JSON {
-    get
-    set
-  }
-}
-extension BlockID.JSON : Swift.ExpressibleByStringLiteral {
-  public init(stringLiteral value: Swift.StringLiteralType)
-  public init(extendedGraphemeClusterLiteral value: Swift.StringLiteralType)
-  public init(unicodeScalarLiteral value: Swift.StringLiteralType)
-  public typealias ExtendedGraphemeClusterLiteralType = Swift.StringLiteralType
-  public typealias StringLiteralType = Swift.StringLiteralType
-  public typealias UnicodeScalarLiteralType = Swift.StringLiteralType
-}
-extension BlockID.JSON : Swift.ExpressibleByIntegerLiteral {
-  public init(integerLiteral value: Swift.IntegerLiteralType)
-  public typealias IntegerLiteralType = Swift.IntegerLiteralType
-}
-extension BlockID.JSON : Swift.ExpressibleByBooleanLiteral {
-  public init(booleanLiteral value: Swift.BooleanLiteralType)
-  public typealias BooleanLiteralType = Swift.BooleanLiteralType
-}
-extension BlockID.JSON : Swift.ExpressibleByFloatLiteral {
-  public init(floatLiteral value: Swift.FloatLiteralType)
-  public typealias FloatLiteralType = Swift.FloatLiteralType
-}
-extension BlockID.JSON : Swift.ExpressibleByDictionaryLiteral {
-  public init(dictionaryLiteral elements: (Swift.String, Any)...)
-  public typealias Key = Swift.String
-  public typealias Value = Any
-}
-extension BlockID.JSON : Swift.ExpressibleByArrayLiteral {
-  public init(arrayLiteral elements: Any...)
-  public typealias ArrayLiteralElement = Any
-}
-extension BlockID.JSON : Swift.RawRepresentable {
-  public init?(rawValue: Any)
-  public var rawValue: Any {
-    get
-  }
-  public func rawData(options opt: Foundation.JSONSerialization.WritingOptions = JSONSerialization.WritingOptions(rawValue: 0)) throws -> Foundation.Data
-  public func rawString(_ encoding: Swift.String.Encoding = .utf8, options opt: Foundation.JSONSerialization.WritingOptions = .prettyPrinted) -> Swift.String?
-  public func rawString(_ options: [BlockID.writingOptionsKeys : Any]) -> Swift.String?
-  public typealias RawValue = Any
-}
-extension BlockID.JSON : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-extension BlockID.JSON {
-  public var array: [BlockID.JSON]? {
-    get
-  }
-  public var arrayValue: [BlockID.JSON] {
-    get
-  }
-  public var arrayObject: [Any]? {
-    get
-    set
-  }
-}
-extension BlockID.JSON {
-  public var dictionary: [Swift.String : BlockID.JSON]? {
-    get
-  }
-  public var dictionaryValue: [Swift.String : BlockID.JSON] {
-    get
-  }
-  public var dictionaryObject: [Swift.String : Any]? {
-    get
-    set
-  }
-}
-extension BlockID.JSON {
-  public var bool: Swift.Bool? {
-    get
-    set
-  }
-  public var boolValue: Swift.Bool {
-    get
-    set
-  }
-}
-extension BlockID.JSON {
-  public var string: Swift.String? {
-    get
-    set
-  }
-  public var stringValue: Swift.String {
-    get
-    set
-  }
-}
-extension BlockID.JSON {
-  public var number: Foundation.NSNumber? {
-    get
-    set
-  }
-  public var numberValue: Foundation.NSNumber {
-    get
-    set
-  }
-}
-extension BlockID.JSON {
-  public var null: Foundation.NSNull? {
-    get
-    set
-  }
-  public func exists() -> Swift.Bool
-}
-extension BlockID.JSON {
-  public var url: Foundation.URL? {
-    get
-    set
-  }
-}
-extension BlockID.JSON {
-  public var double: Swift.Double? {
-    get
-    set
-  }
-  public var doubleValue: Swift.Double {
-    get
-    set
-  }
-  public var float: Swift.Float? {
-    get
-    set
-  }
-  public var floatValue: Swift.Float {
-    get
-    set
-  }
-  public var int: Swift.Int? {
-    get
-    set
-  }
-  public var intValue: Swift.Int {
-    get
-    set
-  }
-  public var uInt: Swift.UInt? {
-    get
-    set
-  }
-  public var uIntValue: Swift.UInt {
-    get
-    set
-  }
-  public var int8: Swift.Int8? {
-    get
-    set
-  }
-  public var int8Value: Swift.Int8 {
-    get
-    set
-  }
-  public var uInt8: Swift.UInt8? {
-    get
-    set
-  }
-  public var uInt8Value: Swift.UInt8 {
-    get
-    set
-  }
-  public var int16: Swift.Int16? {
-    get
-    set
-  }
-  public var int16Value: Swift.Int16 {
-    get
-    set
-  }
-  public var uInt16: Swift.UInt16? {
-    get
-    set
-  }
-  public var uInt16Value: Swift.UInt16 {
-    get
-    set
-  }
-  public var int32: Swift.Int32? {
-    get
-    set
-  }
-  public var int32Value: Swift.Int32 {
-    get
-    set
-  }
-  public var uInt32: Swift.UInt32? {
-    get
-    set
-  }
-  public var uInt32Value: Swift.UInt32 {
-    get
-    set
-  }
-  public var int64: Swift.Int64? {
-    get
-    set
-  }
-  public var int64Value: Swift.Int64 {
-    get
-    set
-  }
-  public var uInt64: Swift.UInt64? {
-    get
-    set
-  }
-  public var uInt64Value: Swift.UInt64 {
-    get
-    set
-  }
-}
-extension BlockID.JSON : Swift.Comparable {
-}
-public func == (lhs: BlockID.JSON, rhs: BlockID.JSON) -> Swift.Bool
-public func <= (lhs: BlockID.JSON, rhs: BlockID.JSON) -> Swift.Bool
-public func >= (lhs: BlockID.JSON, rhs: BlockID.JSON) -> Swift.Bool
-public func > (lhs: BlockID.JSON, rhs: BlockID.JSON) -> Swift.Bool
-public func < (lhs: BlockID.JSON, rhs: BlockID.JSON) -> Swift.Bool
-public enum writingOptionsKeys {
-  case jsonSerialization
-  case castNilToNSNull
-  case maxObjextDepth
-  case encoding
-  public static func == (a: BlockID.writingOptionsKeys, b: BlockID.writingOptionsKeys) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-extension BlockID.JSON : Swift.Codable {
-  public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-}
 @available(iOS 13, macOS 10.15, *)
 public enum DataGroupId : Swift.Int, Swift.CaseIterable {
   case COM
@@ -2449,14 +2083,6 @@ extension BlockID.CacheTTLLIMIT : Swift.Hashable {}
 extension BlockID.CacheTTLLIMIT : Swift.RawRepresentable {}
 extension BlockID.PACEMappingType : Swift.Equatable {}
 extension BlockID.PACEMappingType : Swift.Hashable {}
-extension BlockID.SwiftyJSONError : Swift.Equatable {}
-extension BlockID.SwiftyJSONError : Swift.Hashable {}
-extension BlockID.SwiftyJSONError : Swift.RawRepresentable {}
-extension BlockID.`Type` : Swift.Equatable {}
-extension BlockID.`Type` : Swift.Hashable {}
-extension BlockID.`Type` : Swift.RawRepresentable {}
-extension BlockID.writingOptionsKeys : Swift.Equatable {}
-extension BlockID.writingOptionsKeys : Swift.Hashable {}
 @available(iOS 13, macOS 10.15, *)
 extension BlockID.DataGroupId : Swift.Equatable {}
 @available(iOS 13, macOS 10.15, *)
