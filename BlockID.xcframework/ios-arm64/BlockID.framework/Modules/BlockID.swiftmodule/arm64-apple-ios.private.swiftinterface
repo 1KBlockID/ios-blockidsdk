@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BlockID
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BlockID
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
 import AVFoundation
 import Accelerate
@@ -29,7 +30,6 @@ import WebAuthnKit
 import WebKit
 import YubiKit
 import _Concurrency
-import _CoreNFC_UIKit
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers public class BIDServiceDirectory : ObjectiveC.NSObject, Swift.Codable {
@@ -210,7 +210,7 @@ public class DataGroup7 : DataGroup {
   @objc deinit
 }
 public protocol DocumentScanDelegate {
-  func onDocumentScanResponse(status: Swift.Bool, document: Swift.String?, error: ErrorResponse?)
+  func onDocumentScanResponse(status: Swift.Bool, document: Swift.String?, sessionID: Swift.String?, error: ErrorResponse?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class DocumentScannerViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) convenience public init(docType: DocumentScannerType, dvcId: Swift.String? = nil, delegate: any DocumentScanDelegate)
@@ -624,12 +624,12 @@ public typealias RestoreWalletWithLiveIDCallback = ((_ status: Swift.Bool, _ err
   public func verifyPin(pin: Swift.String) -> Swift.Bool
   public func removePin(pin: Swift.String, completion: @escaping UserAPICallback)
   public func getLiveIDImage() -> UIKit.UIImage?
-  public func setLiveID(liveIdImage: UIKit.UIImage, liveIdProofedBy: Swift.String? = nil, sigToken: Swift.String? = nil, livenessResult: Swift.String?, completion: @escaping LiveIDCallback)
-  public func verifyLiveID(image: UIKit.UIImage, sigToken: Swift.String? = nil, livenessResult: Swift.String?, completion: @escaping LiveIDCallback)
-  public func registerDocument(obj: [Swift.String : Any], sigToken: Swift.String? = nil, completion: @escaping UserAPICallback)
-  public func registerDocument(obj: [Swift.String : Any], storeArtifacts: Swift.Bool, syncArtifacts: Swift.Bool, sigToken: Swift.String? = nil, completion: @escaping UserAPICallback)
-  public func registerDocument(obj: [Swift.String : Any], liveIdProofedBy: Swift.String, docSignToken: Swift.String? = nil, faceImage: UIKit.UIImage, liveIDSignToken: Swift.String? = nil, completion: @escaping UserAPICallback)
-  public func registerDocument(obj: [Swift.String : Any], storeArtifacts: Swift.Bool, syncArtifacts: Swift.Bool, liveIdProofedBy: Swift.String, docSignToken: Swift.String? = nil, faceImage: UIKit.UIImage, liveIDSignToken: Swift.String? = nil, completion: @escaping UserAPICallback)
+  public func setLiveID(liveIdImage: UIKit.UIImage, liveIdProofedBy: Swift.String? = nil, sigToken: Swift.String? = nil, livenessResult: Swift.String?, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping LiveIDCallback)
+  public func verifyLiveID(image: UIKit.UIImage, sigToken: Swift.String? = nil, livenessResult: Swift.String?, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping LiveIDCallback)
+  public func registerDocument(obj: [Swift.String : Any], sigToken: Swift.String? = nil, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping UserAPICallback)
+  public func registerDocument(obj: [Swift.String : Any], storeArtifacts: Swift.Bool, syncArtifacts: Swift.Bool, sigToken: Swift.String? = nil, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping UserAPICallback)
+  public func registerDocument(obj: [Swift.String : Any], liveIdProofedBy: Swift.String, docSignToken: Swift.String? = nil, faceImage: UIKit.UIImage, liveIDSignToken: Swift.String? = nil, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping UserAPICallback)
+  public func registerDocument(obj: [Swift.String : Any], storeArtifacts: Swift.Bool, syncArtifacts: Swift.Bool, liveIdProofedBy: Swift.String, docSignToken: Swift.String? = nil, faceImage: UIKit.UIImage, liveIDSignToken: Swift.String? = nil, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping UserAPICallback)
   public func isCurrentDocumentExists(dictDoc: [Swift.String : Any]) -> Swift.Bool
   public func unregisterDocument(dictDoc: [Swift.String : Any], completion: @escaping UserAPICallback)
   public func fetchDocuments(requestDict: [Swift.String : Any], _ completion: @escaping FetchDocumentsCallback)
@@ -682,7 +682,7 @@ public typealias RestoreWalletWithLiveIDCallback = ((_ status: Swift.Bool, _ err
   public func getData(forKey key: Swift.String) -> Swift.String?
   public func purgeData(forKey key: Swift.String)
   public func getVersion() -> Swift.String?
-  public func verifyDocument(dvcID: Swift.String? = nil, dic: [Swift.String : Any], verifications: [Swift.String], completion: @escaping ((Swift.Bool, [Swift.String : Any]?, ErrorResponse?) -> Swift.Void))
+  public func verifyDocument(dvcID: Swift.String? = nil, dic: [Swift.String : Any], verifications: [Swift.String], mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping ((Swift.Bool, [Swift.String : Any]?, ErrorResponse?) -> Swift.Void))
   public func requestSCEPCertificate(requestedAccount: BIDLinkedAccount, completion: @escaping SCEPCertificateCallback)
   public func checkSCEPCertificate(requestedAccount: BIDLinkedAccount, completion: @escaping SCEPCertificateCallback)
   @objc deinit
@@ -844,9 +844,9 @@ public enum AuthAssetType : Swift.String {
   public func enrollDeviceAuth(completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
   public func unenrollDeviceAuth(completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
   public func verifyDeviceAuth(completion: @escaping (Swift.Bool, BiometricError?, Swift.String?) -> Swift.Void)
-  public func enrollLiveID(dictLiveID: [Swift.String : Any], tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, ial: Swift.String, livenessResult: Swift.String?, completion: @escaping UserAPICallback)
-  public func verifyLiveID(image: UIKit.UIImage, keyPair: APIKeyPair, tenant: BIDTenant, did: Swift.String, livenessResult: Swift.String?, completion: @escaping VerifyLiveIDCallback)
-  public func verifyFace(image: UIKit.UIImage, keyPair: APIKeyPair, tenant: BIDTenant, did: Swift.String, completion: @escaping (_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
+  public func enrollLiveID(dictLiveID: [Swift.String : Any], tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, ial: Swift.String, livenessResult: Swift.String?, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping UserAPICallback)
+  public func verifyLiveID(image: UIKit.UIImage, keyPair: APIKeyPair, tenant: BIDTenant, did: Swift.String, livenessResult: Swift.String?, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping VerifyLiveIDCallback)
+  public func verifyFace(image: UIKit.UIImage, keyPair: APIKeyPair, tenant: BIDTenant, did: Swift.String, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping (_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BIDSessionResponse : Swift.Codable {
@@ -1231,7 +1231,7 @@ public struct TOTPGenerator {
 public protocol LiveIDResponseDelegate : AnyObject {
   func liveIdDidDetectErrorInScanning(error: ErrorResponse?)
   func focusOnFaceChanged(isFocused: Swift.Bool?, message: Swift.String?)
-  func liveIdDetectionCompleted(_ liveIdImage: UIKit.UIImage?, signatureToken: Swift.String?, livenessResult: Swift.String?, error: ErrorResponse?)
+  func liveIdDetectionCompleted(_ liveIdImage: UIKit.UIImage?, signatureToken: Swift.String?, livenessResult: Swift.String?, mobileSessionId: Swift.String?, mobileDocumentId: Swift.String?, error: ErrorResponse?)
   func faceLivenessCheckStarted()
 }
 extension LiveIDResponseDelegate {
@@ -1241,7 +1241,7 @@ extension LiveIDResponseDelegate {
 }
 @objc public class LiveIDScannerHelper : ObjectiveC.NSObject {
   public init(bidScannerView: BIDScannerView, overlayFrame: CoreFoundation.CGRect? = nil, liveIdResponseDelegate: any LiveIDResponseDelegate)
-  public func startLiveIDScanning(dvcID: Swift.String? = nil)
+  public func startLiveIDScanning(dvcID: Swift.String? = nil, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil)
   public func stopLiveIDScanning()
   @objc deinit
 }
@@ -1249,7 +1249,7 @@ extension LiveIDScannerHelper : LiveIDResponseDelegate {
   public func liveIdDidDetectErrorInScanning(error: ErrorResponse?)
   public func faceLivenessCheckStarted()
   public func focusOnFaceChanged(isFocused: Swift.Bool?, message: Swift.String?)
-  public func liveIdDetectionCompleted(_ liveIdImage: UIKit.UIImage?, signatureToken: Swift.String?, livenessResult: Swift.String?, error: ErrorResponse?)
+  public func liveIdDetectionCompleted(_ liveIdImage: UIKit.UIImage?, signatureToken: Swift.String?, livenessResult: Swift.String?, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, error: ErrorResponse?)
 }
 @available(iOS 13, macOS 10.15, *)
 public enum DocTypeEnum : Swift.String {
