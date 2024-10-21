@@ -9,7 +9,7 @@
 BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.10.60'
+   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.10.70'
 ```
 
 ## License
@@ -17,6 +17,11 @@ BlockID is available through CocoaPods. To install it, simply add the following 
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+
+### v1.10.70
+- Fixed issue related to document scanning
+- Introduced live id identifiers
+
 ### v1.10.60
 - Fixed issue related to scopes info evaluation by SDK and empty strings in Origin object
 - Fixed an issue with Sim binding work flow when QR code is scanned
