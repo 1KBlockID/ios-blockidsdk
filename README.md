@@ -9,7 +9,7 @@
 BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.10.70'
+   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.10.80'
 ```
 
 ## License
@@ -17,6 +17,8 @@ BlockID is available through CocoaPods. To install it, simply add the following 
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+### v1.10.80
+- Added support for Xcode 16
 
 ### v1.10.70
 - Fixed issue related to document scanning
