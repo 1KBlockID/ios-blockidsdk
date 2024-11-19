@@ -649,7 +649,6 @@ public typealias RestoreWalletWithLiveIDCallback = ((_ status: Swift.Bool, _ err
   public func getOfflineTOTP(bidLinkedAccount: BlockID.BIDLinkedAccount) -> (totp: BlockID.TOTP?, error: BlockID.ErrorResponse?)
   public func checkUserExist(userId: Swift.String, origin: BlockID.BIDOrigin, completion: @escaping (Swift.Bool) -> ())
   public func addPreLinkedUser(userId: Swift.String, scep_hash: Swift.String, scep_privatekey: Swift.String, scep_expiry: Swift.String, origin: BlockID.BIDOrigin, account: BlockID.BIDAccount?, completion: @escaping BlockID.UserAPICallback)
-  public func addNativeAccount(method: Swift.String!, userId: Swift.String, password: Swift.String, origin: BlockID.BIDOrigin, deviceToken: Swift.String? = nil, lon: Swift.Double, lat: Swift.Double, completion: @escaping BlockID.UserAPICallback)
   public func unLinkAccount(bidLinkedAccount: BlockID.BIDLinkedAccount, deviceToken: Swift.String? = nil, completion: @escaping BlockID.UserAPICallback)
   public func validateAccessCode(code: Swift.String, origin: BlockID.BIDOrigin, completion: @escaping BlockID.AccessCodeValidationAPICallback)
   public func generateSession(origin: BlockID.BIDOrigin, completion: @escaping ((sessionId: Swift.String?, sessionUrl: Swift.String?), _ error: BlockID.ErrorResponse?) -> Swift.Void)
@@ -1670,11 +1669,6 @@ public class PACEInfo : BlockID.SecurityInfo {
   public static func toDigestAlgorithm(oid: Swift.String) throws -> Swift.String
   public static func toKeyLength(oid: Swift.String) throws -> Swift.Int
   @objc deinit
-}
-@_hasMissingDesignatedInitializers public class AuthUserResponse : Swift.Codable {
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
 }
 public class WorkstationAuthOrigin : Swift.Codable {
   public var api: Swift.String?
