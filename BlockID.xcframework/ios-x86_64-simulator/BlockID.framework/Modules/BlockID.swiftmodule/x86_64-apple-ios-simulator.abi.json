@@ -18898,8 +18898,7 @@
             "mangledName": "$s7BlockID0A5IDSDKC22getScopesAttributesDic6scopes5creds6origin6userId10completionySS_SSAA9BIDOriginCSSSgySDySSypGSg_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -22216,6 +22215,89 @@
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRemovedAccountList",
+            "printedName": "getRemovedAccountList(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, [BlockID.BIDLinkedAccount]?, BlockID.ErrorResponse?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, [BlockID.BIDLinkedAccount]?, BlockID.ErrorResponse?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[BlockID.BIDLinkedAccount]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[BlockID.BIDLinkedAccount]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "BIDLinkedAccount",
+                                "printedName": "BlockID.BIDLinkedAccount",
+                                "usr": "s:7BlockID16BIDLinkedAccountC"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC21getRemovedAccountList10completionyySb_SayAA09BIDLinkedF0CGSgAA13ErrorResponseCSgtc_tF",
+            "mangledName": "$s7BlockID0A5IDSDKC21getRemovedAccountList10completionyySb_SayAA09BIDLinkedF0CGSgAA13ErrorResponseCSgtc_tF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -44847,6 +44929,80 @@
                     "declKind": "Accessor",
                     "usr": "s:7BlockID12CustomErrorsV7AccountV15INVALID_ACCOUNTSi4code_SS3msgtvgZ",
                     "mangledName": "$s7BlockID12CustomErrorsV7AccountV15INVALID_ACCOUNTSi4code_SS3msgtvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ACCOUNTS_NOT_FOUND",
+                "printedName": "ACCOUNTS_NOT_FOUND",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, msg: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7AccountV18ACCOUNTS_NOT_FOUNDSi4code_SS3msgtvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7AccountV18ACCOUNTS_NOT_FOUNDSi4code_SS3msgtvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, msg: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7AccountV18ACCOUNTS_NOT_FOUNDSi4code_SS3msgtvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7AccountV18ACCOUNTS_NOT_FOUNDSi4code_SS3msgtvgZ",
                     "moduleName": "BlockID",
                     "static": true,
                     "implicit": true,
@@ -76899,28 +77055,35 @@
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 3709,
+      "offset": 342,
+      "length": 62,
+      "value": "\"\/api\/r1\/community\/{communityName}\/userdid\/{userdid}\/userinfo\""
+    },
+    {
+      "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 9211,
       "length": 9,
       "value": "\"otpseed\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 4127,
+      "offset": 9629,
       "length": 9,
       "value": "\"poi_ial\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 4159,
+      "offset": 9661,
       "length": 9,
       "value": "\"pon_ial\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 4220,
+      "offset": 9722,
       "length": 10,
       "value": "\"otpseeds\""
     },
@@ -77620,42 +77783,70 @@
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2821,
+      "offset": 3035,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2866,
+      "offset": 3080,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "Array",
-      "offset": 2915,
+      "offset": 3129,
       "length": 636,
       "value": "[\"https:\/\/1k-dev.1kosmos.net\/sessions\", \"https:\/\/1k-qa.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu.1kosmos.net\/sessions\", \"https:\/\/1k-uat.1kosmos.net\/sessions\", \"https:\/\/1k-pilot.1kosmos.net\/sessions\", \"https:\/\/1k-pilot-in.1kosmos.in\/sessions\", \"https:\/\/1k-prod-in.1kosmos.in\/sessions\"]"
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3642,
+      "offset": 3856,
       "length": 5,
       "value": "21600"
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3682,
+      "offset": 3896,
       "length": 6,
       "value": "\"IAL1\""
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 97826,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 112882,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 112951,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 113101,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 155240,
+      "offset": 159146,
       "length": 5,
       "value": "false"
     },
@@ -79132,14 +79323,14 @@
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12935,
+      "offset": 13098,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kuldeepchoudhary\/Documents\/Kuldeep1K\/Mobile\/ios-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 12970,
+      "offset": 13133,
       "length": 2,
       "value": "\"\""
     },
