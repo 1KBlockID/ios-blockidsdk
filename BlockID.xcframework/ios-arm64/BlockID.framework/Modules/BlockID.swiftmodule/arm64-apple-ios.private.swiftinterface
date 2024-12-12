@@ -611,6 +611,8 @@ public typealias FetchUserAccountsInfoCallback = ((_ status: Swift.Bool, _ error
 public typealias DocumentSessionCallback = ((_ status: Swift.Bool, _ response: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias PollSessionCallback = ((_ status: Swift.Bool, _ response: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias RestoreWalletWithLiveIDCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
+public typealias GetScopeDataCallBack = (([Swift.String : Any]?, ErrorResponse?) -> Swift.Void)
+public typealias UserAccountsRemovedCallback = ((_ status: Swift.Bool, _ response: [BIDLinkedAccount]?, _ error: ErrorResponse?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockIDSDK
   public func isReady() -> Swift.Bool
@@ -729,6 +731,7 @@ extension BlockIDSDK {
 }
 extension BlockIDSDK {
   public func fetchUserAccountsInfo(accounts: [BIDLinkedAccount], completion: @escaping FetchUserAccountsInfoCallback)
+  public func getRemovedAccountList(completion: @escaping UserAccountsRemovedCallback)
 }
 extension BlockIDSDK {
   public func createDocumentSession(docType: DocumentScannerType, dvcId: Swift.String? = nil, completion: @escaping DocumentSessionCallback)
@@ -1392,6 +1395,7 @@ public struct CustomErrors {
   }
   public struct Account {
     public static let INVALID_ACCOUNT: (code: Swift.Int, msg: Swift.String)
+    public static let ACCOUNTS_NOT_FOUND: (code: Swift.Int, msg: Swift.String)
   }
   public struct VCs {
     public static let SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
