@@ -611,7 +611,6 @@ public typealias FetchUserAccountsInfoCallback = ((_ status: Swift.Bool, _ error
 public typealias DocumentSessionCallback = ((_ status: Swift.Bool, _ response: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias PollSessionCallback = ((_ status: Swift.Bool, _ response: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias RestoreWalletWithLiveIDCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
-public typealias GetScopeDataCallBack = (([Swift.String : Any]?, ErrorResponse?) -> Swift.Void)
 public typealias UserAccountsRemovedCallback = ((_ status: Swift.Bool, _ response: [BIDLinkedAccount]?, _ error: ErrorResponse?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockIDSDK
