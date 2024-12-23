@@ -77825,28 +77825,28 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 113041,
+      "offset": 113155,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 113110,
+      "offset": 113224,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 113337,
+      "offset": 113451,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 159622,
+      "offset": 159736,
       "length": 5,
       "value": "false"
     },
