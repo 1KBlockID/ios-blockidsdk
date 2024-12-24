@@ -20,6 +20,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ### v1.10.90
 - Added functionality to get removed accounts
 - Removed unwanted api calls
+- Bug fixes
 
 ### v1.10.80
 - Added support for Xcode 16
