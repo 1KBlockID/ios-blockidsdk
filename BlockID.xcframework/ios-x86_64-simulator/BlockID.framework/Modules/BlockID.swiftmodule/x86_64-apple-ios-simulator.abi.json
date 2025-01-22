@@ -16463,6 +16463,101 @@
           },
           {
             "kind": "Function",
+            "name": "verifyFaceWithLiveness",
+            "printedName": "verifyFaceWithLiveness(image:mobileSessionId:mobileDocumentId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC22verifyFaceWithLiveness5image15mobileSessionId0i8DocumentK010completionySo7UIImageC_SSSgAKySb_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC22verifyFaceWithLiveness5image15mobileSessionId0i8DocumentK010completionySo7UIImageC_SSSgAKySb_AA13ErrorResponseCSgtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "verifyLiveID",
             "printedName": "verifyLiveID(image:sigToken:livenessResult:mobileSessionId:mobileDocumentId:completion:)",
             "children": [
@@ -39564,12 +39659,27 @@
           {
             "kind": "Function",
             "name": "startLiveIDScanning",
-            "printedName": "startLiveIDScanning(dvcID:mobileSessionId:mobileDocumentId:)",
+            "printedName": "startLiveIDScanning(isWithoutLivenessCheck:dvcID:mobileSessionId:mobileDocumentId:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -39618,8 +39728,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID19LiveIDScannerHelperC05startC10IDScanning03dvcB015mobileSessionId0i8DocumentK0ySSSg_A2HtF",
-            "mangledName": "$s7BlockID19LiveIDScannerHelperC05startC10IDScanning03dvcB015mobileSessionId0i8DocumentK0ySSSg_A2HtF",
+            "usr": "s:7BlockID19LiveIDScannerHelperC05startC10IDScanning22isWithoutLivenessCheck03dvcB015mobileSessionId0m8DocumentO0ySbSg_SSSgA2JtF",
+            "mangledName": "$s7BlockID19LiveIDScannerHelperC05startC10IDScanning22isWithoutLivenessCheck03dvcB015mobileSessionId0m8DocumentO0ySbSg_SSSgA2JtF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -76936,35 +77046,49 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDDocumentKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2809,
+      "offset": 2828,
+      "length": 27,
+      "value": "\"face_liveness_and_compare\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDDocumentKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 2882,
       "length": 8,
       "value": "\"image1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDDocumentKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2844,
+      "offset": 2917,
       "length": 8,
       "value": "\"image2\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDDocumentKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2880,
+      "offset": 2952,
+      "length": 8,
+      "value": "\"liveId\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDDocumentKeys.swift",
+      "kind": "StringLiteral",
+      "offset": 2988,
       "length": 9,
       "value": "\"purpose\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDDocumentKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2932,
+      "offset": 3040,
       "length": 16,
       "value": "\"authentication\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDDocumentKeys.swift",
       "kind": "StringLiteral",
-      "offset": 2991,
+      "offset": 3099,
       "length": 16,
       "value": "\"doc_enrollment\""
     },
@@ -77818,35 +77942,35 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 97827,
+      "offset": 98479,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 113155,
+      "offset": 113807,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 113224,
+      "offset": 113876,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 113451,
+      "offset": 114103,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 159736,
+      "offset": 160388,
       "length": 5,
       "value": "false"
     },
@@ -79095,6 +79219,20 @@
       "offset": 294,
       "length": 1,
       "value": "6"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/LiveID\/LiveIDScannerHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1321,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/LiveID\/LiveIDScannerHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2815,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup1.swift",
