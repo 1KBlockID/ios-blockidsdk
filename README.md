@@ -18,7 +18,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 ### v1.20.00
-- Added new function for face liveness and face compare parallelly to improve live id authentication process
+- Introduced a new method that enables face liveness and face compare to run in parallel, enhancing the Live ID authentication process.
 
 ### v1.10.90
 - Added functionality to get removed accounts
