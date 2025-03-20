@@ -1563,6 +1563,7 @@ public typealias DocumentEnrollmentCallback = ((_ status: Swift.Bool, _ error: E
   public static let shared: BIDDocumentProvider
   public func getUserDocument(id: Swift.String?, type: Swift.String?, category: Swift.String?) -> Swift.String?
   public func getDocument(id: Swift.String?, type: Swift.String?, category: Swift.String?) -> Swift.Array<Any>?
+  public func getDocumentCount() -> Swift.Int
   @objc deinit
 }
 @available(iOS 13, *)
@@ -1619,6 +1620,7 @@ public func calcSHA384Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
 public enum CacheTTLLIMIT : Swift.Int {
   case oneDay
   case sixHours
+  case oneHour
   case tenMinutes
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
