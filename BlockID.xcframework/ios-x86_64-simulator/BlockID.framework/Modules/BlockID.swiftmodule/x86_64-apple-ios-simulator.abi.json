@@ -78335,6 +78335,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 14708,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/UpdateAccountInfo\/UpdateAccountInfoAPIs.swift",
       "kind": "StringLiteral",
       "offset": 564,
