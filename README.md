@@ -18,7 +18,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 ### v1.20.30
-- Updated min deployment target to 15.0
+- Updated minimum deployment target to 15.0
 
 ### v1.20.20
 - Updated caching for application configuration api
