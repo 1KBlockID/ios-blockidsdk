@@ -18,7 +18,9 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 ### v1.20.30
+- Added context while creating 1kWallet session
 - Updated minimum deployment target to 15.0
+- EXPIRED and ABANDONED statuses added for document session polling
 
 ### v1.20.20
 - Updated caching for application configuration api

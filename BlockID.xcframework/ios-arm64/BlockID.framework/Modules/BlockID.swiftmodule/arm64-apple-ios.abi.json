@@ -45536,79 +45536,6 @@
                     "accessorKind": "get"
                   }
                 ]
-              },
-              {
-                "kind": "Var",
-                "name": "TIMEOUT",
-                "printedName": "TIMEOUT",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV15DocumentScannerV7TIMEOUTSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV15DocumentScannerV7TIMEOUTSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV15DocumentScannerV7TIMEOUTSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV15DocumentScannerV7TIMEOUTSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
               }
             ],
             "declKind": "Struct",
@@ -78335,6 +78262,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 14708,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/UpdateAccountInfo\/UpdateAccountInfoAPIs.swift",
       "kind": "StringLiteral",
       "offset": 564,
@@ -78715,231 +78649,231 @@
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 80631,
+      "offset": 79735,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 80670,
+      "offset": 79774,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 80715,
+      "offset": 79819,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 80756,
+      "offset": 79860,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 80792,
+      "offset": 79896,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 80964,
+      "offset": 80068,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81554,
+      "offset": 80658,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81605,
+      "offset": 80709,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81651,
+      "offset": 80755,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81699,
+      "offset": 80803,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81745,
+      "offset": 80849,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81784,
+      "offset": 80888,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81830,
+      "offset": 80934,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81870,
+      "offset": 80974,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81908,
+      "offset": 81012,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81946,
+      "offset": 81050,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 81984,
+      "offset": 81088,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82023,
+      "offset": 81127,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82063,
+      "offset": 81167,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82105,
+      "offset": 81209,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82146,
+      "offset": 81250,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82178,
+      "offset": 81282,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82218,
+      "offset": 81322,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82260,
+      "offset": 81364,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82301,
+      "offset": 81405,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82342,
+      "offset": 81446,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 82383,
+      "offset": 81487,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 84399,
+      "offset": 83503,
       "length": 19,
       "value": "\"mobile_session_id\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 84451,
+      "offset": 83555,
       "length": 20,
       "value": "\"mobile_document_id\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 86457,
+      "offset": 85561,
       "length": 12,
       "value": "\"event_info\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 94158,
+      "offset": 93262,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 94244,
+      "offset": 93348,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "Array",
-      "offset": 94272,
+      "offset": 93376,
       "length": 2,
       "value": "[]"
     },
@@ -79569,14 +79503,14 @@
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13098,
+      "offset": 12989,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 13133,
+      "offset": 13024,
       "length": 2,
       "value": "\"\""
     },
