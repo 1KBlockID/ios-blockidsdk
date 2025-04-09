@@ -1407,7 +1407,6 @@ public struct CustomErrors {
   public struct DocumentScanner {
     public static let CANCELED: (code: Swift.Int, message: Swift.String)
     public static let INVALID_DOC_TYPE: (code: Swift.Int, message: Swift.String)
-    public static let TIMEOUT: (code: Swift.Int, message: Swift.String)
   }
   public struct CaaS {
     public static let GLOBAL_CAAS_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
