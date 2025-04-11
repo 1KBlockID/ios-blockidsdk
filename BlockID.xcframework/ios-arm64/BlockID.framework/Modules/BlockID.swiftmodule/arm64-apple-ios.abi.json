@@ -25621,12 +25621,19 @@
           {
             "kind": "Function",
             "name": "enrollDeviceAuth",
-            "printedName": "enrollDeviceAuth(completion:)",
+            "printedName": "enrollDeviceAuth(reEnrollEnabled:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeFunc",
@@ -25682,8 +25689,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID15BIDAuthProviderC16enrollDeviceAuth10completionyySb_ypSgSSSgtc_tF",
-            "mangledName": "$s7BlockID15BIDAuthProviderC16enrollDeviceAuth10completionyySb_ypSgSSSgtc_tF",
+            "usr": "s:7BlockID15BIDAuthProviderC16enrollDeviceAuth15reEnrollEnabled10completionySb_ySb_ypSgSSSgtctF",
+            "mangledName": "$s7BlockID15BIDAuthProviderC16enrollDeviceAuth15reEnrollEnabled10completionySb_ySb_ypSgSSSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -78279,6 +78286,13 @@
       "offset": 965,
       "length": 20,
       "value": "\"com.blockid.liveid\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/BIDAuthProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11824,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",

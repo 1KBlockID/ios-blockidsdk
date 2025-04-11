@@ -849,7 +849,7 @@ public enum AuthAssetType : Swift.String {
   public func enrollPin(pin: Swift.String, proofedBy: Swift.String, tenant: BlockID.BIDTenant, keyPair: BlockID.APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping BlockID.UserAPICallback)
   public func verifyPin(pin: Swift.String) -> Swift.Bool
   public func unEnrollPin(pin: Swift.String, tenant: BlockID.BIDTenant, keyPair: BlockID.APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping BlockID.UserAPICallback)
-  public func enrollDeviceAuth(completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
+  public func enrollDeviceAuth(reEnrollEnabled: Swift.Bool = false, completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
   public func unenrollDeviceAuth(completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
   public func verifyDeviceAuth(completion: @escaping (Swift.Bool, BlockID.BiometricError?, Swift.String?) -> Swift.Void)
   public func enrollLiveID(dictLiveID: [Swift.String : Any], tenant: BlockID.BIDTenant, keyPair: BlockID.APIKeyPair, did: Swift.String, ial: Swift.String, livenessResult: Swift.String?, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping BlockID.UserAPICallback)
