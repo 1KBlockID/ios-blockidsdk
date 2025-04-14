@@ -696,6 +696,7 @@ extension BlockID.BlockIDSDK {
   public func validateAccessCode(code: Swift.String, completion: @escaping BlockID.AccessCodeValidationAPICallback)
   public func redeemAccessCode(phoneNumber: Swift.String? = nil, code: Swift.String, userId: Swift.String, password: Swift.String, origin: BlockID.BIDOrigin, deviceToken: Swift.String? = nil, lat: Swift.Double, lon: Swift.Double, completion: @escaping BlockID.UserAPICallback)
   public func redeemAccessCode(code: Swift.String, deviceToken: Swift.String? = nil, lat: Swift.Double, lon: Swift.Double, completion: @escaping BlockID.UserAPICallback)
+  public func verifyUserAccount(userId: Swift.String, password: Swift.String, origin: BlockID.BIDOrigin, deviceToken: Swift.String? = nil, lon: Swift.Double, lat: Swift.Double, completion: @escaping BlockID.UserAPICallback)
 }
 extension BlockID.BlockIDSDK {
   public func getKYC(completion: @escaping BlockID.KYCCallback)
@@ -849,7 +850,7 @@ public enum AuthAssetType : Swift.String {
   public func enrollPin(pin: Swift.String, proofedBy: Swift.String, tenant: BlockID.BIDTenant, keyPair: BlockID.APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping BlockID.UserAPICallback)
   public func verifyPin(pin: Swift.String) -> Swift.Bool
   public func unEnrollPin(pin: Swift.String, tenant: BlockID.BIDTenant, keyPair: BlockID.APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping BlockID.UserAPICallback)
-  public func enrollDeviceAuth(reEnrollEnabled: Swift.Bool = false, completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
+  public func enrollDeviceAuth(allowReEnrollment: Swift.Bool = false, completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
   public func unenrollDeviceAuth(completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
   public func verifyDeviceAuth(completion: @escaping (Swift.Bool, BlockID.BiometricError?, Swift.String?) -> Swift.Void)
   public func enrollLiveID(dictLiveID: [Swift.String : Any], tenant: BlockID.BIDTenant, keyPair: BlockID.APIKeyPair, did: Swift.String, ial: Swift.String, livenessResult: Swift.String?, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping BlockID.UserAPICallback)
