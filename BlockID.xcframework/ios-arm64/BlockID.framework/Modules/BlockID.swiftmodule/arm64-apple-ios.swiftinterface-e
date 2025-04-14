@@ -696,7 +696,7 @@ extension BlockID.BlockIDSDK {
   public func validateAccessCode(code: Swift.String, completion: @escaping BlockID.AccessCodeValidationAPICallback)
   public func redeemAccessCode(phoneNumber: Swift.String? = nil, code: Swift.String, userId: Swift.String, password: Swift.String, origin: BlockID.BIDOrigin, deviceToken: Swift.String? = nil, lat: Swift.Double, lon: Swift.Double, completion: @escaping BlockID.UserAPICallback)
   public func redeemAccessCode(code: Swift.String, deviceToken: Swift.String? = nil, lat: Swift.Double, lon: Swift.Double, completion: @escaping BlockID.UserAPICallback)
-  public func verifyUserAccount(userId: Swift.String, password: Swift.String, origin: BlockID.BIDOrigin, deviceToken: Swift.String? = nil, lon: Swift.Double, lat: Swift.Double, completion: @escaping BlockID.UserAPICallback)
+  public func verifyUserAccount(userId: Swift.String, password: Swift.String, origin: BlockID.BIDOrigin, deviceToken: Swift.String? = nil, lat: Swift.Double, lon: Swift.Double, completion: @escaping BlockID.UserAPICallback)
 }
 extension BlockID.BlockIDSDK {
   public func getKYC(completion: @escaping BlockID.KYCCallback)
