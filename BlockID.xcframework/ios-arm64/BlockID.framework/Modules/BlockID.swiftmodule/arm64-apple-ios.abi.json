@@ -78126,28 +78126,28 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/internal\/BIDDeviceAuthenticator.swift",
       "kind": "StringLiteral",
-      "offset": 7831,
+      "offset": 7947,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/internal\/BIDDeviceAuthenticator.swift",
       "kind": "StringLiteral",
-      "offset": 7939,
+      "offset": 8055,
       "length": 16,
       "value": "\".BID_SDK_VAULT\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/internal\/BIDDeviceAuthenticator.swift",
       "kind": "StringLiteral",
-      "offset": 8004,
+      "offset": 8120,
       "length": 41,
       "value": "\"com.onekosmos.blockid.sdk.BID_SDK_VAULT\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/internal\/BIDDeviceAuthenticator.swift",
       "kind": "StringLiteral",
-      "offset": 8134,
+      "offset": 8250,
       "length": 26,
       "value": "\"biometric_protected_item\""
     },
