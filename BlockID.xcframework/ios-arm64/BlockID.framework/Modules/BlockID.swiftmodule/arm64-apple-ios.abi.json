@@ -78124,34 +78124,6 @@
       "value": "\"Authentication\""
     },
     {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/internal\/BIDDeviceAuthenticator.swift",
-      "kind": "StringLiteral",
-      "offset": 7756,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/internal\/BIDDeviceAuthenticator.swift",
-      "kind": "StringLiteral",
-      "offset": 7864,
-      "length": 16,
-      "value": "\".BID_SDK_VAULT\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/internal\/BIDDeviceAuthenticator.swift",
-      "kind": "StringLiteral",
-      "offset": 7929,
-      "length": 41,
-      "value": "\"com.onekosmos.blockid.sdk.BID_SDK_VAULT\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/internal\/BIDDeviceAuthenticator.swift",
-      "kind": "StringLiteral",
-      "offset": 8091,
-      "length": 22,
-      "value": "\"SwiftKeychainWrapper\""
-    },
-    {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Verifiable Credentials\/VerifiableCredentialsAPIs.swift",
       "kind": "StringLiteral",
       "offset": 577,
