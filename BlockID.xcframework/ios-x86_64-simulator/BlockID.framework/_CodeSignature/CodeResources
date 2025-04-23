@@ -12,22 +12,6 @@
 		<data>
 		C6roHZYeJv4cOMMcqu03V+5H3u8=
 		</data>
-		<key>Frameworks/OpenSSL.framework/Info.plist</key>
-		<data>
-		87Q70Sqv1nrkLoZ8nyBw0SppRDk=
-		</data>
-		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
-		<data>
-		/rIyVCqXC0DASarrQbsR2id9SXo=
-		</data>
-		<key>Frameworks/OpenSSL.framework/PrivacyInfo.xcprivacy</key>
-		<data>
-		AL1dh5ctObXBjoBiabSJ86M3HQs=
-		</data>
-		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
-		<data>
-		YDA/Wa9/n1OJf16NZgIGE8DeOg0=
-		</data>
 		<key>Headers/BlockID-Swift.h</key>
 		<data>
 		aQ4Ekn4UB/2tr5MrHSfKHsNAvP4=
@@ -46,11 +30,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QJqI3UCQ8/wvLNMQEFoRakP80jo=
+		VGvdQ53ft+MdKEZX2kVgNFmRfXY=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		MSa6kT5UFCrkoIkRLFZ1IAXdyqY=
+		q2jnP3qu52hIyrHlWz2kWhwW66w=
 		</data>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -129,34 +113,6 @@
 			DarpvfBP5Lovq8xkBioX47mL9t3VkmBadsSge4KcPcI=
 			</data>
 		</dict>
-		<key>Frameworks/OpenSSL.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fr4FCiUFuJRZqN2iLJjncKHtYnRx0JaWwPRpLgYvOek=
-			</data>
-		</dict>
-		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Kpw0upR6Xdq0wBqeiXP5mnaG3/wIbqCaxM7fjT6jMYE=
-			</data>
-		</dict>
-		<key>Frameworks/OpenSSL.framework/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WpuPwM3bECAbtHzCgEs/AExyUUdmItJb/E61TtRuEIQ=
-			</data>
-		</dict>
-		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8BGEkY3eqZKpdEgZS8pO1QgjEVMnb4j4owzqdG/Fvt4=
-			</data>
-		</dict>
 		<key>Headers/BlockID-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -189,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WU1LCofq/lMFaT4DPyqdpcLpxgw2q8CX9620mscGPlU=
+			MuiaOwEEm9cMxIJx6ldyvJth+foyU4zwZ008r//Uvl8=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

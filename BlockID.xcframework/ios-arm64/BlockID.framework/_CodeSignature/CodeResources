@@ -12,22 +12,6 @@
 		<data>
 		C6roHZYeJv4cOMMcqu03V+5H3u8=
 		</data>
-		<key>Frameworks/OpenSSL.framework/Info.plist</key>
-		<data>
-		CqYApdBaZUkeHFEFbq/u4Mep4OU=
-		</data>
-		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
-		<data>
-		rV9lCrJYBXGO0UEFGLpuc/Ef52Q=
-		</data>
-		<key>Frameworks/OpenSSL.framework/PrivacyInfo.xcprivacy</key>
-		<data>
-		AL1dh5ctObXBjoBiabSJ86M3HQs=
-		</data>
-		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
-		<data>
-		OrpJkSyZMTmREzrlPj+QcI1SUZk=
-		</data>
 		<key>Headers/BlockID-Swift.h</key>
 		<data>
 		4weHZgmdHPFw0e9+3hbA6tAqcxQ=
@@ -46,11 +30,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XgUQ9bNnmrMic3MWmdTt8CUXUfY=
+		CKmuioARjhBnEcpi3VRiPHmDPHc=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		MSa6kT5UFCrkoIkRLFZ1IAXdyqY=
+		q2jnP3qu52hIyrHlWz2kWhwW66w=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -129,34 +113,6 @@
 			DarpvfBP5Lovq8xkBioX47mL9t3VkmBadsSge4KcPcI=
 			</data>
 		</dict>
-		<key>Frameworks/OpenSSL.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ccT4/D1Au+wt4qgS+mHZnv0th6tVKOHmxZoBLNyzXas=
-			</data>
-		</dict>
-		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kS10b579DtoKHwiKKolOyXy/kO4ANKLrAto5oSOVJdE=
-			</data>
-		</dict>
-		<key>Frameworks/OpenSSL.framework/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WpuPwM3bECAbtHzCgEs/AExyUUdmItJb/E61TtRuEIQ=
-			</data>
-		</dict>
-		<key>Frameworks/OpenSSL.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			u7HgXuSPE56arAslYV3M1HFt/3JMYcepnE7pU4SdKOE=
-			</data>
-		</dict>
 		<key>Headers/BlockID-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -189,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WU1LCofq/lMFaT4DPyqdpcLpxgw2q8CX9620mscGPlU=
+			MuiaOwEEm9cMxIJx6ldyvJth+foyU4zwZ008r//Uvl8=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>

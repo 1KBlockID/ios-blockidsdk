@@ -21,6 +21,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 - Added context while creating 1kWallet session
 - Updated minimum deployment target to 15.0
 - EXPIRED and ABANDONED statuses added for document session polling
+- Added support to re-enroll biometry if updated to iOS device
 
 ### v1.20.20
 - Updated caching for application configuration api
