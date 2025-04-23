@@ -18,7 +18,7 @@
 		</data>
 		<key>Frameworks/OpenSSL.framework/OpenSSL</key>
 		<data>
-		JHZjSqrHv4gi+WJ16KN/Kedq32A=
+		rV9lCrJYBXGO0UEFGLpuc/Ef52Q=
 		</data>
 		<key>Frameworks/OpenSSL.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jJc/6lZ1sd1IDrlgBJsKWFz7WAM=
+		XgUQ9bNnmrMic3MWmdTt8CUXUfY=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		R2oAq5iquCE7B7HnYzifSt7zGgs=
+		MSa6kT5UFCrkoIkRLFZ1IAXdyqY=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		wEIH0wDYrcoYf8+eQWN7esrug1I=
+		y80r2lTpDri6q7wzpfJe5H6bN2A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xRkTggOV61N9lttabg6i3xYoXF1iekFTFDg3Qb4dS68=
+			kS10b579DtoKHwiKKolOyXy/kO4ANKLrAto5oSOVJdE=
 			</data>
 		</dict>
 		<key>Frameworks/OpenSSL.framework/PrivacyInfo.xcprivacy</key>
@@ -189,7 +189,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KAqxp/HeaccpK4EIdqYIK5GndzeXkZ+RnV9DefPdyWA=
+			WU1LCofq/lMFaT4DPyqdpcLpxgw2q8CX9620mscGPlU=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -217,7 +217,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D/TfcqsiVYjoDmfK2OnYnCtsXx6v0SDDnb3G5zatRrk=
+			DQWpmXvKz4q+MD3avWoCUn6ifLJ7nxtrEIz5Tglk8aQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
