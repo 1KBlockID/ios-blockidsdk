@@ -22,6 +22,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 - Updated minimum deployment target to 15.0
 - EXPIRED and ABANDONED statuses added for document session polling
 - Added support to re-enroll biometry if updated to iOS device
+- Bug fixes and other improvements 
 
 ### v1.20.20
 - Updated caching for application configuration api
