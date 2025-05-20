@@ -9,7 +9,7 @@
 BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.20'
+   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.30'
 ```
 
 ## License
@@ -17,6 +17,13 @@ BlockID is available through CocoaPods. To install it, simply add the following 
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+### v1.20.30
+- Added context while creating 1kWallet session
+- Updated minimum deployment target to 15.0
+- EXPIRED and ABANDONED statuses added for document session polling
+- Added support to re-enroll biometry if updated to iOS device
+- Bug fixes and other improvements 
+
 ### v1.20.20
 - Updated caching for application configuration api
 - Bug fixes and other improvements 

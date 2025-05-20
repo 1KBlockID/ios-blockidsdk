@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BlockID
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BlockID
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import ARKit
 import AVFoundation
@@ -559,6 +559,7 @@ public enum BiometricType {
   public var isEnabled: Swift.Bool?
   public var authType: BiometricType?
   public var biometricTypeString: Swift.String?
+  public var currentBiometric: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -644,6 +645,7 @@ public typealias UserAccountsRemovedCallback = ((_ status: Swift.Bool, _ respons
   public func getTenant() -> BIDTenant?
   public func getAppTenant() -> BIDTenant?
   public func getDeviceAuth() -> DeviceAuth
+  public func isBiometricEnrollmentUpdated() -> Swift.Bool
   public func checkDeviceTrust() -> Swift.Bool
   public func isScreenLockEnabled() -> Swift.Bool
   public func commitTempData()
@@ -694,6 +696,7 @@ extension BlockIDSDK {
   public func validateAccessCode(code: Swift.String, completion: @escaping AccessCodeValidationAPICallback)
   public func redeemAccessCode(phoneNumber: Swift.String? = nil, code: Swift.String, userId: Swift.String, password: Swift.String, origin: BIDOrigin, deviceToken: Swift.String? = nil, lat: Swift.Double, lon: Swift.Double, completion: @escaping UserAPICallback)
   public func redeemAccessCode(code: Swift.String, deviceToken: Swift.String? = nil, lat: Swift.Double, lon: Swift.Double, completion: @escaping UserAPICallback)
+  public func verifyUserAccount(userId: Swift.String, password: Swift.String, origin: BIDOrigin, deviceToken: Swift.String? = nil, lat: Swift.Double, lon: Swift.Double, completion: @escaping UserAPICallback)
 }
 extension BlockIDSDK {
   public func getKYC(completion: @escaping KYCCallback)
@@ -847,7 +850,7 @@ public enum AuthAssetType : Swift.String {
   public func enrollPin(pin: Swift.String, proofedBy: Swift.String, tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping UserAPICallback)
   public func verifyPin(pin: Swift.String) -> Swift.Bool
   public func unEnrollPin(pin: Swift.String, tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, ial: Swift.String, completion: @escaping UserAPICallback)
-  public func enrollDeviceAuth(completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
+  public func enrollDeviceAuth(allowReEnrollment: Swift.Bool = false, completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
   public func unenrollDeviceAuth(completion: @escaping (Swift.Bool, Any?, Swift.String?) -> Swift.Void)
   public func verifyDeviceAuth(completion: @escaping (Swift.Bool, BiometricError?, Swift.String?) -> Swift.Void)
   public func enrollLiveID(dictLiveID: [Swift.String : Any], tenant: BIDTenant, keyPair: APIKeyPair, did: Swift.String, ial: Swift.String, livenessResult: Swift.String?, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping UserAPICallback)
@@ -1407,7 +1410,6 @@ public struct CustomErrors {
   public struct DocumentScanner {
     public static let CANCELED: (code: Swift.Int, message: Swift.String)
     public static let INVALID_DOC_TYPE: (code: Swift.Int, message: Swift.String)
-    public static let TIMEOUT: (code: Swift.Int, message: Swift.String)
   }
   public struct CaaS {
     public static let GLOBAL_CAAS_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
