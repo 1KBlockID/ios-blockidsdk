@@ -676,7 +676,7 @@ public typealias UserAccountsRemovedCallback = ((_ status: Swift.Bool, _ respons
   public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, authFactor: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
   public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, authFactor: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
   public func authenticateUser(controller: UIKit.UIViewController? = nil, sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, extraData: [Swift.String : Any]? = nil, authFactor: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
-  public func isTrustedSessionSources(sessionUrl: Swift.String) -> Swift.Bool
+  public func isTrustedSessionSources(sessionUrl: Swift.String, callback: @escaping (Swift.Bool) -> Swift.Void)
   public func getOfflineAuthPayload(bidLinkedAccount: BIDLinkedAccount) -> Swift.String?
   public func getLicense() -> (license: BIDLicense?, error: ErrorResponse?)
   public func getBiometricAssetEnrollments() -> BiometricAssets?
@@ -1636,6 +1636,8 @@ public enum CacheTTLLIMIT : Swift.Int {
   public func setCache(_ key: Swift.String, _ value: Swift.String?, _ ttl: CacheTTLLIMIT)
   public func setCache(_ key: Swift.String, _ value: Swift.String?, _ ttl: Swift.Int)
   public func getCache(_ key: Swift.String) -> Swift.String?
+  public func isCacheFresh(_ key: Swift.String) -> Swift.Bool
+  public func getAndRetain(_ key: Swift.String) -> Swift.String?
   @objc deinit
 }
 public typealias BIDOriginCallback = ((_ status: Swift.Bool, _ account: BIDLinkedAccount?, _ index: Swift.Int?) -> Swift.Void)
@@ -1831,11 +1833,12 @@ public class OfflineAuthAccountDetail : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers public class BIDTenantInfo : Swift.Codable {
+public class BIDTenantInfo : Swift.Codable {
   public var id: Swift.String?
   public var tenanttag: Swift.String?
   public var name: Swift.String?
   public var displayTenantInfoForPersona: Swift.Bool?
+  public var otherDNS: [Swift.String]
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
