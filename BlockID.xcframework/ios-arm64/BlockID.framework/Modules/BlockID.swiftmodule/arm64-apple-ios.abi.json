@@ -19916,24 +19916,41 @@
           {
             "kind": "Function",
             "name": "isTrustedSessionSources",
-            "printedName": "isTrustedSessionSources(sessionUrl:)",
+            "printedName": "isTrustedSessionSources(sessionUrl:callback:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC23isTrustedSessionSources10sessionUrlSbSS_tF",
-            "mangledName": "$s7BlockID0A5IDSDKC23isTrustedSessionSources10sessionUrlSbSS_tF",
+            "usr": "s:7BlockID0A5IDSDKC23isTrustedSessionSources10sessionUrl8callbackySS_ySbctF",
+            "mangledName": "$s7BlockID0A5IDSDKC23isTrustedSessionSources10sessionUrl8callbackySS_ySbctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -54351,6 +54368,70 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isCacheFresh",
+            "printedName": "isCacheFresh(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID18BIDSDKCacheManagerC12isCacheFreshySbSSF",
+            "mangledName": "$s7BlockID18BIDSDKCacheManagerC12isCacheFreshySbSSF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAndRetain",
+            "printedName": "getAndRetain(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID18BIDSDKCacheManagerC12getAndRetainySSSgSSF",
+            "mangledName": "$s7BlockID18BIDSDKCacheManagerC12getAndRetainySSSgSSF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -63290,6 +63371,115 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "otherDNS",
+            "printedName": "otherDNS",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGvp",
+            "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGvg",
+                "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGvs",
+                "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGvs",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGvM",
+                "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGvM",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -63351,7 +63541,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -78234,28 +78423,35 @@
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 113898,
+      "offset": 114945,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 113967,
+      "offset": 115014,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 114194,
+      "offset": 115241,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 120620,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 161965,
+      "offset": 165384,
       "length": 5,
       "value": "false"
     },
@@ -78543,83 +78739,83 @@
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "Array",
       "offset": 351,
-      "length": 579,
-      "value": "[\"firstname\", \"lastname\", \"ial\", \"aal\", \"ppt\", \"ppt_image\", \"dl\", \"dl_front_image\", \"dl_back_image\", \"liveid\", \"scep_creds\", \"nationalid\", \"deviceid\", \"location\", \"nationalid_front_image\", \"nationalid_back_image\", \"device_info\", \"ssn\", \"ssnl4\", \"dl_object\", \"ppt_object\", \"liveid_object\", \"nationalid_object\", \"ssn_object\", \"fido\"]"
+      "length": 594,
+      "value": "[\"firstname\", \"lastname\", \"ial\", \"aal\", \"ppt\", \"ppt_image\", \"dl\", \"dl_front_image\", \"dl_back_image\", \"liveid\", \"scep_creds\", \"nationalid\", \"deviceid\", \"location\", \"nationalid_front_image\", \"nationalid_back_image\", \"device_info\", \"ssn\", \"ssnl4\", \"dl_object\", \"ppt_object\", \"liveid_object\", \"nationalid_object\", \"ssn_object\", \"fido\", \"account_otp\"]"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 2506,
+      "offset": 2521,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 5458,
+      "offset": 5473,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 6767,
+      "offset": 6782,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 6940,
+      "offset": 6955,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 6997,
+      "offset": 7012,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 8561,
+      "offset": 8576,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8734,
+      "offset": 8749,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8791,
+      "offset": 8806,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 13708,
+      "offset": 13723,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 13837,
+      "offset": 13852,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 13891,
+      "offset": 13906,
       "length": 3,
       "value": "0.0"
     },
@@ -81377,126 +81573,126 @@
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 2262,
+      "offset": 2788,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 2305,
+      "offset": 2831,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 2958,
+      "offset": 3482,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3031,
+      "offset": 3555,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3071,
+      "offset": 3595,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3110,
+      "offset": 3634,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3151,
+      "offset": 3675,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3190,
+      "offset": 3714,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3224,
+      "offset": 3748,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 3279,
+      "offset": 3803,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3358,
+      "offset": 3916,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3397,
+      "offset": 3955,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3432,
+      "offset": 3990,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3472,
+      "offset": 4030,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3506,
+      "offset": 4064,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3546,
+      "offset": 4104,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3621,
+      "offset": 4179,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3651,
+      "offset": 4209,
       "length": 2,
       "value": "\"\""
     },
