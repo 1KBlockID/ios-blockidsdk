@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BlockID
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import ARKit
@@ -267,13 +267,6 @@ public enum AccessCodeType : Swift.String {
 }
 @_hasMissingDesignatedInitializers @available(iOS 13, *)
 public class TagReader {
-  @objc deinit
-}
-@_inheritsConvenienceInitializers public class BIDPassport : BlockID.BIDDocumentData {
-  public class func makePassportObj(passportData: BlockID.MRZDocumentData, passportOcr: Swift.String, passportImage: Swift.String, userPhoto: Swift.String, passportMrz: Swift.String) -> BlockID.BIDPassport
-  public init()
-  override public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
 public protocol QRScanResponseDelegate : AnyObject {
@@ -596,7 +589,6 @@ public typealias BIDTenantRegisterationCallback = ((_ status: Swift.Bool, _ erro
 public typealias UserAPICallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias LiveIDCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias BIDWalletCreationCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
-public typealias BIDMigrationCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias AccessCodeValidationAPICallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ object: BlockID.AccessCodeValidationResponseDecryptedData?) -> Swift.Void)
 public typealias AuthenticateUserCallback = ((_ status: Swift.Bool, _ sessionId: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias SessionResponseCallback = ((_ status: Swift.Bool, _ object: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
@@ -1026,17 +1018,6 @@ public class DataGroup11 : BlockID.DataGroup {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class BIDLicense : Swift.Codable {
-  public var modules: BlockID.LicenseModules!
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@_hasMissingDesignatedInitializers public class LicenseModules : Swift.Codable {
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
 @_hasMissingDesignatedInitializers public class RegisterUserData : Swift.Codable {
   public var type: Swift.String?
   public var id: Swift.String?
@@ -1151,6 +1132,17 @@ extension Swift.UnkeyedEncodingContainer {
   public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
 }
 @_hasMissingDesignatedInitializers public class KYCHashData : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class BIDLicense : Swift.Codable {
+  public var modules: BlockID.LicenseModules!
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class LicenseModules : Swift.Codable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1292,13 +1284,6 @@ public class DataGroup {
   public func hash(_ hashAlgorythm: Swift.String) -> [Swift.UInt8]
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class DataMigrationHelper {
-  public typealias BIDMigrationCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
-  public static let sharedInstance: BlockID.DataMigrationHelper
-  public func isBidChainNeedsMigration() -> Swift.Bool
-  public func migrateBidChains(completion: @escaping (Swift.Bool?, Swift.String?) -> Swift.Void)
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class BIDTenant : Swift.Codable {
   public var tenantTag: Swift.String?
   public var community: Swift.String?
@@ -1315,12 +1300,6 @@ public struct AnalyticsHelper {
 }
 @_hasMissingDesignatedInitializers public class CreateAccessCodePayload {
   public init(version: BlockID.Version, type: BlockID.AccessCodeType, emailID: Swift.String, emailSubject: Swift.String, emailTemplate: Swift.String)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BIDDriverLicense : BlockID.BIDDocumentData {
-  public class func makeDriverLicenseObj(dlData: BlockID.DriverLicenseData?, dlOcr: Swift.String?, dlFrontImage: Swift.String?, dlBackImage: Swift.String?, userPhoto: Swift.String?, dlBarcodeInfo: Swift.String?) -> BlockID.BIDDriverLicense
-  override public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
 }
 public enum DocumentScannerType : Swift.String {
@@ -1716,14 +1695,6 @@ public class BACHandler {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers public class BIDDocumentData : Swift.Codable {
-  public var id: Swift.String?
-  public var type: Swift.String?
-  public var photo: Swift.String?
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
 @_hasMissingDesignatedInitializers public class BIDLinkedAccount : Swift.Codable, Swift.Equatable {
   public var origin: BlockID.BIDOrigin!
   public var userId: Swift.String
@@ -1851,54 +1822,6 @@ public class BIDTenantInfo : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public struct DriverLicenseData : Swift.Codable {
-  public var issuerIdentificationNumber: Swift.String?
-  public var fullName: Swift.String?
-  public var firstName: Swift.String?
-  public var lastName: Swift.String?
-  public var middleName: Swift.String?
-  public var familyName: Swift.String?
-  public var givenName: Swift.String?
-  public var gender: Swift.String?
-  public var height: Swift.String?
-  public var eyeColor: Swift.String?
-  public var dob: Swift.String?
-  public var street: Swift.String?
-  public var city: Swift.String?
-  public var state: Swift.String?
-  public var zipCode: Swift.String?
-  public var country: Swift.String?
-  public var documentType: Swift.String?
-  public var documentId: Swift.String?
-  public var doe: Swift.String?
-  public var doi: Swift.String?
-  public var discriminatorNumber: Swift.String?
-  public var vehicleCodes: Swift.String?
-  public var classificationCode: Swift.String?
-  public var restrictionCode: Swift.String?
-  public var endrosementsCode: Swift.String?
-  public var inventoryControlNumber: Swift.String?
-  public var residenceCity: Swift.String?
-  public var residenceState: Swift.String?
-  public var residenceZipCode: Swift.String?
-  public var organDonor: Swift.String?
-  public var veteran: Swift.String?
-  public var placeOfBirth: Swift.String?
-  public var suffixName: Swift.String?
-  public var nameSuffix: Swift.String?
-  public var complianceType: Swift.String?
-  public var socialSecurityNumber: Swift.String?
-  public var akaDateOfBirth: Swift.String?
-  public var akaSocialSecurityNumber: Swift.String?
-  public var akaFirstName: Swift.String?
-  public var akaLastName: Swift.String?
-  public var akaMiddleName: Swift.String?
-  public var akaGivenName: Swift.String?
-  public var akaFamilyName: Swift.String?
-  public var akaSuffix: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 @_hasMissingDesignatedInitializers public class BIDPasswordPolicy : Swift.Codable {
   public var allowed: Swift.Bool?
   public var rules: BlockID.PasswordRules?
@@ -1997,19 +1920,6 @@ public protocol RFIDResponseDelegate : AnyObject {
 }
 extension BlockID.RFIDScannerHelper : BlockID.RFIDResponseDelegate {
   public func rfidScanCompleted(withPassport docDic: [Swift.String : Any]?, error: BlockID.ErrorResponse?)
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BIDNationalId : BlockID.BIDDocumentData {
-  public var metadata: BlockID.MRZDocumentData?
-  public var mrz_result: Swift.String?
-  public var ocr_front: Swift.String?
-  public var image_front: Swift.String?
-  public var ocr_back: Swift.String?
-  public var image_back: Swift.String?
-  public var qr_code_data: Swift.String?
-  public class func makeNationalIDObj(nidData: BlockID.MRZDocumentData?, nidOcr_front: Swift.String?, nidOcr_back: Swift.String?, nidFrontImage: Swift.String?, nidBackImage: Swift.String?, userPhoto: Swift.String?, nidBarcodeInfo: Swift.String?, nidMrz: Swift.String) -> BlockID.BIDNationalId
-  override public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
 }
 @objc @available(iOS 13, *)
 public class PassportReader : ObjectiveC.NSObject {
