@@ -1758,12 +1758,12 @@ public class OfflineAuthAccountDetail : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public class BIDTenantInfo : Swift.Codable {
+@_hasMissingDesignatedInitializers public class BIDTenantInfo : Swift.Codable {
   public var id: Swift.String?
   public var tenanttag: Swift.String?
   public var name: Swift.String?
   public var displayTenantInfoForPersona: Swift.Bool?
-  public var otherDNS: [Swift.String]
+  public var otherDNS: [Swift.String]?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
