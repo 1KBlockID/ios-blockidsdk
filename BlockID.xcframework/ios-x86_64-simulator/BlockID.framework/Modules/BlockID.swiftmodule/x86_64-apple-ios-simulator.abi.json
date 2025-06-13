@@ -71672,7 +71672,14 @@
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDLinkedAccount.swift",
       "kind": "StringLiteral",
-      "offset": 707,
+      "offset": 520,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDLinkedAccount.swift",
+      "kind": "StringLiteral",
+      "offset": 739,
       "length": 2,
       "value": "\"\""
     },
