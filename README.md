@@ -20,6 +20,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ### v1.20.40
 - Removed document data migration related codebase
+- Removed FIDO related codebase
 
 ### v1.20.30
 - Added context while creating 1kWallet session

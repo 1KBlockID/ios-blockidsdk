@@ -6772,23 +6772,6 @@
         "moduleName": "BlockID"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
         "kind": "TypeDecl",
         "name": "SessionPollingAPI",
         "printedName": "SessionPollingAPI",
@@ -15685,37 +15668,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "WebAuthnKit",
-        "printedName": "WebAuthnKit",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "PromiseKit",
-        "printedName": "PromiseKit",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "YubiKit",
-        "printedName": "YubiKit",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "BlockIDSDK",
         "printedName": "BlockIDSDK",
@@ -21055,891 +21007,6 @@
             "mangledName": "$s7BlockID0A5IDSDKC17getPasswordPolicy7account10completionyAA16BIDLinkedAccountC_ySb_AA011BIDPasswordF0CSgAA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "registerFIDO2Key",
-            "printedName": "registerFIDO2Key(userName:tenantDNS:communityName:fileName:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.ErrorResponse?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ErrorResponse",
-                            "printedName": "BlockID.ErrorResponse",
-                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC16registerFIDO2Key8userName9tenantDNS09communityH004fileH010completionySS_S3SSgySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC16registerFIDO2Key8userName9tenantDNS09communityH004fileH010completionySS_S3SSgySb_AA13ErrorResponseCSgtctF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "authenticateFIDO2Key",
-            "printedName": "authenticateFIDO2Key(userName:tenantDNS:communityName:fileName:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.ErrorResponse?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ErrorResponse",
-                            "printedName": "BlockID.ErrorResponse",
-                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC20authenticateFIDO2Key8userName9tenantDNS09communityH004fileH010completionySS_S3SSgySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC20authenticateFIDO2Key8userName9tenantDNS09communityH004fileH010completionySS_S3SSgySb_AA13ErrorResponseCSgtctF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "registerFIDO2Key",
-            "printedName": "registerFIDO2Key(controller:userName:tenantDNS:communityName:type:pin:setPin:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FIDO2KeyType",
-                "printedName": "BlockID.FIDO2KeyType",
-                "usr": "s:7BlockID12FIDO2KeyTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.ErrorResponse?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ErrorResponse",
-                            "printedName": "BlockID.ErrorResponse",
-                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC16registerFIDO2Key10controller8userName9tenantDNS09communityI04type3pin6setPin10completionySo16UIViewControllerC_S3SAA0eF4TypeOSSSgSbySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC16registerFIDO2Key10controller8userName9tenantDNS09communityI04type3pin6setPin10completionySo16UIViewControllerC_S3SAA0eF4TypeOSSSgSbySb_AA13ErrorResponseCSgtctF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "authenticateFIDO2Key",
-            "printedName": "authenticateFIDO2Key(controller:userName:tenantDNS:communityName:type:pin:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FIDO2KeyType",
-                "printedName": "BlockID.FIDO2KeyType",
-                "usr": "s:7BlockID12FIDO2KeyTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.ErrorResponse?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ErrorResponse",
-                            "printedName": "BlockID.ErrorResponse",
-                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC20authenticateFIDO2Key10controller8userName9tenantDNS09communityI04type3pin10completionySo16UIViewControllerC_S3SAA0eF4TypeOSSSgySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC20authenticateFIDO2Key10controller8userName9tenantDNS09communityI04type3pin10completionySo16UIViewControllerC_S3SAA0eF4TypeOSSSgySb_AA13ErrorResponseCSgtctF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "registerFIDO2Key",
-            "printedName": "registerFIDO2Key(controller:linkedAccount:type:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BlockID.BIDLinkedAccount?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BIDLinkedAccount",
-                    "printedName": "BlockID.BIDLinkedAccount",
-                    "usr": "s:7BlockID16BIDLinkedAccountC"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FIDO2KeyType",
-                "printedName": "BlockID.FIDO2KeyType",
-                "usr": "s:7BlockID12FIDO2KeyTypeO"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.ErrorResponse?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ErrorResponse",
-                            "printedName": "BlockID.ErrorResponse",
-                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC16registerFIDO2Key10controller13linkedAccount4type10completionySo16UIViewControllerC_AA09BIDLinkedI0CSgAA0eF4TypeOySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC16registerFIDO2Key10controller13linkedAccount4type10completionySo16UIViewControllerC_AA09BIDLinkedI0CSgAA0eF4TypeOySb_AA13ErrorResponseCSgtctF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "authenticateFIDO2Key",
-            "printedName": "authenticateFIDO2Key(type:controller:sessionId:sessionURL:creds:scopes:lat:lon:origin:userId:metaData:authFactor:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FIDO2KeyType",
-                "printedName": "BlockID.FIDO2KeyType",
-                "usr": "s:7BlockID12FIDO2KeyTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BIDOrigin",
-                "printedName": "BlockID.BIDOrigin",
-                "usr": "s:7BlockID9BIDOriginC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.ErrorResponse?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ErrorResponse",
-                            "printedName": "BlockID.ErrorResponse",
-                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC20authenticateFIDO2Key4type10controller9sessionId0I3URL5creds6scopes3lat3lon6origin04userJ08metaData10authFactor10completionyAA0eF4TypeO_So16UIViewControllerCSgSSSgS3SS2dAA9BIDOriginCAWSDySSypGSgAWySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC20authenticateFIDO2Key4type10controller9sessionId0I3URL5creds6scopes3lat3lon6origin04userJ08metaData10authFactor10completionyAA0eF4TypeO_So16UIViewControllerCSgSSSgS3SS2dAA9BIDOriginCAWSDySSypGSgAWySb_AA13ErrorResponseCSgtctF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setFido2PIN",
-            "printedName": "setFido2PIN(newPin:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.ErrorResponse?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ErrorResponse",
-                            "printedName": "BlockID.ErrorResponse",
-                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC11setFido2PIN6newPin10completionySS_ySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC11setFido2PIN6newPin10completionySS_ySb_AA13ErrorResponseCSgtctF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "changeFido2PIN",
-            "printedName": "changeFido2PIN(oldPin:newPin:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.ErrorResponse?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ErrorResponse",
-                            "printedName": "BlockID.ErrorResponse",
-                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC14changeFido2PIN6oldPin03newH010completionySS_SSySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC14changeFido2PIN6oldPin03newH010completionySS_SSySb_AA13ErrorResponseCSgtctF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "resetFido2",
-            "printedName": "resetFido2(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.ErrorResponse?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "ErrorResponse",
-                            "printedName": "BlockID.ErrorResponse",
-                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC10resetFido210completionyySb_AA13ErrorResponseCSgtc_tF",
-            "mangledName": "$s7BlockID0A5IDSDKC10resetFido210completionyySb_AA13ErrorResponseCSgtc_tF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
             "isFromExtension": true,
@@ -42356,251 +41423,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "WebAuthnKit",
-        "printedName": "WebAuthnKit",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "PromiseKit",
-        "printedName": "PromiseKit",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "YubiKit",
-        "printedName": "YubiKit",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "FIDO2KeyType",
-        "printedName": "FIDO2KeyType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "PLATFORM",
-            "printedName": "PLATFORM",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BlockID.FIDO2KeyType.Type) -> BlockID.FIDO2KeyType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FIDO2KeyType",
-                    "printedName": "BlockID.FIDO2KeyType",
-                    "usr": "s:7BlockID12FIDO2KeyTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BlockID.FIDO2KeyType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "FIDO2KeyType",
-                        "printedName": "BlockID.FIDO2KeyType",
-                        "usr": "s:7BlockID12FIDO2KeyTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7BlockID12FIDO2KeyTypeO8PLATFORMyA2CmF",
-            "mangledName": "$s7BlockID12FIDO2KeyTypeO8PLATFORMyA2CmF",
-            "moduleName": "BlockID"
-          },
-          {
-            "kind": "Var",
-            "name": "CROSS_PLATFORM",
-            "printedName": "CROSS_PLATFORM",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BlockID.FIDO2KeyType.Type) -> BlockID.FIDO2KeyType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FIDO2KeyType",
-                    "printedName": "BlockID.FIDO2KeyType",
-                    "usr": "s:7BlockID12FIDO2KeyTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BlockID.FIDO2KeyType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "FIDO2KeyType",
-                        "printedName": "BlockID.FIDO2KeyType",
-                        "usr": "s:7BlockID12FIDO2KeyTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7BlockID12FIDO2KeyTypeO14CROSS_PLATFORMyA2CmF",
-            "mangledName": "$s7BlockID12FIDO2KeyTypeO14CROSS_PLATFORMyA2CmF",
-            "moduleName": "BlockID"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BlockID.FIDO2KeyType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FIDO2KeyType",
-                    "printedName": "BlockID.FIDO2KeyType",
-                    "usr": "s:7BlockID12FIDO2KeyTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7BlockID12FIDO2KeyTypeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s7BlockID12FIDO2KeyTypeO8rawValueACSgSS_tcfc",
-            "moduleName": "BlockID",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID12FIDO2KeyTypeO8rawValueSSvp",
-            "mangledName": "$s7BlockID12FIDO2KeyTypeO8rawValueSSvp",
-            "moduleName": "BlockID",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID12FIDO2KeyTypeO8rawValueSSvg",
-                "mangledName": "$s7BlockID12FIDO2KeyTypeO8rawValueSSvg",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:7BlockID12FIDO2KeyTypeO",
-        "mangledName": "$s7BlockID12FIDO2KeyTypeO",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "CustomErrors",
         "printedName": "CustomErrors",
@@ -43156,1134 +41978,6 @@
             "declKind": "Struct",
             "usr": "s:7BlockID12CustomErrorsV7LicenseV",
             "mangledName": "$s7BlockID12CustomErrorsV7LicenseV",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "FIDO2",
-            "printedName": "FIDO2",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "USER_NOT_LINKED",
-                "printedName": "USER_NOT_LINKED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V15USER_NOT_LINKEDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V15USER_NOT_LINKEDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V15USER_NOT_LINKEDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V15USER_NOT_LINKEDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "SERVICE_URL_NOT_SET",
-                "printedName": "SERVICE_URL_NOT_SET",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V19SERVICE_URL_NOT_SETSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V19SERVICE_URL_NOT_SETSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V19SERVICE_URL_NOT_SETSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V19SERVICE_URL_NOT_SETSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "ATTESTATION_OPTIONS_FAILED",
-                "printedName": "ATTESTATION_OPTIONS_FAILED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V26ATTESTATION_OPTIONS_FAILEDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V26ATTESTATION_OPTIONS_FAILEDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V26ATTESTATION_OPTIONS_FAILEDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V26ATTESTATION_OPTIONS_FAILEDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "ATTESTATION_RESULT_FAILED",
-                "printedName": "ATTESTATION_RESULT_FAILED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V25ATTESTATION_RESULT_FAILEDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V25ATTESTATION_RESULT_FAILEDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V25ATTESTATION_RESULT_FAILEDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V25ATTESTATION_RESULT_FAILEDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "LINKING_FAILED",
-                "printedName": "LINKING_FAILED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V14LINKING_FAILEDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V14LINKING_FAILEDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V14LINKING_FAILEDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V14LINKING_FAILEDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "UNLINKING_FAILED",
-                "printedName": "UNLINKING_FAILED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V16UNLINKING_FAILEDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V16UNLINKING_FAILEDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V16UNLINKING_FAILEDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V16UNLINKING_FAILEDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "CANCELED",
-                "printedName": "CANCELED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V8CANCELEDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V8CANCELEDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V8CANCELEDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V8CANCELEDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "INVALID",
-                "printedName": "INVALID",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V7INVALIDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V7INVALIDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V7INVALIDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V7INVALIDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "FETCH_MANAGED_WALLET_FAILED",
-                "printedName": "FETCH_MANAGED_WALLET_FAILED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V27FETCH_MANAGED_WALLET_FAILEDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V27FETCH_MANAGED_WALLET_FAILEDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V27FETCH_MANAGED_WALLET_FAILEDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V27FETCH_MANAGED_WALLET_FAILEDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "INVALID_USER",
-                "printedName": "INVALID_USER",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V12INVALID_USERSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V12INVALID_USERSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V12INVALID_USERSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V12INVALID_USERSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "ASSERTION_OPTIONS_FAILED",
-                "printedName": "ASSERTION_OPTIONS_FAILED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V24ASSERTION_OPTIONS_FAILEDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V24ASSERTION_OPTIONS_FAILEDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V24ASSERTION_OPTIONS_FAILEDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V24ASSERTION_OPTIONS_FAILEDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "ASSERTION_RESULT_FAILED",
-                "printedName": "ASSERTION_RESULT_FAILED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V23ASSERTION_RESULT_FAILEDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V23ASSERTION_RESULT_FAILEDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V23ASSERTION_RESULT_FAILEDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V23ASSERTION_RESULT_FAILEDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "GLOBAL_CAAS_URL_NOT_SET",
-                "printedName": "GLOBAL_CAAS_URL_NOT_SET",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V23GLOBAL_CAAS_URL_NOT_SETSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V23GLOBAL_CAAS_URL_NOT_SETSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "deprecated": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl",
-                  "Available"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V23GLOBAL_CAAS_URL_NOT_SETSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V23GLOBAL_CAAS_URL_NOT_SETSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "ADMIN_CONSOLE_URL_NOT_SET",
-                "printedName": "ADMIN_CONSOLE_URL_NOT_SET",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V25ADMIN_CONSOLE_URL_NOT_SETSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V25ADMIN_CONSOLE_URL_NOT_SETSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V25ADMIN_CONSOLE_URL_NOT_SETSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V25ADMIN_CONSOLE_URL_NOT_SETSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "KEY_ALREADY_REGISTERED",
-                "printedName": "KEY_ALREADY_REGISTERED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV5FIDO2V22KEY_ALREADY_REGISTEREDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V22KEY_ALREADY_REGISTEREDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV5FIDO2V22KEY_ALREADY_REGISTEREDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V22KEY_ALREADY_REGISTEREDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:7BlockID12CustomErrorsV5FIDO2V",
-            "mangledName": "$s7BlockID12CustomErrorsV5FIDO2V",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -45295,6 +42989,79 @@
                     "declKind": "Accessor",
                     "usr": "s:7BlockID12CustomErrorsV4CaaSV23GLOBAL_CAAS_URL_NOT_SETSi4code_SS7messagetvgZ",
                     "mangledName": "$s7BlockID12CustomErrorsV4CaaSV23GLOBAL_CAAS_URL_NOT_SETSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ADMIN_CONSOLE_URL_NOT_SET",
+                "printedName": "ADMIN_CONSOLE_URL_NOT_SET",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV4CaaSV25ADMIN_CONSOLE_URL_NOT_SETSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV4CaaSV25ADMIN_CONSOLE_URL_NOT_SETSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV4CaaSV25ADMIN_CONSOLE_URL_NOT_SETSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV4CaaSV25ADMIN_CONSOLE_URL_NOT_SETSi4code_SS7messagetvgZ",
                     "moduleName": "BlockID",
                     "static": true,
                     "implicit": true,
@@ -49120,23 +46887,6 @@
       },
       {
         "kind": "Import",
-        "name": "SafariServices",
-        "printedName": "SafariServices",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "CommonCrypto",
         "printedName": "CommonCrypto",
         "declKind": "Import",
@@ -51592,23 +49342,6 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "BlockID"
       },
       {
         "kind": "Import",
@@ -62337,33 +60070,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGvp",
-            "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGvp",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -62380,9 +60088,51 @@
                     "usr": "s:Sa"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGSgvp",
+            "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGSgvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
-                "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGvg",
-                "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGvg",
+                "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGSgvg",
+                "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGSgvg",
                 "moduleName": "BlockID",
                 "implicit": true,
                 "accessorKind": "get"
@@ -62399,22 +60149,30 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:Sa"
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGvs",
-                "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGvs",
+                "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGSgvs",
+                "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGSgvs",
                 "moduleName": "BlockID",
                 "implicit": true,
                 "accessorKind": "set"
@@ -62431,8 +60189,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGvM",
-                "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGvM",
+                "usr": "s:7BlockID13BIDTenantInfoC8otherDNSSaySSGSgvM",
+                "mangledName": "$s7BlockID13BIDTenantInfoC8otherDNSSaySSGSgvM",
                 "moduleName": "BlockID",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -62501,6 +60259,7 @@
         "declAttributes": [
           "AccessControl"
         ],
+        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -70696,34 +68455,6 @@
       "value": "\"user_invitation\""
     },
     {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 218,
-      "length": 23,
-      "value": "\"\/api\/r2\/wallets\/fetch\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 4399,
-      "length": 9,
-      "value": "\"fido_id\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 4435,
-      "length": 13,
-      "value": "\"skip_create\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 4749,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Analytics API\/AnalyticsApi.swift",
       "kind": "StringLiteral",
       "offset": 232,
@@ -71398,44 +69129,37 @@
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 98433,
+      "offset": 96824,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 114808,
+      "offset": 114365,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 114877,
+      "offset": 114434,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 115104,
+      "offset": 114661,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 120605,
+      "offset": 120000,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
-      "kind": "BooleanLiteral",
-      "offset": 165369,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
@@ -71762,42 +69486,21 @@
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 8576,
+      "offset": 8498,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8749,
+      "offset": 8627,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8806,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13723,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
-      "kind": "FloatLiteral",
-      "offset": 13852,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
-      "kind": "FloatLiteral",
-      "offset": 13906,
+      "offset": 8681,
       "length": 3,
       "value": "0.0"
     },
@@ -72915,51 +70618,16 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1338,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3686,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4823,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 81447,
-      "length": 10,
-      "value": "\"platform\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDO2NativeHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 81484,
-      "length": 16,
-      "value": "\"cross-platform\""
-    },
-    {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12989,
+      "offset": 10924,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 13024,
+      "offset": 10959,
       "length": 2,
       "value": "\"\""
     },
@@ -73272,97 +70940,6 @@
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 282,
-      "length": 13,
-      "value": "\"\/fido3.html\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 340,
-      "length": 21,
-      "value": "\"session has expired\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 408,
-      "length": 43,
-      "value": "\"session with this sessionId doesn't exist\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 11267,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 11295,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 11327,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 11360,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 11390,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 11423,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 11454,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 11486,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 11759,
-      "length": 14,
-      "value": "\"authenticate\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/FIDO2\/FIDOHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 11794,
-      "length": 10,
-      "value": "\"register\""
-    },
-    {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/AES_3DES_DESEncryption.swift",
       "kind": "IntegerLiteral",
       "offset": 9295,
@@ -73421,112 +70998,112 @@
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 7953,
+      "offset": 6623,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14169,
+      "offset": 12839,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14262,
+      "offset": 12932,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14331,
+      "offset": 13001,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14405,
+      "offset": 13075,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14496,
+      "offset": 13166,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14554,
+      "offset": 13224,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14637,
+      "offset": 13307,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14714,
+      "offset": 13384,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14778,
+      "offset": 13448,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14816,
+      "offset": 13486,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14854,
+      "offset": 13524,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14893,
+      "offset": 13563,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14933,
+      "offset": 13603,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14975,
+      "offset": 13645,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15016,
+      "offset": 13686,
       "length": 2,
       "value": "\"\""
     },
@@ -73613,55 +71190,6 @@
       "offset": 1006,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FIDO2\/FIDO2NativeAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 212,
-      "length": 22,
-      "value": "\"\/attestation\/options\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FIDO2\/FIDO2NativeAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 274,
-      "length": 21,
-      "value": "\"\/attestation\/result\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FIDO2\/FIDO2NativeAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 339,
-      "length": 20,
-      "value": "\"\/assertion\/options\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FIDO2\/FIDO2NativeAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 397,
-      "length": 19,
-      "value": "\"\/assertion\/result\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FIDO2\/FIDO2NativeAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 456,
-      "length": 77,
-      "value": "\"\/link\/community\/{communityId}\/did\/{did}\/user\/{userId}\/fidokey\/{fidoKeyHash}\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FIDO2\/FIDO2NativeAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 570,
-      "length": 38,
-      "value": "\"\/unregister\/community\/{communityId}\/\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FIDO2\/FIDO2NativeAPIs.swift",
-      "kind": "StringLiteral",
-      "offset": 611,
-      "length": 43,
-      "value": "\"user\/{userId}\/did_or_fidokey\/{identifier}\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/Internal\/Renderer.swift",
@@ -74163,21 +71691,7 @@
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDLinkedAccount.swift",
       "kind": "StringLiteral",
-      "offset": 473,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDLinkedAccount.swift",
-      "kind": "BooleanLiteral",
-      "offset": 517,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDLinkedAccount.swift",
-      "kind": "StringLiteral",
-      "offset": 739,
+      "offset": 660,
       "length": 2,
       "value": "\"\""
     },
@@ -74625,56 +72139,56 @@
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3916,
+      "offset": 3923,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3955,
+      "offset": 3962,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3990,
+      "offset": 3997,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 4030,
+      "offset": 4037,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 4064,
+      "offset": 4071,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 4104,
+      "offset": 4111,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 4179,
+      "offset": 4186,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 4209,
+      "offset": 4216,
       "length": 2,
       "value": "\"\""
     },

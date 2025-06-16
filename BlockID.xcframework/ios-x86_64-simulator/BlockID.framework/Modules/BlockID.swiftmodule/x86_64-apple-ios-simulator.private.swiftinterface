@@ -19,16 +19,13 @@ import LocalAuthentication
 import Metal
 import MetalKit
 import OpenSSL
-import PromiseKit
 import SafariServices
 import Swift
 import SwiftUI
 import UIKit
 import Vision
 import WalletCore
-import WebAuthnKit
 import WebKit
-import YubiKit
 import _Concurrency
 import _CoreNFC_UIKit
 import _StringProcessing
@@ -584,7 +581,6 @@ public enum LogLevel : Swift.Int, Swift.CaseIterable {
   public class func clearStoredLogs()
   @objc deinit
 }
-public typealias FIDO2PINCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
 public typealias BIDTenantRegisterationCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ object: BIDTenant?) -> Swift.Void)
 public typealias UserAPICallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
 public typealias LiveIDCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
@@ -698,21 +694,6 @@ extension BlockIDSDK {
 }
 extension BlockIDSDK {
   public func getPasswordPolicy(account: BIDLinkedAccount, completion: @escaping PasswordPolicyCallback)
-}
-extension BlockIDSDK {
-  public func registerFIDO2Key(userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, fileName: Swift.String? = nil, completion: @escaping FIDO2Callback)
-  public func authenticateFIDO2Key(userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, fileName: Swift.String? = nil, completion: @escaping FIDO2Callback)
-}
-extension BlockIDSDK {
-  public func registerFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: FIDO2KeyType, pin: Swift.String? = nil, setPin: Swift.Bool = false, completion: @escaping FIDO2Callback)
-  public func authenticateFIDO2Key(controller: UIKit.UIViewController, userName: Swift.String, tenantDNS: Swift.String, communityName: Swift.String, type: FIDO2KeyType, pin: Swift.String? = nil, completion: @escaping FIDO2Callback)
-  public func registerFIDO2Key(controller: UIKit.UIViewController, linkedAccount: BIDLinkedAccount?, type: FIDO2KeyType, completion: @escaping FIDO2Callback)
-  public func authenticateFIDO2Key(type: FIDO2KeyType, controller: UIKit.UIViewController? = nil, sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, authFactor: Swift.String? = nil, completion: @escaping FIDO2Callback)
-}
-extension BlockIDSDK {
-  public func setFido2PIN(newPin: Swift.String, completion: @escaping FIDO2PINCallback)
-  public func changeFido2PIN(oldPin: Swift.String, newPin: Swift.String, completion: @escaping FIDO2PINCallback)
-  public func resetFido2(completion: @escaping FIDO2PINCallback)
 }
 extension BlockIDSDK {
   public func getVCsFrom(downloadURL url: Swift.String, completion: @escaping VCsCallback)
@@ -1329,15 +1310,6 @@ public class DataGroup15 : DataGroup {
   }
   @objc deinit
 }
-public enum FIDO2KeyType : Swift.String {
-  case PLATFORM
-  case CROSS_PLATFORM
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
 public struct CustomErrors {
   public struct Network {
     public static let OFFLINE: (code: Swift.Int, message: Swift.String)
@@ -1349,24 +1321,6 @@ public struct CustomErrors {
     public static let MODULE_NOT_ENABLED: (code: Swift.Int, message: Swift.String)
     public static let BAD_REQUEST: (code: Swift.Int, message: Swift.String)
     public static let INVALID: (code: Swift.Int, message: Swift.String)
-  }
-  public struct FIDO2 {
-    public static let USER_NOT_LINKED: (code: Swift.Int, message: Swift.String)
-    public static let SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
-    public static let ATTESTATION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
-    public static let ATTESTATION_RESULT_FAILED: (code: Swift.Int, message: Swift.String)
-    public static let LINKING_FAILED: (code: Swift.Int, message: Swift.String)
-    public static let UNLINKING_FAILED: (code: Swift.Int, message: Swift.String)
-    public static let CANCELED: (code: Swift.Int, message: Swift.String)
-    public static let INVALID: (code: Swift.Int, message: Swift.String)
-    public static let FETCH_MANAGED_WALLET_FAILED: (code: Swift.Int, message: Swift.String)
-    public static let INVALID_USER: (code: Swift.Int, message: Swift.String)
-    public static let ASSERTION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
-    public static let ASSERTION_RESULT_FAILED: (code: Swift.Int, message: Swift.String)
-    @available(*, deprecated, message: "Not in use, will be removed soon")
-    public static let GLOBAL_CAAS_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
-    public static let ADMIN_CONSOLE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
-    public static let KEY_ALREADY_REGISTERED: (code: Swift.Int, message: Swift.String)
   }
   public struct SCEPCheck {
     public static let INVALID: (code: Swift.Int, message: Swift.String)
@@ -1392,6 +1346,7 @@ public struct CustomErrors {
   }
   public struct CaaS {
     public static let GLOBAL_CAAS_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
+    public static let ADMIN_CONSOLE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
   }
   public struct LiveIDSelfie {
     public static let CANCELED: (code: Swift.Int, message: Swift.String)
@@ -1450,7 +1405,6 @@ public struct CustomErrors {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public typealias FIDO2Callback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
 @available(iOS 13, macOS 10.15, *)
 public func AESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
 @available(iOS 13, macOS 10.15, *)
@@ -1804,12 +1758,12 @@ public class OfflineAuthAccountDetail : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public class BIDTenantInfo : Swift.Codable {
+@_hasMissingDesignatedInitializers public class BIDTenantInfo : Swift.Codable {
   public var id: Swift.String?
   public var tenanttag: Swift.String?
   public var name: Swift.String?
   public var displayTenantInfoForPersona: Swift.Bool?
-  public var otherDNS: [Swift.String]
+  public var otherDNS: [Swift.String]?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1998,9 +1952,6 @@ extension DocTypeEnum : Swift.RawRepresentable {}
 extension DocumentScannerType : Swift.Equatable {}
 extension DocumentScannerType : Swift.Hashable {}
 extension DocumentScannerType : Swift.RawRepresentable {}
-extension FIDO2KeyType : Swift.Equatable {}
-extension FIDO2KeyType : Swift.Hashable {}
-extension FIDO2KeyType : Swift.RawRepresentable {}
 extension RegisterDocType : Swift.Equatable {}
 extension RegisterDocType : Swift.Hashable {}
 extension RegisterDocType : Swift.RawRepresentable {}
