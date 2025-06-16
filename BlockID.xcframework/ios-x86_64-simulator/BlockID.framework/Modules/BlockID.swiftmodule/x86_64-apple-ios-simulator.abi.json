@@ -71691,21 +71691,7 @@
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDLinkedAccount.swift",
       "kind": "StringLiteral",
-      "offset": 473,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDLinkedAccount.swift",
-      "kind": "BooleanLiteral",
-      "offset": 517,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDLinkedAccount.swift",
-      "kind": "StringLiteral",
-      "offset": 739,
+      "offset": 660,
       "length": 2,
       "value": "\"\""
     },
