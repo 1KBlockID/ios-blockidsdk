@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BlockID'
-  s.version          = '1.20.30'
-  s.summary          = 'BlockID SDK v1.20.30'
+  s.version          = '1.20.40'
+  s.summary          = 'BlockID SDK v1.20.40'
 
   s.description      = <<-DESC
 The BlockID SDK is now available as .xcframework. Application must remove the run script which was required to remove unwanted architecture during app deployment process.
@@ -18,7 +18,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.homepage         = 'https://github.com/1KBlockID/ios-blockidsdk.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'info-1kosmos' => 'info@1kosmos.com' }
-  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.30' }
+  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.40' }
 
   # set platform and minimum deployment target
   s.platform = :ios
@@ -36,7 +36,6 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.dependency 'CryptoSwift', '~> 1.6.0'
   s.dependency 'BigInt', '~> 4.0'
   s.dependency 'OpenSSL-Universal', '~> 1.1.2300'
-  s.dependency 'YubiKit', '~> 4.2.0'
 
   # specify minimum swift version
   s.swift_versions = '5.5'
