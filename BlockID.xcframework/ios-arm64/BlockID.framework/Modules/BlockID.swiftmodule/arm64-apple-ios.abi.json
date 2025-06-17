@@ -69445,62 +69445,62 @@
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "Array",
       "offset": 351,
-      "length": 594,
-      "value": "[\"firstname\", \"lastname\", \"ial\", \"aal\", \"ppt\", \"ppt_image\", \"dl\", \"dl_front_image\", \"dl_back_image\", \"liveid\", \"scep_creds\", \"nationalid\", \"deviceid\", \"location\", \"nationalid_front_image\", \"nationalid_back_image\", \"device_info\", \"ssn\", \"ssnl4\", \"dl_object\", \"ppt_object\", \"liveid_object\", \"nationalid_object\", \"ssn_object\", \"fido\", \"account_otp\"]"
+      "length": 586,
+      "value": "[\"firstname\", \"lastname\", \"ial\", \"aal\", \"ppt\", \"ppt_image\", \"dl\", \"dl_front_image\", \"dl_back_image\", \"liveid\", \"scep_creds\", \"nationalid\", \"deviceid\", \"location\", \"nationalid_front_image\", \"nationalid_back_image\", \"device_info\", \"ssn\", \"ssnl4\", \"dl_object\", \"ppt_object\", \"liveid_object\", \"nationalid_object\", \"ssn_object\", \"account_otp\"]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 2521,
+      "offset": 2513,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 5473,
+      "offset": 5465,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 6782,
+      "offset": 6774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 6955,
+      "offset": 6947,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 7012,
+      "offset": 7004,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 8498,
+      "offset": 8490,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8627,
+      "offset": 8619,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8681,
+      "offset": 8673,
       "length": 3,
       "value": "0.0"
     },
