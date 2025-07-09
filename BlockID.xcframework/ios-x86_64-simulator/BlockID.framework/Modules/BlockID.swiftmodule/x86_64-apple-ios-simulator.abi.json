@@ -19449,7 +19449,7 @@
           {
             "kind": "Function",
             "name": "authenticateUser",
-            "printedName": "authenticateUser(controller:sessionId:sessionURL:creds:scopes:lat:lon:origin:userId:extraData:authFactor:completion:)",
+            "printedName": "authenticateUser(controller:sessionId:sessionURL:creds:scopes:lat:lon:origin:userId:metaData:extraData:authFactor:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19567,6 +19567,34 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "Swift.String?",
                 "children": [
                   {
@@ -19634,8 +19662,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC16authenticateUser10controller9sessionId0G3URL5creds6scopes3lat3lon6origin04userH09extraData10authFactor10completionySo16UIViewControllerCSg_SSSgS3SS2dAA9BIDOriginCATSDySSypGSgATySb_AtA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC16authenticateUser10controller9sessionId0G3URL5creds6scopes3lat3lon6origin04userH09extraData10authFactor10completionySo16UIViewControllerCSg_SSSgS3SS2dAA9BIDOriginCATSDySSypGSgATySb_AtA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID0A5IDSDKC16authenticateUser10controller9sessionId0G3URL5creds6scopes3lat3lon6origin04userH08metaData05extraQ010authFactor10completionySo16UIViewControllerCSg_SSSgS3SS2dAA9BIDOriginCAUSDySSypGSgAyUySb_AuA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC16authenticateUser10controller9sessionId0G3URL5creds6scopes3lat3lon6origin04userH08metaData05extraQ010authFactor10completionySo16UIViewControllerCSg_SSSgS3SS2dAA9BIDOriginCAUSDySSypGSgAyUySb_AuA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -69115,28 +69143,28 @@
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 114067,
+      "offset": 114365,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 114136,
+      "offset": 114434,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 114287,
+      "offset": 114661,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 119626,
+      "offset": 120000,
       "length": 1,
       "value": "0"
     },
