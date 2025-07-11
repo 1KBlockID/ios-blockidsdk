@@ -20,6 +20,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ### v1.20.50
 - Send the session ID upon clicking "Done" during document scanning
+- Bug fixes
 
 ### v1.20.40
 - Removed document data migration related codebase
