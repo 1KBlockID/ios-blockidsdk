@@ -69115,28 +69115,28 @@
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 114067,
+      "offset": 114391,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 114136,
+      "offset": 114460,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 114287,
+      "offset": 114611,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 119626,
+      "offset": 119950,
       "length": 1,
       "value": "0"
     },
