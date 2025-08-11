@@ -63887,7 +63887,8 @@
                 "declAttributes": [
                   "HasInitialValue",
                   "HasStorage",
-                  "AccessControl"
+                  "AccessControl",
+                  "RawDocComment"
                 ],
                 "hasStorage": true,
                 "accessors": [
@@ -64021,7 +64022,8 @@
                 "declAttributes": [
                   "HasInitialValue",
                   "HasStorage",
-                  "AccessControl"
+                  "AccessControl",
+                  "RawDocComment"
                 ],
                 "hasStorage": true,
                 "accessors": [
@@ -72554,21 +72556,21 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/FetchConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1334,
+      "offset": 1539,
       "length": 29,
       "value": "\"origins_allowed_to_transfer\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/FetchConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1401,
+      "offset": 1606,
       "length": 21,
       "value": "\"allowed_to_transfer\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/FetchConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1463,
+      "offset": 1668,
       "length": 25,
       "value": "\"not_allowed_to_transfer\""
     },
