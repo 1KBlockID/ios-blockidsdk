@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BlockID'
-  s.version          = '1.20.50'
-  s.summary          = 'BlockID SDK v1.20.50'
+  s.version          = '1.20.51'
+  s.summary          = 'BlockID SDK v1.20.51'
 
   s.description      = <<-DESC
 The BlockID SDK is now available as .xcframework. Application must remove the run script which was required to remove unwanted architecture during app deployment process.
@@ -18,7 +18,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.homepage         = 'https://github.com/1KBlockID/ios-blockidsdk.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'info-1kosmos' => 'info@1kosmos.com' }
-  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.50' }
+  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.51' }
 
   # set platform and minimum deployment target
   s.platform = :ios
@@ -31,6 +31,8 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.vendored_frameworks = 'BlockID.xcframework'
 
   # add pod dependency
+
+  s.dependency 'secp256k1.swift'
   s.dependency 'TrustWalletCore', '~> 2.5.6'
   s.dependency 'Alamofire','~> 4.9.1'
   s.dependency 'CryptoSwift', '~> 1.6.0'
