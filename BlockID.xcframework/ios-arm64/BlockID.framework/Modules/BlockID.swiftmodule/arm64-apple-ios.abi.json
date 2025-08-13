@@ -4383,6 +4383,20 @@
       },
       {
         "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "BlockID"
+      },
+      {
+        "kind": "Import",
+        "name": "secp256k1",
+        "printedName": "secp256k1",
+        "declKind": "Import",
+        "moduleName": "BlockID"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -19273,7 +19287,7 @@
           {
             "kind": "Function",
             "name": "authenticateUser",
-            "printedName": "authenticateUser(sessionId:creds:scopes:lat:lon:origin:userId:extraData:authFactor:completion:)",
+            "printedName": "authenticateUser(sessionId:creds:scopes:lat:lon:origin:userId:metaData:extraData:authFactor:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19334,6 +19348,34 @@
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -19437,8 +19479,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC16authenticateUser9sessionId5creds6scopes3lat3lon6origin04userG09extraData10authFactor10completionySSSg_S2SS2dAA9BIDOriginCAOSDySSypGSgAOySb_AoA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC16authenticateUser9sessionId5creds6scopes3lat3lon6origin04userG09extraData10authFactor10completionySSSg_S2SS2dAA9BIDOriginCAOSDySSypGSgAOySb_AoA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID0A5IDSDKC16authenticateUser9sessionId5creds6scopes3lat3lon6origin04userG08metaData05extraO010authFactor10completionySSSg_S2SS2dAA9BIDOriginCAPSDySSypGSgAtPySb_ApA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC16authenticateUser9sessionId5creds6scopes3lat3lon6origin04userG08metaData05extraO010authFactor10completionySSSg_S2SS2dAA9BIDOriginCAPSDySSypGSgAtPySb_ApA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -19449,7 +19491,7 @@
           {
             "kind": "Function",
             "name": "authenticateUser",
-            "printedName": "authenticateUser(controller:sessionId:sessionURL:creds:scopes:lat:lon:origin:userId:extraData:authFactor:completion:)",
+            "printedName": "authenticateUser(controller:sessionId:sessionURL:creds:scopes:lat:lon:origin:userId:metaData:extraData:authFactor:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19567,6 +19609,34 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "Swift.String?",
                 "children": [
                   {
@@ -19634,8 +19704,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC16authenticateUser10controller9sessionId0G3URL5creds6scopes3lat3lon6origin04userH09extraData10authFactor10completionySo16UIViewControllerCSg_SSSgS3SS2dAA9BIDOriginCATSDySSypGSgATySb_AtA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC16authenticateUser10controller9sessionId0G3URL5creds6scopes3lat3lon6origin04userH09extraData10authFactor10completionySo16UIViewControllerCSg_SSSgS3SS2dAA9BIDOriginCATSDySSypGSgATySb_AtA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID0A5IDSDKC16authenticateUser10controller9sessionId0G3URL5creds6scopes3lat3lon6origin04userH08metaData05extraQ010authFactor10completionySo16UIViewControllerCSg_SSSgS3SS2dAA9BIDOriginCAUSDySSypGSgAyUySb_AuA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC16authenticateUser10controller9sessionId0G3URL5creds6scopes3lat3lon6origin04userH08metaData05extraQ010authFactor10completionySo16UIViewControllerCSg_SSSgS3SS2dAA9BIDOriginCAUSDySSypGSgAyUySb_AuA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -66288,788 +66358,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "KeyedDecodingContainer",
-        "printedName": "KeyedDecodingContainer",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:forKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "[Swift.String : Any].Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s22KeyedDecodingContainerV7BlockIDE6decode_6forKeySDySSypGAFm_xtKF",
-            "mangledName": "$ss22KeyedDecodingContainerV7BlockIDE6decode_6forKeySDySSypGAFm_xtKF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<K where K : Swift.CodingKey>",
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:forKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "[Any].Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s22KeyedDecodingContainerV7BlockIDE6decode_6forKeySayypGAFm_xtKF",
-            "mangledName": "$ss22KeyedDecodingContainerV7BlockIDE6decode_6forKeySayypGAFm_xtKF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<K where K : Swift.CodingKey>",
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "[Swift.String : Any].Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s22KeyedDecodingContainerV7BlockIDE6decodeySDySSypGAEmKF",
-            "mangledName": "$ss22KeyedDecodingContainerV7BlockIDE6decodeySDySSypGAEmKF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
-            "sugared_genericSig": "<K where K : Swift.CodingKey>",
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:s22KeyedDecodingContainerV",
-        "mangledName": "$ss22KeyedDecodingContainerV",
-        "moduleName": "Swift",
-        "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
-        "sugared_genericSig": "<K where K : Swift.CodingKey>",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "KeyedDecodingContainerProtocol",
-            "printedName": "KeyedDecodingContainerProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Key",
-                "printedName": "Key",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s30KeyedDecodingContainerProtocolP",
-            "mangledName": "$ss30KeyedDecodingContainerProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UnkeyedDecodingContainer",
-        "printedName": "UnkeyedDecodingContainer",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "[Any].Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s24UnkeyedDecodingContainerP7BlockIDE6decodeySayypGAEmKF",
-            "mangledName": "$ss24UnkeyedDecodingContainerP7BlockIDE6decodeySayypGAEmKF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedDecodingContainer>",
-            "sugared_genericSig": "<Self where Self : Swift.UnkeyedDecodingContainer>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "[Swift.String : Any].Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s24UnkeyedDecodingContainerP7BlockIDE6decodeySDySSypGAEmKF",
-            "mangledName": "$ss24UnkeyedDecodingContainerP7BlockIDE6decodeySDySSypGAEmKF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedDecodingContainer>",
-            "sugared_genericSig": "<Self where Self : Swift.UnkeyedDecodingContainer>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:s24UnkeyedDecodingContainerP",
-        "mangledName": "$ss24UnkeyedDecodingContainerP",
-        "moduleName": "Swift",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KeyedEncodingContainerProtocol",
-        "printedName": "KeyedEncodingContainerProtocol",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s30KeyedEncodingContainerProtocolP7BlockIDAC14JSONCodingKeysV3KeyRtzrlE6encodeyySDySSypGKF",
-            "mangledName": "$ss30KeyedEncodingContainerProtocolP7BlockIDAC14JSONCodingKeysV3KeyRtzrlE6encodeyySDySSypGKF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.KeyedEncodingContainerProtocol, τ_0_0.Key == BlockID.JSONCodingKeys>",
-            "sugared_genericSig": "<Self where Self : Swift.KeyedEncodingContainerProtocol, Self.Key == BlockID.JSONCodingKeys>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:forKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.Key"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s30KeyedEncodingContainerProtocolP7BlockIDE6encode_6forKeyySDySSypGSg_0I0QztKF",
-            "mangledName": "$ss30KeyedEncodingContainerProtocolP7BlockIDE6encode_6forKeyySDySSypGSg_0I0QztKF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.KeyedEncodingContainerProtocol>",
-            "sugared_genericSig": "<Self where Self : Swift.KeyedEncodingContainerProtocol>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:forKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Any]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DependentMember",
-                "printedName": "τ_0_0.Key"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s30KeyedEncodingContainerProtocolP7BlockIDE6encode_6forKeyySayypGSg_0I0QztKF",
-            "mangledName": "$ss30KeyedEncodingContainerProtocolP7BlockIDE6encode_6forKeyySayypGSg_0I0QztKF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.KeyedEncodingContainerProtocol>",
-            "sugared_genericSig": "<Self where Self : Swift.KeyedEncodingContainerProtocol>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:s30KeyedEncodingContainerProtocolP",
-        "mangledName": "$ss30KeyedEncodingContainerProtocolP",
-        "moduleName": "Swift",
-        "genericSig": "<τ_0_0.Key : Swift.CodingKey>",
-        "sugared_genericSig": "<Self.Key : Swift.CodingKey>",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UnkeyedEncodingContainer",
-        "printedName": "UnkeyedEncodingContainer",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s24UnkeyedEncodingContainerP7BlockIDE6encodeyySayypGKF",
-            "mangledName": "$ss24UnkeyedEncodingContainerP7BlockIDE6encodeyySayypGKF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedEncodingContainer>",
-            "sugared_genericSig": "<Self where Self : Swift.UnkeyedEncodingContainer>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:s24UnkeyedEncodingContainerP7BlockIDE6encodeyySDySSypGKF",
-            "mangledName": "$ss24UnkeyedEncodingContainerP7BlockIDE6encodeyySDySSypGKF",
-            "moduleName": "BlockID",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedEncodingContainer>",
-            "sugared_genericSig": "<Self where Self : Swift.UnkeyedEncodingContainer>",
-            "declAttributes": [
-              "Mutating"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "Mutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:s24UnkeyedEncodingContainerP",
-        "mangledName": "$ss24UnkeyedEncodingContainerP",
-        "moduleName": "Swift",
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MTKView",
-        "printedName": "MTKView",
-        "declKind": "Class",
-        "usr": "c:objc(cs)MTKView",
-        "moduleName": "MetalKit",
-        "isOpen": true,
-        "intro_iOS": "9.0",
-        "objc_name": "MTKView",
-        "declAttributes": [
-          "Preconcurrency",
-          "Available",
-          "ObjC",
-          "Custom",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)UIView",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIView",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "String",
         "printedName": "String",
         "children": [
@@ -67872,6 +67160,788 @@
             "mangledName": "$s9Alamofire14URLConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KeyedDecodingContainer",
+        "printedName": "KeyedDecodingContainer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "decode",
+            "printedName": "decode(_:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "[Swift.String : Any].Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s22KeyedDecodingContainerV7BlockIDE6decode_6forKeySDySSypGAFm_xtKF",
+            "mangledName": "$ss22KeyedDecodingContainerV7BlockIDE6decode_6forKeySDySSypGAFm_xtKF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<K where K : Swift.CodingKey>",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decode",
+            "printedName": "decode(_:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "[Any].Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s22KeyedDecodingContainerV7BlockIDE6decode_6forKeySayypGAFm_xtKF",
+            "mangledName": "$ss22KeyedDecodingContainerV7BlockIDE6decode_6forKeySayypGAFm_xtKF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<K where K : Swift.CodingKey>",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decode",
+            "printedName": "decode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "[Swift.String : Any].Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s22KeyedDecodingContainerV7BlockIDE6decodeySDySSypGAEmKF",
+            "mangledName": "$ss22KeyedDecodingContainerV7BlockIDE6decodeySDySSypGAEmKF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
+            "sugared_genericSig": "<K where K : Swift.CodingKey>",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:s22KeyedDecodingContainerV",
+        "mangledName": "$ss22KeyedDecodingContainerV",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.CodingKey>",
+        "sugared_genericSig": "<K where K : Swift.CodingKey>",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "KeyedDecodingContainerProtocol",
+            "printedName": "KeyedDecodingContainerProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Key",
+                "printedName": "Key",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s30KeyedDecodingContainerProtocolP",
+            "mangledName": "$ss30KeyedDecodingContainerProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnkeyedDecodingContainer",
+        "printedName": "UnkeyedDecodingContainer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "decode",
+            "printedName": "decode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "[Any].Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s24UnkeyedDecodingContainerP7BlockIDE6decodeySayypGAEmKF",
+            "mangledName": "$ss24UnkeyedDecodingContainerP7BlockIDE6decodeySayypGAEmKF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedDecodingContainer>",
+            "sugared_genericSig": "<Self where Self : Swift.UnkeyedDecodingContainer>",
+            "declAttributes": [
+              "Mutating"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decode",
+            "printedName": "decode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "[Swift.String : Any].Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s24UnkeyedDecodingContainerP7BlockIDE6decodeySDySSypGAEmKF",
+            "mangledName": "$ss24UnkeyedDecodingContainerP7BlockIDE6decodeySDySSypGAEmKF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedDecodingContainer>",
+            "sugared_genericSig": "<Self where Self : Swift.UnkeyedDecodingContainer>",
+            "declAttributes": [
+              "Mutating"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:s24UnkeyedDecodingContainerP",
+        "mangledName": "$ss24UnkeyedDecodingContainerP",
+        "moduleName": "Swift",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KeyedEncodingContainerProtocol",
+        "printedName": "KeyedEncodingContainerProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s30KeyedEncodingContainerProtocolP7BlockIDAC14JSONCodingKeysV3KeyRtzrlE6encodeyySDySSypGKF",
+            "mangledName": "$ss30KeyedEncodingContainerProtocolP7BlockIDAC14JSONCodingKeysV3KeyRtzrlE6encodeyySDySSypGKF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.KeyedEncodingContainerProtocol, τ_0_0.Key == BlockID.JSONCodingKeys>",
+            "sugared_genericSig": "<Self where Self : Swift.KeyedEncodingContainerProtocol, Self.Key == BlockID.JSONCodingKeys>",
+            "declAttributes": [
+              "Mutating"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(_:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Key"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s30KeyedEncodingContainerProtocolP7BlockIDE6encode_6forKeyySDySSypGSg_0I0QztKF",
+            "mangledName": "$ss30KeyedEncodingContainerProtocolP7BlockIDE6encode_6forKeyySDySSypGSg_0I0QztKF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.KeyedEncodingContainerProtocol>",
+            "sugared_genericSig": "<Self where Self : Swift.KeyedEncodingContainerProtocol>",
+            "declAttributes": [
+              "Mutating"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(_:forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Key"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s30KeyedEncodingContainerProtocolP7BlockIDE6encode_6forKeyySayypGSg_0I0QztKF",
+            "mangledName": "$ss30KeyedEncodingContainerProtocolP7BlockIDE6encode_6forKeyySayypGSg_0I0QztKF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.KeyedEncodingContainerProtocol>",
+            "sugared_genericSig": "<Self where Self : Swift.KeyedEncodingContainerProtocol>",
+            "declAttributes": [
+              "Mutating"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:s30KeyedEncodingContainerProtocolP",
+        "mangledName": "$ss30KeyedEncodingContainerProtocolP",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0.Key : Swift.CodingKey>",
+        "sugared_genericSig": "<Self.Key : Swift.CodingKey>",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnkeyedEncodingContainer",
+        "printedName": "UnkeyedEncodingContainer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s24UnkeyedEncodingContainerP7BlockIDE6encodeyySayypGKF",
+            "mangledName": "$ss24UnkeyedEncodingContainerP7BlockIDE6encodeyySayypGKF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedEncodingContainer>",
+            "sugared_genericSig": "<Self where Self : Swift.UnkeyedEncodingContainer>",
+            "declAttributes": [
+              "Mutating"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:s24UnkeyedEncodingContainerP7BlockIDE6encodeyySDySSypGKF",
+            "mangledName": "$ss24UnkeyedEncodingContainerP7BlockIDE6encodeyySDySSypGKF",
+            "moduleName": "BlockID",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.UnkeyedEncodingContainer>",
+            "sugared_genericSig": "<Self where Self : Swift.UnkeyedEncodingContainer>",
+            "declAttributes": [
+              "Mutating"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:s24UnkeyedEncodingContainerP",
+        "mangledName": "$ss24UnkeyedEncodingContainerP",
+        "moduleName": "Swift",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MTKView",
+        "printedName": "MTKView",
+        "declKind": "Class",
+        "usr": "c:objc(cs)MTKView",
+        "moduleName": "MetalKit",
+        "isOpen": true,
+        "intro_iOS": "9.0",
+        "objc_name": "MTKView",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -68573,49 +68643,49 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 372,
       "length": 80,
       "value": "\"115792089237316195423570985008687907853269984665640564039457584007908834671663\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "IntegerLiteral",
-      "offset": 486,
+      "offset": 516,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "IntegerLiteral",
-      "offset": 519,
+      "offset": 549,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "StringLiteral",
-      "offset": 577,
+      "offset": 607,
       "length": 68,
       "value": "\"0x79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "StringLiteral",
-      "offset": 678,
+      "offset": 708,
       "length": 68,
       "value": "\"0x483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "StringLiteral",
-      "offset": 806,
+      "offset": 836,
       "length": 80,
       "value": "\"115792089237316195423570985008687907852837564279074904382605163141518161494337\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "IntegerLiteral",
-      "offset": 942,
+      "offset": 972,
       "length": 1,
       "value": "1"
     },
@@ -69385,28 +69455,28 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 114391,
+      "offset": 114921,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 114460,
+      "offset": 114990,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 114611,
+      "offset": 115223,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 119950,
+      "offset": 121862,
       "length": 1,
       "value": "0"
     },
