@@ -30,6 +30,7 @@ import _Concurrency
 import _CoreNFC_UIKit
 import _StringProcessing
 import _SwiftConcurrencyShims
+import secp256k1
 @objc @_inheritsConvenienceInitializers public class BIDServiceDirectory : ObjectiveC.NSObject, Swift.Codable {
   @objc override dynamic public init()
   @objc deinit
@@ -662,8 +663,8 @@ public typealias UserAccountsRemovedCallback = ((_ status: Swift.Bool, _ respons
   public func getEventData(publicKey: Swift.String, lon: Swift.Double, lat: Swift.Double, completion: @escaping (Swift.String) -> Swift.Void)
   public func authenticateUser(sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, authFactor: Swift.String? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
   public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, authFactor: Swift.String? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
-  public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, authFactor: Swift.String? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
-  public func authenticateUser(controller: UIKit.UIViewController? = nil, sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, authFactor: Swift.String? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
+  public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, extraData: [Swift.String : Any]? = nil, authFactor: Swift.String? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
+  public func authenticateUser(controller: UIKit.UIViewController? = nil, sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BlockID.BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, extraData: [Swift.String : Any]? = nil, authFactor: Swift.String? = nil, completion: @escaping BlockID.AuthenticateUserCallback)
   public func isTrustedSessionSources(sessionUrl: Swift.String, callback: @escaping (Swift.Bool) -> Swift.Void)
   public func getOfflineAuthPayload(bidLinkedAccount: BlockID.BIDLinkedAccount) -> Swift.String?
   public func getLicense() -> (license: BlockID.BIDLicense?, error: BlockID.ErrorResponse?)
