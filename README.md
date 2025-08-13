@@ -22,6 +22,9 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 - Fixed OTP remaining time issue, now OTP time will be 1 to 30 sec
 - Updated logic of account transfer while restoring
 
+# v1.20.51
+- Added nonce signing during authentication
+
 ### v1.20.50
 - Send the session ID upon clicking "Done" during document scanning
 - Bug fixes
