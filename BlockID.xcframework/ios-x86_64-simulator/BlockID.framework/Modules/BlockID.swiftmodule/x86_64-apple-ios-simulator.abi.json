@@ -69212,35 +69212,35 @@
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 97137,
+      "offset": 97075,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 115234,
+      "offset": 115172,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 115303,
+      "offset": 115241,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 115536,
+      "offset": 115474,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 122175,
+      "offset": 122113,
       "length": 1,
       "value": "0"
     },
@@ -72152,126 +72152,126 @@
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 2790,
+      "offset": 2788,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 2833,
+      "offset": 2831,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3484,
+      "offset": 3482,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3557,
+      "offset": 3555,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3597,
+      "offset": 3595,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3636,
+      "offset": 3634,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3677,
+      "offset": 3675,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3716,
+      "offset": 3714,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3750,
+      "offset": 3748,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 3805,
+      "offset": 3803,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3925,
+      "offset": 3923,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3964,
+      "offset": 3962,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 3999,
+      "offset": 3997,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 4039,
+      "offset": 4037,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 4073,
+      "offset": 4071,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 4113,
+      "offset": 4111,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 4188,
+      "offset": 4186,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kuldeepchaudhary\/Documents\/Mobile\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Tenant Info Fetch\/TenantInfoApi.swift",
       "kind": "StringLiteral",
-      "offset": 4218,
+      "offset": 4216,
       "length": 2,
       "value": "\"\""
     },
