@@ -9,7 +9,7 @@
 BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.53'
+   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.54'
 ```
 
 ## License
@@ -18,10 +18,13 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 
-# v1.20.53
+# v1.20.54
+- Fixed an issue on removing account
+
+### v1.20.53
 - Added updateAccounts function to update accounts from the app
   
-# v1.20.51
+### v1.20.51
 - Added nonce signing during authentication
 
 ### v1.20.50
