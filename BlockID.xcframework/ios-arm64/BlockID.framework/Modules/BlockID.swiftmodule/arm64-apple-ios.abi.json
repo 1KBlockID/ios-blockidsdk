@@ -3015,6 +3015,27 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BIDAccount",
+                "printedName": "BlockID.BIDAccount",
+                "usr": "s:7BlockID10BIDAccountC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7BlockID10BIDAccountCACycfc",
+            "mangledName": "$s7BlockID10BIDAccountCACycfc",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(from:)",
             "children": [
               {
@@ -3074,7 +3095,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -67826,63 +67846,63 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 178,
+      "offset": 177,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 204,
+      "offset": 203,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 239,
+      "offset": 238,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 275,
+      "offset": 274,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 313,
+      "offset": 312,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 354,
+      "offset": 353,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 380,
+      "offset": 379,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 408,
+      "offset": 407,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 445,
+      "offset": 444,
       "length": 2,
       "value": "\"\""
     },
