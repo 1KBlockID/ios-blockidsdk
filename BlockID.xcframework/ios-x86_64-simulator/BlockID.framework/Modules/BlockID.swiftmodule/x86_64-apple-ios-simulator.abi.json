@@ -44292,8 +44292,7 @@
                 "declAttributes": [
                   "HasInitialValue",
                   "HasStorage",
-                  "AccessControl",
-                  "RawDocComment"
+                  "AccessControl"
                 ],
                 "isLet": true,
                 "hasStorage": true,
@@ -73342,14 +73341,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13635,
+      "offset": 13680,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 13670,
+      "offset": 13715,
       "length": 2,
       "value": "\"\""
     },
