@@ -44292,7 +44292,8 @@
                 "declAttributes": [
                   "HasInitialValue",
                   "HasStorage",
-                  "AccessControl"
+                  "AccessControl",
+                  "RawDocComment"
                 ],
                 "isLet": true,
                 "hasStorage": true,
@@ -70933,35 +70934,35 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 17248,
+      "offset": 16987,
       "length": 9,
       "value": "\"otpseed\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 17398,
+      "offset": 17137,
       "length": 10,
       "value": "\"username\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 17817,
+      "offset": 17556,
       "length": 9,
       "value": "\"poi_ial\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 17849,
+      "offset": 17588,
       "length": 9,
       "value": "\"pon_ial\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 17910,
+      "offset": 17649,
       "length": 10,
       "value": "\"otpseeds\""
     },
@@ -71633,56 +71634,56 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3147,
+      "offset": 3148,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "Array",
-      "offset": 3196,
+      "offset": 3197,
       "length": 2297,
       "value": "[\"https:\/\/1k-dev.1kosmos.net\/sessions\", \"https:\/\/1k-qa.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu.1kosmos.net\/sessions\", \"https:\/\/1k-uat.1kosmos.net\/sessions\", \"https:\/\/1k-pilot.1kosmos.net\/sessions\", \"https:\/\/1k-pilot-in.1kosmos.in\/sessions\", \"https:\/\/1k-prod-in.1kosmos.in\/sessions\", \"https:\/\/1k-staging-gcp-in.1kosmos.in\/sessions\", \"https:\/\/1k-fedramp-dev.1kosmos.net\/sessions\", \"https:\/\/1k-perf-client.1kosmos.net\/sessions\", \"https:\/\/1k-perf-root.1kosmos.net\/sessions\", \"https:\/\/1k-staging-gcp-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west2.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-dev-aws-01.1kosmos.net\/sessions\", \"https:\/\/1k-dev-fedramp-aws.1kosmos.net\/sessions\", \"https:\/\/1k-staging-aws-01.1kosmos.net\/sessions\", \"https:\/\/1k-uat-govcloud.1kosmos.net\/sessions\", \"https:\/\/1k-staging-govcloud.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west2.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu.1kosmos.net\/sessions\", \"https:\/\/1k-staging-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-fed.1kosmos.net\/sessions\"]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5572,
+      "offset": 5573,
       "length": 6,
       "value": "\"IAL1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 98193,
+      "offset": 98194,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116290,
+      "offset": 116291,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116359,
+      "offset": 116360,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 116592,
+      "offset": 116593,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 123231,
+      "offset": 123232,
       "length": 1,
       "value": "0"
     },
@@ -72445,196 +72446,196 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/WebAuthnAPIs\/WebAuthnAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 203,
+      "offset": 255,
       "length": 22,
       "value": "\"\/attestation\/options\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/WebAuthnAPIs\/WebAuthnAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 265,
+      "offset": 317,
       "length": 21,
       "value": "\"\/attestation\/result\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/WebAuthnAPIs\/WebAuthnAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 330,
+      "offset": 382,
       "length": 20,
       "value": "\"\/assertion\/options\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/WebAuthnAPIs\/WebAuthnAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 388,
+      "offset": 440,
       "length": 19,
       "value": "\"\/assertion\/result\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2264,
+      "offset": 2216,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 2567,
+      "offset": 2519,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 2578,
+      "offset": 2530,
       "length": 3,
       "value": "\"+\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 2621,
+      "offset": 2573,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 2632,
+      "offset": 2584,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2689,
+      "offset": 2641,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2692,
+      "offset": 2644,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2695,
+      "offset": 2647,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 2707,
+      "offset": 2659,
       "length": 3,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2724,
+      "offset": 2676,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2758,
+      "offset": 2710,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 3169,
+      "offset": 3121,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 3180,
+      "offset": 3132,
       "length": 3,
       "value": "\"+\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 3227,
+      "offset": 3179,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 3238,
+      "offset": 3190,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3296,
+      "offset": 3248,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3299,
+      "offset": 3251,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3302,
+      "offset": 3254,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 3314,
+      "offset": 3266,
       "length": 3,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3331,
+      "offset": 3283,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 3428,
+      "offset": 3380,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 3686,
-      "length": 2,
-      "value": "\"\""
+      "offset": 3638,
+      "length": 14,
+      "value": "\"Unknown User\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "StringLiteral",
-      "offset": 3803,
+      "offset": 3767,
       "length": 14,
       "value": "\"Unknown User\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4202,
+      "offset": 4166,
       "length": 5,
       "value": "false"
     },
@@ -73341,14 +73342,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13675,
+      "offset": 13635,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 13710,
+      "offset": 13670,
       "length": 2,
       "value": "\"\""
     },
