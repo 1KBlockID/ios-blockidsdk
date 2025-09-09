@@ -373,6 +373,7 @@ SWIFT_CLASS("_TtC7BlockID10BlockIDSDK")
 
 
 
+
 SWIFT_CLASS("_TtC7BlockID10DeviceAuth")
 @interface DeviceAuth : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -431,6 +432,13 @@ SWIFT_CLASS("_TtC7BlockID19LiveIDScannerHelper")
 
 
 
+
+
+SWIFT_CLASS("_TtC7BlockID13PasskeyHelper")
+@interface PasskeyHelper : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC7BlockID14PassportReader") SWIFT_AVAILABILITY(ios,introduced=13)
