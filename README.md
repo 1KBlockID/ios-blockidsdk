@@ -19,8 +19,9 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 
 # v1.20.55
-- Fixed an issue on removing account
-# v1.20.54
+- Added passkey registration and authentication support
+
+### v1.20.54
 - Fixed an issue on removing account
 
 ### v1.20.53
