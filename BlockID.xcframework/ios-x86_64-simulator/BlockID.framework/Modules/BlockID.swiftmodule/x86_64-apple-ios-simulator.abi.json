@@ -21601,6 +21601,354 @@
           },
           {
             "kind": "Function",
+            "name": "fetchUserByUserName",
+            "printedName": "fetchUserByUserName(tenant:userName:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDTenant",
+                "printedName": "BlockID.BIDTenant",
+                "usr": "s:7BlockID9BIDTenantC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.String?, BlockID.ErrorResponse?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.String?, BlockID.ErrorResponse?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC011fetchUserByE4Name6tenant04userG010completionyAA9BIDTenantC_SSySb_SSSgAA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC011fetchUserByE4Name6tenant04userG010completionyAA9BIDTenantC_SSySb_SSSgAA13ErrorResponseCSgtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerPasskey",
+            "printedName": "registerPasskey(controller:passkeyRequest:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PasskeyRequest",
+                "printedName": "BlockID.PasskeyRequest",
+                "usr": "s:7BlockID14PasskeyRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, BlockID.PasskeyResponse?, BlockID.ErrorResponse?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, BlockID.PasskeyResponse?, BlockID.ErrorResponse?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.PasskeyResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PasskeyResponse",
+                            "printedName": "BlockID.PasskeyResponse",
+                            "usr": "s:7BlockID15PasskeyResponseV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC15registerPasskey10controller14passkeyRequest10completionySo16UIViewControllerC_AA0eH0VySb_AA0E8ResponseVSgAA05ErrorL0CSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC15registerPasskey10controller14passkeyRequest10completionySo16UIViewControllerC_AA0eH0VySb_AA0E8ResponseVSgAA05ErrorL0CSgtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerPasskeyWithAccountLinking",
+            "printedName": "registerPasskeyWithAccountLinking(controller:passkeyRequest:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PasskeyRequest",
+                "printedName": "BlockID.PasskeyRequest",
+                "usr": "s:7BlockID14PasskeyRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, BlockID.PasskeyResponse?, BlockID.ErrorResponse?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, BlockID.PasskeyResponse?, BlockID.ErrorResponse?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.PasskeyResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PasskeyResponse",
+                            "printedName": "BlockID.PasskeyResponse",
+                            "usr": "s:7BlockID15PasskeyResponseV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC33registerPasskeyWithAccountLinking10controller14passkeyRequest10completionySo16UIViewControllerC_AA0eK0VySb_AA0E8ResponseVSgAA05ErrorO0CSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC33registerPasskeyWithAccountLinking10controller14passkeyRequest10completionySo16UIViewControllerC_AA0eK0VySb_AA0E8ResponseVSgAA05ErrorO0CSgtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authenticatePasskey",
+            "printedName": "authenticatePasskey(controller:passkeyRequest:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PasskeyRequest",
+                "printedName": "BlockID.PasskeyRequest",
+                "usr": "s:7BlockID14PasskeyRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, BlockID.PasskeyResponse?, BlockID.ErrorResponse?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, BlockID.PasskeyResponse?, BlockID.ErrorResponse?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.PasskeyResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PasskeyResponse",
+                            "printedName": "BlockID.PasskeyResponse",
+                            "usr": "s:7BlockID15PasskeyResponseV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC19authenticatePasskey10controller14passkeyRequest10completionySo16UIViewControllerC_AA0eH0VySb_AA0E8ResponseVSgAA05ErrorL0CSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC19authenticatePasskey10controller14passkeyRequest10completionySo16UIViewControllerC_AA0eH0VySb_AA0E8ResponseVSgAA05ErrorL0CSgtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "createDocumentSession",
             "printedName": "createDocumentSession(docType:dvcId:completion:)",
             "children": [
@@ -35520,6 +35868,987 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "PasskeyResponse",
+        "printedName": "PasskeyResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "authenticatorId",
+            "printedName": "authenticatorId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID15PasskeyResponseV15authenticatorIdSSSgvp",
+            "mangledName": "$s7BlockID15PasskeyResponseV15authenticatorIdSSSgvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID15PasskeyResponseV15authenticatorIdSSSgvg",
+                "mangledName": "$s7BlockID15PasskeyResponseV15authenticatorIdSSSgvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sub",
+            "printedName": "sub",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID15PasskeyResponseV3subSSSgvp",
+            "mangledName": "$s7BlockID15PasskeyResponseV3subSSSgvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID15PasskeyResponseV3subSSSgvg",
+                "mangledName": "$s7BlockID15PasskeyResponseV3subSSSgvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PasskeyResponse",
+                "printedName": "BlockID.PasskeyResponse",
+                "usr": "s:7BlockID15PasskeyResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7BlockID15PasskeyResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7BlockID15PasskeyResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BlockID",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID15PasskeyResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7BlockID15PasskeyResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BlockID",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7BlockID15PasskeyResponseV",
+        "mangledName": "$s7BlockID15PasskeyResponseV",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PasskeyRequest",
+        "printedName": "PasskeyRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tenant",
+            "printedName": "tenant",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BlockID.BIDTenant?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BIDTenant",
+                    "printedName": "BlockID.BIDTenant",
+                    "usr": "s:7BlockID9BIDTenantC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID14PasskeyRequestV6tenantAA9BIDTenantCSgvp",
+            "mangledName": "$s7BlockID14PasskeyRequestV6tenantAA9BIDTenantCSgvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BlockID.BIDTenant?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BIDTenant",
+                        "printedName": "BlockID.BIDTenant",
+                        "usr": "s:7BlockID9BIDTenantC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV6tenantAA9BIDTenantCSgvg",
+                "mangledName": "$s7BlockID14PasskeyRequestV6tenantAA9BIDTenantCSgvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BlockID.BIDTenant?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BIDTenant",
+                        "printedName": "BlockID.BIDTenant",
+                        "usr": "s:7BlockID9BIDTenantC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV6tenantAA9BIDTenantCSgvs",
+                "mangledName": "$s7BlockID14PasskeyRequestV6tenantAA9BIDTenantCSgvs",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV6tenantAA9BIDTenantCSgvM",
+                "mangledName": "$s7BlockID14PasskeyRequestV6tenantAA9BIDTenantCSgvM",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "username",
+            "printedName": "username",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID14PasskeyRequestV8usernameSSSgvp",
+            "mangledName": "$s7BlockID14PasskeyRequestV8usernameSSSgvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV8usernameSSSgvg",
+                "mangledName": "$s7BlockID14PasskeyRequestV8usernameSSSgvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV8usernameSSSgvs",
+                "mangledName": "$s7BlockID14PasskeyRequestV8usernameSSSgvs",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV8usernameSSSgvM",
+                "mangledName": "$s7BlockID14PasskeyRequestV8usernameSSSgvM",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "displayName",
+            "printedName": "displayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID14PasskeyRequestV11displayNameSSSgvp",
+            "mangledName": "$s7BlockID14PasskeyRequestV11displayNameSSSgvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV11displayNameSSSgvg",
+                "mangledName": "$s7BlockID14PasskeyRequestV11displayNameSSSgvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV11displayNameSSSgvs",
+                "mangledName": "$s7BlockID14PasskeyRequestV11displayNameSSSgvs",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV11displayNameSSSgvM",
+                "mangledName": "$s7BlockID14PasskeyRequestV11displayNameSSSgvM",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceName",
+            "printedName": "deviceName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID14PasskeyRequestV10deviceNameSSSgvp",
+            "mangledName": "$s7BlockID14PasskeyRequestV10deviceNameSSSgvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV10deviceNameSSSgvg",
+                "mangledName": "$s7BlockID14PasskeyRequestV10deviceNameSSSgvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV10deviceNameSSSgvs",
+                "mangledName": "$s7BlockID14PasskeyRequestV10deviceNameSSSgvs",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14PasskeyRequestV10deviceNameSSSgvM",
+                "mangledName": "$s7BlockID14PasskeyRequestV10deviceNameSSSgvM",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(tenant:username:displayName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PasskeyRequest",
+                "printedName": "BlockID.PasskeyRequest",
+                "usr": "s:7BlockID14PasskeyRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDTenant",
+                "printedName": "BlockID.BIDTenant",
+                "usr": "s:7BlockID9BIDTenantC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7BlockID14PasskeyRequestV6tenant8username11displayNameAcA9BIDTenantC_S2Stcfc",
+            "mangledName": "$s7BlockID14PasskeyRequestV6tenant8username11displayNameAcA9BIDTenantC_S2Stcfc",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(tenant:username:deviceName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PasskeyRequest",
+                "printedName": "BlockID.PasskeyRequest",
+                "usr": "s:7BlockID14PasskeyRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDTenant",
+                "printedName": "BlockID.BIDTenant",
+                "usr": "s:7BlockID9BIDTenantC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7BlockID14PasskeyRequestV6tenant8username10deviceNameAcA9BIDTenantC_S2SSgtcfc",
+            "mangledName": "$s7BlockID14PasskeyRequestV6tenant8username10deviceNameAcA9BIDTenantC_S2SSgtcfc",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PasskeyRequest",
+                "printedName": "BlockID.PasskeyRequest",
+                "usr": "s:7BlockID14PasskeyRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7BlockID14PasskeyRequestV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7BlockID14PasskeyRequestV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BlockID",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID14PasskeyRequestV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7BlockID14PasskeyRequestV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BlockID",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7BlockID14PasskeyRequestV",
+        "mangledName": "$s7BlockID14PasskeyRequestV",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PasskeyHelper",
+        "printedName": "PasskeyHelper",
+        "declKind": "Class",
+        "usr": "c:@M@BlockID@objc(cs)PasskeyHelper",
+        "mangledName": "$s7BlockID13PasskeyHelperC",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "BlockID"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "BlockID"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "BlockID"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BIDLicense",
         "printedName": "BIDLicense",
         "children": [
@@ -42078,6 +43407,1424 @@
           },
           {
             "kind": "TypeDecl",
+            "name": "Passkey",
+            "printedName": "Passkey",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "iOS_16_REQUIRED",
+                "printedName": "iOS_16_REQUIRED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "USERNAME_EMPTY",
+                "printedName": "USERNAME_EMPTY",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV14USERNAME_EMPTYSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV14USERNAME_EMPTYSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV14USERNAME_EMPTYSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV14USERNAME_EMPTYSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "DISPLAY_NAME_EMPTY",
+                "printedName": "DISPLAY_NAME_EMPTY",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV18DISPLAY_NAME_EMPTYSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV18DISPLAY_NAME_EMPTYSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV18DISPLAY_NAME_EMPTYSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV18DISPLAY_NAME_EMPTYSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "SERVICE_URL_NOT_SET",
+                "printedName": "SERVICE_URL_NOT_SET",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV19SERVICE_URL_NOT_SETSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV19SERVICE_URL_NOT_SETSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV19SERVICE_URL_NOT_SETSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV19SERVICE_URL_NOT_SETSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ATTESTATION_OPTIONS_FAILED",
+                "printedName": "ATTESTATION_OPTIONS_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV26ATTESTATION_OPTIONS_FAILEDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV26ATTESTATION_OPTIONS_FAILEDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV26ATTESTATION_OPTIONS_FAILEDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV26ATTESTATION_OPTIONS_FAILEDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ATTESTATION_RESULT_FAILED",
+                "printedName": "ATTESTATION_RESULT_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV25ATTESTATION_RESULT_FAILEDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV25ATTESTATION_RESULT_FAILEDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV25ATTESTATION_RESULT_FAILEDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV25ATTESTATION_RESULT_FAILEDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "PASSKEY_AUTHENTICATION_FAILED",
+                "printedName": "PASSKEY_AUTHENTICATION_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV29PASSKEY_AUTHENTICATION_FAILEDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV29PASSKEY_AUTHENTICATION_FAILEDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV29PASSKEY_AUTHENTICATION_FAILEDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV29PASSKEY_AUTHENTICATION_FAILEDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "CANCELED",
+                "printedName": "CANCELED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV8CANCELEDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV8CANCELEDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV8CANCELEDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV8CANCELEDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "INVALID",
+                "printedName": "INVALID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV7INVALIDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV7INVALIDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV7INVALIDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV7INVALIDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "INVALID_RESPONSE",
+                "printedName": "INVALID_RESPONSE",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV16INVALID_RESPONSESi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV16INVALID_RESPONSESi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV16INVALID_RESPONSESi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV16INVALID_RESPONSESi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "UNSUPPORTED_CREDENTIAL_TYPE",
+                "printedName": "UNSUPPORTED_CREDENTIAL_TYPE",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV27UNSUPPORTED_CREDENTIAL_TYPESi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV27UNSUPPORTED_CREDENTIAL_TYPESi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV27UNSUPPORTED_CREDENTIAL_TYPESi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV27UNSUPPORTED_CREDENTIAL_TYPESi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ASSERTION_OPTIONS_FAILED",
+                "printedName": "ASSERTION_OPTIONS_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV24ASSERTION_OPTIONS_FAILEDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV24ASSERTION_OPTIONS_FAILEDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV24ASSERTION_OPTIONS_FAILEDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV24ASSERTION_OPTIONS_FAILEDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ASSERTION_RESULT_FAILED",
+                "printedName": "ASSERTION_RESULT_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV23ASSERTION_RESULT_FAILEDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV23ASSERTION_RESULT_FAILEDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV23ASSERTION_RESULT_FAILEDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV23ASSERTION_RESULT_FAILEDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "UNHANDLED_CREDENTIAL_TYPE",
+                "printedName": "UNHANDLED_CREDENTIAL_TYPE",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV25UNHANDLED_CREDENTIAL_TYPESi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV25UNHANDLED_CREDENTIAL_TYPESi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV25UNHANDLED_CREDENTIAL_TYPESi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV25UNHANDLED_CREDENTIAL_TYPESi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "NOT_INTERACTIVE",
+                "printedName": "NOT_INTERACTIVE",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV15NOT_INTERACTIVESi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV15NOT_INTERACTIVESi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV15NOT_INTERACTIVESi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV15NOT_INTERACTIVESi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "MATCHED_EXCLUDED_CREDENTIAL",
+                "printedName": "MATCHED_EXCLUDED_CREDENTIAL",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV27MATCHED_EXCLUDED_CREDENTIALSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV27MATCHED_EXCLUDED_CREDENTIALSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV27MATCHED_EXCLUDED_CREDENTIALSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV27MATCHED_EXCLUDED_CREDENTIALSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "PASSKEY_REGISTRATION_FAILED",
+                "printedName": "PASSKEY_REGISTRATION_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV27PASSKEY_REGISTRATION_FAILEDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV27PASSKEY_REGISTRATION_FAILEDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV27PASSKEY_REGISTRATION_FAILEDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV27PASSKEY_REGISTRATION_FAILEDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "FETCH_WALLET_FAILED",
+                "printedName": "FETCH_WALLET_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV19FETCH_WALLET_FAILEDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV19FETCH_WALLET_FAILEDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV19FETCH_WALLET_FAILEDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV19FETCH_WALLET_FAILEDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "LINKING_FAILED",
+                "printedName": "LINKING_FAILED",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7BlockID12CustomErrorsV7PasskeyV14LINKING_FAILEDSi4code_SS7messagetvpZ",
+                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV14LINKING_FAILEDSi4code_SS7messagetvpZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV14LINKING_FAILEDSi4code_SS7messagetvgZ",
+                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV14LINKING_FAILEDSi4code_SS7messagetvgZ",
+                    "moduleName": "BlockID",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:7BlockID12CustomErrorsV7PasskeyV",
+            "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
             "name": "SCEPCheck",
             "printedName": "SCEPCheck",
             "children": [
@@ -45917,6 +48664,79 @@
           },
           {
             "kind": "Var",
+            "name": "K_TENANT_MANDATORY",
+            "printedName": "K_TENANT_MANDATORY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(code: Swift.Int, message: Swift.String)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID12CustomErrorsV18K_TENANT_MANDATORYSi4code_SS7messagetvpZ",
+            "mangledName": "$s7BlockID12CustomErrorsV18K_TENANT_MANDATORYSi4code_SS7messagetvpZ",
+            "moduleName": "BlockID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID12CustomErrorsV18K_TENANT_MANDATORYSi4code_SS7messagetvgZ",
+                "mangledName": "$s7BlockID12CustomErrorsV18K_TENANT_MANDATORYSi4code_SS7messagetvgZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "kCancelledProcess",
             "printedName": "kCancelledProcess",
             "children": [
@@ -46128,6 +48948,225 @@
                 "declKind": "Accessor",
                 "usr": "s:7BlockID12CustomErrorsV17KServiceUrlNotSetSi4code_SS3msgtvgZ",
                 "mangledName": "$s7BlockID12CustomErrorsV17KServiceUrlNotSetSi4code_SS3msgtvgZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "USER_MANGMT_SERVICE_URL_NOT_SET",
+            "printedName": "USER_MANGMT_SERVICE_URL_NOT_SET",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(code: Swift.Int, message: Swift.String)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID12CustomErrorsV31USER_MANGMT_SERVICE_URL_NOT_SETSi4code_SS7messagetvpZ",
+            "mangledName": "$s7BlockID12CustomErrorsV31USER_MANGMT_SERVICE_URL_NOT_SETSi4code_SS7messagetvpZ",
+            "moduleName": "BlockID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID12CustomErrorsV31USER_MANGMT_SERVICE_URL_NOT_SETSi4code_SS7messagetvgZ",
+                "mangledName": "$s7BlockID12CustomErrorsV31USER_MANGMT_SERVICE_URL_NOT_SETSi4code_SS7messagetvgZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "K_USER_IS_DISABLED",
+            "printedName": "K_USER_IS_DISABLED",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(code: Swift.Int, message: Swift.String)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID12CustomErrorsV18K_USER_IS_DISABLEDSi4code_SS7messagetvpZ",
+            "mangledName": "$s7BlockID12CustomErrorsV18K_USER_IS_DISABLEDSi4code_SS7messagetvpZ",
+            "moduleName": "BlockID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID12CustomErrorsV18K_USER_IS_DISABLEDSi4code_SS7messagetvgZ",
+                "mangledName": "$s7BlockID12CustomErrorsV18K_USER_IS_DISABLEDSi4code_SS7messagetvgZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "K_USER_IS_LOCKED",
+            "printedName": "K_USER_IS_LOCKED",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(code: Swift.Int, message: Swift.String)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID12CustomErrorsV16K_USER_IS_LOCKEDSi4code_SS7messagetvpZ",
+            "mangledName": "$s7BlockID12CustomErrorsV16K_USER_IS_LOCKEDSi4code_SS7messagetvpZ",
+            "moduleName": "BlockID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID12CustomErrorsV16K_USER_IS_LOCKEDSi4code_SS7messagetvgZ",
+                "mangledName": "$s7BlockID12CustomErrorsV16K_USER_IS_LOCKEDSi4code_SS7messagetvgZ",
                 "moduleName": "BlockID",
                 "static": true,
                 "implicit": true,
@@ -58174,6 +61213,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "BlockID"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "OfflineAuthAccountDetail",
         "printedName": "OfflineAuthAccountDetail",
@@ -68498,28 +71554,42 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9211,
+      "offset": 444,
+      "length": 79,
+      "value": "\"\/tenant\/{tenantId}\/community\/{communityId}\/user\/fetch_single_user_by_username\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 17884,
       "length": 9,
       "value": "\"otpseed\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9629,
+      "offset": 18034,
+      "length": 10,
+      "value": "\"username\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 18453,
       "length": 9,
       "value": "\"poi_ial\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9661,
+      "offset": 18485,
       "length": 9,
       "value": "\"pon_ial\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9722,
+      "offset": 18546,
       "length": 10,
       "value": "\"otpseeds\""
     },
@@ -69191,56 +72261,56 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2944,
+      "offset": 3148,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "Array",
-      "offset": 2993,
+      "offset": 3197,
       "length": 2297,
       "value": "[\"https:\/\/1k-dev.1kosmos.net\/sessions\", \"https:\/\/1k-qa.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu.1kosmos.net\/sessions\", \"https:\/\/1k-uat.1kosmos.net\/sessions\", \"https:\/\/1k-pilot.1kosmos.net\/sessions\", \"https:\/\/1k-pilot-in.1kosmos.in\/sessions\", \"https:\/\/1k-prod-in.1kosmos.in\/sessions\", \"https:\/\/1k-staging-gcp-in.1kosmos.in\/sessions\", \"https:\/\/1k-fedramp-dev.1kosmos.net\/sessions\", \"https:\/\/1k-perf-client.1kosmos.net\/sessions\", \"https:\/\/1k-perf-root.1kosmos.net\/sessions\", \"https:\/\/1k-staging-gcp-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west2.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-dev-aws-01.1kosmos.net\/sessions\", \"https:\/\/1k-dev-fedramp-aws.1kosmos.net\/sessions\", \"https:\/\/1k-staging-aws-01.1kosmos.net\/sessions\", \"https:\/\/1k-uat-govcloud.1kosmos.net\/sessions\", \"https:\/\/1k-staging-govcloud.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west2.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu.1kosmos.net\/sessions\", \"https:\/\/1k-staging-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-fed.1kosmos.net\/sessions\"]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5369,
+      "offset": 5573,
       "length": 6,
       "value": "\"IAL1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 97990,
+      "offset": 98194,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116087,
+      "offset": 116291,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116156,
+      "offset": 116360,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 116389,
+      "offset": 116593,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 123028,
+      "offset": 123232,
       "length": 1,
       "value": "0"
     },
@@ -70001,6 +73071,237 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1085,
+      "length": 29,
+      "value": "\"E_PASSKEY_REGISTRATION_FAIL\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1161,
+      "length": 32,
+      "value": "\"E_PASSKEY_REGISTRATION_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1237,
+      "length": 29,
+      "value": "\"E_PASSKEY_VERIFICATION_FAIL\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1313,
+      "length": 32,
+      "value": "\"E_PASSKEY_VERIFICATION_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/WebAuthnAPIs\/WebAuthnAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 255,
+      "length": 22,
+      "value": "\"\/attestation\/options\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/WebAuthnAPIs\/WebAuthnAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 317,
+      "length": 21,
+      "value": "\"\/attestation\/result\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/WebAuthnAPIs\/WebAuthnAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
+      "length": 20,
+      "value": "\"\/assertion\/options\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/WebAuthnAPIs\/WebAuthnAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 440,
+      "length": 19,
+      "value": "\"\/assertion\/result\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/WebAuthnAPIs\/WebAuthnAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 499,
+      "length": 77,
+      "value": "\"\/link\/community\/{communityId}\/did\/{did}\/user\/{userId}\/fidokey\/{fidoKeyHash}\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2216,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2519,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2530,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2573,
+      "length": 3,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2584,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2641,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2644,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2647,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2659,
+      "length": 3,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2676,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2710,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3121,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3132,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3179,
+      "length": 3,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3190,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3248,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3251,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3254,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3266,
+      "length": 3,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3283,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3380,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3638,
+      "length": 14,
+      "value": "\"Unknown User\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3767,
+      "length": 14,
+      "value": "\"Unknown User\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Passkey\/PasskeyManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4166,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDLicense.swift",
       "kind": "StringLiteral",
       "offset": 214,
@@ -70570,56 +73871,84 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
       "kind": "StringLiteral",
-      "offset": 350,
+      "offset": 361,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
       "kind": "StringLiteral",
-      "offset": 386,
+      "offset": 397,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
       "kind": "StringLiteral",
-      "offset": 415,
+      "offset": 426,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
       "kind": "StringLiteral",
-      "offset": 447,
+      "offset": 458,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
       "kind": "StringLiteral",
-      "offset": 473,
+      "offset": 484,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
       "kind": "StringLiteral",
-      "offset": 508,
+      "offset": 519,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
       "kind": "StringLiteral",
-      "offset": 565,
+      "offset": 576,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
       "kind": "StringLiteral",
-      "offset": 593,
+      "offset": 604,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
+      "kind": "StringLiteral",
+      "offset": 636,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
+      "kind": "StringLiteral",
+      "offset": 667,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
+      "kind": "StringLiteral",
+      "offset": 1338,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
+      "kind": "StringLiteral",
+      "offset": 1362,
       "length": 2,
       "value": "\"\""
     },
@@ -70703,14 +74032,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10924,
+      "offset": 14274,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 10959,
+      "offset": 14309,
       "length": 2,
       "value": "\"\""
     },
@@ -71081,112 +74410,126 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 6623,
+      "offset": 8114,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 12839,
+      "offset": 8165,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 12932,
+      "offset": 14668,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13001,
+      "offset": 14761,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13075,
+      "offset": 14830,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13166,
+      "offset": 14904,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13224,
+      "offset": 14995,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13307,
+      "offset": 15053,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13384,
+      "offset": 15136,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13448,
+      "offset": 15213,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13486,
+      "offset": 15277,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13524,
+      "offset": 15315,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13563,
+      "offset": 15353,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13603,
+      "offset": 15392,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13645,
+      "offset": 15432,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 13686,
+      "offset": 15474,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 15515,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 15818,
       "length": 2,
       "value": "\"\""
     },
@@ -72043,6 +75386,34 @@
       "offset": 278,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 218,
+      "length": 23,
+      "value": "\"\/api\/r2\/wallets\/fetch\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 4352,
+      "length": 9,
+      "value": "\"fido_id\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 4388,
+      "length": 13,
+      "value": "\"skip_create\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 4702,
+      "length": 4,
+      "value": "\"id\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/OfflineAuthAccountDetail.swift",

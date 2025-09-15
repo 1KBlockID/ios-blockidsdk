@@ -6,6 +6,7 @@ import ARKit
 import AVFoundation
 import Accelerate
 import Alamofire
+import AuthenticationServices
 import BigInt
 @_exported import BlockID
 import Combine
@@ -602,6 +603,8 @@ public typealias DocumentSessionCallback = ((_ status: Swift.Bool, _ response: S
 public typealias PollSessionCallback = ((_ status: Swift.Bool, _ response: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias RestoreWalletWithLiveIDCallback = ((_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
 public typealias UserAccountsRemovedCallback = ((_ status: Swift.Bool, _ response: [BlockID.BIDLinkedAccount]?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
+public typealias PasskeyCallback = ((_ status: Swift.Bool, _ response: BlockID.PasskeyResponse?, _ error: BlockID.ErrorResponse?) -> Swift.Void)
+public typealias FetchUserResponseCallBack = ((Swift.Bool, Swift.String?, BlockID.ErrorResponse?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.BlockIDSDK
   public func isReady() -> Swift.Bool
@@ -710,6 +713,12 @@ extension BlockID.BlockIDSDK {
 extension BlockID.BlockIDSDK {
   public func fetchUserAccountsInfo(accounts: [BlockID.BIDLinkedAccount], completion: @escaping BlockID.FetchUserAccountsInfoCallback)
   public func getRemovedAccountList(completion: @escaping BlockID.UserAccountsRemovedCallback)
+  public func fetchUserByUserName(tenant: BlockID.BIDTenant, userName: Swift.String, completion: @escaping BlockID.FetchUserResponseCallBack)
+}
+extension BlockID.BlockIDSDK {
+  public func registerPasskey(controller: UIKit.UIViewController, passkeyRequest: BlockID.PasskeyRequest, completion: @escaping BlockID.PasskeyCallback)
+  public func registerPasskeyWithAccountLinking(controller: UIKit.UIViewController, passkeyRequest: BlockID.PasskeyRequest, completion: @escaping BlockID.PasskeyCallback)
+  public func authenticatePasskey(controller: UIKit.UIViewController, passkeyRequest: BlockID.PasskeyRequest, completion: @escaping BlockID.PasskeyCallback)
 }
 extension BlockID.BlockIDSDK {
   public func createDocumentSession(docType: BlockID.DocumentScannerType, dvcId: Swift.String? = nil, completion: @escaping BlockID.DocumentSessionCallback)
@@ -1119,6 +1128,25 @@ extension Swift.UnkeyedEncodingContainer {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+public struct PasskeyResponse : Swift.Codable {
+  public let authenticatorId: Swift.String?
+  public let sub: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PasskeyRequest : Swift.Codable {
+  public var tenant: BlockID.BIDTenant?
+  public var username: Swift.String?
+  public var displayName: Swift.String?
+  public var deviceName: Swift.String?
+  public init(tenant: BlockID.BIDTenant, username: Swift.String, displayName: Swift.String)
+  public init(tenant: BlockID.BIDTenant, username: Swift.String, deviceName: Swift.String?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PasskeyHelper : ObjectiveC.NSObject {
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class BIDLicense : Swift.Codable {
   public var modules: BlockID.LicenseModules!
   @objc deinit
@@ -1324,6 +1352,27 @@ public struct CustomErrors {
     public static let BAD_REQUEST: (code: Swift.Int, message: Swift.String)
     public static let INVALID: (code: Swift.Int, message: Swift.String)
   }
+  public struct Passkey {
+    public static let iOS_16_REQUIRED: (code: Swift.Int, message: Swift.String)
+    public static let USERNAME_EMPTY: (code: Swift.Int, message: Swift.String)
+    public static let DISPLAY_NAME_EMPTY: (code: Swift.Int, message: Swift.String)
+    public static let SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
+    public static let ATTESTATION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let ATTESTATION_RESULT_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let PASSKEY_AUTHENTICATION_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let CANCELED: (code: Swift.Int, message: Swift.String)
+    public static let INVALID: (code: Swift.Int, message: Swift.String)
+    public static let INVALID_RESPONSE: (code: Swift.Int, message: Swift.String)
+    public static let UNSUPPORTED_CREDENTIAL_TYPE: (code: Swift.Int, message: Swift.String)
+    public static let ASSERTION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let ASSERTION_RESULT_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let UNHANDLED_CREDENTIAL_TYPE: (code: Swift.Int, message: Swift.String)
+    public static let NOT_INTERACTIVE: (code: Swift.Int, message: Swift.String)
+    public static let MATCHED_EXCLUDED_CREDENTIAL: (code: Swift.Int, message: Swift.String)
+    public static let PASSKEY_REGISTRATION_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let FETCH_WALLET_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let LINKING_FAILED: (code: Swift.Int, message: Swift.String)
+  }
   public struct SCEPCheck {
     public static let INVALID: (code: Swift.Int, message: Swift.String)
     public static let NOT_LINKED: (code: Swift.Int, message: Swift.String)
@@ -1389,9 +1438,13 @@ public struct CustomErrors {
   public static let kTenantRegisterFailed: (code: Swift.Int, msg: Swift.String)
   public static let K_TENANT_DNS_IS_MANDATORY: (code: Swift.Int, msg: Swift.String)
   public static let K_COMMUNITY_NAME_IS_MANDATORY: (code: Swift.Int, msg: Swift.String)
+  public static let K_TENANT_MANDATORY: (code: Swift.Int, message: Swift.String)
   public static let kCancelledProcess: (code: Swift.Int, msg: Swift.String)
   public static let kSessionExpired: (code: Swift.Int, msg: Swift.String)
   public static let KServiceUrlNotSet: (code: Swift.Int, msg: Swift.String)
+  public static let USER_MANGMT_SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
+  public static let K_USER_IS_DISABLED: (code: Swift.Int, message: Swift.String)
+  public static let K_USER_IS_LOCKED: (code: Swift.Int, message: Swift.String)
 }
 @objc public class ErrorResponse : ObjectiveC.NSObject {
   public var code: Swift.Int
