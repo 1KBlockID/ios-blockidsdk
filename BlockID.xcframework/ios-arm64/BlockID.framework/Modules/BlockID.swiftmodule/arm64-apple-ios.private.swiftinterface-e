@@ -719,6 +719,7 @@ extension BlockID.BlockIDSDK {
   public func registerPasskey(controller: UIKit.UIViewController, passkeyRequest: BlockID.PasskeyRequest, completion: @escaping BlockID.PasskeyCallback)
   public func registerPasskeyWithAccountLinking(controller: UIKit.UIViewController, passkeyRequest: BlockID.PasskeyRequest, completion: @escaping BlockID.PasskeyCallback)
   public func authenticatePasskey(controller: UIKit.UIViewController, passkeyRequest: BlockID.PasskeyRequest, completion: @escaping BlockID.PasskeyCallback)
+  public func issueJWTOnPasskeyAuthentication(controller: UIKit.UIViewController, passkeyRequest: BlockID.PasskeyRequest, completion: @escaping BlockID.PasskeyCallback)
 }
 extension BlockID.BlockIDSDK {
   public func createDocumentSession(docType: BlockID.DocumentScannerType, dvcId: Swift.String? = nil, completion: @escaping BlockID.DocumentSessionCallback)
@@ -1129,8 +1130,10 @@ extension Swift.UnkeyedEncodingContainer {
   required public init(from decoder: any Swift.Decoder) throws
 }
 public struct PasskeyResponse : Swift.Codable {
-  public let authenticatorId: Swift.String?
-  public let sub: Swift.String?
+  public var authenticatorId: Swift.String?
+  public var sub: Swift.String?
+  public var jwt: Swift.String?
+  public init(authenticatorId: Swift.String?, sub: Swift.String?, jwt: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1139,8 +1142,7 @@ public struct PasskeyRequest : Swift.Codable {
   public var username: Swift.String?
   public var displayName: Swift.String?
   public var deviceName: Swift.String?
-  public init(tenant: BlockID.BIDTenant, username: Swift.String, displayName: Swift.String)
-  public init(tenant: BlockID.BIDTenant, username: Swift.String, deviceName: Swift.String?)
+  public init(tenant: BlockID.BIDTenant, username: Swift.String, displayName: Swift.String? = nil, deviceName: Swift.String? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1356,22 +1358,21 @@ public struct CustomErrors {
     public static let iOS_16_REQUIRED: (code: Swift.Int, message: Swift.String)
     public static let USERNAME_EMPTY: (code: Swift.Int, message: Swift.String)
     public static let DISPLAY_NAME_EMPTY: (code: Swift.Int, message: Swift.String)
-    public static let SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
     public static let ATTESTATION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
     public static let ATTESTATION_RESULT_FAILED: (code: Swift.Int, message: Swift.String)
-    public static let PASSKEY_AUTHENTICATION_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let PASSKEY_REGISTRATION_FAILED: (code: Swift.Int, message: Swift.String)
     public static let CANCELED: (code: Swift.Int, message: Swift.String)
     public static let INVALID: (code: Swift.Int, message: Swift.String)
-    public static let INVALID_RESPONSE: (code: Swift.Int, message: Swift.String)
+    public static let INVALID_SIGNING: (code: Swift.Int, message: Swift.String)
     public static let UNSUPPORTED_CREDENTIAL_TYPE: (code: Swift.Int, message: Swift.String)
     public static let ASSERTION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
     public static let ASSERTION_RESULT_FAILED: (code: Swift.Int, message: Swift.String)
     public static let UNHANDLED_CREDENTIAL_TYPE: (code: Swift.Int, message: Swift.String)
     public static let NOT_INTERACTIVE: (code: Swift.Int, message: Swift.String)
     public static let MATCHED_EXCLUDED_CREDENTIAL: (code: Swift.Int, message: Swift.String)
-    public static let PASSKEY_REGISTRATION_FAILED: (code: Swift.Int, message: Swift.String)
-    public static let FETCH_WALLET_FAILED: (code: Swift.Int, message: Swift.String)
     public static let LINKING_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let FETCH_WALLET_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let PASSKEY_AUTHENTICATION_FAILED: (code: Swift.Int, message: Swift.String)
   }
   public struct SCEPCheck {
     public static let INVALID: (code: Swift.Int, message: Swift.String)
@@ -1397,6 +1398,10 @@ public struct CustomErrors {
   }
   public struct CaaS {
     public static let GLOBAL_CAAS_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
+    public static let DOCU_VERIFY_SERVICE_URL_NOT_SET: (code: Swift.Int, msg: Swift.String)
+    public static let USER_MANGMT_SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
+    public static let AUTH_N_SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
+    public static let WEB_AUTHN_SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
     public static let ADMIN_CONSOLE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
   }
   public struct LiveIDSelfie {
@@ -1439,10 +1444,7 @@ public struct CustomErrors {
   public static let K_TENANT_DNS_IS_MANDATORY: (code: Swift.Int, msg: Swift.String)
   public static let K_COMMUNITY_NAME_IS_MANDATORY: (code: Swift.Int, msg: Swift.String)
   public static let K_TENANT_MANDATORY: (code: Swift.Int, message: Swift.String)
-  public static let kCancelledProcess: (code: Swift.Int, msg: Swift.String)
   public static let kSessionExpired: (code: Swift.Int, msg: Swift.String)
-  public static let KServiceUrlNotSet: (code: Swift.Int, msg: Swift.String)
-  public static let USER_MANGMT_SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
   public static let K_USER_IS_DISABLED: (code: Swift.Int, message: Swift.String)
   public static let K_USER_IS_LOCKED: (code: Swift.Int, message: Swift.String)
 }
