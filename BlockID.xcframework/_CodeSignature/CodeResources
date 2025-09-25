@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/BlockID.framework/BlockID</key>
 		<data>
-		zXWm6c5YeNaltzqJVzz5DB+yswY=
+		5YZWgwwelLG7t8B2F7aYErtlROA=
 		</data>
 		<key>ios-arm64/BlockID.framework/DocumentScannerViewController.nib</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/BlockID.framework/Headers/BlockID-Swift.h</key>
 		<data>
-		tjyBZu4htJeXrZVshbsrDvrb6nA=
+		uNWRy4yT5eqxZbFtVFeB3aMLv4o=
 		</data>
 		<key>ios-arm64/BlockID.framework/Headers/BlockID.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>ios-arm64/BlockID.framework/Info.plist</key>
 		<data>
-		3Vw+MDKVqrqY18RjBhV+zi6psNE=
+		POxeXp8wSPDJzroZk96Lw3di2Og=
 		</data>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -42,23 +42,23 @@
 		</data>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		yfgRW15XiMbCF0GtE1FPQF6ZAnM=
+		w8P+v4vC9QiNWNxXEiOV6qw8MoE=
 		</data>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface-e</key>
 		<data>
-		R2kkRkIp9G0NTcfPxApD/ciulqw=
+		rEy0x6Tnz4kKRNC+/cKr+2mZryM=
 		</data>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		0raRywpRv2cWrACJThg4oOBUgU8=
+		8sfI+FiEaviZnO1YRGUXcrXGguU=
 		</data>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		yfgRW15XiMbCF0GtE1FPQF6ZAnM=
+		w8P+v4vC9QiNWNxXEiOV6qw8MoE=
 		</data>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.swiftinterface-e</key>
 		<data>
-		R2kkRkIp9G0NTcfPxApD/ciulqw=
+		rEy0x6Tnz4kKRNC+/cKr+2mZryM=
 		</data>
 		<key>ios-arm64/BlockID.framework/Modules/module.modulemap</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>ios-arm64/BlockID.framework/_CodeSignature/CodeResources</key>
 		<data>
-		rNXZg/tNH6TN+Gz9oQcA31zlf+Y=
+		sqplDwo2wlmSr0LVg4dtxNn4kzo=
 		</data>
 		<key>ios-arm64/BlockID.framework/default.metallib</key>
 		<data>
-		7HgPuA40gyb/+5TrByILXF+SFJI=
+		BrszW5dd+c/JMFL6uJS5/WxCa5Y=
 		</data>
 		<key>ios-arm64/BlockID.framework/deviceModels.json</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/BlockID</key>
 		<data>
-		1WfpcDHkg9ZfS1QSK7Kzpw2gqiU=
+		DnzhggSDRp3xWBoGMpozi8JBop8=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/DocumentScannerViewController.nib</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Headers/BlockID-Swift.h</key>
 		<data>
-		hAMVA+3YpjmonUT+7gl+fi/6E8I=
+		Pj+nUjgg6U+rdrASaHzM0egsHfA=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Headers/BlockID.h</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Info.plist</key>
 		<data>
-		NQxVFH+8ZncA0SQ9JKkPhwyWPwE=
+		cRaYIooDt0kq+YaqCSFPYRk24JI=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -150,23 +150,23 @@
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		zgjHjVbwWOW24J1W6us+cwlFRmw=
+		8XXepc9+4huxU4b8oxhmamNkqLw=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface-e</key>
 		<data>
-		hVBGWRPfU392LjeXS6IT4jNLpps=
+		zAl9X/Xs8ow8xJNicSFigQOmpLk=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TuGxc5sTcCyre02laeoIUO68MaE=
+		eQ1ZY/zzkCXNpkDzAav9cJbI+pU=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zgjHjVbwWOW24J1W6us+cwlFRmw=
+		8XXepc9+4huxU4b8oxhmamNkqLw=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface-e</key>
 		<data>
-		hVBGWRPfU392LjeXS6IT4jNLpps=
+		zAl9X/Xs8ow8xJNicSFigQOmpLk=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/module.modulemap</key>
 		<data>
@@ -186,11 +186,11 @@
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/_CodeSignature/CodeResources</key>
 		<data>
-		E44fJToQwAZ2abpcU2qHSIfg5iY=
+		paGNQA3Gjt6aTH9pHMH85rQUXJU=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/default.metallib</key>
 		<data>
-		fXR/E3lpyTa/LPAel1y7MpOWknQ=
+		tDJOKlVLkFOGdq265E7lUrUEtcU=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/deviceModels.json</key>
 		<data>
@@ -238,11 +238,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zXWm6c5YeNaltzqJVzz5DB+yswY=
+			5YZWgwwelLG7t8B2F7aYErtlROA=
 			</data>
 			<key>hash2</key>
 			<data>
-			jY6d15Hus5/DgxB+5nk4G20PvBGHXCWkuilYpFrGeP0=
+			TDJWgkH4BQ3Z2n2iRRMsHp+oa9SyCeZehzQ+KStKCCY=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/DocumentScannerViewController.nib</key>
@@ -260,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tjyBZu4htJeXrZVshbsrDvrb6nA=
+			uNWRy4yT5eqxZbFtVFeB3aMLv4o=
 			</data>
 			<key>hash2</key>
 			<data>
-			O7DM1MRF0S12kALBH2tlTjVsCHhDINsRP+FAARifrCQ=
+			w/Cpyb1Pu/Oyo3bTuenSqkIhSffcv0+q2aW873ybigk=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/Headers/BlockID.h</key>
@@ -304,11 +304,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Vw+MDKVqrqY18RjBhV+zi6psNE=
+			POxeXp8wSPDJzroZk96Lw3di2Og=
 			</data>
 			<key>hash2</key>
 			<data>
-			0s/d7rwoiNmkf6KHI88v7ZNyOZOkBftktkrwB2Umdbs=
+			x3VXAoQKhPrGXHeeHgvXMtk7dl8JQPggYrOPbmbna8M=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -326,55 +326,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yfgRW15XiMbCF0GtE1FPQF6ZAnM=
+			w8P+v4vC9QiNWNxXEiOV6qw8MoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			my3Ft7L3uD2ZIkILLkityz5YDiT5qGloLbyQugXSN0E=
+			N68WOEOR0TaIEsjxFZItLfvbsDVeaWaGD2PNtLn65LM=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface-e</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R2kkRkIp9G0NTcfPxApD/ciulqw=
+			rEy0x6Tnz4kKRNC+/cKr+2mZryM=
 			</data>
 			<key>hash2</key>
 			<data>
-			15d5r/1qbgitp1B7H4aMW8I0i1dA2W172fDiBlrdmR8=
+			SexSK253N/8g91nQfUMZQHUeyRX4aj/N3fHoCBxCIWE=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0raRywpRv2cWrACJThg4oOBUgU8=
+			8sfI+FiEaviZnO1YRGUXcrXGguU=
 			</data>
 			<key>hash2</key>
 			<data>
-			HlKn1t/4C3pOibuJA8h2yJKgObcZ09tzmv3vSzgFlbU=
+			5xqZ+6o5ZPXR5R6S16JtzrhaHyBOA8p4q80EfNCWhxY=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yfgRW15XiMbCF0GtE1FPQF6ZAnM=
+			w8P+v4vC9QiNWNxXEiOV6qw8MoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			my3Ft7L3uD2ZIkILLkityz5YDiT5qGloLbyQugXSN0E=
+			N68WOEOR0TaIEsjxFZItLfvbsDVeaWaGD2PNtLn65LM=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.swiftinterface-e</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R2kkRkIp9G0NTcfPxApD/ciulqw=
+			rEy0x6Tnz4kKRNC+/cKr+2mZryM=
 			</data>
 			<key>hash2</key>
 			<data>
-			15d5r/1qbgitp1B7H4aMW8I0i1dA2W172fDiBlrdmR8=
+			SexSK253N/8g91nQfUMZQHUeyRX4aj/N3fHoCBxCIWE=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/Modules/module.modulemap</key>
@@ -425,22 +425,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rNXZg/tNH6TN+Gz9oQcA31zlf+Y=
+			sqplDwo2wlmSr0LVg4dtxNn4kzo=
 			</data>
 			<key>hash2</key>
 			<data>
-			KPeWiNLoRaKspehYPjwl2fwpKWcV+kvrso38DkivmNA=
+			7kdFQkwuLLR7FMgly3X1Q2+h4Hqk6p+pU2jvhV7mvew=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/default.metallib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7HgPuA40gyb/+5TrByILXF+SFJI=
+			BrszW5dd+c/JMFL6uJS5/WxCa5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			kkgXvNE0UvWRvWmLqvmbRHtK2pSP2eTwoFZWMRtxpco=
+			uVavB8iM5Zk5Hd81752ycUWUKJLrM9yiBITkMSD7hN4=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/deviceModels.json</key>
@@ -535,11 +535,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1WfpcDHkg9ZfS1QSK7Kzpw2gqiU=
+			DnzhggSDRp3xWBoGMpozi8JBop8=
 			</data>
 			<key>hash2</key>
 			<data>
-			BmW7A5hJVkzg52J0EvxzsVVyJ5MGuIbq+ybHjRvmpys=
+			o7euAWDd8dbn4A56wIPs8x42wcNs9snTKOqAL5mTjRg=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/DocumentScannerViewController.nib</key>
@@ -557,11 +557,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hAMVA+3YpjmonUT+7gl+fi/6E8I=
+			Pj+nUjgg6U+rdrASaHzM0egsHfA=
 			</data>
 			<key>hash2</key>
 			<data>
-			J8ZkjYdVxrCMFvATTKKvIfbKAhp8viPlUQ27sY7omG0=
+			wgrpGNMwuIwQisvev4csWs+fiNySli0r37B9alq6Em8=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/Headers/BlockID.h</key>
@@ -601,11 +601,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NQxVFH+8ZncA0SQ9JKkPhwyWPwE=
+			cRaYIooDt0kq+YaqCSFPYRk24JI=
 			</data>
 			<key>hash2</key>
 			<data>
-			py9pA+f2polP1BB03v3GWHmKP39ADKPNQ5chpTdEMHw=
+			FAm+RXPODJHQfjH55uunb0aQA0ZAH3B+BIgWb5LNPPk=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -623,55 +623,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zgjHjVbwWOW24J1W6us+cwlFRmw=
+			8XXepc9+4huxU4b8oxhmamNkqLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			PAjj6iCrg3PJ+45eV2JtPZXETnbR/ger3ziUrUd1mp4=
+			I+2g1dNv9dqVPZ2SUUQ+sFwsCd4UFXML4nAWCqmroHc=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface-e</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hVBGWRPfU392LjeXS6IT4jNLpps=
+			zAl9X/Xs8ow8xJNicSFigQOmpLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			AOlFspatnVyeF6AUBEas0lpzjTmr+yBN7HWO90Z4Ujc=
+			xic5DGPQWkgMibXdvLFCQ4jO8WxU1wXjIilW/irJJGg=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TuGxc5sTcCyre02laeoIUO68MaE=
+			eQ1ZY/zzkCXNpkDzAav9cJbI+pU=
 			</data>
 			<key>hash2</key>
 			<data>
-			TNmNd3CrJd706a/GF1g1J+CfOzXF4pa8S9I9YiyFAKs=
+			wjLCGYmumgEDrbFbwAPKkOYfDZrx3ILGFWPYWCF608Y=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zgjHjVbwWOW24J1W6us+cwlFRmw=
+			8XXepc9+4huxU4b8oxhmamNkqLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			PAjj6iCrg3PJ+45eV2JtPZXETnbR/ger3ziUrUd1mp4=
+			I+2g1dNv9dqVPZ2SUUQ+sFwsCd4UFXML4nAWCqmroHc=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.swiftinterface-e</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hVBGWRPfU392LjeXS6IT4jNLpps=
+			zAl9X/Xs8ow8xJNicSFigQOmpLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			AOlFspatnVyeF6AUBEas0lpzjTmr+yBN7HWO90Z4Ujc=
+			xic5DGPQWkgMibXdvLFCQ4jO8WxU1wXjIilW/irJJGg=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/module.modulemap</key>
@@ -722,22 +722,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E44fJToQwAZ2abpcU2qHSIfg5iY=
+			paGNQA3Gjt6aTH9pHMH85rQUXJU=
 			</data>
 			<key>hash2</key>
 			<data>
-			r6O/2VwLATOVFpjn0k69hIAJxxubZQvjbyrTJGGpQII=
+			l7h/d0rjopEAAE3bsxufjMxJZmHdsMi7RGhd1Pb4b+8=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/default.metallib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fXR/E3lpyTa/LPAel1y7MpOWknQ=
+			tDJOKlVLkFOGdq265E7lUrUEtcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			o70+Tjwdfcmh3IePi1MGPntRujZDICZ03KK75bP7+Fc=
+			HdLahyMzpoVdKwdfdS/zO/OjBJr5EAyTrVqxdJdmAl8=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/deviceModels.json</key>
