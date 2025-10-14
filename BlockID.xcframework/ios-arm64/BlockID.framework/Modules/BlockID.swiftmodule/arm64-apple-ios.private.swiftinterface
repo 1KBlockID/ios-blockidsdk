@@ -320,6 +320,7 @@ public struct DTHStruct {
   public func getLicenseModules() -> BIDLicense?
   public func setLicenseModules(modules: BIDLicense)
   public func getLinkedAccounts() -> [BIDLinkedAccount]?
+  public func getLinkedAccountJSONString() -> Swift.String?
   public func setLinkedAccounts(accountsArr: [BIDLinkedAccount])
   public func setCurrentAccount(account: BIDLinkedAccount? = nil)
   public func getCurrentAccount() -> BIDLinkedAccount?
@@ -597,6 +598,7 @@ public typealias IALCallback = ((_ status: Swift.Bool, _ ialValue: Swift.String,
 public typealias VCsCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 public typealias VPCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 public typealias FetchConfigCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: FetchConfigResponse?) -> Swift.Void)
+public typealias FetchAppConfigCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: FetchAppConfigResponse?) -> Swift.Void)
 public typealias FetchDocumentsCallback = ((_ status: Swift.Bool, _ responseDict: [Swift.String : Any]?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias FetchUserAccountsInfoCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
 public typealias DocumentSessionCallback = ((_ status: Swift.Bool, _ response: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
@@ -706,6 +708,8 @@ extension BlockIDSDK {
 }
 extension BlockIDSDK {
   public func fetchConfig(_ tenantDNS: Swift.String, completion: @escaping FetchConfigCallback)
+  public func fetchGlobalAppConfig(_ tenantDNS: Swift.String, completion: @escaping FetchAppConfigCallback)
+  public func fetchAppConfig(_ tenant: BIDTenant, completion: @escaping FetchAppConfigCallback)
 }
 extension BlockIDSDK {
   public func updateAccountInfo(account: BIDLinkedAccount, pushID: Swift.String? = nil, deviceInfo: [Swift.String : Any], completion: @escaping UpdateAccInfoCallback)
@@ -1879,8 +1883,14 @@ extension Swift.String {
   public func convertStringToHex() -> Swift.String
   public func convertHexToString() -> Swift.String
 }
-public class FetchConfigResponse : Swift.Codable {
-  public var data: [Swift.String : MobileAppConfigs.BlockIDConfig]
+@_hasMissingDesignatedInitializers public class FetchConfigResponse : Swift.Codable {
+  public var data: [Swift.String : MobileAppConfigs.BlockIDConfig]?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class FetchAppConfigResponse : Swift.Codable {
+  public var data: [Swift.String : Applications.Mobile]?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1914,6 +1924,30 @@ public class FetchConfigResponse : Swift.Codable {
     public var dns: Swift.String?
     public var tenantTag: Swift.String?
     public var communityName: Swift.String?
+    @objc deinit
+    public func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class Applications : Swift.Codable {
+  @_hasMissingDesignatedInitializers public class Mobile : Swift.Codable {
+    public var versions: Applications.Mobile.Versions?
+    @_hasMissingDesignatedInitializers public class Versions : Swift.Codable {
+      public var minVersionEnforced: Swift.Bool?
+      public var minimumVersion: Applications.Mobile.Versions.MinimumVersion?
+      @_hasMissingDesignatedInitializers public class MinimumVersion : Swift.Codable {
+        public var ios: Swift.String?
+        @objc deinit
+        public func encode(to encoder: any Swift.Encoder) throws
+        required public init(from decoder: any Swift.Decoder) throws
+      }
+      @objc deinit
+      public func encode(to encoder: any Swift.Encoder) throws
+      required public init(from decoder: any Swift.Decoder) throws
+    }
     @objc deinit
     public func encode(to encoder: any Swift.Encoder) throws
     required public init(from decoder: any Swift.Decoder) throws
