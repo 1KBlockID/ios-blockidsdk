@@ -21,6 +21,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ### v1.20.60
 - Fixed OTP remaining time issue, now OTP time will be 1 to 30 sec
 - Updated logic of account transfer while restoring
+- Added a public function to fetch community configurations
 
 ### v1.20.55
 - Added support for Passkey registration and verification
