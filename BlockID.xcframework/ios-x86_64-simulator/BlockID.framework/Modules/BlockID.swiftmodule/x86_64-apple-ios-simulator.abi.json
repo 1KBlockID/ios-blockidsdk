@@ -8584,6 +8584,35 @@
           },
           {
             "kind": "Function",
+            "name": "getLinkedAccountJSONString",
+            "printedName": "getLinkedAccountJSONString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID8BIDVaultC26getLinkedAccountJSONStringSSSgyF",
+            "mangledName": "$s7BlockID8BIDVaultC26getLinkedAccountJSONStringSSSgyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setLinkedAccounts",
             "printedName": "setLinkedAccounts(accountsArr:)",
             "children": [
@@ -8873,34 +8902,6 @@
             "declAttributes": [
               "AccessControl"
             ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setTrustedSessionsSources",
-            "printedName": "setTrustedSessionsSources(info:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FetchConfigResponse",
-                "printedName": "BlockID.FetchConfigResponse",
-                "usr": "s:7BlockID19FetchConfigResponseC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID8BIDVaultC25setTrustedSessionsSources4infoyAA19FetchConfigResponseC_tF",
-            "mangledName": "$s7BlockID8BIDVaultC25setTrustedSessionsSources4infoyAA19FetchConfigResponseC_tF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -21264,7 +21265,7 @@
           {
             "kind": "Function",
             "name": "fetchConfig",
-            "printedName": "fetchConfig(_:completion:)",
+            "printedName": "fetchConfig(_:_:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -21278,9 +21279,24 @@
                 "usr": "s:SS"
               },
               {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Bool, BlockID.ErrorResponse?, BlockID.FetchConfigResponse?) -> ()",
+                "printedName": "(Swift.Bool, BlockID.ErrorResponse?, Swift.String?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -21290,7 +21306,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?, BlockID.FetchConfigResponse?)",
+                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?, Swift.String?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -21315,13 +21331,13 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "BlockID.FetchConfigResponse?",
+                        "printedName": "Swift.String?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "FetchConfigResponse",
-                            "printedName": "BlockID.FetchConfigResponse",
-                            "usr": "s:7BlockID19FetchConfigResponseC"
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
                           }
                         ],
                         "usr": "s:Sq"
@@ -21332,8 +21348,94 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC11fetchConfig_10completionySS_ySb_AA13ErrorResponseCSgAA05FetcheH0CSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC11fetchConfig_10completionySS_ySb_AA13ErrorResponseCSgAA05FetcheH0CSgtctF",
+            "usr": "s:7BlockID0A5IDSDKC11fetchConfig__10completionySS_SSSgySb_AA13ErrorResponseCSgAFtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC11fetchConfig__10completionySS_SSSgySb_AA13ErrorResponseCSgAFtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchCommunityConfig",
+            "printedName": "fetchCommunityConfig(_:_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDTenant",
+                "printedName": "BlockID.BIDTenant",
+                "usr": "s:7BlockID9BIDTenantC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, BlockID.ErrorResponse?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, BlockID.ErrorResponse?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC20fetchCommunityConfig__10completionyAA9BIDTenantC_SSySb_AA13ErrorResponseCSgSSSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC20fetchCommunityConfig__10completionyAA9BIDTenantC_SSySb_AA13ErrorResponseCSgSSSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -42451,7 +42553,7 @@
           {
             "kind": "Function",
             "name": "logAppEvent",
-            "printedName": "logAppEvent(eventName:tenant:eventParams:)",
+            "printedName": "logAppEvent(eventName:isPasskeyEnabled:tenant:eventParams:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -42463,6 +42565,13 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -42491,8 +42600,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID15AnalyticsHelperV11logAppEvent9eventName6tenant0H6ParamsySS_AA9BIDTenantCSDySSypGtFZ",
-            "mangledName": "$s7BlockID15AnalyticsHelperV11logAppEvent9eventName6tenant0H6ParamsySS_AA9BIDTenantCSDySSypGtFZ",
+            "usr": "s:7BlockID15AnalyticsHelperV11logAppEvent9eventName16isPasskeyEnabled6tenant0H6ParamsySS_SbAA9BIDTenantCSDySSypGtFZ",
+            "mangledName": "$s7BlockID15AnalyticsHelperV11logAppEvent9eventName16isPasskeyEnabled6tenant0H6ParamsySS_SbAA9BIDTenantCSDySSypGtFZ",
             "moduleName": "BlockID",
             "static": true,
             "declAttributes": [
@@ -49375,6 +49484,79 @@
                 "declKind": "Accessor",
                 "usr": "s:7BlockID12CustomErrorsV15kSessionExpiredSi4code_SS3msgtvgZ",
                 "mangledName": "$s7BlockID12CustomErrorsV15kSessionExpiredSi4code_SS3msgtvgZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "K_KEY_PATH_IS_MANDATORY",
+            "printedName": "K_KEY_PATH_IS_MANDATORY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(code: Swift.Int, msg: Swift.String)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID12CustomErrorsV23K_KEY_PATH_IS_MANDATORYSi4code_SS3msgtvpZ",
+            "mangledName": "$s7BlockID12CustomErrorsV23K_KEY_PATH_IS_MANDATORYSi4code_SS3msgtvpZ",
+            "moduleName": "BlockID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, msg: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID12CustomErrorsV23K_KEY_PATH_IS_MANDATORYSi4code_SS3msgtvgZ",
+                "mangledName": "$s7BlockID12CustomErrorsV23K_KEY_PATH_IS_MANDATORYSi4code_SS3msgtvgZ",
                 "moduleName": "BlockID",
                 "static": true,
                 "implicit": true,
@@ -66590,1401 +66772,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "FetchConfigResponse",
-        "printedName": "FetchConfigResponse",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "data",
-            "printedName": "data",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : BlockID.MobileAppConfigs.BlockIDConfig]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BlockIDConfig",
-                    "printedName": "BlockID.MobileAppConfigs.BlockIDConfig",
-                    "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID19FetchConfigResponseC4dataSDySSAA16MobileAppConfigsC0A8IDConfigCGvp",
-            "mangledName": "$s7BlockID19FetchConfigResponseC4dataSDySSAA16MobileAppConfigsC0A8IDConfigCGvp",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : BlockID.MobileAppConfigs.BlockIDConfig]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BlockIDConfig",
-                        "printedName": "BlockID.MobileAppConfigs.BlockIDConfig",
-                        "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID19FetchConfigResponseC4dataSDySSAA16MobileAppConfigsC0A8IDConfigCGvg",
-                "mangledName": "$s7BlockID19FetchConfigResponseC4dataSDySSAA16MobileAppConfigsC0A8IDConfigCGvg",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : BlockID.MobileAppConfigs.BlockIDConfig]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BlockIDConfig",
-                        "printedName": "BlockID.MobileAppConfigs.BlockIDConfig",
-                        "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID19FetchConfigResponseC4dataSDySSAA16MobileAppConfigsC0A8IDConfigCGvs",
-                "mangledName": "$s7BlockID19FetchConfigResponseC4dataSDySSAA16MobileAppConfigsC0A8IDConfigCGvs",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID19FetchConfigResponseC4dataSDySSAA16MobileAppConfigsC0A8IDConfigCGvM",
-                "mangledName": "$s7BlockID19FetchConfigResponseC4dataSDySSAA16MobileAppConfigsC0A8IDConfigCGvM",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FetchConfigResponse",
-                "printedName": "BlockID.FetchConfigResponse",
-                "usr": "s:7BlockID19FetchConfigResponseC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7BlockID19FetchConfigResponseC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s7BlockID19FetchConfigResponseC4fromACs7Decoder_p_tKcfc",
-            "moduleName": "BlockID",
-            "implicit": true,
-            "declAttributes": [
-              "Required"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID19FetchConfigResponseC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s7BlockID19FetchConfigResponseC6encode2toys7Encoder_p_tKF",
-            "moduleName": "BlockID",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:7BlockID19FetchConfigResponseC",
-        "mangledName": "$s7BlockID19FetchConfigResponseC",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MobileAppConfigs",
-        "printedName": "MobileAppConfigs",
-        "children": [
-          {
-            "kind": "TypeDecl",
-            "name": "BlockIDConfig",
-            "printedName": "BlockIDConfig",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "app",
-                "printedName": "app",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "BlockID.MobileAppConfigs.OriginAllowedToTransfer?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OriginAllowedToTransfer",
-                        "printedName": "BlockID.MobileAppConfigs.OriginAllowedToTransfer",
-                        "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC3appAC23OriginAllowedToTransferCSgvp",
-                "mangledName": "$s7BlockID16MobileAppConfigsC0A8IDConfigC3appAC23OriginAllowedToTransferCSgvp",
-                "moduleName": "BlockID",
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.MobileAppConfigs.OriginAllowedToTransfer?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "OriginAllowedToTransfer",
-                            "printedName": "BlockID.MobileAppConfigs.OriginAllowedToTransfer",
-                            "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC3appAC23OriginAllowedToTransferCSgvg",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC0A8IDConfigC3appAC23OriginAllowedToTransferCSgvg",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Set",
-                    "printedName": "Set()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BlockID.MobileAppConfigs.OriginAllowedToTransfer?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "OriginAllowedToTransfer",
-                            "printedName": "BlockID.MobileAppConfigs.OriginAllowedToTransfer",
-                            "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC3appAC23OriginAllowedToTransferCSgvs",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC0A8IDConfigC3appAC23OriginAllowedToTransferCSgvs",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "set"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Modify",
-                    "printedName": "Modify()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC3appAC23OriginAllowedToTransferCSgvM",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC0A8IDConfigC3appAC23OriginAllowedToTransferCSgvM",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "_modify"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BlockIDConfig",
-                    "printedName": "BlockID.MobileAppConfigs.BlockIDConfig",
-                    "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s7BlockID16MobileAppConfigsC0A8IDConfigC4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "declAttributes": [
-                  "Required"
-                ],
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s7BlockID16MobileAppConfigsC0A8IDConfigC6encode2toys7Encoder_p_tKF",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:7BlockID16MobileAppConfigsC0A8IDConfigC",
-            "mangledName": "$s7BlockID16MobileAppConfigsC0A8IDConfigC",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "hasMissingDesignatedInitializers": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "SDKConfig",
-            "printedName": "SDKConfig",
-            "children": [
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SDKConfig",
-                    "printedName": "BlockID.MobileAppConfigs.SDKConfig",
-                    "usr": "s:7BlockID16MobileAppConfigsC9SDKConfigC"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:7BlockID16MobileAppConfigsC9SDKConfigC4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s7BlockID16MobileAppConfigsC9SDKConfigC4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "declAttributes": [
-                  "Required"
-                ],
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:7BlockID16MobileAppConfigsC9SDKConfigC6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s7BlockID16MobileAppConfigsC9SDKConfigC6encode2toys7Encoder_p_tKF",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:7BlockID16MobileAppConfigsC9SDKConfigC",
-            "mangledName": "$s7BlockID16MobileAppConfigsC9SDKConfigC",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "hasMissingDesignatedInitializers": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "LiveIdSelfie",
-            "printedName": "LiveIdSelfie",
-            "children": [
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LiveIdSelfie",
-                    "printedName": "BlockID.MobileAppConfigs.LiveIdSelfie",
-                    "usr": "s:7BlockID16MobileAppConfigsC12LiveIdSelfieC"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:7BlockID16MobileAppConfigsC12LiveIdSelfieC4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s7BlockID16MobileAppConfigsC12LiveIdSelfieC4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "declAttributes": [
-                  "Required"
-                ],
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:7BlockID16MobileAppConfigsC12LiveIdSelfieC6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s7BlockID16MobileAppConfigsC12LiveIdSelfieC6encode2toys7Encoder_p_tKF",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:7BlockID16MobileAppConfigsC12LiveIdSelfieC",
-            "mangledName": "$s7BlockID16MobileAppConfigsC12LiveIdSelfieC",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasMissingDesignatedInitializers": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "OriginAllowedToTransfer",
-            "printedName": "OriginAllowedToTransfer",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "originAllowedToTransfer",
-                "printedName": "originAllowedToTransfer",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[BlockID.MobileAppConfigs.Origin]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[BlockID.MobileAppConfigs.Origin]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Origin",
-                            "printedName": "BlockID.MobileAppConfigs.Origin",
-                            "usr": "s:7BlockID16MobileAppConfigsC6OriginC"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC06originghI0SayAC0F0CGSgvp",
-                "mangledName": "$s7BlockID16MobileAppConfigsC23OriginAllowedToTransferC06originghI0SayAC0F0CGSgvp",
-                "moduleName": "BlockID",
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "[BlockID.MobileAppConfigs.Origin]?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Array",
-                            "printedName": "[BlockID.MobileAppConfigs.Origin]",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Origin",
-                                "printedName": "BlockID.MobileAppConfigs.Origin",
-                                "usr": "s:7BlockID16MobileAppConfigsC6OriginC"
-                              }
-                            ],
-                            "usr": "s:Sa"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC06originghI0SayAC0F0CGSgvg",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC23OriginAllowedToTransferC06originghI0SayAC0F0CGSgvg",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Set",
-                    "printedName": "Set()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "[BlockID.MobileAppConfigs.Origin]?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Array",
-                            "printedName": "[BlockID.MobileAppConfigs.Origin]",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Origin",
-                                "printedName": "BlockID.MobileAppConfigs.Origin",
-                                "usr": "s:7BlockID16MobileAppConfigsC6OriginC"
-                              }
-                            ],
-                            "usr": "s:Sa"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC06originghI0SayAC0F0CGSgvs",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC23OriginAllowedToTransferC06originghI0SayAC0F0CGSgvs",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "set"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Modify",
-                    "printedName": "Modify()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC06originghI0SayAC0F0CGSgvM",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC23OriginAllowedToTransferC06originghI0SayAC0F0CGSgvM",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "_modify"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OriginAllowedToTransfer",
-                    "printedName": "BlockID.MobileAppConfigs.OriginAllowedToTransfer",
-                    "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s7BlockID16MobileAppConfigsC23OriginAllowedToTransferC4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "declAttributes": [
-                  "Required"
-                ],
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s7BlockID16MobileAppConfigsC23OriginAllowedToTransferC6encode2toys7Encoder_p_tKF",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:7BlockID16MobileAppConfigsC23OriginAllowedToTransferC",
-            "mangledName": "$s7BlockID16MobileAppConfigsC23OriginAllowedToTransferC",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "hasMissingDesignatedInitializers": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "Origin",
-            "printedName": "Origin",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "dns",
-                "printedName": "dns",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID16MobileAppConfigsC6OriginC3dnsSSSgvp",
-                "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC3dnsSSSgvp",
-                "moduleName": "BlockID",
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC6OriginC3dnsSSSgvg",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC3dnsSSSgvg",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Set",
-                    "printedName": "Set()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC6OriginC3dnsSSSgvs",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC3dnsSSSgvs",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "set"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Modify",
-                    "printedName": "Modify()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC6OriginC3dnsSSSgvM",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC3dnsSSSgvM",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "_modify"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "tenantTag",
-                "printedName": "tenantTag",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID16MobileAppConfigsC6OriginC9tenantTagSSSgvp",
-                "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC9tenantTagSSSgvp",
-                "moduleName": "BlockID",
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC6OriginC9tenantTagSSSgvg",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC9tenantTagSSSgvg",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Set",
-                    "printedName": "Set()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC6OriginC9tenantTagSSSgvs",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC9tenantTagSSSgvs",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "set"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Modify",
-                    "printedName": "Modify()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC6OriginC9tenantTagSSSgvM",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC9tenantTagSSSgvM",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "_modify"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "communityName",
-                "printedName": "communityName",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID16MobileAppConfigsC6OriginC13communityNameSSSgvp",
-                "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC13communityNameSSSgvp",
-                "moduleName": "BlockID",
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC6OriginC13communityNameSSSgvg",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC13communityNameSSSgvg",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Set",
-                    "printedName": "Set()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC6OriginC13communityNameSSSgvs",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC13communityNameSSSgvs",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "set"
-                  },
-                  {
-                    "kind": "Accessor",
-                    "name": "Modify",
-                    "printedName": "Modify()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID16MobileAppConfigsC6OriginC13communityNameSSSgvM",
-                    "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC13communityNameSSSgvM",
-                    "moduleName": "BlockID",
-                    "implicit": true,
-                    "accessorKind": "_modify"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Origin",
-                    "printedName": "BlockID.MobileAppConfigs.Origin",
-                    "usr": "s:7BlockID16MobileAppConfigsC6OriginC"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:7BlockID16MobileAppConfigsC6OriginC4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "declAttributes": [
-                  "Required"
-                ],
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "any Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:7BlockID16MobileAppConfigsC6OriginC6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC6encode2toys7Encoder_p_tKF",
-                "moduleName": "BlockID",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Class",
-            "usr": "s:7BlockID16MobileAppConfigsC6OriginC",
-            "mangledName": "$s7BlockID16MobileAppConfigsC6OriginC",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "hasMissingDesignatedInitializers": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MobileAppConfigs",
-                "printedName": "BlockID.MobileAppConfigs",
-                "usr": "s:7BlockID16MobileAppConfigsC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7BlockID16MobileAppConfigsC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s7BlockID16MobileAppConfigsC4fromACs7Decoder_p_tKcfc",
-            "moduleName": "BlockID",
-            "implicit": true,
-            "declAttributes": [
-              "Required"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID16MobileAppConfigsC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s7BlockID16MobileAppConfigsC6encode2toys7Encoder_p_tKF",
-            "moduleName": "BlockID",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:7BlockID16MobileAppConfigsC",
-        "mangledName": "$s7BlockID16MobileAppConfigsC",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -72616,56 +71403,56 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3148,
+      "offset": 3135,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "Array",
-      "offset": 3197,
+      "offset": 3184,
       "length": 2297,
       "value": "[\"https:\/\/1k-dev.1kosmos.net\/sessions\", \"https:\/\/1k-qa.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu.1kosmos.net\/sessions\", \"https:\/\/1k-uat.1kosmos.net\/sessions\", \"https:\/\/1k-pilot.1kosmos.net\/sessions\", \"https:\/\/1k-pilot-in.1kosmos.in\/sessions\", \"https:\/\/1k-prod-in.1kosmos.in\/sessions\", \"https:\/\/1k-staging-gcp-in.1kosmos.in\/sessions\", \"https:\/\/1k-fedramp-dev.1kosmos.net\/sessions\", \"https:\/\/1k-perf-client.1kosmos.net\/sessions\", \"https:\/\/1k-perf-root.1kosmos.net\/sessions\", \"https:\/\/1k-staging-gcp-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west2.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-dev-aws-01.1kosmos.net\/sessions\", \"https:\/\/1k-dev-fedramp-aws.1kosmos.net\/sessions\", \"https:\/\/1k-staging-aws-01.1kosmos.net\/sessions\", \"https:\/\/1k-uat-govcloud.1kosmos.net\/sessions\", \"https:\/\/1k-staging-govcloud.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west2.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu.1kosmos.net\/sessions\", \"https:\/\/1k-staging-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-fed.1kosmos.net\/sessions\"]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5573,
+      "offset": 5560,
       "length": 6,
       "value": "\"IAL1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 98194,
+      "offset": 98488,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116291,
+      "offset": 116585,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116360,
+      "offset": 116654,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 116593,
+      "offset": 116887,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 123232,
+      "offset": 123526,
       "length": 1,
       "value": "0"
     },
@@ -72974,62 +71761,62 @@
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "Array",
       "offset": 351,
-      "length": 586,
-      "value": "[\"firstname\", \"lastname\", \"ial\", \"aal\", \"ppt\", \"ppt_image\", \"dl\", \"dl_front_image\", \"dl_back_image\", \"liveid\", \"scep_creds\", \"nationalid\", \"deviceid\", \"location\", \"nationalid_front_image\", \"nationalid_back_image\", \"device_info\", \"ssn\", \"ssnl4\", \"dl_object\", \"ppt_object\", \"liveid_object\", \"nationalid_object\", \"ssn_object\", \"account_otp\"]"
+      "length": 603,
+      "value": "[\"firstname\", \"lastname\", \"ial\", \"aal\", \"ppt\", \"ppt_image\", \"dl\", \"dl_front_image\", \"dl_back_image\", \"liveid\", \"scep_creds\", \"nationalid\", \"deviceid\", \"location\", \"nationalid_front_image\", \"nationalid_back_image\", \"device_info\", \"ssn\", \"ssnl4\", \"dl_object\", \"ppt_object\", \"liveid_object\", \"nationalid_object\", \"ssn_object\", \"account_otp\", \"accounts_json\"]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 2513,
+      "offset": 2530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 5465,
+      "offset": 5482,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 6774,
+      "offset": 6791,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 6947,
+      "offset": 6964,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 7004,
+      "offset": 7021,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 8490,
+      "offset": 8853,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8619,
+      "offset": 8982,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 8673,
+      "offset": 9036,
       "length": 3,
       "value": "0.0"
     },
@@ -73043,49 +71830,49 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/ConfigurationAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 394,
+      "offset": 407,
       "length": 21,
       "value": "\"adminconsole.global\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/ConfigurationAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 443,
+      "offset": 448,
       "length": 100,
       "value": "\"mobile_app_configs.\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/ConfigurationAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 520,
+      "offset": 525,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/ConfigurationAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 531,
+      "offset": 536,
       "length": 3,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/ConfigurationAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 539,
+      "offset": 544,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/ConfigurationAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 542,
+      "offset": 547,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/ConfigurationAPIs.swift",
       "kind": "IntegerLiteral",
-      "offset": 572,
+      "offset": 577,
       "length": 3,
       "value": "200"
     },
@@ -74245,6 +73032,13 @@
       "value": "200"
     },
     {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9440,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
       "kind": "StringLiteral",
       "offset": 361,
@@ -74408,14 +73202,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14330,
+      "offset": 14442,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 14365,
+      "offset": 14477,
       "length": 2,
       "value": "\"\""
     },
@@ -74786,126 +73580,126 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 8317,
+      "offset": 8327,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 8368,
+      "offset": 8378,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14871,
+      "offset": 14881,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14964,
+      "offset": 14974,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15033,
+      "offset": 15043,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15107,
+      "offset": 15117,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15198,
+      "offset": 15208,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15256,
+      "offset": 15266,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15339,
+      "offset": 15349,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15416,
+      "offset": 15426,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15480,
+      "offset": 15490,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15518,
+      "offset": 15528,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15556,
+      "offset": 15566,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15595,
+      "offset": 15605,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15635,
+      "offset": 15645,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15677,
+      "offset": 15687,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15718,
+      "offset": 15728,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 16021,
+      "offset": 16031,
       "length": 2,
       "value": "\"\""
     },
@@ -76116,30 +74910,44 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/FetchConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 635,
+      "offset": 646,
       "length": 15,
       "value": "\"liveid_selfie\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/FetchConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 692,
+      "offset": 703,
       "length": 25,
       "value": "\"trusted_session_sources\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/FetchConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 971,
+      "offset": 984,
       "length": 24,
       "value": "\"restore_wallet_enabled\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/FetchConfigResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 1560,
       "length": 29,
       "value": "\"origins_allowed_to_transfer\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/FetchConfigResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1627,
+      "length": 21,
+      "value": "\"allowed_to_transfer\""
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/FetchConfigResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1689,
+      "length": 25,
+      "value": "\"not_allowed_to_transfer\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDScannerHelper.swift",

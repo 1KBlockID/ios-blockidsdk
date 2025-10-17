@@ -9,7 +9,7 @@
 BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.55'
+   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.60'
 ```
 
 ## License
@@ -17,6 +17,11 @@ BlockID is available through CocoaPods. To install it, simply add the following 
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+
+### v1.20.60
+- Fixed OTP remaining time issue, now OTP time will be 1 to 30 sec
+- Updated logic of account transfer while restoring
+- Added a public function to fetch community configurations
 
 ### v1.20.55
 - Added support for Passkey registration and verification

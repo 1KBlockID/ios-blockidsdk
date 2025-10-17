@@ -320,6 +320,7 @@ public struct DTHStruct {
   public func getLicenseModules() -> BIDLicense?
   public func setLicenseModules(modules: BIDLicense)
   public func getLinkedAccounts() -> [BIDLinkedAccount]?
+  public func getLinkedAccountJSONString() -> Swift.String?
   public func setLinkedAccounts(accountsArr: [BIDLinkedAccount])
   public func setCurrentAccount(account: BIDLinkedAccount? = nil)
   public func getCurrentAccount() -> BIDLinkedAccount?
@@ -332,7 +333,6 @@ public struct DTHStruct {
   @objc deinit
 }
 extension BIDVault {
-  public func setTrustedSessionsSources(info: FetchConfigResponse)
   public func getTrustedSessionsSources() -> [Swift.String]?
 }
 extension BIDVault {
@@ -596,7 +596,7 @@ public typealias MessageGatewaysCallback = ((_ status: Swift.Bool, _ object: [Me
 public typealias IALCallback = ((_ status: Swift.Bool, _ ialValue: Swift.String, _ error: ErrorResponse?) -> Swift.Void)
 public typealias VCsCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 public typealias VPCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
-public typealias FetchConfigCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: FetchConfigResponse?) -> Swift.Void)
+public typealias FetchConfigCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ response: Swift.String?) -> Swift.Void)
 public typealias FetchDocumentsCallback = ((_ status: Swift.Bool, _ responseDict: [Swift.String : Any]?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias FetchUserAccountsInfoCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
 public typealias DocumentSessionCallback = ((_ status: Swift.Bool, _ response: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
@@ -705,7 +705,8 @@ extension BlockIDSDK {
   public func getVP(_ dictVCObj: [Swift.String : Any], completion: @escaping VPCallback)
 }
 extension BlockIDSDK {
-  public func fetchConfig(_ tenantDNS: Swift.String, completion: @escaping FetchConfigCallback)
+  public func fetchConfig(_ tenantDNS: Swift.String, _ keyPath: Swift.String? = nil, completion: @escaping FetchConfigCallback)
+  public func fetchCommunityConfig(_ tenant: BIDTenant, _ keyPath: Swift.String, completion: @escaping FetchConfigCallback)
 }
 extension BlockIDSDK {
   public func updateAccountInfo(account: BIDLinkedAccount, pushID: Swift.String? = nil, deviceInfo: [Swift.String : Any], completion: @escaping UpdateAccInfoCallback)
@@ -1309,7 +1310,7 @@ public class DataGroup {
   required public init(from decoder: any Swift.Decoder) throws
 }
 public struct AnalyticsHelper {
-  public static func logAppEvent(eventName: Swift.String, tenant: BIDTenant, eventParams: [Swift.String : Any])
+  public static func logAppEvent(eventName: Swift.String, isPasskeyEnabled: Swift.Bool = false, tenant: BIDTenant, eventParams: [Swift.String : Any])
 }
 @_hasMissingDesignatedInitializers public class CreateAccessCodePayload {
   public init(version: Version, type: AccessCodeType, emailID: Swift.String, emailSubject: Swift.String, emailTemplate: Swift.String)
@@ -1445,6 +1446,7 @@ public struct CustomErrors {
   public static let K_COMMUNITY_NAME_IS_MANDATORY: (code: Swift.Int, msg: Swift.String)
   public static let K_TENANT_MANDATORY: (code: Swift.Int, message: Swift.String)
   public static let kSessionExpired: (code: Swift.Int, msg: Swift.String)
+  public static let K_KEY_PATH_IS_MANDATORY: (code: Swift.Int, msg: Swift.String)
   public static let K_USER_IS_DISABLED: (code: Swift.Int, message: Swift.String)
   public static let K_USER_IS_LOCKED: (code: Swift.Int, message: Swift.String)
 }
@@ -1878,47 +1880,6 @@ extension Swift.String {
   public func replace(target: Swift.String, with: Swift.String) -> Swift.String
   public func convertStringToHex() -> Swift.String
   public func convertHexToString() -> Swift.String
-}
-public class FetchConfigResponse : Swift.Codable {
-  public var data: [Swift.String : MobileAppConfigs.BlockIDConfig]
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@_hasMissingDesignatedInitializers public class MobileAppConfigs : Swift.Codable {
-  @_hasMissingDesignatedInitializers public class BlockIDConfig : Swift.Codable {
-    public var app: MobileAppConfigs.OriginAllowedToTransfer?
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
-  @_hasMissingDesignatedInitializers public class SDKConfig : Swift.Codable {
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
-  @_hasMissingDesignatedInitializers public class LiveIdSelfie : Swift.Codable {
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
-  @_hasMissingDesignatedInitializers public class OriginAllowedToTransfer : Swift.Codable {
-    public var originAllowedToTransfer: [MobileAppConfigs.Origin]?
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
-  @_hasMissingDesignatedInitializers public class Origin : Swift.Codable {
-    public var dns: Swift.String?
-    public var tenantTag: Swift.String?
-    public var communityName: Swift.String?
-    @objc deinit
-    public func encode(to encoder: any Swift.Encoder) throws
-    required public init(from decoder: any Swift.Decoder) throws
-  }
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
 }
 public protocol RFIDResponseDelegate : AnyObject {
   func rfidScanCompleted(withPassport docDic: [Swift.String : Any]?, error: ErrorResponse?)
