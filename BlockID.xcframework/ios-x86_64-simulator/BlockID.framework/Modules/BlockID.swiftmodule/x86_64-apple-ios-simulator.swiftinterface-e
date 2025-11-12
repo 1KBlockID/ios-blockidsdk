@@ -321,6 +321,7 @@ public struct DTHStruct {
   public func setLicenseModules(modules: BlockID.BIDLicense)
   public func getLinkedAccounts() -> [BlockID.BIDLinkedAccount]?
   public func getLinkedAccountJSONString() -> Swift.String?
+  public func setLinkedAccountsJSON(accountsJSON: Swift.String)
   public func setLinkedAccounts(accountsArr: [BlockID.BIDLinkedAccount])
   public func setCurrentAccount(account: BlockID.BIDLinkedAccount? = nil)
   public func getCurrentAccount() -> BlockID.BIDLinkedAccount?
@@ -660,6 +661,7 @@ public typealias FetchUserResponseCallBack = ((Swift.Bool, Swift.String?, BlockI
   public func getDID() -> Swift.String
   public func getIAL(completion: @escaping BlockID.IALCallback)
   public func getLinkedUserAccounts() -> (linkedUsers: [BlockID.BIDLinkedAccount]?, error: BlockID.ErrorResponse?)
+  public func setLinkedAccountsJSON(accountsJSON: Swift.String)
   public func updateAccounts(accounts: [BlockID.BIDLinkedAccount])
   public func setCurrentUserAccount(account: BlockID.BIDLinkedAccount)
   public func getCurrentUserAccount() -> (currentUser: BlockID.BIDLinkedAccount?, error: BlockID.ErrorResponse?)
