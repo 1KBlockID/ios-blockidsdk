@@ -8613,6 +8613,32 @@
           },
           {
             "kind": "Function",
+            "name": "setLinkedAccountsJSON",
+            "printedName": "setLinkedAccountsJSON(accountsJSON:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID8BIDVaultC21setLinkedAccountsJSON08accountsG0ySS_tF",
+            "mangledName": "$s7BlockID8BIDVaultC21setLinkedAccountsJSON08accountsG0ySS_tF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setLinkedAccounts",
             "printedName": "setLinkedAccounts(accountsArr:)",
             "children": [
@@ -18706,6 +18732,32 @@
             "declKind": "Func",
             "usr": "s:7BlockID0A5IDSDKC21getLinkedUserAccountsSayAA16BIDLinkedAccountCGSg11linkedUsers_AA13ErrorResponseCSg5errortyF",
             "mangledName": "$s7BlockID0A5IDSDKC21getLinkedUserAccountsSayAA16BIDLinkedAccountCGSg11linkedUsers_AA13ErrorResponseCSg5errortyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLinkedAccountsJSON",
+            "printedName": "setLinkedAccountsJSON(accountsJSON:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC21setLinkedAccountsJSON08accountsG0ySS_tF",
+            "mangledName": "$s7BlockID0A5IDSDKC21setLinkedAccountsJSON08accountsG0ySS_tF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -71424,35 +71476,35 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 98488,
+      "offset": 98643,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116585,
+      "offset": 116740,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116654,
+      "offset": 116809,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 116887,
+      "offset": 117042,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 123526,
+      "offset": 123681,
       "length": 1,
       "value": "0"
     },
