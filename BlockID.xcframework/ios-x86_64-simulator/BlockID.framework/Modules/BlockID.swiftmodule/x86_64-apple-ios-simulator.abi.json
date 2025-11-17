@@ -3015,6 +3015,27 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BIDAccount",
+                "printedName": "BlockID.BIDAccount",
+                "usr": "s:7BlockID10BIDAccountC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7BlockID10BIDAccountCACycfc",
+            "mangledName": "$s7BlockID10BIDAccountCACycfc",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(from:)",
             "children": [
               {
@@ -3074,7 +3095,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -8605,6 +8625,32 @@
             "declKind": "Func",
             "usr": "s:7BlockID8BIDVaultC26getLinkedAccountJSONStringSSSgyF",
             "mangledName": "$s7BlockID8BIDVaultC26getLinkedAccountJSONStringSSSgyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLinkedAccountsJSON",
+            "printedName": "setLinkedAccountsJSON(accountsJSON:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID8BIDVaultC21setLinkedAccountsJSON08accountsG0ySS_tF",
+            "mangledName": "$s7BlockID8BIDVaultC21setLinkedAccountsJSON08accountsG0ySS_tF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -18706,6 +18752,32 @@
             "declKind": "Func",
             "usr": "s:7BlockID0A5IDSDKC21getLinkedUserAccountsSayAA16BIDLinkedAccountCGSg11linkedUsers_AA13ErrorResponseCSg5errortyF",
             "mangledName": "$s7BlockID0A5IDSDKC21getLinkedUserAccountsSayAA16BIDLinkedAccountCGSg11linkedUsers_AA13ErrorResponseCSg5errortyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLinkedAccountsJSON",
+            "printedName": "setLinkedAccountsJSON(accountsJSON:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC21setLinkedAccountsJSON08accountsG0ySS_tF",
+            "mangledName": "$s7BlockID0A5IDSDKC21setLinkedAccountsJSON08accountsG0ySS_tF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -70024,63 +70096,63 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 178,
+      "offset": 177,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 204,
+      "offset": 203,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 239,
+      "offset": 238,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 275,
+      "offset": 274,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 313,
+      "offset": 312,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 354,
+      "offset": 353,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 380,
+      "offset": 379,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 408,
+      "offset": 407,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDAccount.swift",
       "kind": "StringLiteral",
-      "offset": 445,
+      "offset": 444,
       "length": 2,
       "value": "\"\""
     },
@@ -71424,35 +71496,35 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 98488,
+      "offset": 98643,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116585,
+      "offset": 116740,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116654,
+      "offset": 116809,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 116887,
+      "offset": 117042,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 123526,
+      "offset": 123681,
       "length": 1,
       "value": "0"
     },
