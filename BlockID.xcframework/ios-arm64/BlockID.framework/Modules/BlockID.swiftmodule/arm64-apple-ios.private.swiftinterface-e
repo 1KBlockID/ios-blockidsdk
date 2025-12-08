@@ -31,7 +31,6 @@ import _Concurrency
 import _CoreNFC_UIKit
 import _StringProcessing
 import _SwiftConcurrencyShims
-import secp256k1
 @objc @_inheritsConvenienceInitializers public class BIDServiceDirectory : ObjectiveC.NSObject, Swift.Codable {
   @objc override dynamic public init()
   @objc deinit
