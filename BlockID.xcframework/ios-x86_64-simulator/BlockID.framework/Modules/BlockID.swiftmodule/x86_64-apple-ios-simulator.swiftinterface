@@ -213,7 +213,7 @@ public protocol DocumentScanDelegate {
   func onDocumentScanResponse(status: Swift.Bool, document: Swift.String?, sessionID: Swift.String?, error: ErrorResponse?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class DocumentScannerViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency convenience public init(docType: DocumentScannerType, dvcId: Swift.String? = nil, delegate: any DocumentScanDelegate)
+  @_Concurrency.MainActor @preconcurrency convenience public init(docType: DocumentScannerType, dvcId: Swift.String? = nil, uid: Swift.String? = nil, delegate: any DocumentScanDelegate)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -725,7 +725,7 @@ extension BlockIDSDK {
   public func issueJWTOnPasskeyAuthentication(controller: UIKit.UIViewController, passkeyRequest: PasskeyRequest, completion: @escaping PasskeyCallback)
 }
 extension BlockIDSDK {
-  public func createDocumentSession(docType: DocumentScannerType, dvcId: Swift.String? = nil, completion: @escaping DocumentSessionCallback)
+  public func createDocumentSession(docType: DocumentScannerType, dvcId: Swift.String? = nil, uid: Swift.String? = nil, completion: @escaping DocumentSessionCallback)
   public func pollDocumentSession(sessionId: Swift.String, dvcId: Swift.String? = nil, completion: @escaping PollSessionCallback)
 }
 extension BlockIDSDK {

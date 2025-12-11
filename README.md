@@ -20,6 +20,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ### v1.20.80
 - Updated authentication with UWL 
+- SDK now allows to accept uid as store id during id proofing session creation
 
 ### v1.20.70
 - Bug fixes and improvements 
