@@ -22,6 +22,9 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 - Updated authentication with UWL 
 - SDK now allows to accept uid as store id during id proofing session creation
 
+### v1.20.71
+- Updated nonce signature authentication
+
 ### v1.20.70
 - Bug fixes and improvements 
 
