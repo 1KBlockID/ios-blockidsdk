@@ -226,7 +226,6 @@ extension BlockID.DocumentScannerViewController : SafariServices.SFSafariViewCon
 @objc @_inheritsConvenienceInitializers public class AccountAuthConstants : ObjectiveC.NSObject {
   public static let kAuthSender: Swift.String
   public static let kNativeAuthScehema: Swift.String
-  public static let kAuthMethodScep: Swift.String
   public static func isNativeAuth(authPage: Swift.String!) -> Swift.Bool
   public static func isPwdResetAvailable(authPage: Swift.String!) -> Swift.Bool
   @objc override dynamic public init()
