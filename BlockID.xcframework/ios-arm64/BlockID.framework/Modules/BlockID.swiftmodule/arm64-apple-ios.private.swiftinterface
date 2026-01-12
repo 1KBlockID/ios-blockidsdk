@@ -226,7 +226,6 @@ extension DocumentScannerViewController : SafariServices.SFSafariViewControllerD
 @objc @_inheritsConvenienceInitializers public class AccountAuthConstants : ObjectiveC.NSObject {
   public static let kAuthSender: Swift.String
   public static let kNativeAuthScehema: Swift.String
-  public static let kAuthMethodScep: Swift.String
   public static func isNativeAuth(authPage: Swift.String!) -> Swift.Bool
   public static func isPwdResetAvailable(authPage: Swift.String!) -> Swift.Bool
   @objc override dynamic public init()
@@ -591,7 +590,6 @@ public typealias BIDWalletCreationCallback = ((_ status: Swift.Bool, _ error: Er
 public typealias AccessCodeValidationAPICallback = ((_ status: Swift.Bool, _ error: ErrorResponse?, _ object: AccessCodeValidationResponseDecryptedData?) -> Swift.Void)
 public typealias AuthenticateUserCallback = ((_ status: Swift.Bool, _ sessionId: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias SessionResponseCallback = ((_ status: Swift.Bool, _ object: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
-public typealias SCEPCertificateCallback = ((_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void)
 public typealias KYCCallback = ((_ status: Swift.Bool, _ kycHash: Swift.String?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias MessageGatewaysCallback = ((_ status: Swift.Bool, _ object: [MessageGateway]?, _ error: ErrorResponse?) -> Swift.Void)
 public typealias IALCallback = ((_ status: Swift.Bool, _ ialValue: Swift.String, _ error: ErrorResponse?) -> Swift.Void)
@@ -644,9 +642,8 @@ public typealias FetchUserResponseCallBack = ((Swift.Bool, Swift.String?, ErrorR
   public func commitTempData()
   public func resetRestorationData()
   public func getTOTP() -> (totp: TOTP?, error: ErrorResponse?)
-  public func getOfflineTOTP(bidLinkedAccount: BIDLinkedAccount) -> (totp: TOTP?, error: ErrorResponse?)
   public func checkUserExist(userId: Swift.String, origin: BIDOrigin, completion: @escaping (Swift.Bool) -> ())
-  public func addPreLinkedUser(userId: Swift.String, scep_hash: Swift.String, scep_privatekey: Swift.String, scep_expiry: Swift.String, origin: BIDOrigin, account: BIDAccount?, completion: @escaping UserAPICallback)
+  public func addPreLinkedUser(userId: Swift.String, origin: BIDOrigin, account: BIDAccount?, completion: @escaping UserAPICallback)
   public func unLinkAccount(bidLinkedAccount: BIDLinkedAccount, deviceToken: Swift.String? = nil, completion: @escaping UserAPICallback)
   public func validateAccessCode(code: Swift.String, origin: BIDOrigin, completion: @escaping AccessCodeValidationAPICallback)
   public func generateSession(origin: BIDOrigin, completion: @escaping ((sessionId: Swift.String?, sessionUrl: Swift.String?), _ error: ErrorResponse?) -> Swift.Void)
@@ -672,7 +669,6 @@ public typealias FetchUserResponseCallBack = ((Swift.Bool, Swift.String?, ErrorR
   public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, extraData: [Swift.String : Any]? = nil, authFactor: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
   public func authenticateUser(controller: UIKit.UIViewController? = nil, sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, scopes: Swift.String, lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, extraData: [Swift.String : Any]? = nil, authFactor: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
   public func isTrustedSessionSources(sessionUrl: Swift.String, callback: @escaping (Swift.Bool) -> Swift.Void)
-  public func getOfflineAuthPayload(bidLinkedAccount: BIDLinkedAccount) -> Swift.String?
   public func getLicense() -> (license: BIDLicense?, error: ErrorResponse?)
   public func getBiometricAssetEnrollments() -> BiometricAssets?
   public func getDigitalAssetEnrollments() -> DigitalAssets?
@@ -682,8 +678,6 @@ public typealias FetchUserResponseCallBack = ((Swift.Bool, Swift.String?, ErrorR
   public func purgeData(forKey key: Swift.String)
   public func getVersion() -> Swift.String?
   public func verifyDocument(dvcID: Swift.String? = nil, dic: [Swift.String : Any], verifications: [Swift.String], mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping ((Swift.Bool, [Swift.String : Any]?, ErrorResponse?) -> Swift.Void))
-  public func requestSCEPCertificate(requestedAccount: BIDLinkedAccount, completion: @escaping SCEPCertificateCallback)
-  public func checkSCEPCertificate(requestedAccount: BIDLinkedAccount, completion: @escaping SCEPCertificateCallback)
   @objc deinit
 }
 extension BlockIDSDK {
@@ -1060,9 +1054,6 @@ public class DataGroup11 : DataGroup {
 }
 @_hasMissingDesignatedInitializers public class BIDOnboardedUserAccount : Swift.Codable {
   public var userId: Swift.String?
-  public var scep_hash: Swift.String?
-  public var scep_privatekey: Swift.String?
-  public var scep_expiry: Swift.String?
   public var isLinked: Swift.Bool?
   public var origin: BIDOrigin!
   public var account: BIDAccount?
@@ -1377,10 +1368,6 @@ public struct CustomErrors {
     public static let FETCH_WALLET_FAILED: (code: Swift.Int, message: Swift.String)
     public static let PASSKEY_AUTHENTICATION_FAILED: (code: Swift.Int, message: Swift.String)
   }
-  public struct SCEPCheck {
-    public static let INVALID: (code: Swift.Int, message: Swift.String)
-    public static let NOT_LINKED: (code: Swift.Int, message: Swift.String)
-  }
   public struct PublicKey {
     public static let NOT_FOUND: (code: Swift.Int, message: Swift.String)
   }
@@ -1680,17 +1667,6 @@ public class PACEInfo : SecurityInfo {
   public static func toKeyLength(oid: Swift.String) throws -> Swift.Int
   @objc deinit
 }
-public class WorkstationAuthOrigin : Swift.Codable {
-  public var api: Swift.String?
-  public var tag: Swift.String?
-  public var community: Swift.String?
-  public var publicKey: Swift.String?
-  public var scopes: Swift.String?
-  public init(api: Swift.String, tag: Swift.String, community: Swift.String, publicKey: Swift.String, scopes: Swift.String)
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
 @available(iOS 13, *)
 public class BACHandler {
   public var ksenc: [Swift.UInt8]
@@ -1713,13 +1689,9 @@ public class BACHandler {
 @_hasMissingDesignatedInitializers public class BIDLinkedAccount : Swift.Codable, Swift.Equatable {
   public var origin: BIDOrigin!
   public var userId: Swift.String
-  public var smartcardhash: Swift.String?
-  public var sceptoken: Swift.String?
-  public var scep_expiry: Swift.String?
   public var account: BIDAccount?
   public var passwordPolicy: BIDPasswordPolicy?
   public static func == (lhs: BIDLinkedAccount, rhs: BIDLinkedAccount) -> Swift.Bool
-  public func isOfflineAuthSupported() -> Swift.Bool
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1786,17 +1758,6 @@ public struct ProxyDetails {
 @_hasMissingDesignatedInitializers public class QRSplitDataPacket : Swift.Codable {
   public class func getTotalPackage(data: Swift.String, packageSize: Swift.Int) -> Swift.Int
   public class func split(offlinePayload: Swift.String, length: Swift.Int) -> [Swift.String]
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-public class OfflineAuthAccountDetail : Swift.Codable {
-  public var user: Swift.String?
-  public var did: Swift.String?
-  public var hash: Swift.String?
-  public var token: Swift.String?
-  public var account: BIDAccount?
-  public init(user: Swift.String, did: Swift.String, hash: Swift.String, token: Swift.String, account: BIDAccount?)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
