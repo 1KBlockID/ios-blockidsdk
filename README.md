@@ -21,6 +21,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ### v1.20.90
 - Removed otp seed from shared account object after authentication
 - Removed workstation OTP, scep and windows
+- Bug fixes and improvements
 
 ### v1.20.80
 - Updated authentication with UWL 
