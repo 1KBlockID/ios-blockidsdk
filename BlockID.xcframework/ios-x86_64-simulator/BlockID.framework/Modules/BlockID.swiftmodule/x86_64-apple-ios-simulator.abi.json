@@ -4995,57 +4995,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "kAuthMethodScep",
-            "printedName": "kAuthMethodScep",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7BlockID20AccountAuthConstantsC01kD10MethodScepSSvpZ",
-            "mangledName": "$s7BlockID20AccountAuthConstantsC01kD10MethodScepSSvpZ",
-            "moduleName": "BlockID",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7BlockID20AccountAuthConstantsC01kD10MethodScepSSvgZ",
-                "mangledName": "$s7BlockID20AccountAuthConstantsC01kD10MethodScepSSvgZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "isNativeAuth",
             "printedName": "isNativeAuth(authPage:)",
@@ -68217,13 +68166,6 @@
       "offset": 303,
       "length": 24,
       "value": "\"blockid:\/\/authenticate\""
-    },
-    {
-      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDOrigin.swift",
-      "kind": "StringLiteral",
-      "offset": 370,
-      "length": 6,
-      "value": "\"scep\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
