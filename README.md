@@ -9,7 +9,7 @@
 BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.50'
+   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.90'
 ```
 
 ## License
@@ -17,6 +17,39 @@ BlockID is available through CocoaPods. To install it, simply add the following 
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+
+### v1.20.90
+- Removed otp seed from shared account object after authentication
+- Removed Workstation OTP, SCEP and Windows login related implementation
+- Bug fixes and improvements
+
+### v1.20.80
+- Updated authentication with UWL 
+- SDK now allows to accept uid as store id during id proofing session creation
+- Updated support for trusted sessions sources
+
+### v1.20.71
+- Updated nonce signature authentication
+
+### v1.20.70
+- Bug fixes and improvements 
+
+### v1.20.60
+- Fixed OTP remaining time issue, now OTP time will be 1 to 30 sec
+- Updated logic of account transfer while restoring
+- Added a public function to fetch community configurations
+
+### v1.20.55
+- Added support for Passkey registration and verification
+
+### v1.20.54
+- Fixed an issue on removing account
+
+### v1.20.53
+- Added updateAccounts function to update accounts from the app
+  
+### v1.20.51
+- Added nonce signing during authentication
 
 ### v1.20.50
 - Send the session ID upon clicking "Done" during document scanning
