@@ -37,6 +37,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.dependency 'CryptoSwift', '~> 1.8.4'
   s.dependency 'BigInt', '~> 5.2.0'
   s.dependency 'OpenSSL-Universal', '~> 1.1.2300'
+  s.dependency 'SwiftProtobuf', '~> 1.27'
 
   # specify minimum swift version
   s.swift_versions = '5.5'
