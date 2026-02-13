@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UAmu5+6WSPa/mKbz3PAFenvTK/E=
+		u3MrspayulKzaUp7A7k7oQCrwwA=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -59,10 +59,6 @@
 		<key>PasskeyInternalVC.nib</key>
 		<data>
 		AF9hf6Cds8BtcSVgp5ARCc67Rak=
-		</data>
-		<key>PrivacyInfo.xcprivacy</key>
-		<data>
-		RuuTpNkAN5G/IsH3qkPBPZxbFC8=
 		</data>
 		<key>QRGenerator.nib</key>
 		<data>
@@ -196,13 +192,6 @@
 			<key>hash2</key>
 			<data>
 			a7Lw5JbdpRNjLhNKA2wT9is1kkNL7fyBNt7varvPFyw=
-			</data>
-		</dict>
-		<key>PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			aTza4vNKFwQ2kP0y+n3DtZFSnpC0yUZedbXa5MWV9mY=
 			</data>
 		</dict>
 		<key>QRGenerator.nib</key>
