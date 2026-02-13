@@ -9,7 +9,7 @@
 BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
 
 ```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.55'
+   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.20.56'
 ```
 
 ## License
@@ -18,7 +18,10 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 
-# v1.20.55
+# v1.20.56
+- Added support for Missing privacy manifest regarding Alamofire
+
+### v1.20.55
 - Added passkey registration and authentication support
 
 ### v1.20.54
