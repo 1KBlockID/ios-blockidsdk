@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/BlockID.framework/BlockID</key>
 		<data>
-		YHEaWjMkIX30GyR0Rr+ijQxKM5o=
+		Zn3u2UZDv4+8co+icI8BrxWVhwI=
 		</data>
 		<key>ios-arm64/BlockID.framework/DocumentScannerViewController.nib</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>ios-arm64/BlockID.framework/Info.plist</key>
 		<data>
-		Fa+55B3akrbmKcyEao4ekQ24G8Q=
+		ooYGnJd+bALbRDZoqTnqiTQ9fZM=
 		</data>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		jucozUcVxXWsVE+GFydOV3t9zAE=
+		zpvWhTHLiepxAbtjMDNRkobL/wk=
 		</data>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>ios-arm64/BlockID.framework/_CodeSignature/CodeResources</key>
 		<data>
-		+Z3H2HL5baO6v/ZmsjBDE4EW2QM=
+		AO7Da8vbRqGfYf0YXh9qVEgdAA4=
 		</data>
 		<key>ios-arm64/BlockID.framework/default.metallib</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/BlockID</key>
 		<data>
-		xdzJ2ue8Kf1PPMJvDmEC3JgTtGg=
+		OPCt4iXd+k7oiZlRT0II77PGs9U=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/DocumentScannerViewController.nib</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Info.plist</key>
 		<data>
-		NrTWTYuZI6QR4t9BfH0qEDonXGo=
+		Z0nuWLzypmPnsYAZs1rAYcPFnuw=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jucozUcVxXWsVE+GFydOV3t9zAE=
+		zpvWhTHLiepxAbtjMDNRkobL/wk=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/_CodeSignature/CodeResources</key>
 		<data>
-		bf9Geo6GPrjuM7s7CEzCaqrPyRU=
+		6nod0pL8FFYqHCkOY2nLFMRWAwg=
 		</data>
 		<key>ios-x86_64-simulator/BlockID.framework/default.metallib</key>
 		<data>
@@ -234,7 +234,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PgtG9uRicYL7Md0+DrlKThEqNAxLwR5XG/J+KIB2xDc=
+			WHYTovTokPLV4zi4X03sPNSp1v0uJpRUHryMRo2L2nA=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/DocumentScannerViewController.nib</key>
@@ -276,14 +276,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aaYrVLmpUWBY84ut2cmg4oakJu7dgCrcne9D4uMkz/Q=
+			5lpyach7q5kwB3XN/5wJAjlLU/InyKaYkb4mT7lOJWg=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RExbbJVHCEBmfEuT/0ipyHb3mya0HMetxFjb7lDhesY=
+			u9dY4Uj3VWnc5OJBj5KuyFM5/II9OQZ1BY15L+I363U=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -353,7 +353,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zJ3eWVuBlLTfvTAYuL4+q2oFP8HxlF4St8Z6/fNiuYo=
+			AO7DnipvVlSjTMvBMndEd8+OCRs6kSTwyAErV04wdG0=
 			</data>
 		</dict>
 		<key>ios-arm64/BlockID.framework/default.metallib</key>
@@ -423,7 +423,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FO17VCmPYmwJig6rLR+tbpXwrJxVlSA7ON12xR8oUJI=
+			txq44ZJs7HTCdKq/IylD2chktKXGrx/TISyRbVL29ls=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/DocumentScannerViewController.nib</key>
@@ -465,14 +465,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vGzFJyRZalf6hQteYcYJPC30s83mVMa1ATEBSOt2e4Y=
+			mYBwn5MUKibUMW7B7ZHDUomjLJanF2Kvd/4aJiO/X5E=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RExbbJVHCEBmfEuT/0ipyHb3mya0HMetxFjb7lDhesY=
+			u9dY4Uj3VWnc5OJBj5KuyFM5/II9OQZ1BY15L+I363U=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/Modules/BlockID.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -542,7 +542,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FUfSycMP5jjwaqrWkRKdfaxrCvvvxvgacfNRLrsnNng=
+			x5IaU9PrIGDbxbP9A8nppVL5OWyyvgEchj/Wagyo3cI=
 			</data>
 		</dict>
 		<key>ios-x86_64-simulator/BlockID.framework/default.metallib</key>
