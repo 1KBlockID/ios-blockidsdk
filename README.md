@@ -19,8 +19,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 
 ### v1.30.10
-- Bug fixes
-- Updated polling response structure for document scanning
+- Updated supporting libraries
 
 ### v1.30.00
 - Updated compatibility with Xcode 26.0.1

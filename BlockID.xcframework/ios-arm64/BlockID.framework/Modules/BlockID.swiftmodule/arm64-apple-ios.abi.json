@@ -6774,7 +6774,7 @@
                 "kind": "TypeNominal",
                 "name": "HTTPMethod",
                 "printedName": "Alamofire.HTTPMethod",
-                "usr": "s:9Alamofire10HTTPMethodO"
+                "usr": "s:9Alamofire10HTTPMethodV"
               },
               {
                 "kind": "TypeNominal",
@@ -6819,23 +6819,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
+                "name": "HTTPHeaders",
+                "printedName": "Alamofire.HTTPHeaders",
+                "usr": "s:9Alamofire11HTTPHeadersV"
               },
               {
                 "kind": "TypeFunc",
@@ -6914,8 +6900,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID17SessionPollingAPIC04makeC7Request13requestMethod10serviceUrl0H4Body0H7Headers10completiony9Alamofire10HTTPMethodO_SSSgSDySSyXlGSgSDyS2SGySiSg_AA18BIDSessionResponseCSgAmA05ErrorR0CSgtctF",
-            "mangledName": "$s7BlockID17SessionPollingAPIC04makeC7Request13requestMethod10serviceUrl0H4Body0H7Headers10completiony9Alamofire10HTTPMethodO_SSSgSDySSyXlGSgSDyS2SGySiSg_AA18BIDSessionResponseCSgAmA05ErrorR0CSgtctF",
+            "usr": "s:7BlockID17SessionPollingAPIC04makeC7Request13requestMethod10serviceUrl0H4Body0H7Headers10completiony9Alamofire10HTTPMethodV_SSSgSDySSyXlGSgAJ11HTTPHeadersVySiSg_AA18BIDSessionResponseCSgAmA05ErrorS0CSgtctF",
+            "mangledName": "$s7BlockID17SessionPollingAPIC04makeC7Request13requestMethod10serviceUrl0H4Body0H7Headers10completiony9Alamofire10HTTPMethodV_SSSgSDySSyXlGSgAJ11HTTPHeadersVySiSg_AA18BIDSessionResponseCSgAmA05ErrorS0CSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -59963,7 +59949,7 @@
                 "kind": "TypeNominal",
                 "name": "HTTPMethod",
                 "printedName": "Alamofire.HTTPMethod",
-                "usr": "s:9Alamofire10HTTPMethodO"
+                "usr": "s:9Alamofire10HTTPMethodV"
               },
               {
                 "kind": "TypeNominal",
@@ -60008,23 +59994,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
+                "name": "HTTPHeaders",
+                "printedName": "Alamofire.HTTPHeaders",
+                "usr": "s:9Alamofire11HTTPHeadersV"
               },
               {
                 "kind": "TypeFunc",
@@ -60088,8 +60060,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID17BIDNetworkManagerC11makeRequest13requestMethod10serviceUrl0G4Body0G7Headers10completiony9Alamofire10HTTPMethodO_SSSgSDySSyXlGSgSDyS2SGySiSg10statusCode_s5Error_pSg5errorxSg6resultt_tctSeRzlF",
-            "mangledName": "$s7BlockID17BIDNetworkManagerC11makeRequest13requestMethod10serviceUrl0G4Body0G7Headers10completiony9Alamofire10HTTPMethodO_SSSgSDySSyXlGSgSDyS2SGySiSg10statusCode_s5Error_pSg5errorxSg6resultt_tctSeRzlF",
+            "usr": "s:7BlockID17BIDNetworkManagerC11makeRequest13requestMethod10serviceUrl0G4Body0G7Headers10completiony9Alamofire10HTTPMethodV_SSSgSDySSyXlGSgAJ11HTTPHeadersVySiSg10statusCode_s5Error_pSg5errorxSg6resultt_tctSeRzlF",
+            "mangledName": "$s7BlockID17BIDNetworkManagerC11makeRequest13requestMethod10serviceUrl0G4Body0G7Headers10completiony9Alamofire10HTTPMethodV_SSSgSDySSyXlGSgAJ11HTTPHeadersVySiSg10statusCode_s5Error_pSg5errorxSg6resultt_tctSeRzlF",
             "moduleName": "BlockID",
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
             "sugared_genericSig": "<T where T : Swift.Decodable>",
@@ -60113,7 +60085,7 @@
                 "kind": "TypeNominal",
                 "name": "HTTPMethod",
                 "printedName": "Alamofire.HTTPMethod",
-                "usr": "s:9Alamofire10HTTPMethodO"
+                "usr": "s:9Alamofire10HTTPMethodV"
               },
               {
                 "kind": "TypeNominal",
@@ -60158,23 +60130,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
+                "name": "HTTPHeaders",
+                "printedName": "Alamofire.HTTPHeaders",
+                "usr": "s:9Alamofire11HTTPHeadersV"
               },
               {
                 "kind": "TypeFunc",
@@ -60231,8 +60189,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID17BIDNetworkManagerC11makeRequest13requestMethod10serviceUrl0G4Body0G7Headers10completiony9Alamofire10HTTPMethodO_SSSgSDySSyXlGSgSDyS2SGyAM_AMSbtctF",
-            "mangledName": "$s7BlockID17BIDNetworkManagerC11makeRequest13requestMethod10serviceUrl0G4Body0G7Headers10completiony9Alamofire10HTTPMethodO_SSSgSDySSyXlGSgSDyS2SGyAM_AMSbtctF",
+            "usr": "s:7BlockID17BIDNetworkManagerC11makeRequest13requestMethod10serviceUrl0G4Body0G7Headers10completiony9Alamofire10HTTPMethodV_SSSgSDySSyXlGSgAJ11HTTPHeadersVyAM_AMSbtctF",
+            "mangledName": "$s7BlockID17BIDNetworkManagerC11makeRequest13requestMethod10serviceUrl0G4Body0G7Headers10completiony9Alamofire10HTTPMethodV_SSSgSDySSyXlGSgAJ11HTTPHeadersVyAM_AMSbtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -60253,7 +60211,7 @@
                 "kind": "TypeNominal",
                 "name": "HTTPMethod",
                 "printedName": "Alamofire.HTTPMethod",
-                "usr": "s:9Alamofire10HTTPMethodO"
+                "usr": "s:9Alamofire10HTTPMethodV"
               },
               {
                 "kind": "TypeNominal",
@@ -60298,23 +60256,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
+                "name": "HTTPHeaders",
+                "printedName": "Alamofire.HTTPHeaders",
+                "usr": "s:9Alamofire11HTTPHeadersV"
               },
               {
                 "kind": "TypeFunc",
@@ -60379,8 +60323,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID17BIDNetworkManagerC25makeRequestWithStatusCode13requestMethod10serviceUrl0J4Body0J7Headers10completiony9Alamofire10HTTPMethodO_SSSgSDySSyXlGSgSDyS2SGySiSg_s5Error_pSgAMtctF",
-            "mangledName": "$s7BlockID17BIDNetworkManagerC25makeRequestWithStatusCode13requestMethod10serviceUrl0J4Body0J7Headers10completiony9Alamofire10HTTPMethodO_SSSgSDySSyXlGSgSDyS2SGySiSg_s5Error_pSgAMtctF",
+            "usr": "s:7BlockID17BIDNetworkManagerC25makeRequestWithStatusCode13requestMethod10serviceUrl0J4Body0J7Headers10completiony9Alamofire10HTTPMethodV_SSSgSDySSyXlGSgAJ11HTTPHeadersVySiSg_s5Error_pSgAMtctF",
+            "mangledName": "$s7BlockID17BIDNetworkManagerC25makeRequestWithStatusCode13requestMethod10serviceUrl0J4Body0J7Headers10completiony9Alamofire10HTTPMethodV_SSSgSDySSyXlGSgAJ11HTTPHeadersVySiSg_s5Error_pSgAMtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -60401,7 +60345,7 @@
                 "kind": "TypeNominal",
                 "name": "HTTPMethod",
                 "printedName": "Alamofire.HTTPMethod",
-                "usr": "s:9Alamofire10HTTPMethodO"
+                "usr": "s:9Alamofire10HTTPMethodV"
               },
               {
                 "kind": "TypeNominal",
@@ -60446,23 +60390,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
+                "name": "HTTPHeaders",
+                "printedName": "Alamofire.HTTPHeaders",
+                "usr": "s:9Alamofire11HTTPHeadersV"
               },
               {
                 "kind": "TypeFunc",
@@ -60526,8 +60456,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID17BIDNetworkManagerC7request0E6Method10serviceUrl0E4Body0E7Headers10completiony9Alamofire10HTTPMethodO_SSSgSDySSyXlGSgSDyS2SGySiSg_s5Error_pSgypSgtctF",
-            "mangledName": "$s7BlockID17BIDNetworkManagerC7request0E6Method10serviceUrl0E4Body0E7Headers10completiony9Alamofire10HTTPMethodO_SSSgSDySSyXlGSgSDyS2SGySiSg_s5Error_pSgypSgtctF",
+            "usr": "s:7BlockID17BIDNetworkManagerC7request0E6Method10serviceUrl0E4Body0E7Headers10completiony9Alamofire10HTTPMethodV_SSSgSDySSyXlGSgAJ11HTTPHeadersVySiSg_s5Error_pSgypSgtctF",
+            "mangledName": "$s7BlockID17BIDNetworkManagerC7request0E6Method10serviceUrl0E4Body0E7Headers10completiony9Alamofire10HTTPMethodV_SSSgSDySSyXlGSgAJ11HTTPHeadersVySiSg_s5Error_pSgypSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -60549,7 +60479,7 @@
                 "kind": "TypeNominal",
                 "name": "HTTPMethod",
                 "printedName": "Alamofire.HTTPMethod",
-                "usr": "s:9Alamofire10HTTPMethodO"
+                "usr": "s:9Alamofire10HTTPMethodV"
               },
               {
                 "kind": "TypeNominal",
@@ -60585,23 +60515,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
+                "name": "HTTPHeaders",
+                "printedName": "Alamofire.HTTPHeaders",
+                "usr": "s:9Alamofire11HTTPHeadersV"
               },
               {
                 "kind": "TypeFunc",
@@ -60665,8 +60581,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID17BIDNetworkManagerC20makeMultipartRequest13requestMethod10serviceUrl17multipartFormData0H7Headers10completiony9Alamofire10HTTPMethodO_SSSgyAJ0fmN0CcSDyS2SGySiSg10statusCode_s5Error_pSg5errorxSg6resultt_tctSeRzlF",
-            "mangledName": "$s7BlockID17BIDNetworkManagerC20makeMultipartRequest13requestMethod10serviceUrl17multipartFormData0H7Headers10completiony9Alamofire10HTTPMethodO_SSSgyAJ0fmN0CcSDyS2SGySiSg10statusCode_s5Error_pSg5errorxSg6resultt_tctSeRzlF",
+            "usr": "s:7BlockID17BIDNetworkManagerC20makeMultipartRequest13requestMethod10serviceUrl17multipartFormData0H7Headers10completiony9Alamofire10HTTPMethodV_SSSgyAJ0fmN0CcAJ11HTTPHeadersVySiSg10statusCode_s5Error_pSg5errorxSg6resultt_tctSeRzlF",
+            "mangledName": "$s7BlockID17BIDNetworkManagerC20makeMultipartRequest13requestMethod10serviceUrl17multipartFormData0H7Headers10completiony9Alamofire10HTTPMethodV_SSSgyAJ0fmN0CcAJ11HTTPHeadersVySiSg10statusCode_s5Error_pSg5errorxSg6resultt_tctSeRzlF",
             "moduleName": "BlockID",
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
             "sugared_genericSig": "<T where T : Swift.Decodable>",
