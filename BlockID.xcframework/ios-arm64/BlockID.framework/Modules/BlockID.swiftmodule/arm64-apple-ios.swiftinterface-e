@@ -797,7 +797,7 @@ public typealias FetchUserResponseCallBack = (Swift.Bool, Swift.String?, BlockID
   #endif
   public func validateAccessCode(code: Swift.String, origin: BlockID.BIDOrigin, completion: @escaping BlockID.AccessCodeValidationAPICallback)
   #if compiler(>=5.3) && $NonescapableTypes
-  public func generateSession(origin: BlockID.BIDOrigin, completion: @escaping ((sessionId: Swift.String?, sessionUrl: Swift.String?), _ error: BlockID.ErrorResponse?) -> Swift.Void)
+  public func generateSession(origin: BlockID.BIDOrigin, metaData: BlockID.BIDSessionMetaData? = nil, completion: @escaping ((sessionId: Swift.String?, sessionUrl: Swift.String?), _ error: BlockID.ErrorResponse?) -> Swift.Void)
   #endif
   public func getSessionResponse(completion: @escaping BlockID.SessionResponseCallback)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -1090,7 +1090,8 @@ public enum AuthAssetType : Swift.String {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers public class BIDSessionMetaData : Swift.Codable {
+public class BIDSessionMetaData : Swift.Codable {
+  public init(privateInfo: Swift.String, purpose: Swift.String, context: Swift.String)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws

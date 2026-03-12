@@ -17948,7 +17948,7 @@
           {
             "kind": "Function",
             "name": "generateSession",
-            "printedName": "generateSession(origin:completion:)",
+            "printedName": "generateSession(origin:metaData:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -17960,6 +17960,21 @@
                 "name": "BIDOrigin",
                 "printedName": "BlockID.BIDOrigin",
                 "usr": "s:7BlockID9BIDOriginC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BlockID.BIDSessionMetaData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BIDSessionMetaData",
+                    "printedName": "BlockID.BIDSessionMetaData",
+                    "usr": "s:7BlockID18BIDSessionMetaDataC"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -18031,8 +18046,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC15generateSession6origin10completionyAA9BIDOriginC_ySSSg9sessionId_AI0I3Urlt_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC15generateSession6origin10completionyAA9BIDOriginC_ySSSg9sessionId_AI0I3Urlt_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID0A5IDSDKC15generateSession6origin8metaData10completionyAA9BIDOriginC_AA014BIDSessionMetaH0CSgySSSg9sessionId_AM0M3Urlt_AA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC15generateSession6origin8metaData10completionyAA9BIDOriginC_AA014BIDSessionMetaH0CSgySSSg9sessionId_AM0M3Urlt_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -26257,6 +26272,45 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(privateInfo:purpose:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BIDSessionMetaData",
+                "printedName": "BlockID.BIDSessionMetaData",
+                "usr": "s:7BlockID18BIDSessionMetaDataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7BlockID18BIDSessionMetaDataC11privateInfo7purpose7contextACSS_S2Stcfc",
+            "mangledName": "$s7BlockID18BIDSessionMetaDataC11privateInfo7purpose7contextACSS_S2Stcfc",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(from:)",
             "children": [
               {
@@ -26316,7 +26370,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -69849,35 +69902,35 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 96815,
+      "offset": 96906,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 114912,
+      "offset": 115003,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 114981,
+      "offset": 115072,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 115214,
+      "offset": 115305,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 121599,
+      "offset": 121690,
       "length": 1,
       "value": "0"
     },
