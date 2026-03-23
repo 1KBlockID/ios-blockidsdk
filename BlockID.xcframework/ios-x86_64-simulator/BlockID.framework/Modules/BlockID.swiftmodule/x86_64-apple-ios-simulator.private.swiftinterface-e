@@ -1090,8 +1090,9 @@ public enum AuthAssetType : Swift.String {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public class BIDSessionMetaData : Swift.Codable {
-  public init(privateInfo: Swift.String, purpose: Swift.String, context: Swift.String)
+@_hasMissingDesignatedInitializers public class BIDSessionMetaData : Swift.Codable {
+  public var purpose: Swift.String?
+  public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -2098,13 +2099,6 @@ public struct ProxyDetails {
   #endif
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class QRSplitDataPacket : Swift.Codable {
-  public class func getTotalPackage(data: Swift.String, packageSize: Swift.Int) -> Swift.Int
-  public class func split(offlinePayload: Swift.String, length: Swift.Int) -> [Swift.String]
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
 @_hasMissingDesignatedInitializers public class BIDWallet : Swift.Codable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -2238,10 +2232,6 @@ extension BlockID.APIFailedError : Foundation.LocalizedError {
     get
   }
   #endif
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class QRGenerator : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public func generateCode(_ string: Swift.String, foregroundColor: UIKit.UIColor = .black, backgroundColor: UIKit.UIColor = .white)
-  @objc deinit
 }
 extension BlockID.KeychainItemAccessibility : Swift.Equatable {}
 extension BlockID.KeychainItemAccessibility : Swift.Hashable {}

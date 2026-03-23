@@ -20,6 +20,8 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ### v1.30.10
 - Updated supporting libraries
+- Added improvement on creating session api
+- Updated BIDSessionMetaData access specifier for purpose property
 
 ### v1.30.00
 - Updated compatibility with Xcode 26.0.1
