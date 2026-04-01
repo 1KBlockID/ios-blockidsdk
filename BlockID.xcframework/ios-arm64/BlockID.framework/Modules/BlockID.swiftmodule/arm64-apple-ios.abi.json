@@ -2540,6 +2540,253 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "OTPSeedUpdatedAccountResult",
+        "printedName": "OTPSeedUpdatedAccountResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "account",
+            "printedName": "account",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BIDLinkedAccount",
+                "printedName": "BlockID.BIDLinkedAccount",
+                "usr": "s:7BlockID16BIDLinkedAccountC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC7accountAA09BIDLinkedE0Cvp",
+            "mangledName": "$s7BlockID27OTPSeedUpdatedAccountResultC7accountAA09BIDLinkedE0Cvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BIDLinkedAccount",
+                    "printedName": "BlockID.BIDLinkedAccount",
+                    "usr": "s:7BlockID16BIDLinkedAccountC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC7accountAA09BIDLinkedE0Cvg",
+                "mangledName": "$s7BlockID27OTPSeedUpdatedAccountResultC7accountAA09BIDLinkedE0Cvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC7successSbvp",
+            "mangledName": "$s7BlockID27OTPSeedUpdatedAccountResultC7successSbvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC7successSbvg",
+                "mangledName": "$s7BlockID27OTPSeedUpdatedAccountResultC7successSbvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BlockID.ErrorResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorResponse",
+                    "printedName": "BlockID.ErrorResponse",
+                    "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC5errorAA13ErrorResponseCSgvp",
+            "mangledName": "$s7BlockID27OTPSeedUpdatedAccountResultC5errorAA13ErrorResponseCSgvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BlockID.ErrorResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErrorResponse",
+                        "printedName": "BlockID.ErrorResponse",
+                        "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC5errorAA13ErrorResponseCSgvg",
+                "mangledName": "$s7BlockID27OTPSeedUpdatedAccountResultC5errorAA13ErrorResponseCSgvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(account:success:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OTPSeedUpdatedAccountResult",
+                "printedName": "BlockID.OTPSeedUpdatedAccountResult",
+                "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDLinkedAccount",
+                "printedName": "BlockID.BIDLinkedAccount",
+                "usr": "s:7BlockID16BIDLinkedAccountC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BlockID.ErrorResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErrorResponse",
+                    "printedName": "BlockID.ErrorResponse",
+                    "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC7account7success5errorAcA09BIDLinkedE0C_SbAA13ErrorResponseCSgtcfc",
+            "mangledName": "$s7BlockID27OTPSeedUpdatedAccountResultC7account7success5errorAcA09BIDLinkedE0C_SbAA13ErrorResponseCSgtcfc",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC",
+        "mangledName": "$s7BlockID27OTPSeedUpdatedAccountResultC",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BIDAccount",
         "printedName": "BIDAccount",
         "children": [
@@ -15649,6 +15896,226 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "OTPSeedUpdateAction",
+        "printedName": "OTPSeedUpdateAction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "emptyAccounts",
+            "printedName": "emptyAccounts",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BlockID.OTPSeedUpdateAction.Type) -> BlockID.OTPSeedUpdateAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OTPSeedUpdateAction",
+                    "printedName": "BlockID.OTPSeedUpdateAction",
+                    "usr": "s:7BlockID19OTPSeedUpdateActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BlockID.OTPSeedUpdateAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OTPSeedUpdateAction",
+                        "printedName": "BlockID.OTPSeedUpdateAction",
+                        "usr": "s:7BlockID19OTPSeedUpdateActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7BlockID19OTPSeedUpdateActionO13emptyAccountsyA2CmF",
+            "mangledName": "$s7BlockID19OTPSeedUpdateActionO13emptyAccountsyA2CmF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "executed",
+            "printedName": "executed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BlockID.OTPSeedUpdateAction.Type) -> BlockID.OTPSeedUpdateAction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OTPSeedUpdateAction",
+                    "printedName": "BlockID.OTPSeedUpdateAction",
+                    "usr": "s:7BlockID19OTPSeedUpdateActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BlockID.OTPSeedUpdateAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OTPSeedUpdateAction",
+                        "printedName": "BlockID.OTPSeedUpdateAction",
+                        "usr": "s:7BlockID19OTPSeedUpdateActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7BlockID19OTPSeedUpdateActionO8executedyA2CmF",
+            "mangledName": "$s7BlockID19OTPSeedUpdateActionO8executedyA2CmF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OTPSeedUpdateAction",
+                "printedName": "BlockID.OTPSeedUpdateAction",
+                "usr": "s:7BlockID19OTPSeedUpdateActionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OTPSeedUpdateAction",
+                "printedName": "BlockID.OTPSeedUpdateAction",
+                "usr": "s:7BlockID19OTPSeedUpdateActionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID19OTPSeedUpdateActionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7BlockID19OTPSeedUpdateActionO2eeoiySbAC_ACtFZ",
+            "moduleName": "BlockID",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID19OTPSeedUpdateActionO9hashValueSivp",
+            "mangledName": "$s7BlockID19OTPSeedUpdateActionO9hashValueSivp",
+            "moduleName": "BlockID",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID19OTPSeedUpdateActionO9hashValueSivg",
+                "mangledName": "$s7BlockID19OTPSeedUpdateActionO9hashValueSivg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID19OTPSeedUpdateActionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7BlockID19OTPSeedUpdateActionO4hash4intoys6HasherVz_tF",
+            "moduleName": "BlockID",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7BlockID19OTPSeedUpdateActionO",
+        "mangledName": "$s7BlockID19OTPSeedUpdateActionO",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BlockIDSDK",
         "printedName": "BlockIDSDK",
         "children": [
@@ -21250,8 +21717,8 @@
           },
           {
             "kind": "Function",
-            "name": "fetchUserAccountsInfo",
-            "printedName": "fetchUserAccountsInfo(accounts:completion:)",
+            "name": "updateOTPSeedsForAccounts",
+            "printedName": "updateOTPSeedsForAccounts(accounts:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -21271,6 +21738,146 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, [BlockID.OTPSeedUpdatedAccountResult], BlockID.OTPSeedUpdateAction) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, [BlockID.OTPSeedUpdatedAccountResult], BlockID.OTPSeedUpdateAction)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[BlockID.OTPSeedUpdatedAccountResult]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OTPSeedUpdatedAccountResult",
+                            "printedName": "BlockID.OTPSeedUpdatedAccountResult",
+                            "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OTPSeedUpdateAction",
+                        "printedName": "BlockID.OTPSeedUpdateAction",
+                        "usr": "s:7BlockID19OTPSeedUpdateActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC25updateOTPSeedsForAccounts8accounts10completionySayAA16BIDLinkedAccountCG_ySb_SayAA014OTPSeedUpdatedK6ResultCGAA0L12UpdateActionOtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC25updateOTPSeedsForAccounts8accounts10completionySayAA16BIDLinkedAccountCG_ySb_SayAA014OTPSeedUpdatedK6ResultCGAA0L12UpdateActionOtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateOTPSeedForSingleAccount",
+            "printedName": "updateOTPSeedForSingleAccount(account:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDLinkedAccount",
+                "printedName": "BlockID.BIDLinkedAccount",
+                "usr": "s:7BlockID16BIDLinkedAccountC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, [BlockID.OTPSeedUpdatedAccountResult], BlockID.OTPSeedUpdateAction) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, [BlockID.OTPSeedUpdatedAccountResult], BlockID.OTPSeedUpdateAction)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[BlockID.OTPSeedUpdatedAccountResult]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OTPSeedUpdatedAccountResult",
+                            "printedName": "BlockID.OTPSeedUpdatedAccountResult",
+                            "usr": "s:7BlockID27OTPSeedUpdatedAccountResultC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OTPSeedUpdateAction",
+                        "printedName": "BlockID.OTPSeedUpdateAction",
+                        "usr": "s:7BlockID19OTPSeedUpdateActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC29updateOTPSeedForSingleAccount7account10completionyAA09BIDLinkedH0C_ySb_SayAA0e7UpdatedH6ResultCGAA0E12UpdateActionOtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC29updateOTPSeedForSingleAccount7account10completionyAA09BIDLinkedH0C_ySb_SayAA0e7UpdatedH6ResultCGAA0E12UpdateActionOtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "emptyOTPSeedsForAccounts",
+            "printedName": "emptyOTPSeedsForAccounts(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeFunc",
@@ -21313,11 +21920,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC21fetchUserAccountsInfo8accounts10completionySayAA16BIDLinkedAccountCG_ySb_AA13ErrorResponseCSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC21fetchUserAccountsInfo8accounts10completionySayAA16BIDLinkedAccountCG_ySb_AA13ErrorResponseCSgtctF",
+            "usr": "s:7BlockID0A5IDSDKC24emptyOTPSeedsForAccounts10completionyySb_AA13ErrorResponseCSgtc_tF",
+            "mangledName": "$s7BlockID0A5IDSDKC24emptyOTPSeedsForAccounts10completionyySb_AA13ErrorResponseCSgtc_tF",
             "moduleName": "BlockID",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -69619,56 +70227,56 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3040,
+      "offset": 3366,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "Array",
-      "offset": 3089,
+      "offset": 3415,
       "length": 2384,
       "value": "[\"https:\/\/1k-dev.1kosmos.net\/sessions\", \"https:\/\/1k-qa.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu.1kosmos.net\/sessions\", \"https:\/\/1k-uat.1kosmos.net\/sessions\", \"https:\/\/1k-pilot.1kosmos.net\/sessions\", \"https:\/\/1k-pilot-in.1kosmos.in\/sessions\", \"https:\/\/1k-prod-in.1kosmos.in\/sessions\", \"https:\/\/1k-staging-gcp-in.1kosmos.in\/sessions\", \"https:\/\/1k-fedramp-dev.1kosmos.net\/sessions\", \"https:\/\/1k-perf-client.1kosmos.net\/sessions\", \"https:\/\/1k-perf-root.1kosmos.net\/sessions\", \"https:\/\/1k-staging-gcp-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west2.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-dev-aws-01.1kosmos.net\/sessions\", \"https:\/\/1k-dev-fedramp-aws.1kosmos.net\/sessions\", \"https:\/\/1k-staging-aws-01.1kosmos.net\/sessions\", \"https:\/\/1k-uat-govcloud.1kosmos.net\/sessions\", \"https:\/\/1k-staging-govcloud.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west2.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu.1kosmos.net\/sessions\", \"https:\/\/1k-staging-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-fed.1kosmos.net\/sessions\", \"https:\/\/1k-prod-sg.1kosmos.net\/sessions\"]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5552,
+      "offset": 5878,
       "length": 6,
       "value": "\"IAL1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 97401,
+      "offset": 97727,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 115498,
+      "offset": 115824,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 115567,
+      "offset": 115893,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 115800,
+      "offset": 116126,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 122185,
+      "offset": 122511,
       "length": 1,
       "value": "0"
     },

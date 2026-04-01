@@ -158,6 +158,15 @@ public enum KeychainItemAccessibility {
     get
   }
 }
+public class OTPSeedUpdatedAccountResult {
+  final public let account: BlockID.BIDLinkedAccount
+  final public let success: Swift.Bool
+  final public let error: BlockID.ErrorResponse?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(account: BlockID.BIDLinkedAccount, success: Swift.Bool, error: BlockID.ErrorResponse?)
+  #endif
+  @objc deinit
+}
 public class BIDAccount : Swift.Codable {
   public var source: Swift.String?
   public var tenantId: Swift.String?
@@ -721,13 +730,23 @@ public typealias VCsCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResp
 public typealias VPCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: Swift.String?) -> Swift.Void
 public typealias FetchConfigCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: Swift.String?) -> Swift.Void
 public typealias FetchDocumentsCallback = (_ status: Swift.Bool, _ responseDict: [Swift.String : Any]?, _ error: BlockID.ErrorResponse?) -> Swift.Void
-public typealias FetchUserAccountsInfoCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias DocumentSessionCallback = (_ status: Swift.Bool, _ response: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias PollSessionCallback = (_ status: Swift.Bool, _ response: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias RestoreWalletWithLiveIDCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias UserAccountsRemovedCallback = (_ status: Swift.Bool, _ response: [BlockID.BIDLinkedAccount]?, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias PasskeyCallback = (_ status: Swift.Bool, _ response: BlockID.PasskeyResponse?, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias FetchUserResponseCallBack = (Swift.Bool, Swift.String?, BlockID.ErrorResponse?) -> Swift.Void
+public typealias EmptyOTPSeedsForAccountsCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void
+public typealias OTPSeedUpdatedCallback = (_ status: Swift.Bool, _ results: [BlockID.OTPSeedUpdatedAccountResult], _ action: BlockID.OTPSeedUpdateAction) -> Swift.Void
+public enum OTPSeedUpdateAction {
+  case emptyAccounts
+  case executed
+  public static func == (a: BlockID.OTPSeedUpdateAction, b: BlockID.OTPSeedUpdateAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.BlockIDSDK
   public func isReady() -> Swift.Bool
@@ -904,9 +923,9 @@ extension BlockID.BlockIDSDK {
   #if compiler(>=5.3) && $NonescapableTypes
   public func updateAccountInfo(account: BlockID.BIDLinkedAccount, pushID: Swift.String? = nil, deviceInfo: [Swift.String : Any], completion: @escaping BlockID.UpdateAccInfoCallback)
   #endif
-}
-extension BlockID.BlockIDSDK {
-  public func fetchUserAccountsInfo(accounts: [BlockID.BIDLinkedAccount], completion: @escaping BlockID.FetchUserAccountsInfoCallback)
+  public func updateOTPSeedsForAccounts(accounts: [BlockID.BIDLinkedAccount], completion: @escaping BlockID.OTPSeedUpdatedCallback)
+  public func updateOTPSeedForSingleAccount(account: BlockID.BIDLinkedAccount, completion: @escaping BlockID.OTPSeedUpdatedCallback)
+  public func emptyOTPSeedsForAccounts(completion: @escaping BlockID.EmptyOTPSeedsForAccountsCallback)
   public func getRemovedAccountList(completion: @escaping BlockID.UserAccountsRemovedCallback)
   public func fetchUserByUserName(tenant: BlockID.BIDTenant, userName: Swift.String, completion: @escaping BlockID.FetchUserResponseCallBack)
 }
@@ -2247,6 +2266,8 @@ extension BlockID.BiometricType : Swift.Hashable {}
 extension BlockID.LogLevel : Swift.Equatable {}
 extension BlockID.LogLevel : Swift.Hashable {}
 extension BlockID.LogLevel : Swift.RawRepresentable {}
+extension BlockID.OTPSeedUpdateAction : Swift.Equatable {}
+extension BlockID.OTPSeedUpdateAction : Swift.Hashable {}
 extension BlockID.TOTPUtils.Algorithm : Swift.Hashable {}
 extension BlockID.TOTPUtils.Error : Swift.Equatable {}
 extension BlockID.TOTPUtils.Error : Swift.Hashable {}
