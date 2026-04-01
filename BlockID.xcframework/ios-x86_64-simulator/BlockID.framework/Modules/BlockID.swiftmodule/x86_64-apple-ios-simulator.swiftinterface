@@ -158,6 +158,15 @@ public enum KeychainItemAccessibility {
     get
   }
 }
+public class OTPSeedUpdatedAccountResult {
+  final public let account: BIDLinkedAccount
+  final public let success: Swift.Bool
+  final public let error: ErrorResponse?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(account: BIDLinkedAccount, success: Swift.Bool, error: ErrorResponse?)
+  #endif
+  @objc deinit
+}
 public class BIDAccount : Swift.Codable {
   public var source: Swift.String?
   public var tenantId: Swift.String?
@@ -721,13 +730,23 @@ public typealias VCsCallback = (_ status: Swift.Bool, _ error: ErrorResponse?, _
 public typealias VPCallback = (_ status: Swift.Bool, _ error: ErrorResponse?, _ response: Swift.String?) -> Swift.Void
 public typealias FetchConfigCallback = (_ status: Swift.Bool, _ error: ErrorResponse?, _ response: Swift.String?) -> Swift.Void
 public typealias FetchDocumentsCallback = (_ status: Swift.Bool, _ responseDict: [Swift.String : Any]?, _ error: ErrorResponse?) -> Swift.Void
-public typealias FetchUserAccountsInfoCallback = (_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void
 public typealias DocumentSessionCallback = (_ status: Swift.Bool, _ response: Swift.String?, _ error: ErrorResponse?) -> Swift.Void
 public typealias PollSessionCallback = (_ status: Swift.Bool, _ response: Swift.String?, _ error: ErrorResponse?) -> Swift.Void
 public typealias RestoreWalletWithLiveIDCallback = (_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void
 public typealias UserAccountsRemovedCallback = (_ status: Swift.Bool, _ response: [BIDLinkedAccount]?, _ error: ErrorResponse?) -> Swift.Void
 public typealias PasskeyCallback = (_ status: Swift.Bool, _ response: PasskeyResponse?, _ error: ErrorResponse?) -> Swift.Void
 public typealias FetchUserResponseCallBack = (Swift.Bool, Swift.String?, ErrorResponse?) -> Swift.Void
+public typealias EmptyOTPSeedsForAccountsCallback = (_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void
+public typealias OTPSeedUpdatedCallback = (_ status: Swift.Bool, _ results: [OTPSeedUpdatedAccountResult], _ action: OTPSeedUpdateAction) -> Swift.Void
+public enum OTPSeedUpdateAction {
+  case emptyAccounts
+  case executed
+  public static func == (a: OTPSeedUpdateAction, b: OTPSeedUpdateAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockIDSDK
   public func isReady() -> Swift.Bool
@@ -904,9 +923,9 @@ extension BlockIDSDK {
   #if compiler(>=5.3) && $NonescapableTypes
   public func updateAccountInfo(account: BIDLinkedAccount, pushID: Swift.String? = nil, deviceInfo: [Swift.String : Any], completion: @escaping UpdateAccInfoCallback)
   #endif
-}
-extension BlockIDSDK {
-  public func fetchUserAccountsInfo(accounts: [BIDLinkedAccount], completion: @escaping FetchUserAccountsInfoCallback)
+  public func updateOTPSeedsForAccounts(accounts: [BIDLinkedAccount], completion: @escaping OTPSeedUpdatedCallback)
+  public func updateOTPSeedForSingleAccount(account: BIDLinkedAccount, completion: @escaping OTPSeedUpdatedCallback)
+  public func emptyOTPSeedsForAccounts(completion: @escaping EmptyOTPSeedsForAccountsCallback)
   public func getRemovedAccountList(completion: @escaping UserAccountsRemovedCallback)
   public func fetchUserByUserName(tenant: BIDTenant, userName: Swift.String, completion: @escaping FetchUserResponseCallBack)
 }
@@ -2247,6 +2266,8 @@ extension BiometricType : Swift.Hashable {}
 extension LogLevel : Swift.Equatable {}
 extension LogLevel : Swift.Hashable {}
 extension LogLevel : Swift.RawRepresentable {}
+extension OTPSeedUpdateAction : Swift.Equatable {}
+extension OTPSeedUpdateAction : Swift.Hashable {}
 extension TOTPUtils.Algorithm : Swift.Hashable {}
 extension TOTPUtils.Error : Swift.Equatable {}
 extension TOTPUtils.Error : Swift.Hashable {}
