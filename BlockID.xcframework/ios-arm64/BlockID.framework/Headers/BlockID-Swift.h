@@ -417,12 +417,6 @@ SWIFT_CLASS("_TtC7BlockID14PersonalAssets")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS("_TtC7BlockID11QRGenerator")
-@interface QRGenerator : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
 SWIFT_CLASS("_TtC7BlockID15QRScannerHelper")
 @interface QRScannerHelper : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

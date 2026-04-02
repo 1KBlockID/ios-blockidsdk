@@ -158,6 +158,15 @@ public enum KeychainItemAccessibility {
     get
   }
 }
+public class OTPSeedUpdatedAccountResult {
+  final public let account: BlockID.BIDLinkedAccount
+  final public let success: Swift.Bool
+  final public let error: BlockID.ErrorResponse?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(account: BlockID.BIDLinkedAccount, success: Swift.Bool, error: BlockID.ErrorResponse?)
+  #endif
+  @objc deinit
+}
 public class BIDAccount : Swift.Codable {
   public var source: Swift.String?
   public var tenantId: Swift.String?
@@ -721,18 +730,27 @@ public typealias VCsCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResp
 public typealias VPCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: Swift.String?) -> Swift.Void
 public typealias FetchConfigCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?, _ response: Swift.String?) -> Swift.Void
 public typealias FetchDocumentsCallback = (_ status: Swift.Bool, _ responseDict: [Swift.String : Any]?, _ error: BlockID.ErrorResponse?) -> Swift.Void
-public typealias FetchUserAccountsInfoCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias DocumentSessionCallback = (_ status: Swift.Bool, _ response: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias PollSessionCallback = (_ status: Swift.Bool, _ response: Swift.String?, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias RestoreWalletWithLiveIDCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias UserAccountsRemovedCallback = (_ status: Swift.Bool, _ response: [BlockID.BIDLinkedAccount]?, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias PasskeyCallback = (_ status: Swift.Bool, _ response: BlockID.PasskeyResponse?, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias FetchUserResponseCallBack = (Swift.Bool, Swift.String?, BlockID.ErrorResponse?) -> Swift.Void
+public typealias EmptyOTPSeedsForAccountsCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void
+public typealias OTPSeedUpdatedCallback = (_ status: Swift.Bool, _ results: [BlockID.OTPSeedUpdatedAccountResult], _ action: BlockID.OTPSeedUpdateAction) -> Swift.Void
+public enum OTPSeedUpdateAction {
+  case emptyAccounts
+  case executed
+  public static func == (a: BlockID.OTPSeedUpdateAction, b: BlockID.OTPSeedUpdateAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockIDSDK : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.BlockIDSDK
   public func isReady() -> Swift.Bool
   public func setLicenseKey(key: Swift.String)
-  public func getLicenseKey() -> Swift.String
   public func setDvcID(dvcID: Swift.String)
   public func initiateTempWallet(completion: @escaping BlockID.BIDWalletCreationCallback)
   public func registerTenant(tenant: BlockID.BIDTenant, completion: @escaping BlockID.BIDTenantRegisterationCallback)
@@ -765,7 +783,6 @@ public typealias FetchUserResponseCallBack = (Swift.Bool, Swift.String?, BlockID
   #if compiler(>=5.3) && $NonescapableTypes
   public func registerDocument(obj: [Swift.String : Any], storeArtifacts: Swift.Bool, syncArtifacts: Swift.Bool, liveIdProofedBy: Swift.String, docSignToken: Swift.String? = nil, faceImage: UIKit.UIImage, liveIDSignToken: Swift.String? = nil, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping BlockID.UserAPICallback)
   #endif
-  public func isCurrentDocumentExists(dictDoc: [Swift.String : Any]) -> Swift.Bool
   public func unregisterDocument(dictDoc: [Swift.String : Any], completion: @escaping BlockID.UserAPICallback)
   public func fetchDocuments(requestDict: [Swift.String : Any], _ completion: @escaping BlockID.FetchDocumentsCallback)
   public func setProxy(host: Swift.String, port: Swift.Int, userName: Swift.String, password: Swift.String, isHTPPOnly: Swift.Bool)
@@ -773,8 +790,8 @@ public typealias FetchUserResponseCallBack = (Swift.Bool, Swift.String?, BlockID
   public func getProxyDetails() -> BlockID.ProxyDetails?
   #endif
   public func isPinRegistered() -> Swift.Bool
-  public func isDeviceAuthRegisterd() -> Swift.Bool
-  public func isLiveIDRegisterd() -> Swift.Bool
+  public func isDeviceAuthRegistered() -> Swift.Bool
+  public func isLiveIDRegistered() -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   public func getTenant() -> BlockID.BIDTenant?
   #endif
@@ -799,7 +816,7 @@ public typealias FetchUserResponseCallBack = (Swift.Bool, Swift.String?, BlockID
   #endif
   public func validateAccessCode(code: Swift.String, origin: BlockID.BIDOrigin, completion: @escaping BlockID.AccessCodeValidationAPICallback)
   #if compiler(>=5.3) && $NonescapableTypes
-  public func generateSession(origin: BlockID.BIDOrigin, completion: @escaping ((sessionId: Swift.String?, sessionUrl: Swift.String?), _ error: BlockID.ErrorResponse?) -> Swift.Void)
+  public func generateSession(origin: BlockID.BIDOrigin, metaData: BlockID.BIDSessionMetaData? = nil, completion: @escaping ((sessionId: Swift.String?, sessionUrl: Swift.String?), _ error: BlockID.ErrorResponse?) -> Swift.Void)
   #endif
   public func getSessionResponse(completion: @escaping BlockID.SessionResponseCallback)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -906,9 +923,9 @@ extension BlockID.BlockIDSDK {
   #if compiler(>=5.3) && $NonescapableTypes
   public func updateAccountInfo(account: BlockID.BIDLinkedAccount, pushID: Swift.String? = nil, deviceInfo: [Swift.String : Any], completion: @escaping BlockID.UpdateAccInfoCallback)
   #endif
-}
-extension BlockID.BlockIDSDK {
-  public func fetchUserAccountsInfo(accounts: [BlockID.BIDLinkedAccount], completion: @escaping BlockID.FetchUserAccountsInfoCallback)
+  public func updateOTPSeedsForAccounts(accounts: [BlockID.BIDLinkedAccount], completion: @escaping BlockID.OTPSeedUpdatedCallback)
+  public func updateOTPSeedForSingleAccount(account: BlockID.BIDLinkedAccount, completion: @escaping BlockID.OTPSeedUpdatedCallback)
+  public func emptyOTPSeedsForAccounts(completion: @escaping BlockID.EmptyOTPSeedsForAccountsCallback)
   public func getRemovedAccountList(completion: @escaping BlockID.UserAccountsRemovedCallback)
   public func fetchUserByUserName(tenant: BlockID.BIDTenant, userName: Swift.String, completion: @escaping BlockID.FetchUserResponseCallBack)
 }
@@ -1059,9 +1076,6 @@ public enum AuthAssetType : Swift.String {
   #if compiler(>=5.3) && $NonescapableTypes
   public func verifyLiveID(image: UIKit.UIImage, keyPair: BlockID.APIKeyPair, tenant: BlockID.BIDTenant, did: Swift.String, livenessResult: Swift.String?, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping BlockID.VerifyLiveIDCallback)
   #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func verifyFace(image: UIKit.UIImage, keyPair: BlockID.APIKeyPair, tenant: BlockID.BIDTenant, did: Swift.String, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, completion: @escaping (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BIDSessionResponse : Swift.Codable {
@@ -1096,6 +1110,8 @@ public enum AuthAssetType : Swift.String {
   required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BIDSessionMetaData : Swift.Codable {
+  public var purpose: Swift.String?
+  public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1711,11 +1727,27 @@ public struct CustomErrors {
   public static let KLiveIdTokenValidationFailed: (code: Swift.Int, msg: Swift.String)
   public static let kLiveIDMismatch: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentDataMismatch: (code: Swift.Int, msg: Swift.String)
-  public static let kDocumentPhotoComparisionFailed: (code: Swift.Int, msg: Swift.String)
+  public static let kDocumentPhotoComparisonFailed: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentExpired: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentEnrolled: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentPhotoNotFound: (code: Swift.Int, msg: Swift.String)
   public static let kLiveIDMandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_Id_Is_Mandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_Type_Is_Mandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_Category_Is_Mandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_ProofedBy_Is_Mandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_LiveId_Not_Unenrolled: (code: Swift.Int, msg: Swift.String)
+  public static let K_Invalid_Category: (code: Swift.Int, msg: Swift.String)
+  public static let K_Document_Not_Exist: (code: Swift.Int, msg: Swift.String)
+  public static let K_FirstName_Is_Mandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_LastName_Is_Mandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_DateOfBirth_Is_Mandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_DateOfExpiry_Is_Mandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_Face_Is_Mandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_Image_Is_Mandatory: (code: Swift.Int, msg: Swift.String)
+  public static let K_LiveId_Enrolled: (code: Swift.Int, msg: Swift.String)
+  public static let K_LiveId_Wrong_Enrollment: (code: Swift.Int, msg: Swift.String)
+  public static let K_SSN_Mandatory: (code: Swift.Int, msg: Swift.String)
   public static let K_REGISTRATION_NOT_ALLOWED: (code: Swift.Int, message: Swift.String)
   public static let kNotTrustedSessionSource: (code: Swift.Int, msg: Swift.String)
   public static let kPPAboutToExpire: (code: Swift.Int, msg: Swift.String)
@@ -1821,7 +1853,6 @@ public enum RegisterDocType : Swift.String {
   case PIN
   case LIVE_ID
   case SSN
-  case PHONE
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -2087,13 +2118,6 @@ public struct ProxyDetails {
   #endif
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class QRSplitDataPacket : Swift.Codable {
-  public class func getTotalPackage(data: Swift.String, packageSize: Swift.Int) -> Swift.Int
-  public class func split(offlinePayload: Swift.String, length: Swift.Int) -> [Swift.String]
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
 @_hasMissingDesignatedInitializers public class BIDWallet : Swift.Codable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -2228,10 +2252,6 @@ extension BlockID.APIFailedError : Foundation.LocalizedError {
   }
   #endif
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class QRGenerator : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public func generateCode(_ string: Swift.String, foregroundColor: UIKit.UIColor = .black, backgroundColor: UIKit.UIColor = .white)
-  @objc deinit
-}
 extension BlockID.KeychainItemAccessibility : Swift.Equatable {}
 extension BlockID.KeychainItemAccessibility : Swift.Hashable {}
 extension BlockID.AccessCodeType : Swift.Equatable {}
@@ -2246,6 +2266,8 @@ extension BlockID.BiometricType : Swift.Hashable {}
 extension BlockID.LogLevel : Swift.Equatable {}
 extension BlockID.LogLevel : Swift.Hashable {}
 extension BlockID.LogLevel : Swift.RawRepresentable {}
+extension BlockID.OTPSeedUpdateAction : Swift.Equatable {}
+extension BlockID.OTPSeedUpdateAction : Swift.Hashable {}
 extension BlockID.TOTPUtils.Algorithm : Swift.Hashable {}
 extension BlockID.TOTPUtils.Error : Swift.Equatable {}
 extension BlockID.TOTPUtils.Error : Swift.Hashable {}
