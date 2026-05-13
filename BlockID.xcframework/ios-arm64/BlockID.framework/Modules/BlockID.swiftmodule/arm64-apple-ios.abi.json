@@ -70640,84 +70640,84 @@
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 3061,
+      "offset": 3044,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 3269,
+      "offset": 3252,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 6145,
+      "offset": 6128,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 6282,
+      "offset": 6265,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 7898,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
-      "kind": "FloatLiteral",
-      "offset": 8071,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
-      "kind": "FloatLiteral",
-      "offset": 8128,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8239,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10212,
+      "offset": 7881,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 10341,
+      "offset": 8054,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "FloatLiteral",
-      "offset": 10395,
+      "offset": 8111,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 10573,
+      "offset": 8222,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10195,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
+      "kind": "FloatLiteral",
+      "offset": 10324,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
+      "kind": "FloatLiteral",
+      "offset": 10378,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/pankit\/1K\/iOS\/ios-kernel-sdk\/BlockIDSDK\/BIDQR\/BIDQRScopesProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10556,
       "length": 5,
       "value": "false"
     },
