@@ -18,7 +18,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.homepage         = 'https://github.com/1KBlockID/ios-blockidsdk.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'info-1kosmos' => 'info@1kosmos.com' }
-  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.30.30.1' }
+  s.source           = { :git => 'https://github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.30.30.2' }
 
   # set platform and minimum deployment target
   s.platform = :ios
@@ -33,9 +33,9 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   # add pod dependency
 
   s.dependency 'TrustWalletCore', '~> 4.6.9'
-  s.dependency 'Alamofire', '5.9.0'
-  s.dependency 'CryptoSwift', '~> 1.8.4'
-  s.dependency 'BigInt', '~> 5.2.0'
+  s.dependency 'Alamofire', '5.11.2'
+  s.dependency 'CryptoSwift', '~> 1.10.0'
+  s.dependency 'BigInt', '~> 5.7.0'
   s.dependency 'OpenSSL-Universal', '~> 1.1.2300'
 
   # specify minimum swift version
