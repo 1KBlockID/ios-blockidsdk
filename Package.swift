@@ -37,6 +37,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BlockID",
+            dependencies: [
+                "CryptoSwift",
+                "BigInt",
+                "Alamofire",
+                .product(name: "WalletCore", package: "wallet-core"),
+                .product(name: "OpenSSL", package: "OpenSSL-Package"),
+            ]
             path: "BlockID.xcframework"
         )
     ]
