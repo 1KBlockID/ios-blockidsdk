@@ -17,6 +17,7 @@ let package = Package(
         .package(url: "https://github.com/attaswift/BigInt.git", exact: "5.7.0"),
         .package(url: "https://github.com/Alamofire/Alamofire.git", exact: "5.11.2"),
         .package(url: "https://github.com/trustwallet/wallet-core.git", exact: "4.6.9"),
+        .package(url: "https://github.com/apple/swift-protobuf.git", exact: "1.38.0"),
         .package(url: "https://github.com/krzyzanowskim/OpenSSL-Package.git", exact: "3.3.2000"),
     ],
     targets: [
