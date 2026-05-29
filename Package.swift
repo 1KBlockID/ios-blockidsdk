@@ -31,7 +31,7 @@ let package = Package(
                 "CryptoSwift",
                 "BigInt",
                 "Alamofire",
-                .product(name: "WalletCore", package: "WalletCore"),
+                .product(name: "WalletCore", package: "wallet-core"),
                 .product(name: "OpenSSL", package: "OpenSSL-Package"),
             ]
         )
