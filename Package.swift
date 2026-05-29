@@ -32,6 +32,7 @@ let package = Package(
                 "BigInt",
                 "Alamofire",
                 .product(name: "WalletCore", package: "wallet-core"),
+                .product(name: "WalletCoreSwiftProtobuf", package: "wallet-core"),
                 .product(name: "OpenSSL", package: "OpenSSL-Package"),
             ]
         )
