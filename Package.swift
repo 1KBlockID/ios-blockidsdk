@@ -9,6 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "BlockID",
+       	    type: .dynamic,
             targets: ["BlockIDWrapper"]
         )
     ],
