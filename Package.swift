@@ -29,6 +29,7 @@ let package = Package(
             name: "BlockIDWrapper",
             dependencies: [
                 "BlockID",
+                "Alamofire",
                 "CryptoSwift",
                 "BigInt",
                 .product(name: "WalletCore", package: "wallet-core"),
