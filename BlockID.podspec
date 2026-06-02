@@ -31,10 +31,13 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   s.vendored_frameworks = 'BlockID.xcframework'
 
   # add pod dependency
+  # NOTE: CocoaPods distribution is currently disabled.
+  # Dependencies are managed via Swift Package Manager (Package.swift).
+  # Uncomment below to re-enable CocoaPods support.
 
-  s.dependency 'TrustWalletCore', '~> 4.6.9'
-  s.dependency 'Alamofire', '5.11.2'
-  s.dependency 'OpenSSL-Universal', '~> 1.1.2300'
+  # s.dependency 'TrustWalletCore', '~> 4.6.9'
+  # s.dependency 'Alamofire', '5.11.2'
+  # s.dependency 'OpenSSL-Universal', '~> 3.3.2300'
 
   # specify minimum swift version
   s.swift_versions = '5.9'
