@@ -35,7 +35,7 @@ The BlockID SDK is now available as .xcframework. Application must remove the ru
   # Dependencies are managed via Swift Package Manager (Package.swift).
   # Uncomment below to re-enable CocoaPods support.
 
-   s.dependency 'TrustWalletCore', '~> 4.6.9'
+  # s.dependency 'TrustWalletCore', '~> 4.6.9'
   # s.dependency 'Alamofire', '5.11.2'
   # s.dependency 'OpenSSL-Universal', '~> 3.3.2300'
 
