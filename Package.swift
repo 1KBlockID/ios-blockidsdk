@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "BlockID",
-       	    type: .static,
+            type: .dynamic,
             targets: ["BlockIDWrapper"]
         )
     ],
@@ -18,7 +18,7 @@ let package = Package(
         .package(url: "https://github.com/attaswift/BigInt.git", exact: "5.7.0"),
         .package(url: "https://github.com/Alamofire/Alamofire.git", exact: "5.11.2"),
         .package(url: "https://github.com/trustwallet/wallet-core.git", exact: "4.6.9"),
-        .package(url: "https://github.com/krzyzanowskim/OpenSSL-Package.git", exact: "3.3.2000"),
+        .package(url: "https://github.com/krzyzanowskim/OpenSSL-Package.git", exact: "3.3.3001"),
     ],
     targets: [
         .binaryTarget(
@@ -26,9 +26,18 @@ let package = Package(
             path: "BlockID.xcframework"
         ),
         .target(
+            name: "OpenSSLShim",
+            dependencies: [
+                .product(name: "OpenSSL", package: "OpenSSL-Package"),
+            ],
+            path: "Sources/OpenSSLShim",
+            publicHeadersPath: "include"
+        ),
+        .target(
             name: "BlockIDWrapper",
             dependencies: [
                 "BlockID",
+                "OpenSSLShim",
                 "Alamofire",
                 "CryptoSwift",
                 "BigInt",

@@ -13277,6 +13277,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OpenSSL",
+        "printedName": "OpenSSL",
+        "declKind": "Import",
+        "moduleName": "BlockID"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ResponseAPDU",
         "printedName": "ResponseAPDU",
