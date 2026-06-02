@@ -34,7 +34,7 @@ let package = Package(
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
                 .product(name: "BigInt", package: "BigInt"),
                 .product(name: "WalletCore", package: "wallet-core"),
-                .product(name: "SwiftProtobuf", package: "swift-protobuf"),
+                .product(name: "WalletCoreSwiftProtobuf", package: "swift-protobuf"),
             ],
             path: "Sources/BlockIDTarget"
         ),
