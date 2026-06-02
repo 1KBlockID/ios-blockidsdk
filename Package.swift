@@ -1,4 +1,5 @@
 // swift-tools-version: 5.9
+
 import PackageDescription
 
 let package = Package(
@@ -9,41 +10,37 @@ let package = Package(
     products: [
         .library(
             name: "BlockID",
-            type: .dynamic,
-            targets: ["BlockIDWrapper"]
+            targets: ["BlockIDTarget"]
         )
     ],
     dependencies: [
+        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", exact: "3.3.3001"),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", exact: "5.11.2"),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", exact: "1.10.0"),
         .package(url: "https://github.com/attaswift/BigInt.git", exact: "5.7.0"),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", exact: "5.11.2"),
         .package(url: "https://github.com/trustwallet/wallet-core.git", exact: "4.6.9"),
-        .package(url: "https://github.com/krzyzanowskim/OpenSSL-Package.git", exact: "3.3.3001"),
+        .package(url: "https://github.com/apple/swift-protobuf.git", exact: "1.25.0"),
     ],
     targets: [
-        .binaryTarget(
-            name: "BlockID",
-            path: "BlockID.xcframework"
-        ),
+        // Wrapper target that links the binary xcframework with its dependencies.
+        // This ensures OpenSSL (and other transitive deps) are linked into any
+        // consuming app target automatically.
         .target(
-            name: "OpenSSLShim",
+            name: "BlockIDTarget",
             dependencies: [
-                .product(name: "OpenSSL", package: "OpenSSL-Package"),
-            ],
-            path: "Sources/OpenSSLShim",
-            publicHeadersPath: "include"
-        ),
-        .target(
-            name: "BlockIDWrapper",
-            dependencies: [
-                "BlockID",
-                "OpenSSLShim",
-                "Alamofire",
-                "CryptoSwift",
-                "BigInt",
+                "BlockIDFramework",
+                .product(name: "OpenSSL", package: "OpenSSL"),
+                .product(name: "Alamofire", package: "Alamofire"),
+                .product(name: "CryptoSwift", package: "CryptoSwift"),
+                .product(name: "BigInt", package: "BigInt"),
                 .product(name: "WalletCore", package: "wallet-core"),
-                .product(name: "OpenSSL", package: "OpenSSL-Package"),
-            ]
+                .product(name: "SwiftProtobuf", package: "swift-protobuf"),
+            ],
+            path: "Sources/BlockIDTarget"
+        ),
+        .binaryTarget(
+            name: "BlockIDFramework",
+            path: "BlockID.xcframework"
         )
     ]
 )
