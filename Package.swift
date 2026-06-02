@@ -19,7 +19,6 @@ let package = Package(
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", exact: "1.10.0"),
         .package(url: "https://github.com/attaswift/BigInt.git", exact: "5.7.0"),
         .package(url: "https://github.com/trustwallet/wallet-core.git", exact: "4.6.9"),
-        .package(url: "https://github.com/apple/swift-protobuf.git", exact: "1.25.0"),
     ],
     targets: [
         // Wrapper target that links the binary xcframework with its dependencies.
@@ -34,7 +33,6 @@ let package = Package(
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
                 .product(name: "BigInt", package: "BigInt"),
                 .product(name: "WalletCore", package: "wallet-core"),
-                .product(name: "SwiftProtobuf", package: "swift-protobuf"),
             ],
             path: "Sources/BlockIDTarget"
         ),
