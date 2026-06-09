@@ -1334,7 +1334,6 @@ public struct CustomErrors {
     public static let INVALID: (code: Swift.Int, message: Swift.String)
   }
   public struct Passkey {
-    public static let iOS_16_REQUIRED: (code: Swift.Int, message: Swift.String)
     public static let USERNAME_EMPTY: (code: Swift.Int, message: Swift.String)
     public static let DISPLAY_NAME_EMPTY: (code: Swift.Int, message: Swift.String)
     public static let ATTESTATION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)

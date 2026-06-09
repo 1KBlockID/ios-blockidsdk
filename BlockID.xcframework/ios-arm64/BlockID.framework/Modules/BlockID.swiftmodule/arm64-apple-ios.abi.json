@@ -43803,79 +43803,6 @@
             "children": [
               {
                 "kind": "Var",
-                "name": "iOS_16_REQUIRED",
-                "printedName": "iOS_16_REQUIRED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
                 "name": "USERNAME_EMPTY",
                 "printedName": "USERNAME_EMPTY",
                 "children": [
@@ -71797,14 +71724,14 @@
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13999,
+      "offset": 13805,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 14034,
+      "offset": 13840,
       "length": 2,
       "value": "\"\""
     },
@@ -72679,42 +72606,42 @@
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2144,
+      "offset": 2120,
       "length": 16,
       "value": "\"passportNumber\""
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2166,
+      "offset": 2142,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2246,
+      "offset": 2222,
       "length": 13,
       "value": "\"dateOfBirth\""
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2265,
+      "offset": 2241,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2344,
+      "offset": 2320,
       "length": 12,
       "value": "\"expiryDate\""
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2362,
+      "offset": 2338,
       "length": 2,
       "value": "\"\""
     },
