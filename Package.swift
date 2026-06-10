@@ -17,8 +17,6 @@ let package = Package(
         .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", exact: "3.3.3001"),
         .package(url: "https://github.com/attaswift/BigInt.git", exact: "5.7.0"),
         .package(url: "https://github.com/trustwallet/wallet-core.git", exact: "4.6.13"),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", exact: "5.11.2"),
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", exact: "1.10.0"),
     ],
     targets: [
         // Wrapper target that links the binary xcframework with its dependencies.
