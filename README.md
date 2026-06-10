@@ -19,7 +19,8 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 
 ### v1.30.30
-- Bug fixes
+- Bug fixes and improvements
+- Updated support for trusted sessions sources
 
 ### v1.30.20
 - Added authentication rejection
