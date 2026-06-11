@@ -50,6 +50,8 @@ Then add `BlockID` to your target's dependencies:
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+### v1.30.40
+- Updated sdk with swift package manager
 
 ### v1.30.30
 - Bug fixes and improvements
