@@ -6,11 +6,44 @@
 
 ## Installation
 
-BlockID is available through CocoaPods. To install it, simply add the following line to your Podfile:
+### Swift Package Manager
 
-```ruby
-   pod 'BlockID', :git => 'https://{gituser}:{gittoken}@github.com/1KBlockID/ios-blockidsdk.git', :tag => '1.30.40'
+BlockID can be integrated using Swift Package Manager (SPM).
+
+#### Using Xcode
+
+1. Open your project in Xcode.
+2. Go to **File → Add Package Dependencies...**
+3. In the search bar, enter the repository URL:
+   ```
+   https://github.com/1KBlockID/ios-blockidsdk.git
+   ```
+4. Set the **Dependency Rule** to **Exact Version** and enter `1.30.40` (or the desired version).
+5. Click **Add Package**.
+6. Select the `BlockID` library and add it to your app target.
+
+#### Using Package.swift
+
+Add the following dependency to your `Package.swift` file:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/1KBlockID/ios-blockidsdk.git", exact: "1.30.40")
+]
 ```
+
+Then add `BlockID` to your target's dependencies:
+
+```swift
+.target(
+    name: "YourApp",
+    dependencies: [
+        .product(name: "BlockID", package: "ios-blockidsdk")
+    ]
+)
+```
+
+> **Note:** The minimum deployment target is iOS 16.0.
 
 ## License
 
