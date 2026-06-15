@@ -1591,6 +1591,7 @@ public enum CacheTTLLIMIT : Swift.Int {
   public func getCache(_ key: Swift.String) -> Swift.String?
   public func isCacheFresh(_ key: Swift.String) -> Swift.Bool
   public func getAndRetain(_ key: Swift.String) -> Swift.String?
+  public func removeCache(_ key: Swift.String)
   @objc deinit
 }
 public typealias BIDOriginCallback = (_ status: Swift.Bool, _ account: BIDLinkedAccount?, _ index: Swift.Int?) -> Swift.Void

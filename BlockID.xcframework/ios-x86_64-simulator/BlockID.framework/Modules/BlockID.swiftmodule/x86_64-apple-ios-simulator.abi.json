@@ -55925,6 +55925,33 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeCache",
+            "printedName": "removeCache(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID18BIDSDKCacheManagerC11removeCacheyySSF",
+            "mangledName": "$s7BlockID18BIDSDKCacheManagerC11removeCacheyySSF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -69974,7 +70001,7 @@
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 123520,
+      "offset": 127950,
       "length": 1,
       "value": "0"
     },
@@ -70425,6 +70452,13 @@
       "offset": 577,
       "length": 3,
       "value": "200"
+    },
+    {
+      "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/ConfigurationAPIs.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1106,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
