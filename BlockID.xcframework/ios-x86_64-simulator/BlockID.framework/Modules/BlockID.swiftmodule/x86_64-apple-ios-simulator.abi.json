@@ -69974,7 +69974,7 @@
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 123520,
+      "offset": 128319,
       "length": 1,
       "value": "0"
     },
@@ -70425,6 +70425,13 @@
       "offset": 577,
       "length": 3,
       "value": "200"
+    },
+    {
+      "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/ConfigurationAPIs.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1106,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
