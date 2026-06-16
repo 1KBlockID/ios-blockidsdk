@@ -53,6 +53,9 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ### v1.30.40
 - Updated sdk with swift package manager
 
+### v1.30.40
+- Updated logic for trusted sessions sources while authentication and user-onboarding
+
 ### v1.30.30
 - Bug fixes and improvements
 - Updated support for trusted sessions sources
