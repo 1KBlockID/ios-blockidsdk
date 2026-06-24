@@ -1626,12 +1626,6 @@
                 "mangledName": "$s7BlockID13DataGroupHashV2idSSvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available",
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1717,12 +1711,6 @@
                 "mangledName": "$s7BlockID13DataGroupHashV03sodE0SSvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available",
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1808,12 +1796,6 @@
                 "mangledName": "$s7BlockID13DataGroupHashV08computedE0SSvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available",
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1899,12 +1881,6 @@
                 "mangledName": "$s7BlockID13DataGroupHashV5matchSbvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available",
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1914,12 +1890,8 @@
         "usr": "s:7BlockID13DataGroupHashV",
         "mangledName": "$s7BlockID13DataGroupHashV",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -2054,12 +2026,8 @@
         "usr": "s:7BlockID31ChipAuthenticationPublicKeyInfoC",
         "mangledName": "$s7BlockID31ChipAuthenticationPublicKeyInfoC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID12SecurityInfoC",
         "hasMissingDesignatedInitializers": true,
@@ -4430,12 +4398,8 @@
         "usr": "s:7BlockID10DataGroup2C",
         "mangledName": "$s7BlockID10DataGroup2C",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID9DataGroupC",
         "hasMissingDesignatedInitializers": true,
@@ -4587,12 +4551,8 @@
         "usr": "s:7BlockID10DataGroup7C",
         "mangledName": "$s7BlockID10DataGroup7C",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID9DataGroupC",
         "hasMissingDesignatedInitializers": true,
@@ -7286,10 +7246,8 @@
         "usr": "s:7BlockID9TagReaderC",
         "mangledName": "$s7BlockID9TagReaderC",
         "moduleName": "BlockID",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available"
+          "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -13021,12 +12979,8 @@
         "usr": "s:7BlockID16NFCPassportModelC",
         "mangledName": "$s7BlockID16NFCPassportModelC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -13137,13 +13091,9 @@
             "mangledName": "$s7BlockID12OpenSSLUtilsC16getPublicKeyData4fromSays5UInt8VGSgs13OpaquePointerV_tFZ",
             "moduleName": "BlockID",
             "static": true,
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "Available",
-              "Available"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -13192,13 +13142,9 @@
             "mangledName": "$s7BlockID12OpenSSLUtilsC24decodePublicKeyFromBytes03pubG4Data6paramss13OpaquePointerVSgSays5UInt8VG_AHtFZ",
             "moduleName": "BlockID",
             "static": true,
-            "intro_Macosx": "10.15",
-            "intro_iOS": "13",
             "declAttributes": [
               "Final",
               "AccessControl",
-              "Available",
-              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -13251,12 +13197,8 @@
         "usr": "s:7BlockID12OpenSSLUtilsC",
         "mangledName": "$s7BlockID12OpenSSLUtilsC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -13275,6 +13217,23 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OpenSSL",
+        "printedName": "OpenSSL",
+        "declKind": "Import",
+        "moduleName": "BlockID"
       },
       {
         "kind": "TypeDecl",
@@ -13386,10 +13345,6 @@
                 "mangledName": "$s7BlockID12ResponseAPDUV4dataSays5UInt8VGvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -13475,10 +13430,6 @@
                 "mangledName": "$s7BlockID12ResponseAPDUV3sw1s5UInt8VvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -13564,10 +13515,6 @@
                 "mangledName": "$s7BlockID12ResponseAPDUV3sw2s5UInt8VvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -13624,10 +13571,8 @@
         "usr": "s:7BlockID12ResponseAPDUV",
         "mangledName": "$s7BlockID12ResponseAPDUV",
         "moduleName": "BlockID",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -23998,12 +23943,8 @@
         "usr": "s:7BlockID22ChipAuthenticationInfoC",
         "mangledName": "$s7BlockID22ChipAuthenticationInfoC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID12SecurityInfoC",
         "hasMissingDesignatedInitializers": true,
@@ -24177,12 +24118,8 @@
         "usr": "s:7BlockID8ASN1ItemC",
         "mangledName": "$s7BlockID8ASN1ItemC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -24287,12 +24224,8 @@
         "usr": "s:7BlockID20SimpleASN1DumpParserC",
         "mangledName": "$s7BlockID20SimpleASN1DumpParserC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -27454,10 +27387,8 @@
         "usr": "s:7BlockID15SecureMessagingC",
         "mangledName": "$s7BlockID15SecureMessagingC",
         "moduleName": "BlockID",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -28927,12 +28858,8 @@
         "usr": "s:7BlockID22NFCPassportReaderErrorO",
         "mangledName": "$s7BlockID22NFCPassportReaderErrorO",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -29448,12 +29375,8 @@
         "usr": "s:7BlockID12OpenSSLErrorO",
         "mangledName": "$s7BlockID12OpenSSLErrorO",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -30727,12 +30650,8 @@
         "usr": "s:7BlockID11DataGroup11C",
         "mangledName": "$s7BlockID11DataGroup11C",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID9DataGroupC",
         "hasMissingDesignatedInitializers": true,
@@ -37873,12 +37792,8 @@
         "usr": "s:7BlockID15CertificateTypeO",
         "mangledName": "$s7BlockID15CertificateTypeO",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -38289,12 +38204,8 @@
         "usr": "s:7BlockID15CertificateItemO",
         "mangledName": "$s7BlockID15CertificateItemO",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "enumRawTypeName": "String",
         "conformances": [
@@ -38739,12 +38650,8 @@
         "usr": "s:7BlockID11X509WrapperC",
         "mangledName": "$s7BlockID11X509WrapperC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -38934,12 +38841,8 @@
         "usr": "s:7BlockID3COMC",
         "mangledName": "$s7BlockID3COMC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID9DataGroupC",
         "hasMissingDesignatedInitializers": true,
@@ -39034,12 +38937,8 @@
         "usr": "s:7BlockID12SecurityInfoC",
         "mangledName": "$s7BlockID12SecurityInfoC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -41413,12 +41312,8 @@
         "usr": "s:7BlockID11DocTypeEnumO",
         "mangledName": "$s7BlockID11DocTypeEnumO",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "enumRawTypeName": "String",
         "conformances": [
@@ -41557,12 +41452,8 @@
         "usr": "s:7BlockID10DataGroup1C",
         "mangledName": "$s7BlockID10DataGroup1C",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID9DataGroupC",
         "hasMissingDesignatedInitializers": true,
@@ -41684,12 +41575,6 @@
                 "mangledName": "$s7BlockID9DataGroupC13datagroupTypeAA0cD2IdOvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available",
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -41858,12 +41743,8 @@
         "usr": "s:7BlockID9DataGroupC",
         "mangledName": "$s7BlockID9DataGroupC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -43142,12 +43023,8 @@
         "usr": "s:7BlockID11DataGroup14C",
         "mangledName": "$s7BlockID11DataGroup14C",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "superclassUsr": "s:7BlockID9DataGroupC",
@@ -43322,12 +43199,8 @@
         "usr": "s:7BlockID11DataGroup15C",
         "mangledName": "$s7BlockID11DataGroup15C",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID9DataGroupC",
         "hasMissingDesignatedInitializers": true,
@@ -43945,79 +43818,6 @@
             "name": "Passkey",
             "printedName": "Passkey",
             "children": [
-              {
-                "kind": "Var",
-                "name": "iOS_16_REQUIRED",
-                "printedName": "iOS_16_REQUIRED",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(code: Swift.Int, message: Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvpZ",
-                "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvpZ",
-                "moduleName": "BlockID",
-                "static": true,
-                "declAttributes": [
-                  "HasInitialValue",
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(code: Swift.Int, message: Swift.String)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ]
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvgZ",
-                    "mangledName": "$s7BlockID12CustomErrorsV7PasskeyV15iOS_16_REQUIREDSi4code_SS7messagetvgZ",
-                    "moduleName": "BlockID",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
               {
                 "kind": "Var",
                 "name": "USERNAME_EMPTY",
@@ -51673,12 +51473,8 @@
         "usr": "s:7BlockID10AESEncrypt3key7message2ivSays5UInt8VGAH_A2HtF",
         "mangledName": "$s7BlockID10AESEncrypt3key7message2ivSays5UInt8VGAH_A2HtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -51749,12 +51545,8 @@
         "usr": "s:7BlockID10AESDecrypt3key7message2ivSays5UInt8VGAH_A2HtF",
         "mangledName": "$s7BlockID10AESDecrypt3key7message2ivSays5UInt8VGAH_A2HtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -51811,12 +51603,8 @@
         "usr": "s:7BlockID13AESECBEncrypt3key7messageSays5UInt8VGAG_AGtF",
         "mangledName": "$s7BlockID13AESECBEncrypt3key7messageSays5UInt8VGAG_AGtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -51887,12 +51675,8 @@
         "usr": "s:7BlockID16tripleDESEncrypt3key7message2ivSays5UInt8VGAH_A2HtF",
         "mangledName": "$s7BlockID16tripleDESEncrypt3key7message2ivSays5UInt8VGAH_A2HtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -51963,12 +51747,8 @@
         "usr": "s:7BlockID16tripleDESDecrypt3key7message2ivSays5UInt8VGAH_A2HtF",
         "mangledName": "$s7BlockID16tripleDESDecrypt3key7message2ivSays5UInt8VGAH_A2HtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -52046,12 +51826,8 @@
         "usr": "s:7BlockID10DESEncrypt3key7message2iv7optionsSays5UInt8VGAI_A2Is6UInt32VtF",
         "mangledName": "$s7BlockID10DESEncrypt3key7message2iv7optionsSays5UInt8VGAI_A2Is6UInt32VtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -52129,12 +51905,8 @@
         "usr": "s:7BlockID10DESDecrypt3key7message2iv7optionsSays5UInt8VGAI_A2Is6UInt32VtF",
         "mangledName": "$s7BlockID10DESDecrypt3key7message2iv7optionsSays5UInt8VGAI_A2Is6UInt32VtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -52757,12 +52529,8 @@
         "usr": "s:7BlockID11DataGroup12C",
         "mangledName": "$s7BlockID11DataGroup12C",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID9DataGroupC",
         "hasMissingDesignatedInitializers": true,
@@ -53086,12 +52854,8 @@
         "usr": "s:7BlockID21NFCViewDisplayMessageO",
         "mangledName": "$s7BlockID21NFCViewDisplayMessageO",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -53152,12 +52916,8 @@
         "usr": "s:7BlockID16NotImplementedDGC",
         "mangledName": "$s7BlockID16NotImplementedDGC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID9DataGroupC",
         "hasMissingDesignatedInitializers": true,
@@ -54195,10 +53955,8 @@
         "usr": "s:7BlockID11PACEHandlerC",
         "mangledName": "$s7BlockID11PACEHandlerC",
         "moduleName": "BlockID",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -54856,12 +54614,8 @@
         "usr": "s:7BlockID3mac8algoName3key3msgSays5UInt8VGAA34SecureMessagingSupportedAlgorithmsO_A2HtF",
         "mangledName": "$s7BlockID3mac8algoName3key3msgSays5UInt8VGAA34SecureMessagingSupportedAlgorithmsO_A2HtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -54917,12 +54671,8 @@
         "usr": "s:7BlockID6desMAC3key3msgSays5UInt8VGAG_AGtF",
         "mangledName": "$s7BlockID6desMAC3key3msgSays5UInt8VGAG_AGtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -54978,12 +54728,8 @@
         "usr": "s:7BlockID6aesMAC3key3msgSays5UInt8VGAG_AGtF",
         "mangledName": "$s7BlockID6aesMAC3key3msgSays5UInt8VGAG_AGtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -55031,12 +54777,8 @@
         "usr": "s:7BlockID6wrapDO1b3arrSays5UInt8VGAF_AGtF",
         "mangledName": "$s7BlockID6wrapDO1b3arrSays5UInt8VGAF_AGtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -55084,12 +54826,8 @@
         "usr": "s:7BlockID8unwrapDO3tag11wrappedDataSays5UInt8VGAF_AGtKF",
         "mangledName": "$s7BlockID8unwrapDO3tag11wrappedDataSays5UInt8VGAF_AGtKF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "throwing": true,
         "funcSelfKind": "NonMutating"
@@ -55171,12 +54909,8 @@
         "usr": "s:7BlockID10oidToBytes0C010replaceTagSays5UInt8VGSS_SbtF",
         "mangledName": "$s7BlockID10oidToBytes0C010replaceTagSays5UInt8VGSS_SbtF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -55223,12 +54957,8 @@
         "usr": "s:7BlockID10asn1LengthySi_Sits10ArraySliceVys5UInt8VGKF",
         "mangledName": "$s7BlockID10asn1LengthySi_Sits10ArraySliceVys5UInt8VGKF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "throwing": true,
@@ -55277,12 +55007,8 @@
         "usr": "s:7BlockID10asn1LengthySi_SitSays5UInt8VGKF",
         "mangledName": "$s7BlockID10asn1LengthySi_SitSays5UInt8VGKF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "throwing": true,
         "funcSelfKind": "NonMutating"
@@ -55317,12 +55043,8 @@
         "usr": "s:7BlockID12toAsn1LengthySays5UInt8VGSiKF",
         "mangledName": "$s7BlockID12toAsn1LengthySays5UInt8VGSiKF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "throwing": true,
@@ -55372,12 +55094,8 @@
         "usr": "s:7BlockID8calcHash4data13hashAlgorithmSays5UInt8VGAG_SStKF",
         "mangledName": "$s7BlockID8calcHash4data13hashAlgorithmSays5UInt8VGAG_SStKF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "throwing": true,
@@ -55421,12 +55139,8 @@
         "usr": "s:7BlockID12calcSHA1HashySays5UInt8VGAEF",
         "mangledName": "$s7BlockID12calcSHA1HashySays5UInt8VGAEF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -55469,12 +55183,8 @@
         "usr": "s:7BlockID14calcSHA224HashySays5UInt8VGAEF",
         "mangledName": "$s7BlockID14calcSHA224HashySays5UInt8VGAEF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -55517,12 +55227,8 @@
         "usr": "s:7BlockID14calcSHA256HashySays5UInt8VGAEF",
         "mangledName": "$s7BlockID14calcSHA256HashySays5UInt8VGAEF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -55565,12 +55271,8 @@
         "usr": "s:7BlockID14calcSHA512HashySays5UInt8VGAEF",
         "mangledName": "$s7BlockID14calcSHA512HashySays5UInt8VGAEF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -55613,12 +55315,8 @@
         "usr": "s:7BlockID14calcSHA384HashySays5UInt8VGAEF",
         "mangledName": "$s7BlockID14calcSHA384HashySays5UInt8VGAEF",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
@@ -57714,12 +57412,8 @@
         "usr": "s:7BlockID8PACEInfoC",
         "mangledName": "$s7BlockID8PACEInfoC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "superclassUsr": "s:7BlockID12SecurityInfoC",
         "hasMissingDesignatedInitializers": true,
@@ -57898,10 +57592,6 @@
                 "mangledName": "$s7BlockID10BACHandlerC5ksencSays5UInt8VGvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -58012,10 +57702,6 @@
                 "mangledName": "$s7BlockID10BACHandlerC5ksmacSays5UInt8VGvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -58126,10 +57812,6 @@
                 "mangledName": "$s7BlockID10BACHandlerC4kifdSays5UInt8VGvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -58319,10 +58001,8 @@
         "usr": "s:7BlockID10BACHandlerC",
         "mangledName": "$s7BlockID10BACHandlerC",
         "moduleName": "BlockID",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -60286,12 +59966,8 @@
         "usr": "s:7BlockID11DataGroupIdO",
         "mangledName": "$s7BlockID11DataGroupIdO",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
-          "AccessControl",
-          "Available",
-          "Available"
+          "AccessControl"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -65712,12 +65388,8 @@
         "usr": "s:7BlockID10CardAccessC",
         "mangledName": "$s7BlockID10CardAccessC",
         "moduleName": "BlockID",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
-          "Available",
           "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true,
@@ -66283,10 +65955,6 @@
                 "mangledName": "$s7BlockID14PassportReaderC32passiveAuthenticationUsesOpenSSLSbvM",
                 "moduleName": "BlockID",
                 "implicit": true,
-                "intro_iOS": "13",
-                "declAttributes": [
-                  "Available"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -66671,10 +66339,8 @@
         "usr": "c:@M@BlockID@objc(cs)PassportReader",
         "mangledName": "$s7BlockID14PassportReaderC",
         "moduleName": "BlockID",
-        "intro_iOS": "13",
         "declAttributes": [
           "AccessControl",
-          "Available",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -68834,14 +68500,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroupParser.swift",
       "kind": "Array",
-      "offset": 187,
+      "offset": 152,
       "length": 145,
       "value": "[\"Common\", \"DG1\", \"DG2\", \"DG3\", \"DG4\", \"DG5\", \"DG6\", \"DG7\", \"DG8\", \"DG9\", \"DG10\", \"DG11\", \"DG12\", \"DG13\", \"DG14\", \"DG15\", \"DG16\", \"SecurityData\"]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroupParser.swift",
       "kind": "Array",
-      "offset": 365,
+      "offset": 330,
       "length": 108,
       "value": "[0x60, 0x61, 0x75, 0x63, 0x76, 0x65, 0x66, 0x67, 0x68, 0x69, 0x6A, 0x6B, 0x6C, 0x6D, 0x6E, 0x6F, 0x70, 0x77]"
     },
@@ -68946,154 +68612,154 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 243,
+      "offset": 208,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 295,
+      "offset": 260,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 348,
+      "offset": 313,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 407,
+      "offset": 372,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 468,
+      "offset": 433,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 522,
+      "offset": 487,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 567,
+      "offset": 532,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 614,
+      "offset": 579,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 662,
+      "offset": 627,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 712,
+      "offset": 677,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 761,
+      "offset": 726,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 809,
+      "offset": 774,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 868,
+      "offset": 833,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 920,
+      "offset": 885,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 972,
+      "offset": 937,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 1021,
+      "offset": 986,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 1071,
+      "offset": 1036,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 1125,
+      "offset": 1090,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 1174,
+      "offset": 1139,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 1223,
+      "offset": 1188,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "IntegerLiteral",
-      "offset": 1269,
+      "offset": 1234,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup2.swift",
       "kind": "Array",
-      "offset": 1321,
+      "offset": 1286,
       "length": 2,
       "value": "[]"
     },
@@ -69457,7 +69123,7 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup7.swift",
       "kind": "Array",
-      "offset": 253,
+      "offset": 218,
       "length": 2,
       "value": "[]"
     },
@@ -69618,14 +69284,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/TagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 339,
+      "offset": 317,
       "length": 4,
       "value": "0xA0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/TagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 5540,
+      "offset": 5518,
       "length": 3,
       "value": "256"
     },
@@ -69800,364 +69466,364 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 416,
+      "offset": 381,
       "length": 6,
       "value": "\"5F03\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 434,
+      "offset": 399,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 543,
+      "offset": 508,
       "length": 6,
       "value": "\"5F03\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 560,
+      "offset": 525,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 661,
+      "offset": 626,
       "length": 4,
       "value": "\"53\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 670,
+      "offset": 635,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 700,
+      "offset": 665,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 711,
+      "offset": 676,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 811,
+      "offset": 776,
       "length": 4,
       "value": "\"5A\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 820,
+      "offset": 785,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 850,
+      "offset": 815,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 861,
+      "offset": 826,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 962,
+      "offset": 927,
       "length": 6,
       "value": "\"5F28\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 973,
+      "offset": 938,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1075,
+      "offset": 1040,
       "length": 4,
       "value": "\"59\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 1049,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1179,
+      "offset": 1144,
       "length": 6,
       "value": "\"5F57\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1190,
+      "offset": 1155,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1280,
+      "offset": 1245,
       "length": 6,
       "value": "\"5F35\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1291,
+      "offset": 1256,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1386,
+      "offset": 1351,
       "length": 6,
       "value": "\"5F2C\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1397,
+      "offset": 1362,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1504,
+      "offset": 1469,
       "length": 4,
       "value": "\"5B\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1513,
+      "offset": 1478,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1542,
+      "offset": 1507,
       "length": 4,
       "value": "\"<<\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1569,
+      "offset": 1534,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1597,
+      "offset": 1562,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1608,
+      "offset": 1573,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1726,
+      "offset": 1691,
       "length": 4,
       "value": "\"5B\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1735,
+      "offset": 1700,
       "length": 3,
       "value": "\"?\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1764,
+      "offset": 1729,
       "length": 4,
       "value": "\"<<\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1789,
+      "offset": 1754,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1809,
+      "offset": 1774,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1884,
+      "offset": 1849,
       "length": 3,
       "value": "\"<\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1895,
+      "offset": 1860,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 1986,
+      "offset": 1951,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2145,
       "length": 6,
       "value": "\"5F1F\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 2191,
+      "offset": 2156,
       "length": 11,
       "value": "\"NOT FOUND\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "StringLiteral",
-      "offset": 3453,
+      "offset": 3418,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Array",
-      "offset": 3643,
+      "offset": 3608,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Dictionary",
-      "offset": 3866,
+      "offset": 3831,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4323,
+      "offset": 4288,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4401,
+      "offset": 4366,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4468,
+      "offset": 4433,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4538,
+      "offset": 4503,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Array",
-      "offset": 4614,
+      "offset": 4579,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Array",
-      "offset": 4687,
+      "offset": 4652,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Array",
-      "offset": 4749,
+      "offset": 4714,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "Dictionary",
-      "offset": 6313,
+      "offset": 6278,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8454,
+      "offset": 8419,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/NFCPassportModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 10982,
+      "offset": 10947,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/OpenSSLUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 245,
+      "offset": 210,
       "length": 5,
       "value": "false"
     },
@@ -70325,7 +69991,7 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 123520,
+      "offset": 128319,
       "length": 1,
       "value": "0"
     },
@@ -70353,56 +70019,56 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 242,
+      "offset": 207,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 267,
+      "offset": 232,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 296,
+      "offset": 261,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 322,
+      "offset": 287,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "StringLiteral",
-      "offset": 353,
+      "offset": 318,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "StringLiteral",
-      "offset": 423,
+      "offset": 388,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "StringLiteral",
-      "offset": 499,
+      "offset": 464,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SimpleASN1DumpParser.swift",
       "kind": "StringLiteral",
-      "offset": 526,
+      "offset": 491,
       "length": 2,
       "value": "\"\""
     },
@@ -70776,6 +70442,13 @@
       "offset": 577,
       "length": 3,
       "value": "200"
+    },
+    {
+      "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/GlobalConfig\/ConfigurationAPIs.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1106,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
@@ -71452,336 +71125,336 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/X509Wrapper.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 274,
       "length": 25,
       "value": "\"Certificate fingerprint\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/X509Wrapper.swift",
       "kind": "StringLiteral",
-      "offset": 392,
+      "offset": 322,
       "length": 8,
       "value": "\"Issuer\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/X509Wrapper.swift",
       "kind": "StringLiteral",
-      "offset": 424,
+      "offset": 354,
       "length": 9,
       "value": "\"Subject\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/X509Wrapper.swift",
       "kind": "StringLiteral",
-      "offset": 458,
+      "offset": 388,
       "length": 15,
       "value": "\"Serial number\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/X509Wrapper.swift",
       "kind": "StringLiteral",
-      "offset": 504,
+      "offset": 434,
       "length": 21,
       "value": "\"Signature algorithm\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/X509Wrapper.swift",
       "kind": "StringLiteral",
-      "offset": 556,
+      "offset": 486,
       "length": 22,
       "value": "\"Public key algorithm\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/X509Wrapper.swift",
       "kind": "StringLiteral",
-      "offset": 600,
+      "offset": 530,
       "length": 12,
       "value": "\"Valid from\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/X509Wrapper.swift",
       "kind": "StringLiteral",
-      "offset": 633,
+      "offset": 563,
       "length": 10,
       "value": "\"Valid to\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/COM.swift",
       "kind": "StringLiteral",
-      "offset": 195,
+      "offset": 160,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/COM.swift",
       "kind": "StringLiteral",
-      "offset": 259,
+      "offset": 224,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/COM.swift",
       "kind": "Array",
-      "offset": 328,
+      "offset": 293,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 217,
+      "offset": 183,
       "length": 16,
       "value": "\"2.23.136.1.1.5\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 312,
+      "offset": 278,
       "length": 23,
       "value": "\"0.4.0.127.0.7.2.2.1.1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 368,
+      "offset": 334,
       "length": 23,
       "value": "\"0.4.0.127.0.7.2.2.1.2\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 472,
+      "offset": 438,
       "length": 25,
       "value": "\"0.4.0.127.0.7.2.2.3.1.1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 543,
+      "offset": 509,
       "length": 25,
       "value": "\"0.4.0.127.0.7.2.2.3.2.1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 616,
+      "offset": 582,
       "length": 25,
       "value": "\"0.4.0.127.0.7.2.2.3.1.2\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 689,
+      "offset": 655,
       "length": 25,
       "value": "\"0.4.0.127.0.7.2.2.3.1.3\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 762,
+      "offset": 728,
       "length": 25,
       "value": "\"0.4.0.127.0.7.2.2.3.1.4\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 837,
+      "offset": 803,
       "length": 25,
       "value": "\"0.4.0.127.0.7.2.2.3.2.2\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 912,
+      "offset": 878,
       "length": 25,
       "value": "\"0.4.0.127.0.7.2.2.3.2.3\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 987,
+      "offset": 953,
       "length": 25,
       "value": "\"0.4.0.127.0.7.2.2.3.2.4\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1060,
+      "offset": 1026,
       "length": 15,
       "value": "\"0.4.0.127.0.7\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1110,
+      "offset": 1076,
       "length": 8,
       "value": "\".2.2.4\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 1126,
       "length": 4,
       "value": "\".1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1225,
+      "offset": 1191,
       "length": 4,
       "value": "\".1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1350,
+      "offset": 1316,
       "length": 4,
       "value": "\".2\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1479,
+      "offset": 1445,
       "length": 4,
       "value": "\".3\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1608,
+      "offset": 1574,
       "length": 4,
       "value": "\".4\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1721,
+      "offset": 1687,
       "length": 4,
       "value": "\".2\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1790,
+      "offset": 1756,
       "length": 4,
       "value": "\".1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1921,
+      "offset": 1887,
       "length": 4,
       "value": "\".2\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2056,
+      "offset": 2022,
       "length": 4,
       "value": "\".3\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2191,
+      "offset": 2157,
       "length": 4,
       "value": "\".4\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2304,
+      "offset": 2270,
       "length": 4,
       "value": "\".3\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2369,
+      "offset": 2335,
       "length": 4,
       "value": "\".1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2494,
+      "offset": 2460,
       "length": 4,
       "value": "\".2\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2623,
+      "offset": 2589,
       "length": 4,
       "value": "\".3\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2752,
+      "offset": 2718,
       "length": 4,
       "value": "\".4\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2865,
+      "offset": 2831,
       "length": 4,
       "value": "\".4\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2934,
+      "offset": 2900,
       "length": 4,
       "value": "\".1\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3065,
+      "offset": 3031,
       "length": 4,
       "value": "\".2\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3200,
+      "offset": 3166,
       "length": 4,
       "value": "\".3\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3335,
+      "offset": 3301,
       "length": 4,
       "value": "\".4\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3451,
+      "offset": 3417,
       "length": 4,
       "value": "\".6\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3526,
+      "offset": 3492,
       "length": 4,
       "value": "\".2\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3664,
+      "offset": 3630,
       "length": 4,
       "value": "\".3\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SecurityInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3802,
+      "offset": 3768,
       "length": 4,
       "value": "\".4\""
     },
@@ -71851,28 +71524,28 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup1.swift",
       "kind": "Dictionary",
-      "offset": 428,
+      "offset": 358,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup.swift",
       "kind": "Array",
-      "offset": 290,
+      "offset": 255,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup.swift",
       "kind": "Array",
-      "offset": 435,
+      "offset": 400,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroup.swift",
       "kind": "IntegerLiteral",
-      "offset": 457,
+      "offset": 422,
       "length": 1,
       "value": "0"
     },
@@ -72075,14 +71748,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13999,
+      "offset": 13805,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 14034,
+      "offset": 13840,
       "length": 2,
       "value": "\"\""
     },
@@ -72194,112 +71867,112 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 24459,
+      "offset": 24266,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 25064,
+      "offset": 24871,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 25330,
+      "offset": 25137,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 25364,
+      "offset": 25171,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 25398,
+      "offset": 25205,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 25432,
+      "offset": 25239,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 25705,
+      "offset": 25512,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 26039,
+      "offset": 25846,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 26162,
+      "offset": 25969,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 26394,
+      "offset": 26201,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 26419,
+      "offset": 26226,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 26444,
+      "offset": 26251,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 26574,
+      "offset": 26381,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "BooleanLiteral",
-      "offset": 26703,
+      "offset": 26510,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 28502,
+      "offset": 28309,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/CameraModule\/Camera\/LiveIDModule\/FaceDetector.swift",
       "kind": "IntegerLiteral",
-      "offset": 28519,
+      "offset": 28326,
       "length": 1,
       "value": "0"
     },
@@ -72397,14 +72070,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/AES_3DES_DESEncryption.swift",
       "kind": "IntegerLiteral",
-      "offset": 9295,
+      "offset": 9085,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/AES_3DES_DESEncryption.swift",
       "kind": "IntegerLiteral",
-      "offset": 11071,
+      "offset": 10826,
       "length": 1,
       "value": "0"
     },
@@ -72677,98 +72350,98 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 833,
+      "offset": 767,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 894,
+      "offset": 828,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 982,
+      "offset": 916,
       "length": 4,
       "value": "0x03"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1070,
+      "offset": 1004,
       "length": 4,
       "value": "0x04"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 1240,
+      "offset": 1174,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1275,
+      "offset": 1209,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "Array",
-      "offset": 1338,
+      "offset": 1272,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1379,
+      "offset": 1313,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1416,
+      "offset": 1350,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1459,
+      "offset": 1393,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1549,
+      "offset": 1483,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1589,
+      "offset": 1523,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1629,
+      "offset": 1563,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PACEHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1666,
+      "offset": 1600,
       "length": 2,
       "value": "-1"
     },
@@ -72796,7 +72469,7 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/SOD.swift",
       "kind": "Array",
-      "offset": 2156,
+      "offset": 2121,
       "length": 2,
       "value": "[]"
     },
@@ -72859,217 +72532,217 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 450,
+      "offset": 415,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 498,
+      "offset": 463,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 546,
+      "offset": 511,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 598,
+      "offset": 563,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 655,
+      "offset": 620,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 707,
+      "offset": 672,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 765,
+      "offset": 730,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 818,
+      "offset": 783,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 876,
+      "offset": 841,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 934,
+      "offset": 899,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 987,
+      "offset": 952,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 1045,
+      "offset": 1010,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 1103,
+      "offset": 1068,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/PACEInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 1156,
+      "offset": 1121,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2144,
+      "offset": 2120,
       "length": 16,
       "value": "\"passportNumber\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2166,
+      "offset": 2142,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2246,
+      "offset": 2222,
       "length": 13,
       "value": "\"dateOfBirth\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2265,
+      "offset": 2241,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2344,
+      "offset": 2320,
       "length": 12,
       "value": "\"expiryDate\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/PassportDetails.swift",
       "kind": "StringLiteral",
-      "offset": 2362,
+      "offset": 2338,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/BACHandler.swift",
       "kind": "Array",
-      "offset": 258,
+      "offset": 236,
       "length": 9,
       "value": "[0, 0, 0, 1]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/BACHandler.swift",
       "kind": "Array",
-      "offset": 293,
+      "offset": 271,
       "length": 9,
       "value": "[0, 0, 0, 2]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/BACHandler.swift",
       "kind": "Array",
-      "offset": 341,
+      "offset": 319,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/BACHandler.swift",
       "kind": "Array",
-      "offset": 377,
+      "offset": 355,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/BACHandler.swift",
       "kind": "Array",
-      "offset": 409,
+      "offset": 387,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/BACHandler.swift",
       "kind": "Array",
-      "offset": 440,
+      "offset": 418,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/BACHandler.swift",
       "kind": "Array",
-      "offset": 475,
+      "offset": 453,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 278,
+      "offset": 243,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 334,
+      "offset": 299,
       "length": 3,
       "value": "0x1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 363,
+      "offset": 328,
       "length": 3,
       "value": "0x2"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/SecureMessagingSessionKeyGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 393,
+      "offset": 358,
       "length": 3,
       "value": "0x3"
     },
@@ -73104,133 +72777,133 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 261,
+      "offset": 226,
       "length": 4,
       "value": "0x60"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 281,
+      "offset": 246,
       "length": 4,
       "value": "0x61"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 301,
+      "offset": 266,
       "length": 4,
       "value": "0x75"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 321,
+      "offset": 286,
       "length": 4,
       "value": "0x63"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 341,
+      "offset": 306,
       "length": 4,
       "value": "0x76"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 361,
+      "offset": 326,
       "length": 4,
       "value": "0x65"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 381,
+      "offset": 346,
       "length": 4,
       "value": "0x66"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 401,
+      "offset": 366,
       "length": 4,
       "value": "0x67"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 421,
+      "offset": 386,
       "length": 4,
       "value": "0x68"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 441,
+      "offset": 406,
       "length": 4,
       "value": "0x69"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 462,
+      "offset": 427,
       "length": 4,
       "value": "0x6A"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 483,
+      "offset": 448,
       "length": 4,
       "value": "0x6B"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 504,
+      "offset": 469,
       "length": 4,
       "value": "0x6C"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 525,
+      "offset": 490,
       "length": 4,
       "value": "0x6D"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 546,
+      "offset": 511,
       "length": 4,
       "value": "0x6E"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 567,
+      "offset": 532,
       "length": 4,
       "value": "0x6F"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 588,
+      "offset": 553,
       "length": 4,
       "value": "0x70"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 608,
+      "offset": 573,
       "length": 4,
       "value": "0x77"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/DataGroups\/DataGroupId.swift",
       "kind": "IntegerLiteral",
-      "offset": 632,
+      "offset": 597,
       "length": 4,
       "value": "0x00"
     },
@@ -73384,42 +73057,42 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 305,
+      "offset": 283,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 352,
+      "offset": 330,
       "length": 3,
       "value": "0x1"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 398,
+      "offset": 376,
       "length": 3,
       "value": "0x2"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 445,
+      "offset": 423,
       "length": 3,
       "value": "0x3"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 503,
+      "offset": 481,
       "length": 3,
       "value": "224"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/ChipAuthenticationHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 795,
+      "offset": 773,
       "length": 5,
       "value": "false"
     },
@@ -73727,63 +73400,63 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PassportReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 420,
+      "offset": 398,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PassportReader.swift",
       "kind": "Array",
-      "offset": 535,
+      "offset": 513,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PassportReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 574,
+      "offset": 552,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PassportReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 617,
+      "offset": 595,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PassportReader.swift",
       "kind": "StringLiteral",
-      "offset": 835,
+      "offset": 813,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PassportReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1195,
+      "offset": 1173,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PassportReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1433,
+      "offset": 1411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PassportReader.swift",
       "kind": "Array",
-      "offset": 2301,
+      "offset": 2279,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/RFIDScanner\/RFIDSupportingFiles\/NFCPassportReader\/PassportReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2332,
+      "offset": 2310,
       "length": 4,
       "value": "true"
     },

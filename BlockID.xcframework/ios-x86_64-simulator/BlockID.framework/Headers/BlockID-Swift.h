@@ -406,7 +406,7 @@ SWIFT_CLASS("_TtC7BlockID13PasskeyHelper")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC7BlockID14PassportReader") SWIFT_AVAILABILITY(ios,introduced=13)
+SWIFT_CLASS("_TtC7BlockID14PassportReader")
 @interface PassportReader : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

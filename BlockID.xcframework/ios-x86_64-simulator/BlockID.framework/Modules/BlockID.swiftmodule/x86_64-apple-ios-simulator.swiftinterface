@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BlockID
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BlockID
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import ARKit
 import AVFoundation
@@ -123,15 +123,13 @@ open class KeychainWrapper {
   open class func wipeKeychain()
   @objc deinit
 }
-@available(iOS 13, macOS 10.15, *)
 public struct DataGroupHash {
   public var id: Swift.String
   public var sodHash: Swift.String
   public var computedHash: Swift.String
   public var match: Swift.Bool
 }
-@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class ChipAuthenticationPublicKeyInfo : SecurityInfo {
+@_hasMissingDesignatedInitializers public class ChipAuthenticationPublicKeyInfo : SecurityInfo {
   override public func getObjectIdentifier() -> Swift.String
   override public func getProtocolOIDString() -> Swift.String
   public func getKeyId() -> Swift.Int
@@ -180,8 +178,7 @@ public class BIDAccount : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class DataGroup2 : DataGroup {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DataGroup2 : DataGroup {
   public var nrImages: Swift.Int {
     get
   }
@@ -253,8 +250,7 @@ public class DataGroup2 : DataGroup {
 @_hasMissingDesignatedInitializers public class BIDDocumentKeys {
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class DataGroup7 : DataGroup {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DataGroup7 : DataGroup {
   public var imageData: [Swift.UInt8] {
     get
   }
@@ -332,8 +328,7 @@ public enum AccessCodeType : Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @available(iOS 13, *)
-public class TagReader {
+@_hasMissingDesignatedInitializers public class TagReader {
   @objc deinit
 }
 public protocol QRScanResponseDelegate : AnyObject {
@@ -490,7 +485,6 @@ public enum PassportAuthenticationStatus {
     get
   }
 }
-@available(iOS 13, macOS 10.15, *)
 public class NFCPassportModel {
   public var documentType: Swift.String {
     get
@@ -634,21 +628,17 @@ public class NFCPassportModel {
   public func verifyActiveAuthentication(challenge: [Swift.UInt8], signature: [Swift.UInt8])
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class OpenSSLUtils {
+@_hasMissingDesignatedInitializers public class OpenSSLUtils {
   public static func getOpenSSLError() -> Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
-  @available(iOS 13, macOS 10.15, *)
   public static func getPublicKeyData(from key: Swift.OpaquePointer) -> [Swift.UInt8]?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @available(iOS 13, macOS 10.15, *)
   public static func decodePublicKeyFromBytes(pubKeyData: [Swift.UInt8], params: Swift.OpaquePointer) -> Swift.OpaquePointer?
   #endif
   public static func computeSharedSecret(privateKeyPair: Swift.OpaquePointer, publicKey: Swift.OpaquePointer) -> [Swift.UInt8]
   @objc deinit
 }
-@available(iOS 13, *)
 public struct ResponseAPDU {
   public var data: [Swift.UInt8]
   public var sw1: Swift.UInt8
@@ -980,8 +970,7 @@ extension BlockIDSDK {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class ChipAuthenticationInfo : SecurityInfo {
+@_hasMissingDesignatedInitializers public class ChipAuthenticationInfo : SecurityInfo {
   override public func getObjectIdentifier() -> Swift.String
   override public func getProtocolOIDString() -> Swift.String
   public func getKeyId() -> Swift.Int
@@ -990,7 +979,6 @@ public class ChipAuthenticationInfo : SecurityInfo {
   public static func toKeyLength(oid: Swift.String) throws -> Swift.Int
   @objc deinit
 }
-@available(iOS 13, macOS 10.15, *)
 public class ASN1Item : Swift.CustomDebugStringConvertible {
   public init(line: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -1002,7 +990,6 @@ public class ASN1Item : Swift.CustomDebugStringConvertible {
   }
   @objc deinit
 }
-@available(iOS 13, macOS 10.15, *)
 public class SimpleASN1DumpParser {
   public init()
   public func parse(data: Foundation.Data) throws -> ASN1Item
@@ -1126,7 +1113,6 @@ public enum SecureMessagingSupportedAlgorithms {
     get
   }
 }
-@available(iOS 13, *)
 public class SecureMessaging {
   public init(encryptionAlgorithm: SecureMessagingSupportedAlgorithms = .DES, ksenc: [Swift.UInt8], ksmac: [Swift.UInt8], ssc: [Swift.UInt8])
   @objc deinit
@@ -1146,7 +1132,6 @@ public class SecureMessaging {
 extension SelfieScannerViewController : SafariServices.SFSafariViewControllerDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
 }
-@available(iOS 13, macOS 10.15, *)
 public enum NFCPassportReaderError : Swift.Error {
   case ResponseError(Swift.String, Swift.UInt8, Swift.UInt8)
   case InvalidResponse
@@ -1174,7 +1159,6 @@ public enum NFCPassportReaderError : Swift.Error {
   case InvalidDataPassed(Swift.String)
   case NotYetSupported(Swift.String)
 }
-@available(iOS 13, macOS 10.15, *)
 extension NFCPassportReaderError : Foundation.LocalizedError {
   #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
@@ -1182,7 +1166,6 @@ extension NFCPassportReaderError : Foundation.LocalizedError {
   }
   #endif
 }
-@available(iOS 13, macOS 10.15, *)
 public enum OpenSSLError : Swift.Error {
   case UnableToGetX509CertificateFromPKCS7(Swift.String)
   case UnableToVerifyX509CertificateForSOD(Swift.String)
@@ -1193,7 +1176,6 @@ public enum OpenSSLError : Swift.Error {
   case UnableToParseASN1(Swift.String)
   case UnableToDecryptRSASignature(Swift.String)
 }
-@available(iOS 13, macOS 10.15, *)
 extension OpenSSLError : Foundation.LocalizedError {
   #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
@@ -1220,8 +1202,7 @@ extension PassiveAuthenticationError : Foundation.LocalizedError {
   @_Concurrency.MainActor @preconcurrency @objc required override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class DataGroup11 : DataGroup {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DataGroup11 : DataGroup {
   public var fullName: Swift.String? {
     get
   }
@@ -1420,7 +1401,6 @@ public struct PasskeyRequest : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@available(iOS 13, macOS 10.15, *)
 public enum CertificateType {
   case documentSigningCertificate
   case issuerSigningCertificate
@@ -1430,7 +1410,6 @@ public enum CertificateType {
     get
   }
 }
-@available(iOS 13, macOS 10.15, *)
 public enum CertificateItem : Swift.String {
   case fingerprint
   case issuerName
@@ -1443,13 +1422,11 @@ public enum CertificateItem : Swift.String {
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
-  @available(iOS 13, macOS 10.15, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
-@available(iOS 13, macOS 10.15, *)
 public class X509Wrapper {
   final public let cert: Swift.OpaquePointer
   #if compiler(>=5.3) && $NonescapableTypes
@@ -1483,8 +1460,7 @@ public class X509Wrapper {
   #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class COM : DataGroup {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class COM : DataGroup {
   public var version: Swift.String {
     get
   }
@@ -1496,8 +1472,7 @@ public class COM : DataGroup {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class SecurityInfo {
+@_hasMissingDesignatedInitializers public class SecurityInfo {
   public func getObjectIdentifier() -> Swift.String
   public func getProtocolOIDString() -> Swift.String
   @objc deinit
@@ -1568,7 +1543,6 @@ extension LiveIDScannerHelper : LiveIDResponseDelegate {
   public func liveIdDetectionCompleted(_ liveIdImage: UIKit.UIImage?, signatureToken: Swift.String?, livenessResult: Swift.String?, mobileSessionId: Swift.String? = nil, mobileDocumentId: Swift.String? = nil, error: ErrorResponse?)
   #endif
 }
-@available(iOS 13, macOS 10.15, *)
 public enum DocTypeEnum : Swift.String {
   case TD1
   case TD2
@@ -1576,21 +1550,18 @@ public enum DocTypeEnum : Swift.String {
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
-  @available(iOS 13, macOS 10.15, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class DataGroup1 : DataGroup {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DataGroup1 : DataGroup {
   public var elements: [Swift.String : Swift.String] {
     get
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class DataGroup {
+@_hasMissingDesignatedInitializers public class DataGroup {
   public var datagroupType: DataGroupId
   public var body: [Swift.UInt8] {
     get
@@ -1631,15 +1602,13 @@ public enum DocumentScannerType : Swift.String {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class DataGroup14 : DataGroup {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DataGroup14 : DataGroup {
   public var securityInfos: [SecurityInfo] {
     get
   }
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class DataGroup15 : DataGroup {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DataGroup15 : DataGroup {
   public var rsaPublicKey: Swift.OpaquePointer? {
     get
   }
@@ -1661,7 +1630,6 @@ public struct CustomErrors {
     public static let INVALID: (code: Swift.Int, message: Swift.String)
   }
   public struct Passkey {
-    public static let iOS_16_REQUIRED: (code: Swift.Int, message: Swift.String)
     public static let USERNAME_EMPTY: (code: Swift.Int, message: Swift.String)
     public static let DISPLAY_NAME_EMPTY: (code: Swift.Int, message: Swift.String)
     public static let ATTESTATION_OPTIONS_FAILED: (code: Swift.Int, message: Swift.String)
@@ -1781,23 +1749,15 @@ public struct CustomErrors {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@available(iOS 13, macOS 10.15, *)
 public func AESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func AESDecrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func AESECBEncrypt(key: [Swift.UInt8], message: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func tripleDESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func tripleDESDecrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func DESEncrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8], options: Swift.UInt32 = 0) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func DESDecrypt(key: [Swift.UInt8], message: [Swift.UInt8], iv: [Swift.UInt8], options: Swift.UInt32 = 0) -> [Swift.UInt8]
 public typealias PasswordPolicyCallback = (_ status: Swift.Bool, _ response: BIDPasswordPolicy?, _ error: ErrorResponse?) -> Swift.Void
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class DataGroup12 : DataGroup {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DataGroup12 : DataGroup {
   public var issuingAuthority: Swift.String? {
     get
   }
@@ -1827,7 +1787,6 @@ public class DataGroup12 : DataGroup {
   }
   @objc deinit
 }
-@available(iOS 13, macOS 10.15, *)
 public enum NFCViewDisplayMessage {
   case requestPresentPassport
   case authenticatingWithPassport(Swift.Int)
@@ -1835,15 +1794,13 @@ public enum NFCViewDisplayMessage {
   case error(NFCPassportReaderError)
   case successfulRead
 }
-@available(iOS 13, macOS 10.15, *)
 extension NFCViewDisplayMessage {
   public var description: Swift.String {
     get
   }
 }
 public typealias AccessCodeAPIsCallback = (_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class NotImplementedDG : DataGroup {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class NotImplementedDG : DataGroup {
   @objc deinit
 }
 public enum RegisterDocType : Swift.String {
@@ -1884,7 +1841,6 @@ public typealias DocumentEnrollmentCallback = (_ status: Swift.Bool, _ error: Er
   public func getDocumentCount() -> Swift.Int
   @objc deinit
 }
-@available(iOS 13, *)
 public class PACEHandler {
   public init(cardAccess: CardAccess, tagReader: TagReader) throws
   public func doPACE(mrzKey: Swift.String, completed: @escaping (Swift.Bool) -> ())
@@ -1904,36 +1860,21 @@ public func xor(_ kifd: [Swift.UInt8], _ response_kicc: [Swift.UInt8]) -> [Swift
 public func generateRandomUInt8Array(_ size: Swift.Int) -> [Swift.UInt8]
 public func pad(_ toPad: [Swift.UInt8], blockSize: Swift.Int) -> [Swift.UInt8]
 public func unpad(_ tounpad: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func mac(algoName: SecureMessagingSupportedAlgorithms, key: [Swift.UInt8], msg: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func desMAC(key: [Swift.UInt8], msg: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func aesMAC(key: [Swift.UInt8], msg: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func wrapDO(b: Swift.UInt8, arr: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func unwrapDO(tag: Swift.UInt8, wrappedData: [Swift.UInt8]) throws -> [Swift.UInt8]
 public func intToBytes(val: Swift.Int, removePadding: Swift.Bool) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func oidToBytes(oid: Swift.String, replaceTag: Swift.Bool) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func asn1Length(_ data: Swift.ArraySlice<Swift.UInt8>) throws -> (Swift.Int, Swift.Int)
-@available(iOS 13, macOS 10.15, *)
 public func asn1Length(_ data: [Swift.UInt8]) throws -> (Swift.Int, Swift.Int)
-@available(iOS 13, macOS 10.15, *)
 public func toAsn1Length(_ data: Swift.Int) throws -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func calcHash(data: [Swift.UInt8], hashAlgorithm: Swift.String) throws -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func calcSHA1Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func calcSHA224Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func calcSHA256Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func calcSHA512Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
-@available(iOS 13, macOS 10.15, *)
 public func calcSHA384Hash(_ data: [Swift.UInt8]) -> [Swift.UInt8]
 public enum CacheTTLLIMIT : Swift.Int {
   case oneDay
@@ -1977,8 +1918,7 @@ public enum PACEMappingType {
     get
   }
 }
-@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class PACEInfo : SecurityInfo {
+@_hasMissingDesignatedInitializers public class PACEInfo : SecurityInfo {
   public static let PARAM_ID_GFP_1024_160: Swift.Int
   public static let PARAM_ID_GFP_2048_224: Swift.Int
   public static let PARAM_ID_GFP_2048_256: Swift.Int
@@ -2014,7 +1954,6 @@ public class PACEInfo : SecurityInfo {
   public static func toKeyLength(oid: Swift.String) throws -> Swift.Int
   @objc deinit
 }
-@available(iOS 13, *)
 public class BACHandler {
   public var ksenc: [Swift.UInt8]
   public var ksmac: [Swift.UInt8]
@@ -2045,7 +1984,6 @@ public class BACHandler {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@available(iOS 13, macOS 10.15, *)
 public enum DataGroupId : Swift.Int, Swift.CaseIterable {
   case COM
   case DG1
@@ -2071,9 +2009,7 @@ public enum DataGroupId : Swift.Int, Swift.CaseIterable {
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
-  @available(iOS 13, macOS 10.15, *)
   public typealias AllCases = [DataGroupId]
-  @available(iOS 13, macOS 10.15, *)
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [DataGroupId] {
     get
@@ -2182,8 +2118,7 @@ public struct ProxyDetails {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
-public class CardAccess {
+@_hasMissingDesignatedInitializers public class CardAccess {
   public var securityInfos: [SecurityInfo] {
     get
   }
@@ -2216,8 +2151,7 @@ extension RFIDScannerHelper : RFIDResponseDelegate {
   public func rfidScanCompleted(withPassport docDic: [Swift.String : Any]?, error: ErrorResponse?)
   #endif
 }
-@objc @available(iOS 13, *)
-public class PassportReader : ObjectiveC.NSObject {
+@objc public class PassportReader : ObjectiveC.NSObject {
   public var passiveAuthenticationUsesOpenSSL: Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   public init(logLevel: LogLevel = .info, masterListURL: Foundation.URL? = nil)
@@ -2230,7 +2164,6 @@ public class PassportReader : ObjectiveC.NSObject {
   public func stopReadingPassport()
   @objc deinit
 }
-@available(iOS 13, *)
 extension PassportReader : CoreNFC.NFCTagReaderSessionDelegate {
   public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
   public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: any Swift.Error)
@@ -2278,21 +2211,13 @@ extension AuthAssetType : Swift.Hashable {}
 extension AuthAssetType : Swift.RawRepresentable {}
 extension SecureMessagingSupportedAlgorithms : Swift.Equatable {}
 extension SecureMessagingSupportedAlgorithms : Swift.Hashable {}
-@available(iOS 13, macOS 10.15, *)
 extension CertificateType : Swift.Equatable {}
-@available(iOS 13, macOS 10.15, *)
 extension CertificateType : Swift.Hashable {}
-@available(iOS 13, macOS 10.15, *)
 extension CertificateItem : Swift.Equatable {}
-@available(iOS 13, macOS 10.15, *)
 extension CertificateItem : Swift.Hashable {}
-@available(iOS 13, macOS 10.15, *)
 extension CertificateItem : Swift.RawRepresentable {}
-@available(iOS 13, macOS 10.15, *)
 extension DocTypeEnum : Swift.Equatable {}
-@available(iOS 13, macOS 10.15, *)
 extension DocTypeEnum : Swift.Hashable {}
-@available(iOS 13, macOS 10.15, *)
 extension DocTypeEnum : Swift.RawRepresentable {}
 extension DocumentScannerType : Swift.Equatable {}
 extension DocumentScannerType : Swift.Hashable {}
@@ -2308,11 +2233,8 @@ extension CacheTTLLIMIT : Swift.Hashable {}
 extension CacheTTLLIMIT : Swift.RawRepresentable {}
 extension PACEMappingType : Swift.Equatable {}
 extension PACEMappingType : Swift.Hashable {}
-@available(iOS 13, macOS 10.15, *)
 extension DataGroupId : Swift.Equatable {}
-@available(iOS 13, macOS 10.15, *)
 extension DataGroupId : Swift.Hashable {}
-@available(iOS 13, macOS 10.15, *)
 extension DataGroupId : Swift.RawRepresentable {}
 extension Version : Swift.Equatable {}
 extension Version : Swift.Hashable {}
