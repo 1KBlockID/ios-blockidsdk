@@ -20971,9 +20971,6 @@
             "usr": "s:7BlockID0A5IDSDKC17verifyUserAccount6userId8password6origin11deviceToken3lat3lon10completionySS_SSAA9BIDOriginCSSSgS2dySb_AA13ErrorResponseCSgtctF",
             "mangledName": "$s7BlockID0A5IDSDKC17verifyUserAccount6userId8password6origin11deviceToken3lat3lon10completionySS_SSAA9BIDOriginCSSSgS2dySb_AA13ErrorResponseCSgtctF",
             "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -69928,70 +69925,70 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 97902,
+      "offset": 98296,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 101055,
+      "offset": 101449,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 103465,
+      "offset": 103859,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 109833,
+      "offset": 110227,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 112764,
+      "offset": 113158,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116674,
+      "offset": 117068,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 116743,
+      "offset": 117137,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 116976,
+      "offset": 117370,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 117337,
+      "offset": 117731,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 128319,
+      "offset": 128713,
       "length": 1,
       "value": "0"
     },
@@ -70005,14 +70002,14 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AuthNAPIs\/AuthNAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 4529,
+      "offset": 4983,
       "length": 17,
       "value": "\"signature_token\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AuthNAPIs\/AuthNAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 5027,
+      "offset": 5481,
       "length": 29,
       "value": "\"proof_of_authentication_jwt\""
     },
