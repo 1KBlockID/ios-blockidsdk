@@ -66706,7 +66706,10 @@
             "declKind": "EnumElement",
             "usr": "s:7BlockID14APIFailedErrorO8notFoundyACSS_tcACmF",
             "mangledName": "$s7BlockID14APIFailedErrorO8notFoundyACSS_tcACmF",
-            "moduleName": "BlockID"
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
@@ -66733,7 +66736,8 @@
             "mangledName": "$s7BlockID14APIFailedErrorO16errorDescriptionSSSgvp",
             "moduleName": "BlockID",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "accessors": [
@@ -66772,7 +66776,8 @@
         "mangledName": "$s7BlockID14APIFailedErrorO",
         "moduleName": "BlockID",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -73502,35 +73507,35 @@
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/BaseAPIResponse.swift",
       "kind": "StringLiteral",
-      "offset": 225,
+      "offset": 964,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/BaseAPIResponse.swift",
       "kind": "StringLiteral",
-      "offset": 255,
+      "offset": 1059,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/BaseAPIResponse.swift",
       "kind": "StringLiteral",
-      "offset": 282,
+      "offset": 1132,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/BaseAPIResponse.swift",
       "kind": "StringLiteral",
-      "offset": 313,
+      "offset": 1252,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/prasannagupta\/Documents\/GitHub\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/BaseAPIResponse.swift",
       "kind": "StringLiteral",
-      "offset": 345,
+      "offset": 1352,
       "length": 2,
       "value": "\"\""
     }
