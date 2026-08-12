@@ -50,6 +50,9 @@ Then add `BlockID` to your target's dependencies:
 BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
+### v1.30.60
+- Improved error message on passkey
+
 ### v1.30.50
 - Added simulator support
 - Improved API error response handling
