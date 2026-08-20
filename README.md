@@ -18,7 +18,7 @@ BlockID can be integrated using Swift Package Manager (SPM).
    ```
    https://github.com/1KBlockID/ios-blockidsdk.git
    ```
-4. Set the **Dependency Rule** to **Exact Version** and enter `1.30.50` (or the desired version).
+4. Set the **Dependency Rule** to **Exact Version** and enter `1.30.51` (or the desired version).
 5. Click **Add Package**.
 6. Select the `BlockID` library and add it to your app target.
 
@@ -28,7 +28,7 @@ Add the following dependency to your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/1KBlockID/ios-blockidsdk.git", exact: "1.30.50")
+    .package(url: "https://github.com/1KBlockID/ios-blockidsdk.git", exact: "1.30.51")
 ]
 ```
 
@@ -52,6 +52,9 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 ### v1.30.60
 - Improved error message on passkey
+
+### v1.30.51
+- Bug fixes and improvements 
 
 ### v1.30.50
 - Added simulator support
