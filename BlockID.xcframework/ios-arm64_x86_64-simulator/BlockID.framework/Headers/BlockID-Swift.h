@@ -441,11 +441,6 @@ SWIFT_CLASS("_TtC7BlockID27SelfieScannerViewController")
 - (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
 @end
 
-SWIFT_CLASS("_TtC7BlockID17SessionPollingAPI")
-@interface SessionPollingAPI : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 /// A <code>Generator</code> contains all of the parameters needed to generate a one-time password.
 SWIFT_CLASS("_TtC7BlockID9TOTPUtils")
 @interface TOTPUtils : NSObject
@@ -908,11 +903,6 @@ SWIFT_CLASS("_TtC7BlockID27SelfieScannerViewController")
 
 @interface SelfieScannerViewController (SWIFT_EXTENSION(BlockID)) <SFSafariViewControllerDelegate>
 - (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
-@end
-
-SWIFT_CLASS("_TtC7BlockID17SessionPollingAPI")
-@interface SessionPollingAPI : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 /// A <code>Generator</code> contains all of the parameters needed to generate a one-time password.

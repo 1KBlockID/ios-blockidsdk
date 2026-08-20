@@ -321,13 +321,6 @@ public enum AccessCodeType : Swift.String {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers public class SessionPollingAPI : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func makeSessionRequest(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping SessionAPICallback)
-  #endif
-  @objc override dynamic public init()
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class TagReader {
   @objc deinit
 }
@@ -1647,6 +1640,12 @@ public struct CustomErrors {
     public static let LINKING_FAILED: (code: Swift.Int, message: Swift.String)
     public static let FETCH_WALLET_FAILED: (code: Swift.Int, message: Swift.String)
     public static let PASSKEY_AUTHENTICATION_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let WEBAUTHN_KEYPAIR_SETUP_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let ASSERTION_REQUEST_ENCODING_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let USER_FETCH_RESPONSE_PARSE_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let USER_DATA_MISSING_IN_RESPONSE: (code: Swift.Int, message: Swift.String)
+    public static let USER_INFO_NIL: (code: Swift.Int, message: Swift.String)
+    public static let CLIENT_KEYPAIR_FOR_REDEEM_ACCESS_CODE_IS_NIL: (code: Swift.Int, message: Swift.String)
   }
   public struct PublicKey {
     public static let NOT_FOUND: (code: Swift.Int, message: Swift.String)
@@ -2048,6 +2047,9 @@ public struct ProxyDetails {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func request(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (Swift.Int?, (any Swift.Error)?, Any?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func makeSessionRequest(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping SessionAPICallback)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func makeMultipartRequest<T>(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, multipartFormData: @escaping (Alamofire.MultipartFormData) -> Swift.Void, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (NetworkResponseCallback<T>) -> Swift.Void) where T : Swift.Decodable
