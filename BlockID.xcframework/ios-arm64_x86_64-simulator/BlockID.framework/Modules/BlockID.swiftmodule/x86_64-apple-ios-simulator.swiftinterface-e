@@ -321,13 +321,6 @@ public enum AccessCodeType : Swift.String {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers public class SessionPollingAPI : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func makeSessionRequest(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: BlockID.RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping BlockID.SessionAPICallback)
-  #endif
-  @objc override dynamic public init()
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class TagReader {
   @objc deinit
 }
@@ -394,6 +387,10 @@ public struct DTHStruct {
   public func getServerPublicKey() -> Swift.String?
   #endif
   public func setServerPublicKey(key: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getServerEnvironmentCurve() -> Swift.String?
+  #endif
+  public func setServerEnvironmentCurve(key: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   public func getOtpSeed() -> Swift.String?
   #endif
@@ -728,6 +725,7 @@ public typealias PasskeyCallback = (_ status: Swift.Bool, _ response: BlockID.Pa
 public typealias FetchUserResponseCallBack = (Swift.Bool, Swift.String?, BlockID.ErrorResponse?) -> Swift.Void
 public typealias EmptyOTPSeedsForAccountsCallback = (_ status: Swift.Bool, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public typealias OTPSeedUpdatedCallback = (_ status: Swift.Bool, _ results: [BlockID.OTPSeedUpdatedAccountResult], _ action: BlockID.OTPSeedUpdateAction) -> Swift.Void
+public typealias EnvironmentCallback = (_ status: Swift.Bool, _ environment: BlockID.BIDEnvironment?, _ error: BlockID.ErrorResponse?) -> Swift.Void
 public enum OTPSeedUpdateAction {
   case emptyAccounts
   case executed
@@ -813,11 +811,12 @@ public enum OTPSeedUpdateAction {
   public func resetPassword(userId: Swift.String, password: Swift.String, account: BlockID.BIDAccount?, origin: BlockID.BIDOrigin, completion: @escaping BlockID.UserAPICallback)
   #endif
   public func resetSDK(licenseKey: Swift.String, rootTenant: BlockID.BIDTenant, reason: Swift.String)
+  public func getEnvironmentCurveName(dns: Swift.String, completion: @escaping BlockID.EnvironmentCallback)
   #if compiler(>=5.3) && $NonescapableTypes
-  public func encryptString(str: Swift.String, rcptKey: Swift.String, curveName: Swift.String = "secp256k1") -> Swift.String?
+  public func encryptString(str: Swift.String, rcptKey: Swift.String, curveName: Swift.String) -> Swift.String?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func decryptString(str: Swift.String, senderKey: Swift.String, curveName: Swift.String = "secp256k1") -> Swift.String?
+  public func decryptString(str: Swift.String, senderKey: Swift.String, curveName: Swift.String) -> Swift.String?
   #endif
   public func getWalletPublicKey() -> Swift.String
   public func getServerPublicKey() -> Swift.String
@@ -900,7 +899,7 @@ extension BlockID.BlockIDSDK {
   public func getPasswordPolicy(account: BlockID.BIDLinkedAccount, completion: @escaping BlockID.PasswordPolicyCallback)
 }
 extension BlockID.BlockIDSDK {
-  public func getVCsFrom(downloadURL url: Swift.String, completion: @escaping BlockID.VCsCallback)
+  public func getVC(downloadURL url: Swift.String, completion: @escaping BlockID.VCsCallback)
   public func getVP(_ dictVCObj: [Swift.String : Any], completion: @escaping BlockID.VPCallback)
 }
 extension BlockID.BlockIDSDK {
@@ -943,6 +942,7 @@ extension BlockID.BlockIDSDK {
   #if compiler(>=5.3) && $NonescapableTypes
   public func restoreWalletWithLiveID(controller: UIKit.UIViewController, rootTenantDNS: Swift.String, communityName: Swift.String, dvcID: Swift.String? = nil, completion: @escaping BlockID.RestoreWalletWithLiveIDCallback)
   #endif
+  public func logAppEvent(eventName: Swift.String, tenant: BlockID.BIDTenant, eventParams: [Swift.String : Any])
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TOTPUtils : ObjectiveC.NSObject {
   public static let sharedInstance: BlockID.TOTPUtils
@@ -1262,10 +1262,10 @@ extension BlockID.PassiveAuthenticationError : Foundation.LocalizedError {
 @_hasMissingDesignatedInitializers public class AccessCodeResponse : Swift.Codable {
   public func getPublicKey() -> Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
-  public func accessCodeValidationData(curveName: Swift.String = "secp256k1") -> BlockID.AccessCodeValidationResponseDecryptedData?
+  public func accessCodeValidationData(curveName: Swift.String) -> BlockID.AccessCodeValidationResponseDecryptedData?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func accessCodeRedeemData(curveName: Swift.String = "secp256k1") -> BlockID.BIDOnboardedUserAccount?
+  public func accessCodeRedeemData(curveName: Swift.String) -> BlockID.BIDOnboardedUserAccount?
   #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -1584,7 +1584,7 @@ public enum DocTypeEnum : Swift.String {
   required public init(from decoder: any Swift.Decoder) throws
 }
 public struct AnalyticsHelper {
-  public static func logAppEvent(eventName: Swift.String, isPasskeyEnabled: Swift.Bool = false, tenant: BlockID.BIDTenant, eventParams: [Swift.String : Any])
+  public static func logPassKeyEvent(eventName: Swift.String, tenant: BlockID.BIDTenant, apiKeyPair: BlockID.APIKeyPair, eventParams: [Swift.String : Any])
 }
 @_hasMissingDesignatedInitializers public class CreateAccessCodePayload {
   public init(version: BlockID.Version, type: BlockID.AccessCodeType, emailID: Swift.String, emailSubject: Swift.String, emailTemplate: Swift.String)
@@ -1647,6 +1647,12 @@ public struct CustomErrors {
     public static let LINKING_FAILED: (code: Swift.Int, message: Swift.String)
     public static let FETCH_WALLET_FAILED: (code: Swift.Int, message: Swift.String)
     public static let PASSKEY_AUTHENTICATION_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let WEBAUTHN_KEYPAIR_SETUP_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let ASSERTION_REQUEST_ENCODING_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let USER_FETCH_RESPONSE_PARSE_FAILED: (code: Swift.Int, message: Swift.String)
+    public static let USER_DATA_MISSING_IN_RESPONSE: (code: Swift.Int, message: Swift.String)
+    public static let USER_INFO_NIL: (code: Swift.Int, message: Swift.String)
+    public static let CLIENT_KEYPAIR_FOR_REDEEM_ACCESS_CODE_IS_NIL: (code: Swift.Int, message: Swift.String)
   }
   public struct PublicKey {
     public static let NOT_FOUND: (code: Swift.Int, message: Swift.String)
@@ -1688,6 +1694,8 @@ public struct CustomErrors {
   public static let kPublicKeyRequired: (code: Swift.Int, msg: Swift.String)
   public static let kEncryption: (code: Swift.Int, msg: Swift.String)
   public static let kDecryption: (code: Swift.Int, msg: Swift.String)
+  public static let kAPIKeyPairRequired: (code: Swift.Int, message: Swift.String)
+  public static let kWalletIsMandatory: (code: Swift.Int, message: Swift.String)
   public static let kDocumentDataMandatory: (code: Swift.Int, msg: Swift.String)
   public static let kInvalidPP: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentVerificationFailed: (code: Swift.Int, msg: Swift.String)
@@ -2050,6 +2058,9 @@ public struct ProxyDetails {
   public func request(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: BlockID.RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (Swift.Int?, (any Swift.Error)?, Any?) -> Swift.Void)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  public func makeSessionRequest(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, requestBody: BlockID.RequestBody?, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping BlockID.SessionAPICallback)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func makeMultipartRequest<T>(requestMethod: Alamofire.HTTPMethod, serviceUrl: Swift.String?, multipartFormData: @escaping (Alamofire.MultipartFormData) -> Swift.Void, requestHeaders: Alamofire.HTTPHeaders, completion: @escaping (BlockID.NetworkResponseCallback<T>) -> Swift.Void) where T : Swift.Decodable
   #endif
   @objc deinit
@@ -2086,6 +2097,13 @@ public struct ProxyDetails {
   public var id: Swift.String?
   public var mobileLogo: Swift.String?
   public var name: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class BIDEnvironment : ObjectiveC.NSObject, Swift.Codable {
+  public var EC_CURVE_NAME: Swift.String?
+  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws

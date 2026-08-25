@@ -312,6 +312,11 @@ SWIFT_CLASS("_TtC7BlockID20AccountAuthConstants")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+SWIFT_CLASS("_TtC7BlockID14BIDEnvironment")
+@interface BIDEnvironment : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 SWIFT_CLASS("_TtC7BlockID17BIDNetworkManager")
 @interface BIDNetworkManager : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -773,6 +778,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC7BlockID20AccountAuthConstants")
 @interface AccountAuthConstants : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7BlockID14BIDEnvironment")
+@interface BIDEnvironment : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
