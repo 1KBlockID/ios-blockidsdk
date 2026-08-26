@@ -1751,6 +1751,13 @@ public struct CustomErrors {
   public init(code: Swift.Int, msg: Swift.String, responseObj: [Swift.String : Any])
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class BIDEnvironment : ObjectiveC.NSObject, Swift.Codable {
+  public var EC_CURVE_NAME: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers public class ServicePublicKeyResponse : Swift.Codable {
   public var publicKey: Swift.String?
   @objc deinit
@@ -2097,13 +2104,6 @@ public struct ProxyDetails {
   public var id: Swift.String?
   public var mobileLogo: Swift.String?
   public var name: Swift.String?
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class BIDEnvironment : ObjectiveC.NSObject, Swift.Codable {
-  public var EC_CURVE_NAME: Swift.String?
-  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
