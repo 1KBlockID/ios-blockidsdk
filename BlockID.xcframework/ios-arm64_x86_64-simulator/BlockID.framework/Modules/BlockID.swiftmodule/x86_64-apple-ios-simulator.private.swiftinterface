@@ -388,6 +388,10 @@ public struct DTHStruct {
   #endif
   public func setServerPublicKey(key: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
+  public func getServerEnvironmentCurve() -> Swift.String?
+  #endif
+  public func setServerEnvironmentCurve(key: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getOtpSeed() -> Swift.String?
   #endif
   public func setOtpSeed(key: Swift.String)
@@ -721,6 +725,7 @@ public typealias PasskeyCallback = (_ status: Swift.Bool, _ response: PasskeyRes
 public typealias FetchUserResponseCallBack = (Swift.Bool, Swift.String?, ErrorResponse?) -> Swift.Void
 public typealias EmptyOTPSeedsForAccountsCallback = (_ status: Swift.Bool, _ error: ErrorResponse?) -> Swift.Void
 public typealias OTPSeedUpdatedCallback = (_ status: Swift.Bool, _ results: [OTPSeedUpdatedAccountResult], _ action: OTPSeedUpdateAction) -> Swift.Void
+public typealias EnvironmentCallback = (_ status: Swift.Bool, _ environment: BIDEnvironment?, _ error: ErrorResponse?) -> Swift.Void
 public enum OTPSeedUpdateAction {
   case emptyAccounts
   case executed
@@ -806,11 +811,12 @@ public enum OTPSeedUpdateAction {
   public func resetPassword(userId: Swift.String, password: Swift.String, account: BIDAccount?, origin: BIDOrigin, completion: @escaping UserAPICallback)
   #endif
   public func resetSDK(licenseKey: Swift.String, rootTenant: BIDTenant, reason: Swift.String)
+  public func getEnvironmentCurveName(dns: Swift.String, completion: @escaping EnvironmentCallback)
   #if compiler(>=5.3) && $NonescapableTypes
-  public func encryptString(str: Swift.String, rcptKey: Swift.String) -> Swift.String?
+  public func encryptString(str: Swift.String, rcptKey: Swift.String, curveName: Swift.String) -> Swift.String?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func decryptString(str: Swift.String, senderKey: Swift.String) -> Swift.String?
+  public func decryptString(str: Swift.String, senderKey: Swift.String, curveName: Swift.String) -> Swift.String?
   #endif
   public func getWalletPublicKey() -> Swift.String
   public func getServerPublicKey() -> Swift.String
@@ -893,7 +899,7 @@ extension BlockIDSDK {
   public func getPasswordPolicy(account: BIDLinkedAccount, completion: @escaping PasswordPolicyCallback)
 }
 extension BlockIDSDK {
-  public func getVCsFrom(downloadURL url: Swift.String, completion: @escaping VCsCallback)
+  public func getVC(downloadURL url: Swift.String, completion: @escaping VCsCallback)
   public func getVP(_ dictVCObj: [Swift.String : Any], completion: @escaping VPCallback)
 }
 extension BlockIDSDK {
@@ -936,6 +942,7 @@ extension BlockIDSDK {
   #if compiler(>=5.3) && $NonescapableTypes
   public func restoreWalletWithLiveID(controller: UIKit.UIViewController, rootTenantDNS: Swift.String, communityName: Swift.String, dvcID: Swift.String? = nil, completion: @escaping RestoreWalletWithLiveIDCallback)
   #endif
+  public func logAppEvent(eventName: Swift.String, tenant: BIDTenant, eventParams: [Swift.String : Any])
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TOTPUtils : ObjectiveC.NSObject {
   public static let sharedInstance: TOTPUtils
@@ -1255,10 +1262,10 @@ extension PassiveAuthenticationError : Foundation.LocalizedError {
 @_hasMissingDesignatedInitializers public class AccessCodeResponse : Swift.Codable {
   public func getPublicKey() -> Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
-  public func accessCodeValidationData() -> AccessCodeValidationResponseDecryptedData?
+  public func accessCodeValidationData(curveName: Swift.String) -> AccessCodeValidationResponseDecryptedData?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func accessCodeRedeemData() -> BIDOnboardedUserAccount?
+  public func accessCodeRedeemData(curveName: Swift.String) -> BIDOnboardedUserAccount?
   #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -1577,7 +1584,7 @@ public enum DocTypeEnum : Swift.String {
   required public init(from decoder: any Swift.Decoder) throws
 }
 public struct AnalyticsHelper {
-  public static func logAppEvent(eventName: Swift.String, isPasskeyEnabled: Swift.Bool = false, tenant: BIDTenant, eventParams: [Swift.String : Any])
+  public static func logPassKeyEvent(eventName: Swift.String, tenant: BIDTenant, apiKeyPair: APIKeyPair, eventParams: [Swift.String : Any])
 }
 @_hasMissingDesignatedInitializers public class CreateAccessCodePayload {
   public init(version: Version, type: AccessCodeType, emailID: Swift.String, emailSubject: Swift.String, emailTemplate: Swift.String)
@@ -1687,6 +1694,8 @@ public struct CustomErrors {
   public static let kPublicKeyRequired: (code: Swift.Int, msg: Swift.String)
   public static let kEncryption: (code: Swift.Int, msg: Swift.String)
   public static let kDecryption: (code: Swift.Int, msg: Swift.String)
+  public static let kAPIKeyPairRequired: (code: Swift.Int, message: Swift.String)
+  public static let kWalletIsMandatory: (code: Swift.Int, message: Swift.String)
   public static let kDocumentDataMandatory: (code: Swift.Int, msg: Swift.String)
   public static let kInvalidPP: (code: Swift.Int, msg: Swift.String)
   public static let kDocumentVerificationFailed: (code: Swift.Int, msg: Swift.String)
@@ -1741,6 +1750,13 @@ public struct CustomErrors {
   public init(code: Swift.Int, msg: Swift.String)
   public init(code: Swift.Int, msg: Swift.String, responseObj: [Swift.String : Any])
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class BIDEnvironment : ObjectiveC.NSObject, Swift.Codable {
+  public var EC_CURVE_NAME: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class ServicePublicKeyResponse : Swift.Codable {
   public var publicKey: Swift.String?
