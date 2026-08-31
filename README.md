@@ -51,7 +51,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 ### v1.30.60
-- Bug fixes and improvements 
+- Bug fixes and improvements
 
 ### v1.30.51
 - Bug fixes and improvements 
