@@ -70240,70 +70240,70 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 98296,
+      "offset": 98454,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 101449,
+      "offset": 101607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 103859,
+      "offset": 104017,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 110227,
+      "offset": 110385,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 113158,
+      "offset": 113316,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 117068,
+      "offset": 117226,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 117137,
+      "offset": 117295,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 117370,
+      "offset": 117528,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 117731,
+      "offset": 117889,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 128713,
+      "offset": 128871,
       "length": 1,
       "value": "0"
     },
