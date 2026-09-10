@@ -51,7 +51,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 
 ## Change Logs
 ### v1.30.70
-- Added support for *.1kosmos-gov.net and *.1kosmos.fedhive.mil tenants
+- Added support for mil environments (fedramp)
 
 ### v1.30.60
 - Bug fixes and improvements
