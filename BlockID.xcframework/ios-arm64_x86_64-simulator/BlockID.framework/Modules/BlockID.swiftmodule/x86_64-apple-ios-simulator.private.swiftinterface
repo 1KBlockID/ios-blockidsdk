@@ -819,6 +819,9 @@ public enum OTPSeedUpdateAction {
   public func decryptString(str: Swift.String, senderKey: Swift.String, curveName: Swift.String) -> Swift.String?
   #endif
   public func getWalletPublicKey() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func sha512SaltedWithWalletKey(_ value: Swift.String) -> Swift.String?
+  #endif
   public func getServerPublicKey() -> Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
   public func getMnemonicPhrases() -> Swift.String?
@@ -2144,6 +2147,7 @@ public struct ProxyDetails {
 }
 extension Swift.String {
   public func sha512() -> Swift.String
+  public func sha512SaltedBase64(salt: Swift.String) -> Swift.String
   public func sha256() -> Swift.String
   public func md5HashV1() -> Swift.String
   public func md5HashV0() -> Swift.String
