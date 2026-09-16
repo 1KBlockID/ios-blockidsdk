@@ -52,6 +52,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 ### v1.30.70
 - Added support for mil environments (fedramp)
+- Aligned SSN & Document Store hashing with AdminAPI (SHA-512 salted)
 
 ### v1.30.60
 - Bug fixes and improvements
