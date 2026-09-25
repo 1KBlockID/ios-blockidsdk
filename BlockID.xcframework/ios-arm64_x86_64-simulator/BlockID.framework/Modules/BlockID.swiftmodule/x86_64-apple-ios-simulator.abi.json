@@ -8255,6 +8255,61 @@
           },
           {
             "kind": "Function",
+            "name": "getServerEnvironmentCurve",
+            "printedName": "getServerEnvironmentCurve()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID8BIDVaultC25getServerEnvironmentCurveSSSgyF",
+            "mangledName": "$s7BlockID8BIDVaultC25getServerEnvironmentCurveSSSgyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setServerEnvironmentCurve",
+            "printedName": "setServerEnvironmentCurve(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID8BIDVaultC25setServerEnvironmentCurve3keyySS_tF",
+            "mangledName": "$s7BlockID8BIDVaultC25setServerEnvironmentCurve3keyySS_tF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getOtpSeed",
             "printedName": "getOtpSeed()",
             "children": [
@@ -13337,23 +13392,6 @@
       },
       {
         "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "BlockID"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BlockID",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "LocalAuthentication",
         "printedName": "LocalAuthentication",
         "declKind": "Import",
@@ -18395,8 +18433,87 @@
           },
           {
             "kind": "Function",
+            "name": "getEnvironmentCurveName",
+            "printedName": "getEnvironmentCurveName(dns:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, BlockID.BIDEnvironment?, BlockID.ErrorResponse?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, BlockID.BIDEnvironment?, BlockID.ErrorResponse?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.BIDEnvironment?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BIDEnvironment",
+                            "printedName": "BlockID.BIDEnvironment",
+                            "usr": "c:@M@BlockID@objc(cs)BIDEnvironment"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "BlockID.ErrorResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "BlockID.ErrorResponse",
+                            "usr": "c:@M@BlockID@objc(cs)ErrorResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC23getEnvironmentCurveName3dns10completionySS_ySb_AA14BIDEnvironmentCSgAA13ErrorResponseCSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC23getEnvironmentCurveName3dns10completionySS_ySb_AA14BIDEnvironmentCSgAA13ErrorResponseCSgtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "encryptString",
-            "printedName": "encryptString(str:rcptKey:)",
+            "printedName": "encryptString(str:rcptKey:curveName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18423,11 +18540,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC13encryptString3str7rcptKeySSSgSS_SStF",
-            "mangledName": "$s7BlockID0A5IDSDKC13encryptString3str7rcptKeySSSgSS_SStF",
+            "usr": "s:7BlockID0A5IDSDKC13encryptString3str7rcptKey9curveNameSSSgSS_S2StF",
+            "mangledName": "$s7BlockID0A5IDSDKC13encryptString3str7rcptKey9curveNameSSSgSS_S2StF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -18438,7 +18561,7 @@
           {
             "kind": "Function",
             "name": "decryptString",
-            "printedName": "decryptString(str:senderKey:)",
+            "printedName": "decryptString(str:senderKey:curveName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18465,11 +18588,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC13decryptString3str9senderKeySSSgSS_SStF",
-            "mangledName": "$s7BlockID0A5IDSDKC13decryptString3str9senderKeySSSgSS_SStF",
+            "usr": "s:7BlockID0A5IDSDKC13decryptString3str9senderKey9curveNameSSSgSS_S2StF",
+            "mangledName": "$s7BlockID0A5IDSDKC13decryptString3str9senderKey9curveNameSSSgSS_S2StF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -18491,6 +18620,42 @@
             "declKind": "Func",
             "usr": "s:7BlockID0A5IDSDKC18getWalletPublicKeySSyF",
             "mangledName": "$s7BlockID0A5IDSDKC18getWalletPublicKeySSyF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sha512SaltedWithWalletKey",
+            "printedName": "sha512SaltedWithWalletKey(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC25sha512SaltedWithWalletKeyySSSgSSF",
+            "mangledName": "$s7BlockID0A5IDSDKC25sha512SaltedWithWalletKeyySSSgSSF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -20942,8 +21107,8 @@
           },
           {
             "kind": "Function",
-            "name": "getVCsFrom",
-            "printedName": "getVCsFrom(downloadURL:completion:)",
+            "name": "getVC",
+            "printedName": "getVC(downloadURL:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -21011,8 +21176,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID0A5IDSDKC10getVCsFrom11downloadURL10completionySS_ySb_AA13ErrorResponseCSgSSSgtctF",
-            "mangledName": "$s7BlockID0A5IDSDKC10getVCsFrom11downloadURL10completionySS_ySb_AA13ErrorResponseCSgSSSgtctF",
+            "usr": "s:7BlockID0A5IDSDKC5getVC11downloadURL10completionySS_ySb_AA13ErrorResponseCSgSSSgtctF",
+            "mangledName": "$s7BlockID0A5IDSDKC5getVC11downloadURL10completionySS_ySb_AA13ErrorResponseCSgSSSgtctF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -22597,6 +22762,59 @@
             "declKind": "Func",
             "usr": "s:7BlockID0A5IDSDKC021restoreWalletWithLiveB010controller13rootTenantDNS13communityName03dvcB010completionySo16UIViewControllerC_S3SSgySb_AA13ErrorResponseCSgtctF",
             "mangledName": "$s7BlockID0A5IDSDKC021restoreWalletWithLiveB010controller13rootTenantDNS13communityName03dvcB010completionySo16UIViewControllerC_S3SSgySb_AA13ErrorResponseCSgtctF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logAppEvent",
+            "printedName": "logAppEvent(eventName:tenant:eventParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BIDTenant",
+                "printedName": "BlockID.BIDTenant",
+                "usr": "s:7BlockID9BIDTenantC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID0A5IDSDKC11logAppEvent9eventName6tenant0G6ParamsySS_AA9BIDTenantCSDySSypGtF",
+            "mangledName": "$s7BlockID0A5IDSDKC11logAppEvent9eventName6tenant0G6ParamsySS_AA9BIDTenantCSDySSypGtF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl",
@@ -31077,7 +31295,7 @@
           {
             "kind": "Function",
             "name": "accessCodeValidationData",
-            "printedName": "accessCodeValidationData()",
+            "printedName": "accessCodeValidationData(curveName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -31092,11 +31310,17 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID18AccessCodeResponseC06accessD14ValidationDataAA0cdge9DecryptedH0CSgyF",
-            "mangledName": "$s7BlockID18AccessCodeResponseC06accessD14ValidationDataAA0cdge9DecryptedH0CSgyF",
+            "usr": "s:7BlockID18AccessCodeResponseC06accessD14ValidationData9curveNameAA0cdge9DecryptedH0CSgSS_tF",
+            "mangledName": "$s7BlockID18AccessCodeResponseC06accessD14ValidationData9curveNameAA0cdge9DecryptedH0CSgSS_tF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -31106,7 +31330,7 @@
           {
             "kind": "Function",
             "name": "accessCodeRedeemData",
-            "printedName": "accessCodeRedeemData()",
+            "printedName": "accessCodeRedeemData(curveName:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -31121,11 +31345,17 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID18AccessCodeResponseC06accessD10RedeemDataAA23BIDOnboardedUserAccountCSgyF",
-            "mangledName": "$s7BlockID18AccessCodeResponseC06accessD10RedeemDataAA23BIDOnboardedUserAccountCSgyF",
+            "usr": "s:7BlockID18AccessCodeResponseC06accessD10RedeemData9curveNameAA23BIDOnboardedUserAccountCSgSS_tF",
+            "mangledName": "$s7BlockID18AccessCodeResponseC06accessD10RedeemData9curveNameAA23BIDOnboardedUserAccountCSgSS_tF",
             "moduleName": "BlockID",
             "declAttributes": [
               "AccessControl"
@@ -42225,8 +42455,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "logAppEvent",
-            "printedName": "logAppEvent(eventName:isPasskeyEnabled:tenant:eventParams:)",
+            "name": "logPassKeyEvent",
+            "printedName": "logPassKeyEvent(eventName:tenant:apiKeyPair:eventParams:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -42241,16 +42471,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "BIDTenant",
                 "printedName": "BlockID.BIDTenant",
                 "usr": "s:7BlockID9BIDTenantC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "APIKeyPair",
+                "printedName": "BlockID.APIKeyPair",
+                "usr": "s:7BlockID10APIKeyPairC"
               },
               {
                 "kind": "TypeNominal",
@@ -42273,8 +42502,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7BlockID15AnalyticsHelperV11logAppEvent9eventName16isPasskeyEnabled6tenant0H6ParamsySS_SbAA9BIDTenantCSDySSypGtFZ",
-            "mangledName": "$s7BlockID15AnalyticsHelperV11logAppEvent9eventName16isPasskeyEnabled6tenant0H6ParamsySS_SbAA9BIDTenantCSDySSypGtFZ",
+            "usr": "s:7BlockID15AnalyticsHelperV15logPassKeyEvent9eventName6tenant03apiG4Pair0I6ParamsySS_AA9BIDTenantCAA06APIKeyM0CSDySSypGtFZ",
+            "mangledName": "$s7BlockID15AnalyticsHelperV15logPassKeyEvent9eventName6tenant03apiG4Pair0I6ParamsySS_AA9BIDTenantCAA06APIKeyM0CSDySSypGtFZ",
             "moduleName": "BlockID",
             "static": true,
             "declAttributes": [
@@ -47367,6 +47596,154 @@
           },
           {
             "kind": "Var",
+            "name": "kAPIKeyPairRequired",
+            "printedName": "kAPIKeyPairRequired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(code: Swift.Int, message: Swift.String)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID12CustomErrorsV19kAPIKeyPairRequiredSi4code_SS7messagetvpZ",
+            "mangledName": "$s7BlockID12CustomErrorsV19kAPIKeyPairRequiredSi4code_SS7messagetvpZ",
+            "moduleName": "BlockID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID12CustomErrorsV19kAPIKeyPairRequiredSi4code_SS7messagetvgZ",
+                "mangledName": "$s7BlockID12CustomErrorsV19kAPIKeyPairRequiredSi4code_SS7messagetvgZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kWalletIsMandatory",
+            "printedName": "kWalletIsMandatory",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(code: Swift.Int, message: Swift.String)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID12CustomErrorsV18kWalletIsMandatorySi4code_SS7messagetvpZ",
+            "mangledName": "$s7BlockID12CustomErrorsV18kWalletIsMandatorySi4code_SS7messagetvpZ",
+            "moduleName": "BlockID",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(code: Swift.Int, message: Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID12CustomErrorsV18kWalletIsMandatorySi4code_SS7messagetvgZ",
+                "mangledName": "$s7BlockID12CustomErrorsV18kWalletIsMandatorySi4code_SS7messagetvgZ",
+                "moduleName": "BlockID",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "kDocumentDataMandatory",
             "printedName": "kDocumentDataMandatory",
             "children": [
@@ -51312,6 +51689,305 @@
         "printedName": "Accelerate",
         "declKind": "Import",
         "moduleName": "BlockID"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BIDEnvironment",
+        "printedName": "BIDEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "EC_CURVE_NAME",
+            "printedName": "EC_CURVE_NAME",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7BlockID14BIDEnvironmentC13EC_CURVE_NAMESSSgvp",
+            "mangledName": "$s7BlockID14BIDEnvironmentC13EC_CURVE_NAMESSSgvp",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14BIDEnvironmentC13EC_CURVE_NAMESSSgvg",
+                "mangledName": "$s7BlockID14BIDEnvironmentC13EC_CURVE_NAMESSSgvg",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14BIDEnvironmentC13EC_CURVE_NAMESSSgvs",
+                "mangledName": "$s7BlockID14BIDEnvironmentC13EC_CURVE_NAMESSSgvs",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7BlockID14BIDEnvironmentC13EC_CURVE_NAMESSSgvM",
+                "mangledName": "$s7BlockID14BIDEnvironmentC13EC_CURVE_NAMESSSgvM",
+                "moduleName": "BlockID",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BIDEnvironment",
+                "printedName": "BlockID.BIDEnvironment",
+                "usr": "c:@M@BlockID@objc(cs)BIDEnvironment"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BlockID@objc(cs)BIDEnvironment(im)init",
+            "mangledName": "$s7BlockID14BIDEnvironmentCACycfc",
+            "moduleName": "BlockID",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BIDEnvironment",
+                "printedName": "BlockID.BIDEnvironment",
+                "usr": "c:@M@BlockID@objc(cs)BIDEnvironment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7BlockID14BIDEnvironmentC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7BlockID14BIDEnvironmentC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BlockID",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7BlockID14BIDEnvironmentC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7BlockID14BIDEnvironmentC6encode2toys7Encoder_p_tKF",
+            "moduleName": "BlockID",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BlockID@objc(cs)BIDEnvironment",
+        "mangledName": "$s7BlockID14BIDEnvironmentC",
+        "moduleName": "BlockID",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -67959,6 +68635,35 @@
           },
           {
             "kind": "Function",
+            "name": "sha512SaltedBase64",
+            "printedName": "sha512SaltedBase64(salt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS7BlockIDE18sha512SaltedBase644saltS2S_tF",
+            "mangledName": "$sSS7BlockIDE18sha512SaltedBase644saltS2S_tF",
+            "moduleName": "BlockID",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "sha256",
             "printedName": "sha256()",
             "children": [
@@ -69442,49 +70147,182 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "StringLiteral",
-      "offset": 338,
+      "offset": 335,
+      "length": 11,
+      "value": "\"secp256k1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "StringLiteral",
+      "offset": 369,
+      "length": 12,
+      "value": "\"prime256v1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "StringLiteral",
+      "offset": 693,
       "length": 80,
       "value": "\"115792089237316195423570985008687907853269984665640564039457584007908834671663\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "IntegerLiteral",
-      "offset": 482,
+      "offset": 794,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "IntegerLiteral",
-      "offset": 515,
+      "offset": 816,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "StringLiteral",
-      "offset": 573,
-      "length": 68,
-      "value": "\"0x79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798\""
+      "offset": 871,
+      "length": 66,
+      "value": "\"79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 946,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 961,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "StringLiteral",
-      "offset": 674,
-      "length": 68,
-      "value": "\"0x483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8\""
+      "offset": 1017,
+      "length": 66,
+      "value": "\"483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1092,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1107,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "StringLiteral",
-      "offset": 802,
+      "offset": 1145,
       "length": 80,
       "value": "\"115792089237316195423570985008687907852837564279074904382605163141518161494337\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
       "kind": "IntegerLiteral",
-      "offset": 938,
+      "offset": 1239,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "StringLiteral",
+      "offset": 1399,
+      "length": 80,
+      "value": "\"115792089210356248762697446949407573530086143415290314195533631308867097853951\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1500,
+      "length": 2,
+      "value": "-3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "StringLiteral",
+      "offset": 1555,
+      "length": 66,
+      "value": "\"5ac635d8aa3a93e7b3ebbd55769886bc651d06b0cc53b0f63bce3c3e27d2604b\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1630,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1645,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "StringLiteral",
+      "offset": 1701,
+      "length": 66,
+      "value": "\"6b17d1f2e12c4247f8bce6e563a440f277037d812deb33a0f4a13945d898c296\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1776,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1791,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "StringLiteral",
+      "offset": 1847,
+      "length": 66,
+      "value": "\"4fe342e2fe1a7f9b8ee7eb4a7c0f9e162bce33576b315ececbb6406837bf51f5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1922,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1937,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "StringLiteral",
+      "offset": 1975,
+      "length": 80,
+      "value": "\"115792089210356248762697446949407573529996955224135760342422259061068512044369\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/ECDSA\/ECDSA_Algorithm.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2069,
       "length": 1,
       "value": "1"
     },
@@ -69533,35 +70371,35 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 18029,
+      "offset": 18110,
       "length": 9,
       "value": "\"otpseed\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 18179,
+      "offset": 18260,
       "length": 10,
       "value": "\"username\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 18598,
+      "offset": 18679,
       "length": 9,
       "value": "\"poi_ial\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 18630,
+      "offset": 18711,
       "length": 9,
       "value": "\"pon_ial\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/FetchUserAccountInfo\/FetchUserAccountInfoAPI.swift",
       "kind": "StringLiteral",
-      "offset": 18691,
+      "offset": 18772,
       "length": 10,
       "value": "\"otpseeds\""
     },
@@ -69687,70 +70525,77 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 630,
+      "offset": 644,
+      "length": 40,
+      "value": "\"com.blockid.sdk.serverEnvironmentCurve\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
+      "kind": "StringLiteral",
+      "offset": 722,
       "length": 26,
       "value": "\"com.blockid.sdk.otpseeds\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 699,
+      "offset": 791,
       "length": 31,
       "value": "\"com.blockid.sdk.licensemodule\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 771,
+      "offset": 863,
       "length": 32,
       "value": "\"com.blockid.sdk.linkedAccounts\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 844,
+      "offset": 936,
       "length": 32,
       "value": "\"com.blockid.sdk.currentAccount\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 919,
+      "offset": 1011,
       "length": 36,
       "value": "\"com.blockid.sdk.isLiveIdRegistered\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 995,
+      "offset": 1087,
       "length": 33,
       "value": "\"com.blockid.sdk.isPinRegistered\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1063,
+      "offset": 1155,
       "length": 26,
       "value": "\"com.blockid.sdk.docsList\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1121,
+      "offset": 1213,
       "length": 10,
       "value": "\"K_DVC_ID\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1213,
+      "offset": 1305,
       "length": 27,
       "value": "\"K_TRUSTED_SESSION_SOURCES\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1279,
+      "offset": 1371,
       "length": 12,
       "value": "\"K_USER_IAL\""
     },
@@ -70147,13 +70992,6 @@
       "value": "\"key_paths\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Profile Image\/ProfileImageAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 249,
-      "length": 62,
-      "value": "\"\/api\/r1\/community\/{community}\/userdid\/{userdid}\/profileimage\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/internal\/BIDDeviceAuthenticator.swift",
       "kind": "StringLiteral",
       "offset": 673,
@@ -70218,92 +71056,106 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3432,
+      "length": 11,
+      "value": "\"secp256k1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 3493,
+      "length": 11,
+      "value": "\"secp256k1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 3366,
+      "offset": 3661,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "Array",
-      "offset": 3415,
-      "length": 2559,
-      "value": "[\"https:\/\/1k-dev.1kosmos.net\/sessions\", \"https:\/\/1k-qa.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu.1kosmos.net\/sessions\", \"https:\/\/1k-uat.1kosmos.net\/sessions\", \"https:\/\/1k-pilot.1kosmos.net\/sessions\", \"https:\/\/1k-pilot-in.1kosmos.in\/sessions\", \"https:\/\/1k-prod-in.1kosmos.in\/sessions\", \"https:\/\/1k-staging-gcp-in.1kosmos.in\/sessions\", \"https:\/\/1k-fedramp-dev.1kosmos.net\/sessions\", \"https:\/\/1k-perf-client.1kosmos.net\/sessions\", \"https:\/\/1k-perf-root.1kosmos.net\/sessions\", \"https:\/\/1k-staging-gcp-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west2.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-dev-aws-01.1kosmos.net\/sessions\", \"https:\/\/1k-dev-fedramp-aws.1kosmos.net\/sessions\", \"https:\/\/1k-staging-aws-01.1kosmos.net\/sessions\", \"https:\/\/1k-uat-govcloud.1kosmos.net\/sessions\", \"https:\/\/1k-staging-govcloud.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west2.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu.1kosmos.net\/sessions\", \"https:\/\/1k-staging-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-fed.1kosmos.net\/sessions\", \"https:\/\/1k-prod-sg.1kosmos.net\/sessions\", \"https:\/\/1k-cs-sandbox.1kosmos.net\/sessions\", \"https:\/\/identity.1kosmos.net\/sessions\"]"
+      "offset": 3710,
+      "length": 3811,
+      "value": "[\"https:\/\/1k-dev.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu.1kosmos.net\/sessions\", \"https:\/\/1k-uat.1kosmos.net\/sessions\", \"https:\/\/1k-pilot.1kosmos.net\/sessions\", \"https:\/\/1k-pilot-in.1kosmos.in\/sessions\", \"https:\/\/1k-prod-in.1kosmos.in\/sessions\", \"https:\/\/1k-staging-gcp-in.1kosmos.in\/sessions\", \"https:\/\/1k-perf-root.1kosmos.net\/sessions\", \"https:\/\/1k-staging-gcp-us.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-west4.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu.1kosmos.net\/sessions\", \"https:\/\/1k-staging-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-ca.1kosmos.net\/sessions\", \"https:\/\/1k-prod-sg.1kosmos.net\/sessions\", \"https:\/\/1k-cs-sandbox.1kosmos.net\/sessions\", \"https:\/\/identity.1kosmos.net\/sessions\", \"https:\/\/omega-root.1kosmos.net\/sessions\", \"https:\/\/sentinel-root.1kosmos.net\/sessions\", \"https:\/\/bifrost-root.1kosmos.net\/sessions\", \"https:\/\/dev-root.1kosmos.net\/sessions\", \"https:\/\/multi-cloud-root.1kosmos.net\/sessions\", \"https:\/\/parallax-root.1kosmos.net\/sessions\", \"https:\/\/1k-dev-aws.1kosmos.net\/sessions\", \"https:\/\/1k-il4.1kosmos-gov.net\/sessions\", \"https:\/\/qa-root.1kosmos.net\/sessions\", \"https:\/\/1k-perf-ca.1kosmos.net\/sessions\", \"https:\/\/1k-perf-gcp.1kosmos.net\/sessions\", \"https:\/\/1k-bootstrap-qa-gcp.1kosmos.net\/sessions\", \"https:\/\/uat-root.1kosmos.net\/sessions\", \"https:\/\/pilot-root.1kosmos.net\/sessions\", \"https:\/\/1k-staging-eu-ldn.1kosmos.net\/sessions\", \"https:\/\/1k-staging-gcp-01.1kosmos.net\/sessions\", \"https:\/\/1k-ha-poc-eu-north1.1kosmos.net\/sessions\", \"https:\/\/1k-prod-aws-ldn.1kosmos.net\/sessions\", \"https:\/\/1k-prod-eu-west1.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us-aws.1kosmos.net\/sessions\", \"https:\/\/1k-prod-us.1kosmos-gov.net\/sessions\", \"https:\/\/1k-staging-us.1kosmos-gov.net\/sessions\", \"https:\/\/1k-uat-fedramp.1kosmos-gov.net\/sessions\", \"https:\/\/1k-prod.1kosmos.fedhive.mil\/sessions\", \"https:\/\/1k-staging.1kosmos.fedhive.mil\/sessions\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6053,
+      "offset": 7600,
       "length": 6,
       "value": "\"IAL1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 98454,
+      "offset": 113211,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 101607,
+      "offset": 116364,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 104017,
+      "offset": 118774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 110385,
+      "offset": 125630,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 113316,
+      "offset": 128561,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 117226,
+      "offset": 132950,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 117295,
+      "offset": 133019,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 117528,
+      "offset": 133252,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 117889,
+      "offset": 133613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 128871,
+      "offset": 144878,
       "length": 1,
       "value": "0"
     },
@@ -70317,14 +71169,14 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AuthNAPIs\/AuthNAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 4983,
+      "offset": 5204,
       "length": 17,
       "value": "\"signature_token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AuthNAPIs\/AuthNAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 5481,
+      "offset": 5702,
       "length": 29,
       "value": "\"proof_of_authentication_jwt\""
     },
@@ -70478,112 +71330,105 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 14018,
+      "offset": 14048,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 14050,
+      "offset": 14080,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 14248,
+      "offset": 14278,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 14279,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14313,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14457,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 14743,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 14769,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 14805,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 14839,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 14870,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 15405,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 15436,
+      "offset": 14309,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 15470,
+      "offset": 14343,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14487,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 15901,
+      "offset": 14773,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
-      "offset": 15938,
+      "offset": 14799,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 14835,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 14869,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 14900,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 15435,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 15466,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15500,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 15931,
       "length": 2,
       "value": "\"\""
     },
@@ -70591,6 +71436,13 @@
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
       "kind": "StringLiteral",
       "offset": 15968,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Session APIs\/SessionsAPI.swift",
+      "kind": "StringLiteral",
+      "offset": 15998,
       "length": 2,
       "value": "\"\""
     },
@@ -70870,224 +71722,224 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 10437,
+      "offset": 10741,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 10491,
+      "offset": 10795,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 57201,
+      "offset": 59673,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 84106,
+      "offset": 87182,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 84142,
+      "offset": 87218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 84713,
+      "offset": 87789,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 84764,
+      "offset": 87840,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 84810,
+      "offset": 87886,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 84858,
+      "offset": 87934,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 84904,
+      "offset": 87980,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 84943,
+      "offset": 88019,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 84989,
+      "offset": 88065,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85029,
+      "offset": 88105,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85067,
+      "offset": 88143,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85105,
+      "offset": 88181,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85143,
+      "offset": 88219,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85182,
+      "offset": 88258,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85222,
+      "offset": 88298,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85264,
+      "offset": 88340,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85305,
+      "offset": 88381,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85337,
+      "offset": 88413,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85377,
+      "offset": 88453,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85419,
+      "offset": 88495,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85460,
+      "offset": 88536,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85501,
+      "offset": 88577,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 85542,
+      "offset": 88618,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87558,
+      "offset": 90634,
       "length": 19,
       "value": "\"mobile_session_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 87610,
+      "offset": 90686,
       "length": 20,
       "value": "\"mobile_document_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 89616,
+      "offset": 92692,
       "length": 12,
       "value": "\"event_info\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 97317,
+      "offset": 100393,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "StringLiteral",
-      "offset": 97403,
+      "offset": 100479,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User APIs\/UserAPI.swift",
       "kind": "Array",
-      "offset": 97431,
+      "offset": 100507,
       "length": 2,
       "value": "[]"
     },
@@ -71890,13 +72742,6 @@
       "value": "200"
     },
     {
-      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/AnalyticsHelper\/AnalyticsHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9352,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/CreateAccessCodePayload.swift",
       "kind": "StringLiteral",
       "offset": 361,
@@ -72060,14 +72905,14 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14732,
+      "offset": 14984,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/Internal\/API Manager\/ErrorManager.swift",
       "kind": "StringLiteral",
-      "offset": 14767,
+      "offset": 15019,
       "length": 2,
       "value": "\"\""
     },
@@ -72438,126 +73283,126 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 8041,
+      "offset": 8143,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 8092,
+      "offset": 8194,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14595,
+      "offset": 14931,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14688,
+      "offset": 15024,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14757,
+      "offset": 15093,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14831,
+      "offset": 15167,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14922,
+      "offset": 15258,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 14980,
+      "offset": 15316,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15063,
+      "offset": 15399,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15140,
+      "offset": 15476,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15204,
+      "offset": 15540,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15242,
+      "offset": 15578,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15280,
+      "offset": 15616,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15319,
+      "offset": 15655,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15359,
+      "offset": 15695,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15401,
+      "offset": 15737,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15442,
+      "offset": 15778,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/AccessCode\/AccessCodeAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 15745,
+      "offset": 16081,
       "length": 2,
       "value": "\"\""
     },
@@ -73320,21 +74165,21 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 4401,
+      "offset": 4572,
       "length": 9,
       "value": "\"fido_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 4437,
+      "offset": 4608,
       "length": 13,
       "value": "\"skip_create\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/ManagedWallets\/ManagedWalletsAPIs.swift",
       "kind": "StringLiteral",
-      "offset": 4751,
+      "offset": 4922,
       "length": 4,
       "value": "\"id\""
     },
@@ -73355,14 +74200,21 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDWallet.swift",
       "kind": "StringLiteral",
-      "offset": 273,
+      "offset": 282,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDWallet.swift",
       "kind": "StringLiteral",
-      "offset": 305,
+      "offset": 315,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/Data Models\/BIDWallet.swift",
+      "kind": "StringLiteral",
+      "offset": 347,
       "length": 2,
       "value": "\"\""
     },
@@ -73554,6 +74406,13 @@
       "offset": 220,
       "length": 5,
       "value": "\"\/sd\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/CaaS APIs\/CaaSAPIs.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 19,
+      "value": "\"\/caas\/environment\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-kernel-sdk\/ios-kernel-sdk\/BlockIDSDK\/BIDAPIs\/User Management\/AuthModules\/BIDPasswordPolicy.swift",
