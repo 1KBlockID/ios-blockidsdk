@@ -7958,100 +7958,6 @@
           },
           {
             "kind": "Function",
-            "name": "setLiveIDRegistered",
-            "printedName": "setLiveIDRegistered(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID8BIDVaultC19setLiveIDRegisteredyySbF",
-            "mangledName": "$s7BlockID8BIDVaultC19setLiveIDRegisteredyySbF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isLiveIDRegistered",
-            "printedName": "isLiveIDRegistered()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID8BIDVaultC18isLiveIDRegisteredSbyF",
-            "mangledName": "$s7BlockID8BIDVaultC18isLiveIDRegisteredSbyF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setPINRegistered",
-            "printedName": "setPINRegistered(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID8BIDVaultC16setPINRegisteredyySbF",
-            "mangledName": "$s7BlockID8BIDVaultC16setPINRegisteredyySbF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isPINRegistered",
-            "printedName": "isPINRegistered()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7BlockID8BIDVaultC15isPINRegisteredSbyF",
-            "mangledName": "$s7BlockID8BIDVaultC15isPINRegisteredSbyF",
-            "moduleName": "BlockID",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "setAuthAsset",
             "printedName": "setAuthAsset(value:forKey:)",
             "children": [
@@ -70535,42 +70441,28 @@
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1011,
-      "length": 36,
-      "value": "\"com.blockid.sdk.isLiveIdRegistered\""
-    },
-    {
-      "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
-      "kind": "StringLiteral",
-      "offset": 1087,
-      "length": 33,
-      "value": "\"com.blockid.sdk.isPinRegistered\""
-    },
-    {
-      "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
-      "kind": "StringLiteral",
-      "offset": 1155,
+      "offset": 1003,
       "length": 26,
       "value": "\"com.blockid.sdk.docsList\""
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1213,
+      "offset": 1061,
       "length": 10,
       "value": "\"K_DVC_ID\""
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1305,
+      "offset": 1153,
       "length": 27,
       "value": "\"K_TRUSTED_SESSION_SOURCES\""
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDVault\/BIDVault.swift",
       "kind": "StringLiteral",
-      "offset": 1371,
+      "offset": 1219,
       "length": 12,
       "value": "\"K_USER_IAL\""
     },
@@ -71067,70 +70959,70 @@
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 117280,
+      "offset": 117206,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 120438,
+      "offset": 120364,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 122848,
+      "offset": 122774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 129719,
+      "offset": 129645,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 132650,
+      "offset": 132576,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 137039,
+      "offset": 136965,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 137108,
+      "offset": 137034,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "StringLiteral",
-      "offset": 137341,
+      "offset": 137267,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 137702,
+      "offset": 137628,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BlockIDSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 148987,
+      "offset": 148913,
       "length": 1,
       "value": "0"
     },
@@ -71270,7 +71162,7 @@
     {
       "filePath": "\/Users\/GauravRane\/Documents\/iosProjects\/ios-kernel-sdk\/BlockIDSDK\/BIDLogin\/BIDAuthProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 11187,
+      "offset": 11060,
       "length": 5,
       "value": "false"
     },

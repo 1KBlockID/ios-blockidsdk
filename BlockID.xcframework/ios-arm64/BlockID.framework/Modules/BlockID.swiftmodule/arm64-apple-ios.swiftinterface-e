@@ -298,10 +298,6 @@ public struct DTHStruct {
   public func setTenant(tenant: BlockID.BIDTenant)
   public func getAppTenant() -> BlockID.BIDTenant?
   public func setAppTenant(appTenant: BlockID.BIDTenant)
-  public func setLiveIDRegistered(_ value: Swift.Bool)
-  public func isLiveIDRegistered() -> Swift.Bool
-  public func setPINRegistered(_ value: Swift.Bool)
-  public func isPINRegistered() -> Swift.Bool
   public func setAuthAsset(value: Swift.String, forKey key: Swift.String)
   public func getAuthAssetValue(forKey key: Swift.String) -> Swift.String?
   public func removeAuthAssetValue(forKey key: Swift.String)
