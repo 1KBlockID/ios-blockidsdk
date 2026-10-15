@@ -7,5 +7,4 @@ framework module BlockID {
 
 module BlockID.Swift {
   header "BlockID-Swift.h"
-  requires objc
 }
