@@ -370,6 +370,10 @@ public struct DTHStruct {
   public func getAppTenant() -> BIDTenant?
   #endif
   public func setAppTenant(appTenant: BIDTenant)
+  public func setLiveIDRegistered(_ value: Swift.Bool)
+  public func isLiveIDRegistered() -> Swift.Bool
+  public func setPINRegistered(_ value: Swift.Bool)
+  public func isPINRegistered() -> Swift.Bool
   public func setAuthAsset(value: Swift.String, forKey key: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   public func getAuthAssetValue(forKey key: Swift.String) -> Swift.String?
@@ -815,6 +819,9 @@ public enum OTPSeedUpdateAction {
   public func decryptString(str: Swift.String, senderKey: Swift.String, curveName: Swift.String) -> Swift.String?
   #endif
   public func getWalletPublicKey() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func sha512SaltedWithWalletKey(_ value: Swift.String) -> Swift.String?
+  #endif
   public func getServerPublicKey() -> Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
   public func getMnemonicPhrases() -> Swift.String?
@@ -958,7 +965,6 @@ extension BlockIDSDK {
     case invalidTime
     case invalidPeriod
     case invalidDigits
-    case invalidGenerator
     public static func == (a: TOTPUtils.Error, b: TOTPUtils.Error) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -2141,6 +2147,7 @@ public struct ProxyDetails {
 }
 extension Swift.String {
   public func sha512() -> Swift.String
+  public func sha512SaltedBase64(salt: Swift.String) -> Swift.String
   public func sha256() -> Swift.String
   public func md5HashV1() -> Swift.String
   public func md5HashV0() -> Swift.String
