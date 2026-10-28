@@ -370,10 +370,6 @@ public struct DTHStruct {
   public func getAppTenant() -> BIDTenant?
   #endif
   public func setAppTenant(appTenant: BIDTenant)
-  public func setLiveIDRegistered(_ value: Swift.Bool)
-  public func isLiveIDRegistered() -> Swift.Bool
-  public func setPINRegistered(_ value: Swift.Bool)
-  public func isPINRegistered() -> Swift.Bool
   public func setAuthAsset(value: Swift.String, forKey key: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   public func getAuthAssetValue(forKey key: Swift.String) -> Swift.String?
@@ -962,6 +958,7 @@ extension BlockIDSDK {
     case invalidTime
     case invalidPeriod
     case invalidDigits
+    case invalidGenerator
     public static func == (a: TOTPUtils.Error, b: TOTPUtils.Error) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
