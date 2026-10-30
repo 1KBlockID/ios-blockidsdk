@@ -353,7 +353,6 @@ public struct DTHStruct {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BIDVault : ObjectiveC.NSObject {
   public static let sharedInstance: BIDVault
-  public func setPin(pin: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   public func getLicenseKey() -> Swift.String?
   #endif
@@ -791,7 +790,7 @@ public enum OTPSeedUpdateAction {
   #if compiler(>=5.3) && $NonescapableTypes
   public func getTOTP() -> (totp: TOTP?, error: ErrorResponse?)
   #endif
-  public func checkUserExist(userId: Swift.String, origin: BIDOrigin, completion: @escaping (Swift.Bool) -> ())
+  public func checkUserExist(userId: Swift.String, origin: BIDOrigin, completion: @escaping (Swift.Bool) -> Swift.Void)
   #if compiler(>=5.3) && $NonescapableTypes
   public func addPreLinkedUser(userId: Swift.String, origin: BIDOrigin, account: BIDAccount?, completion: @escaping UserAPICallback)
   #endif
@@ -934,7 +933,7 @@ extension BlockIDSDK {
   public func restoreUserDataFromWallet(completion: @escaping UserAPICallback)
   @discardableResult
   public func generateWalletForRestore(mnemonics: Swift.String) -> Swift.Bool
-  public func isRestoreWalletEnabled(forTenant dns: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  public func isRestoreWalletEnabled(forTenant dns: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
   #if compiler(>=5.3) && $NonescapableTypes
   public func restoreWalletWithLiveID(controller: UIKit.UIViewController, rootTenantDNS: Swift.String, communityName: Swift.String, dvcID: Swift.String? = nil, completion: @escaping RestoreWalletWithLiveIDCallback)
   #endif
@@ -1335,28 +1334,28 @@ public struct JSONCodingKeys : Swift.CodingKey {
   #endif
 }
 extension Swift.KeyedDecodingContainer {
-  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type, forKey key: K) throws -> Swift.Dictionary<Swift.String, Any>
-  public func decode(_ type: Swift.Array<Any>.Type, forKey key: K) throws -> Swift.Array<Any>
-  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type, forKey key: K) throws -> [Swift.String : Any]
+  public func decode(_ type: Swift.Array<Any>.Type, forKey key: K) throws -> [Any]
+  public func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> [Swift.String : Any]
 }
 extension Swift.UnkeyedDecodingContainer {
-  public mutating func decode(_ type: Swift.Array<Any>.Type) throws -> Swift.Array<Any>
-  public mutating func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> Swift.Dictionary<Swift.String, Any>
+  public mutating func decode(_ type: Swift.Array<Any>.Type) throws -> [Any]
+  public mutating func decode(_ type: Swift.Dictionary<Swift.String, Any>.Type) throws -> [Swift.String : Any]
 }
 extension Swift.KeyedEncodingContainerProtocol where Self.Key == JSONCodingKeys {
-  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
+  public mutating func encode(_ value: [Swift.String : Any]) throws
 }
 extension Swift.KeyedEncodingContainerProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
-  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>?, forKey key: Self.Key) throws
+  public mutating func encode(_ value: [Swift.String : Any]?, forKey key: Self.Key) throws
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public mutating func encode(_ value: Swift.Array<Any>?, forKey key: Self.Key) throws
+  public mutating func encode(_ value: [Any]?, forKey key: Self.Key) throws
   #endif
 }
 extension Swift.UnkeyedEncodingContainer {
-  public mutating func encode(_ value: Swift.Array<Any>) throws
-  public mutating func encode(_ value: Swift.Dictionary<Swift.String, Any>) throws
+  public mutating func encode(_ value: [Any]) throws
+  public mutating func encode(_ value: [Swift.String : Any]) throws
 }
 @_hasMissingDesignatedInitializers public class KYCHashData : Swift.Codable {
   @objc deinit
@@ -1848,14 +1847,14 @@ public typealias DocumentEnrollmentCallback = (_ status: Swift.Bool, _ error: Er
   public func getUserDocument(id: Swift.String?, type: Swift.String?, category: Swift.String?) -> Swift.String?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func getDocument(id: Swift.String?, type: Swift.String?, category: Swift.String?) -> Swift.Array<Any>?
+  public func getDocument(id: Swift.String?, type: Swift.String?, category: Swift.String?) -> [Any]?
   #endif
   public func getDocumentCount() -> Swift.Int
   @objc deinit
 }
 public class PACEHandler {
   public init(cardAccess: CardAccess, tagReader: TagReader) throws
-  public func doPACE(mrzKey: Swift.String, completed: @escaping (Swift.Bool) -> ())
+  public func doPACE(mrzKey: Swift.String, completed: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
 public func binToHexRep(_ val: [Swift.UInt8], asArray: Swift.Bool = false) -> Swift.String
@@ -1973,7 +1972,7 @@ public class BACHandler {
   public init()
   public init(tagReader: TagReader)
   #if compiler(>=5.3) && $NonescapableTypes
-  public func performBACAndGetSessionKeys(mrzKey: Swift.String, completed: @escaping (_ error: NFCPassportReaderError?) -> ())
+  public func performBACAndGetSessionKeys(mrzKey: Swift.String, completed: @escaping (_ error: NFCPassportReaderError?) -> Swift.Void)
   #endif
   public func sessionKeys(data: [Swift.UInt8]) throws -> ([Swift.UInt8], [Swift.UInt8], [Swift.UInt8])
   @objc deinit
@@ -2174,7 +2173,7 @@ extension RFIDScannerHelper : RFIDResponseDelegate {
   public func setMasterListURL(_ masterListURL: Foundation.URL)
   public func overrideNFCDataAmountToRead(amount: Swift.Int)
   #if compiler(>=5.3) && $NonescapableTypes
-  public func readPassport(mrzKey: Swift.String, tags: [DataGroupId] = [], skipSecureElements: Swift.Bool = true, customDisplayMessage: ((NFCViewDisplayMessage) -> Swift.String?)? = nil, completed: @escaping (NFCPassportModel?, NFCPassportReaderError?) -> ())
+  public func readPassport(mrzKey: Swift.String, tags: [DataGroupId] = [], skipSecureElements: Swift.Bool = true, customDisplayMessage: ((NFCViewDisplayMessage) -> Swift.String?)? = nil, completed: @escaping (NFCPassportModel?, NFCPassportReaderError?) -> Swift.Void)
   #endif
   public func stopReadingPassport()
   @objc deinit
