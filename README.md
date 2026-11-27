@@ -52,6 +52,7 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ## Change Logs
 ### v1.30.90
 - Bug fixes and improvements
+- Updated E_SESSION_AUTH event data format
 
 ### v1.30.81
 - Added support for External TOTP 
