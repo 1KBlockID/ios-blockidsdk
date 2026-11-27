@@ -69,6 +69,42 @@
     "iPhone16,3": "iPhone 15 Pro",
     "iPhone16,4": "iPhone 15 Pro Max",
     
+    "//16": "iPhone 16 Series",
+    
+    "iPhone17,1": "iPhone 16 Pro",
+    "iPhone17,2": "iPhone 16 Pro Max",
+    "iPhone17,3": "iPhone 16",
+    "iPhone17,4": "iPhone 16 Plus",
+    "iPhone17,5": "iPhone 16e",
+    
+    "//17": "iPhone 17 Series",
+    
+    "iPhone18,1": "iPhone 17 Pro",
+    "iPhone18,2": "iPhone 17 Pro Max",
+    "iPhone18,3": "iPhone 17",
+    "iPhone18,4": "iPhone Air",
+    "iPhone18,5": "iPhone 17e",
+    
+    "//18": "iPhone 18 Series",
+    
+    "iPhone19,2": "iPhone 18 Pro",
+    "iPhone19,3": "iPhone 18 Pro Max",
+    "iPhone19,7": "iPhone 18 Pro Max",
+    "iPhone19,4": "iPhone Duo (foldable)",
+    
+    "//Pad": "iPad Series",
+    
+    "iPad7,11": "iPad (7th Gen)",
+    "iPad7,12": "iPad (7th Gen)",
+    "iPad11,6": "iPad (8th Gen)",
+    "iPad11,7": "iPad (8th Gen)",
+    "iPad12,1": "iPad (9th Gen)",
+    "iPad12,2": "iPad (9th Gen)",
+    "iPad13,18": "iPad (10th Gen)",
+    "iPad13,19": "iPad (10th Gen)",
+    "iPad15,7": "iPad (11th Gen)",
+    "iPad15,8": "iPad (11th Gen)",
+    
     "//PadMini": "iPad Mini Series",
     
     "iPad2,5": "iPad Mini (1st Gen)",
@@ -86,6 +122,8 @@
     "iPad11,2": "iPad Mini 5",
     "iPad14,1": "iPad Mini 6",
     "iPad14,2": "iPad Mini 6",
+    "iPad16,1": "iPad Mini (7th Gen)",
+    "iPad16,2": "iPad Mini (7th Gen)",
     
     "//PadAir": "iPad Air Series",
     
@@ -100,6 +138,14 @@
     "iPad13,2": "iPad Air (4th Gen)",
     "iPad13,16": "iPad Air (5th Gen)",
     "iPad13,17": "iPad Air (5th Gen)",
+    "iPad14,8": "iPad Air 11-inch (M2, 6th Gen)",
+    "iPad14,9": "iPad Air 11-inch (M2, 6th Gen)",
+    "iPad14,10": "iPad Air 13-inch (M2, 6th Gen)",
+    "iPad14,11": "iPad Air 13-inch (M2, 6th Gen)",
+    "iPad15,3": "iPad Air 11-inch (M3, 7th Gen)",
+    "iPad15,4": "iPad Air 11-inch (M3, 7th Gen)",
+    "iPad15,5": "iPad Air 13-inch (M3, 7th Gen)",
+    "iPad15,6": "iPad Air 13-inch (M3, 7th Gen)",
     
     "//PadPro": "iPad Pro Series",
     
@@ -130,6 +176,14 @@
     "iPad13,8": "iPad Pro 12.9-inch (5th Gen)",
     "iPad13,9": "iPad Pro 12.9-inch (5th Gen)",
     "iPad13,10": "iPad Pro 12.9-inch (5th Gen)",
-    "iPad13,11": "iPad Pro 12.9-inch (5th Gen)"
+    "iPad13,11": "iPad Pro 12.9-inch (5th Gen)",
+    "iPad14,3": "iPad Pro 11-inch (4th Gen)",
+    "iPad14,4": "iPad Pro 11-inch (4th Gen)",
+    "iPad14,5": "iPad Pro 12.9-inch (6th Gen)",
+    "iPad14,6": "iPad Pro 12.9-inch (6th Gen)",
+    "iPad16,3": "iPad Pro 11-inch (M4)",
+    "iPad16,4": "iPad Pro 11-inch (M4)",
+    "iPad16,5": "iPad Pro 13-inch (M4)",
+    "iPad16,6": "iPad Pro 13-inch (M4)"
 }
 

@@ -30,15 +30,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Hr1mFxh9h3m0+ae7vgmoFrcy4u8=
+		LJ92m8CrvGz7HqylDjn3YA8J6Q4=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		bkPiKnoE7Fkl3kjQE7dptZMBiXI=
+		S43CKddMbdtOZU+7Il8eh3hLzUE=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Whops6kbVUvSyLSs8NWItG+RVaw=
+		ccatiPYN/ZwDZRnWCJcAfP5zl2Y=
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -46,7 +46,11 @@
 		</data>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Whops6kbVUvSyLSs8NWItG+RVaw=
+		ccatiPYN/ZwDZRnWCJcAfP5zl2Y=
+		</data>
+		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<data>
+		lBjgviJI9CuxmqX97b7+KQsTdXs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +70,7 @@
 		</data>
 		<key>deviceModels.json</key>
 		<data>
-		hHwe2V1Ngo6EzH76F+kLTUGyyZM=
+		HjcTo/SHfHJC9AOe2Qa7zE0waj0=
 		</data>
 		<key>iconLoading.png</key>
 		<data>
@@ -141,14 +145,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y+wIE4SqIGRKDau8iVoQZk12vxuoGtSNsINjvc3S3uc=
+			B3d0P1TyWX9HdKvy647sFg5zJA6jcwxeUG6hbsCxZ+Y=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cHSm57O02FUcPw7kIMSdAO7O78PlVQGthhsPH3kg1e4=
+			c04TZFJiL9/ZECUC7dtpAh4DJAXroknYK6kpgQJAv6U=
 			</data>
 		</dict>
 		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -162,7 +166,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cHSm57O02FUcPw7kIMSdAO7O78PlVQGthhsPH3kg1e4=
+			c04TZFJiL9/ZECUC7dtpAh4DJAXroknYK6kpgQJAv6U=
+			</data>
+		</dict>
+		<key>Modules/BlockID.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l3Ea2fm9Fp4MMy6BzaV1B++JCmuM58XCgVKHmsPFcS8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -197,7 +208,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y69w77LwRzCxsW27ZfD8B0+rsztF7205bzjH0hihqJo=
+			p+ZCPJzr0m0y2UBWJ4k7DXZKB6bbNk4VzShV9ankgHw=
 			</data>
 		</dict>
 		<key>iconLoading.png</key>
