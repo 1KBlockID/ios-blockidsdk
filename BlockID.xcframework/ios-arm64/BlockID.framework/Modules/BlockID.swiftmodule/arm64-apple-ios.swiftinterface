@@ -834,7 +834,7 @@ public enum OTPSeedUpdateAction {
   #endif
   public func getEventData(publicKey: Swift.String, lon: Swift.Double, lat: Swift.Double, completion: @escaping (Swift.String) -> Swift.Void)
   #if compiler(>=5.3) && $NonescapableTypes
-  public func authenticateUser(sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, authFactor: Swift.String? = nil, isRejected: Swift.Bool = false, completion: @escaping AuthenticateUserCallback)
+  public func authenticateUser(sessionId: Swift.String?, sessionURL: Swift.String, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, authFactor: Swift.String? = nil, metaData: [Swift.String : Any]? = nil, isRejected: Swift.Bool = false, completion: @escaping AuthenticateUserCallback)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func authenticateUser(sessionId: Swift.String?, creds: Swift.String, dictScopes: [Swift.String : Any], lat: Swift.Double, lon: Swift.Double, origin: BIDOrigin, userId: Swift.String? = nil, authFactor: Swift.String? = nil, completion: @escaping AuthenticateUserCallback)
