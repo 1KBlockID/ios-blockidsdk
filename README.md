@@ -53,6 +53,9 @@ BlockID is available under the MIT license. See the LICENSE file for more info.
 ### v1.30.90
 - Bug fixes and improvements
 
+### v1.30.81
+- Added support for External TOTP 
+
 ### v1.30.80
 - Bug fixes and improvements 
 

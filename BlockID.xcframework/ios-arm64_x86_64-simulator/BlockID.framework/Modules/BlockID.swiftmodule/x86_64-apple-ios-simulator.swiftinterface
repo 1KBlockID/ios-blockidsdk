@@ -1660,6 +1660,16 @@ public struct CustomErrors {
     public static let INVALID_ACCOUNT: (code: Swift.Int, msg: Swift.String)
     public static let ACCOUNTS_NOT_FOUND: (code: Swift.Int, msg: Swift.String)
   }
+  public struct ExternalOTP {
+    public static let INVALID_QR: (code: Swift.Int, msg: Swift.String)
+    public static let UNSUPPORTED_TYPE: (code: Swift.Int, msg: Swift.String)
+    public static let INVALID_SECRET: (code: Swift.Int, msg: Swift.String)
+    public static let INVALID_PARAMETERS: (code: Swift.Int, msg: Swift.String)
+    public static let DUPLICATE_ACCOUNT: (code: Swift.Int, msg: Swift.String)
+    public static let ACCOUNT_NOT_FOUND: (code: Swift.Int, msg: Swift.String)
+    public static let STORAGE_FAILED: (code: Swift.Int, msg: Swift.String)
+    public static let OTP_GENERATION_FAILED: (code: Swift.Int, msg: Swift.String)
+  }
   public struct VCs {
     public static let SERVICE_URL_NOT_SET: (code: Swift.Int, message: Swift.String)
     public static let INVALID_VC_DATA: (code: Swift.Int, message: Swift.String)
@@ -2198,6 +2208,66 @@ extension APIFailedError : Foundation.LocalizedError {
     get
   }
   #endif
+}
+@_hasMissingDesignatedInitializers final public class BIDExternalOTPAccount : Swift.Codable {
+  final public let id: Swift.String
+  final public let issuer: Swift.String
+  final public let accountName: Swift.String
+  final public let algorithm: Swift.String
+  final public let digits: Swift.Int
+  final public let period: Swift.Int
+  final public let createdAt: Foundation.TimeInterval
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class BIDExternalOTPPreview {
+  final public let account: BIDExternalOTPAccount
+  final public let labelIssuer: Swift.String
+  final public let parameterIssuer: Swift.String
+  final public var existingAccount: BIDExternalOTPAccount? {
+    get
+  }
+  final public var isDuplicate: Swift.Bool {
+    get
+  }
+  final public var hasIssuerMismatch: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class BIDExternalOTPCode {
+  final public let code: Swift.String
+  final public let remainingSeconds: Swift.Int
+  final public let period: Swift.Int
+  final public let digits: Swift.Int
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class BIDExternalOTPProvider {
+  public static let shared: BIDExternalOTPProvider
+  public static func isExternalOTPUri(_ value: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func parse(_ uri: Swift.String) -> (preview: BIDExternalOTPPreview?, error: ErrorResponse?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func save(_ preview: BIDExternalOTPPreview, replaceExisting: Swift.Bool) -> (account: BIDExternalOTPAccount?, error: ErrorResponse?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getAccounts() -> (accounts: [BIDExternalOTPAccount]?, error: ErrorResponse?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getCode(accountId: Swift.String) -> (code: BIDExternalOTPCode?, error: ErrorResponse?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func removeAccount(accountId: Swift.String) -> (status: Swift.Bool, error: ErrorResponse?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setSelectedAccount(accountId: Swift.String?) -> (status: Swift.Bool, error: ErrorResponse?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getSelectedAccount() -> (account: BIDExternalOTPAccount?, error: ErrorResponse?)
+  #endif
+  @objc deinit
 }
 extension KeychainItemAccessibility : Swift.Equatable {}
 extension KeychainItemAccessibility : Swift.Hashable {}
